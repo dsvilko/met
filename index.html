@@ -200,13 +200,13 @@ a:hover { color: var(--accent-hover); }
   font-size: 0.78rem;
   line-height: 1.3;
   color: var(--fg);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 .card-label .count {
   color: var(--fg-dim);
   font-size: 0.7rem;
+}
+.met-category {
+  font-style: italic;
 }
 
 /* ─── Detail View (single meteorite) ──────────────────────── */
@@ -217,31 +217,66 @@ a:hover { color: var(--accent-hover); }
   padding: 1rem;
 }
 #detail-view.active { display: block; }
+#detail-header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
 #detail-name {
-  font-size: 1.4rem;
-  font-weight: 300;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--fg);
+  margin-bottom: 0.3rem;
+}
+#detail-category {
+  font-size: 1rem;
+  font-style: italic;
   color: var(--accent);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
+}
+#detail-weight {
+  font-size: 0.95rem;
+  color: var(--fg);
+  margin-bottom: 0.8rem;
 }
 #detail-desc {
   font-size: 0.85rem;
   color: var(--fg-dim);
   line-height: 1.6;
-  margin-bottom: 1rem;
+  margin: 0 auto 1rem;
   white-space: pre-wrap;
+  text-align: left;
+  max-width: 800px;
 }
 #detail-images {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 0.8rem;
 }
 #detail-images img {
-  width: 100%;
+  flex: 0 1 280px;
+  min-width: 0;
   border-radius: var(--radius);
   cursor: pointer;
   transition: transform var(--transition);
 }
 #detail-images img:hover { transform: scale(1.02); }
+
+/* Sub-folders shown inside the detail view */
+#detail-subfolders { margin-top: 2rem; }
+.detail-subfolders-heading {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--fg);
+  margin-bottom: 0.8rem;
+  border-bottom: 1px solid var(--border, #333);
+  padding-bottom: 0.4rem;
+}
+.subfolder-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
 
 /* ─── Pagination ─────────────────────────────────────────────── */
 #pagination {
@@ -315,7 +350,7 @@ a:hover { color: var(--accent-hover); }
   cursor: pointer;
   font-size: 0.85rem;
 }
-#lightbox-nav button:hover { background: rgba(255,255,255,0.2); }
+#lightbox-nav button:hover { background: rgba(0, 0, 0, 0.331); }
 #lightbox-counter {
   position: absolute;
   top: 1rem; left: 1rem;
@@ -360,30 +395,30 @@ a:hover { color: var(--accent-hover); }
 </div>
 
 <div id="info-toggle">
-  <button onclick="document.getElementById('info-panel').classList.toggle('open')">ℹ About this collection</button>
+  <button onclick="document.getElementById('info-panel').classList.toggle('open')">About this collection</button>
 </div>
 <div id="info-panel">
-  <p>Welcome to the photo album of my meteorite collection. For any inquiries, I can be contacted at <a href="mailto:dsvilko@gmail.com">dsvilko@gmail.com</a>. Please note that due to a large demand, I can no longer help identify stones you have found and suspect might be a meteorite. There are dedicated websites as well as excellent Facebook groups that can help you to ID your rock.</p>
-  <h3>About Me</h3>
-  <p>I'm a physics teacher, meteorite collector and macro photographer from Zagreb, Croatia. Due to my very limited budget, most of my meteorite collection is in a form of micro fragments and small slices but it covers a huge range of different meteoritic material. I've started collecting in 2019 and my collection currently contains samples of over 200 different meteorites, making it the most varied meteorite collection in Croatia. The collection is also often used for STEM outreach, especially to school kids. I would especially like to thank all the generous meteorite dealers and my "meteoritic" friends that have over these last few years helped grow my collection. Needless to say that without such help, my collection would be nowhere near this extensive.</p>
-  <h3>Photo Licensing</h3>
-  <p>All of these macro photos are copyrighted by me. If you want to use my photos, please contact me at <a href="mailto:dsvilko@gmail.com">dsvilko@gmail.com</a>. In general, if it's purely for educational/outreach, non-commercial use, I'll probably grant free use of my photos. If it's for commercial use, we will work something out.</p>
+ <p>Welcome to the photo album of my meteorite collection. For any inquiries, I can be contacted at <a href="mailto:dsvilko@gmail.com">dsvilko@gmail.com</a>. Please note that due to high demand, I can no longer help identify stones you have found and suspect might be meteorites. There are dedicated websites as well as excellent Facebook groups that can help you ID your rock.</p>
+<h3>About Me</h3>
+<p>I'm a physics teacher, meteorite collector, and macro photographer from Zagreb, Croatia. Due to my very limited budget, most of my meteorite collection is in the form of micro fragments and small slices, but it covers a wide range of different meteoritic materials. I started collecting in 2019, and my collection currently contains samples of over 200 different meteorites, making it the most varied meteorite collection in Croatia. The collection is also often used for STEM outreach, especially to school kids. I would like to give special thanks to all the generous meteorite dealers and my "meteoritic" friends who have helped grow my collection over the past few years. Needless to say, without such help, my collection would be nowhere near this extensive.</p>
+<h3>Photo Licensing</h3>
+<p>All of these macro photos are copyrighted by me. If you want to use my photos, please contact me at <a href="mailto:dsvilko@gmail.com">dsvilko@gmail.com</a>. In general, if it's purely for educational/outreach, non-commercial use, I'll likely grant free use of my photos. If it's for commercial use, we can work something out.</p>
 </div>
 
 <!-- ─── Toolbar ──────────────────────────────────────────────── -->
 <div id="toolbar">
   <div class="btn-group" id="mode-btns">
-    <button class="active" data-mode="hierarchy" title="Browse category hierarchy">🗂 Hierarchy</button>
-    <button data-mode="collapsed" title="All meteorites in current category">📦 Collapsed</button>
-    <button data-mode="photos" title="All individual photos">🖼 Photos</button>
+    <button class="active" data-mode="hierarchy" title="Browse category hierarchy">Types</button>
+    <button data-mode="collapsed" title="All meteorites in current category">Meteorites</button>
+    <button data-mode="photos" title="All individual photos">Photos</button>
   </div>
   <div class="btn-group" id="sort-btns">
-    <button class="active" data-sort="category" title="Sort by full category path">A→Z Path</button>
-    <button data-sort="name" title="Sort by meteorite name">A→Z Name</button>
-    <button data-sort="random" title="Random order">🎲 Random</button>
+    <button class="active" data-sort="category" title="Sort by full category path">Type</button>
+    <button data-sort="name" title="Sort by meteorite name">Name</button>
+    <button data-sort="random" title="Random order">Random</button>
   </div>
   <input id="search-box" type="text" placeholder="🔍 Search name or description…">
-  <button class="tool-btn" id="slideshow-btn" title="Start fullscreen slideshow">▶ Slideshow</button>
+  <button class="tool-btn" id="slideshow-btn" title="Start fullscreen slideshow">Slideshow</button>
 </div>
 
 <!-- ─── Breadcrumbs ──────────────────────────────────────────── -->
@@ -396,9 +431,14 @@ a:hover { color: var(--accent-hover); }
 <div id="loading"><div class="spinner"></div><br>Loading manifest…</div>
 <div id="gallery"></div>
 <div id="detail-view">
-  <div id="detail-name"></div>
+  <div id="detail-header">
+    <div id="detail-name"></div>
+    <div id="detail-category"></div>
+    <div id="detail-weight"></div>
+  </div>
   <div id="detail-desc"></div>
   <div id="detail-images"></div>
+  <div id="detail-subfolders"></div>
 </div>
 <div id="pagination"></div>
 
@@ -537,6 +577,7 @@ function renderGalleryView() {
   gallery.style.display = 'grid';
   detailView.classList.remove('active');
   pagination.innerHTML = '';
+  document.getElementById('status-bar').style.display = '';
 
   renderBreadcrumbs();
 
@@ -633,7 +674,8 @@ function setupToolbar() {
   document.getElementById('lb-pause').addEventListener('click', toggleLightboxPause);
 
   document.getElementById('lightbox').addEventListener('click', (e) => {
-    if (e.target.id === 'lightbox') closeLightbox();
+    // Close when clicking the lightbox background (not image, caption, nav, close btn)
+    if (e.target === e.currentTarget) closeLightbox();
   });
 
   // Keyboard
@@ -655,9 +697,9 @@ function setupToolbar() {
 // ═══════════════════════════════════════════════════════════════
 
 /** Get the tree node at the current path. */
-function getTreeNode() {
+function getTreeNodeAt(path) {
   let node = manifest.tree;
-  for (const seg of currentPath) {
+  for (const seg of path) {
     if (node.children && node.children[seg]) {
       node = node.children[seg];
     } else {
@@ -665,6 +707,17 @@ function getTreeNode() {
     }
   }
   return node;
+}
+
+function getTreeNode() {
+  return getTreeNodeAt(currentPath);
+}
+
+/** Get the meteorite whose own folder lives exactly at the given path
+ *  (folders that contain photos AND sub-folders are both a category and a meteorite). */
+function getMeteoriteAtPath(path) {
+  const prefix = manifest.root + '/' + path.join('/');
+  return manifest.meteorites.find(m => m.path === prefix) || null;
 }
 
 /** Get meteorites matching current path (at this level or below). */
@@ -756,6 +809,7 @@ function render() {
   gallery.style.display = 'grid';
   detailView.classList.remove('active');
   pagination.innerHTML = '';
+  document.getElementById('status-bar').style.display = '';
 
   renderBreadcrumbs();
 
@@ -780,7 +834,7 @@ function renderBreadcrumbs() {
 
   const home = document.createElement('span');
   home.className = 'crumb';
-  home.textContent = '🏠 Home';
+  home.textContent = 'Home';
   home.addEventListener('click', () => { currentPath = []; currentPage = 1; render(); });
   bc.appendChild(home);
 
@@ -807,44 +861,56 @@ function setStatus(text) {
 }
 
 // ─── Hierarchy Mode ─────────────────────────────────────────
+/** Append category + meteorite cards for a tree node into a container.
+ *  Folders that are themselves a meteorite (photos AND sub-folders) are
+ *  rendered as meteorite cards only. onClickBase, when given, is the path
+ *  category cards drill into (defaults to currentPath.push behaviour).
+ *  Returns {subtypeCount, metCount}. */
+function appendHierarchyCards(container, path, node, onClickBase) {
+  let subtypeCount = 0;
+  const childKeys = Object.keys(node.children);
+  if (childKeys.length > 0) {
+    sortStrings(childKeys).forEach(key => {
+      if (getMeteoriteAtPath([...path, key])) return;
+      subtypeCount++;
+      const childPath = [...path, key];
+      const onClick = onClickBase
+        ? () => {
+            currentPath = [...onClickBase, key];
+            currentPage = 1;
+            render();
+            window.scrollTo(0, 0);
+          }
+        : undefined;
+      container.appendChild(createCategoryCard(key, getMeteoritesBelow(childPath), onClick));
+    });
+  }
+
+  const directMeteorites = (node.meteorites || []).map(name =>
+    manifest.meteorites.find(m => m.name === name)
+  ).filter(Boolean);
+
+  sortMeteorites(directMeteorites).forEach(met => {
+    container.appendChild(createMeteoriteCard(met));
+  });
+
+  return { subtypeCount, metCount: directMeteorites.length };
+}
+
 function renderHierarchy() {
   const node = getTreeNode();
   if (!node) { setStatus('Category not found.'); return; }
 
   const gallery = document.getElementById('gallery');
-  const childKeys = Object.keys(node.children);
+  const { subtypeCount, metCount } = appendHierarchyCards(gallery, currentPath, node);
 
-  // If there are subcategories, show them
-  if (childKeys.length > 0) {
-    const sorted = sortStrings(childKeys);
-    sorted.forEach(key => {
-      const childMeteorites = getMeteoritesBelow([...currentPath, key]);
-      const card = createCategoryCard(key, childMeteorites);
-      gallery.appendChild(card);
-    });
-    setStatus(`${childKeys.length} subcategories`);
-  }
-
-  // If there are direct meteorite references at this level
-  if (node.meteorites && node.meteorites.length > 0) {
-    const directMeteorites = node.meteorites.map(name =>
-      manifest.meteorites.find(m => m.name === name)
-    ).filter(Boolean);
-
-    const sorted = sortMeteorites(directMeteorites);
-    sorted.forEach(met => {
-      const card = createMeteoriteCard(met);
-      gallery.appendChild(card);
-    });
-
-    if (childKeys.length > 0) {
-      setStatus(`${childKeys.length} subcategories, ${directMeteorites.length} meteorites`);
-    } else {
-      setStatus(`${directMeteorites.length} meteorites`);
-    }
-  }
-
-  if (childKeys.length === 0 && (!node.meteorites || node.meteorites.length === 0)) {
+  if (subtypeCount > 0 && metCount > 0) {
+    setStatus(`${subtypeCount} subtypes, ${metCount} meteorites`);
+  } else if (subtypeCount > 0) {
+    setStatus(`${subtypeCount} subtypes`);
+  } else if (metCount > 0) {
+    setStatus(`${metCount} meteorites`);
+  } else {
     setStatus('Empty category.');
   }
 }
@@ -852,7 +918,7 @@ function renderHierarchy() {
 // ─── Collapsed Mode ─────────────────────────────────────────
 function renderCollapsed() {
   const meteorites = sortMeteorites(getMeteoritesBelow(currentPath));
-  renderPaginatedCards(meteorites, met => createMeteoriteCard(met, true));
+  renderPaginatedCards(meteorites, met => createMeteoriteCard(met, false));
 }
 
 // ─── Photos Mode ────────────────────────────────────────────
@@ -953,15 +1019,49 @@ function renderPagination(totalPages, currentPg) {
 }
 
 // ═══════════════════════════════════════════════════════════════
+// SLIDESHOW HELPER
+// ═══════════════════════════════════════════════════════════════
+
+/** Set up crossfade slideshow on a card's image elements. */
+function setupSlideshow(card, getNextSrc, timerKey) {
+  const imgEl = card.querySelector('img');
+  const nextEl = card.querySelector('.slideshow-next');
+  let currentImg = imgEl;
+  let nextImg = nextEl;
+
+  const runSlideshow = () => {
+    const newSrc = getNextSrc();
+
+    const tempImg = new Image();
+    tempImg.onload = () => {
+      nextImg.src = newSrc;
+      currentImg.style.opacity = '0';
+      nextImg.style.opacity = '1';
+      setTimeout(() => {
+        [currentImg, nextImg] = [nextImg, currentImg];
+      }, 1000);
+    };
+    tempImg.src = newSrc;
+  };
+
+  const initialDelay = Math.random() * 5000;
+  const timer = setTimeout(() => {
+    runSlideshow();
+    const intervalTimer = setInterval(runSlideshow, 5000);
+    slideshowTimers.set(timerKey, intervalTimer);
+  }, initialDelay);
+  slideshowTimers.set(timerKey + '-init', timer);
+}
+
+// ═══════════════════════════════════════════════════════════════
 // CARD FACTORIES
 // ═══════════════════════════════════════════════════════════════
 
 /** Create a card for a subcategory with a slowly rotating slideshow thumbnail. */
-function createCategoryCard(name, meteorites) {
+function createCategoryCard(name, meteorites, onClickOverride) {
   const card = document.createElement('div');
   card.className = 'card';
 
-  // Pick a random starting meteorite
   const randomMet = meteorites.length > 0
     ? meteorites[Math.floor(Math.random() * meteorites.length)]
     : null;
@@ -971,6 +1071,7 @@ function createCategoryCard(name, meteorites) {
   card.innerHTML = `
     <div class="card-img-wrap">
       <img src="${imgSrc}" alt="${escapeHtml(name)}" loading="lazy">
+      <img class="slideshow-next" alt="" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1s ease-in-out;">
     </div>
     <div class="card-label">
       ${escapeHtml(name)}
@@ -978,22 +1079,18 @@ function createCategoryCard(name, meteorites) {
     </div>
   `;
 
-  // Set up the rotating slideshow every 5 seconds
   if (meteorites.length > 0) {
-    const imgEl = card.querySelector('img');
-    const timer = setInterval(() => {
+    setupSlideshow(card, () => {
       const rMet = meteorites[Math.floor(Math.random() * meteorites.length)];
-      const newSrc = encodeImagePath(getRandomImage(rMet));
-      imgEl.classList.add('fade-out');
-      setTimeout(() => {
-        imgEl.src = newSrc;
-        imgEl.classList.remove('fade-out');
-      }, 500);
-    }, 5000);
-    slideshowTimers.set(name, timer);
+      return encodeImagePath(getRandomImage(rMet));
+    }, name);
   }
 
   card.addEventListener('click', () => {
+    if (onClickOverride) {
+      onClickOverride();
+      return;
+    }
     currentPath.push(name);
     currentPage = 1;
     render();
@@ -1003,35 +1100,74 @@ function createCategoryCard(name, meteorites) {
   return card;
 }
 
+/** Parse meteorite folder name into name, category, weight parts. */
+function parseMeteoriteName(name, met) {
+  // Try full format: "Name (category) - weight" (dash must be after closing paren)
+  let match = name.match(/^([^(]+)\s*\(([^)]+)\)\s*-\s*(.+)$/);
+  if (match) {
+    return {
+      name: match[1].trim(),
+      category: match[2].trim(),
+      weight: match[3].trim()
+    };
+  }
+
+  // Try: "Name (category)" (no dash after paren)
+  match = name.match(/^([^(]+)\s*\(([^)]+)\)$/);
+  if (match) {
+    return {
+      name: match[1].trim(),
+      category: match[2].trim(),
+      weight: ''
+    };
+  }
+
+  // Try: "Name - weight" (no brackets at all) - use category from path
+  // Only if there are no parentheses in the name
+  if (!name.includes('(') && !name.includes(')')) {
+    match = name.match(/^([^-]+)\s*-\s*(.+)$/);
+    if (match) {
+      const pathCategory = met.categories.length > 1 ? met.categories[met.categories.length - 1] : met.categories[0] || '';
+      return {
+        name: match[1].trim(),
+        category: pathCategory,
+        weight: match[2].trim()
+      };
+    }
+  }
+
+  // Fallback: just the name
+  return { name: name.trim(), category: '', weight: '' };
+}
+
 /** Create a card for an individual meteorite. */
 function createMeteoriteCard(met, noSlideshow = false) {
   const card = document.createElement('div');
   card.className = 'card';
 
   const imgSrc = encodeImagePath(getRandomImage(met));
+  const parsed = parseMeteoriteName(met.name, met);
+
+  let labelHtml = `<div class="met-name">${escapeHtml(parsed.name)} <span class="count">(${met.images.length} ${met.images.length>1 ? 'photos' : 'photo'})</span></div>`;
+  if (parsed.category) {
+    labelHtml += `<div class="met-category" style="color:var(--accent);font-size:0.7rem;">${escapeHtml(parsed.category)}</div>`;
+  }
+  if (parsed.weight) {
+    labelHtml += `<div class="met-weight" style="font-size:0.7rem;color:var(--fg-dim);">${escapeHtml(parsed.weight)}</div>`;
+  }
 
   card.innerHTML = `
     <div class="card-img-wrap">
       <img src="${imgSrc}" alt="${escapeHtml(met.name)}" loading="lazy">
+      <img class="slideshow-next" alt="" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1s ease-in-out;">
     </div>
-    <div class="card-label">
-      ${escapeHtml(met.name)}
-      <span class="count">(${met.images.length} photos)</span>
+    <div class="card-label" style="display:flex;flex-direction:column;gap:0.15rem;">
+      ${labelHtml}
     </div>
   `;
 
-  // Slideshow for hierarchy mode
   if (!noSlideshow && met.images.length > 1) {
-    const imgEl = card.querySelector('img');
-    const timer = setInterval(() => {
-      const newSrc = encodeImagePath(getRandomImage(met));
-      imgEl.classList.add('fade-out');
-      setTimeout(() => {
-        imgEl.src = newSrc;
-        imgEl.classList.remove('fade-out');
-      }, 500);
-    }, 5000);
-    slideshowTimers.set('met-' + met.name, timer);
+    setupSlideshow(card, () => encodeImagePath(getRandomImage(met)), 'met-' + met.name);
   }
 
   card.addEventListener('click', () => {
@@ -1061,8 +1197,12 @@ function showDetail(met) {
   gallery.style.display = 'none';
   pagination.innerHTML = '';
   detailView.classList.add('active');
+  document.getElementById('status-bar').style.display = 'none';
 
-  document.getElementById('detail-name').textContent = met.name;
+  const parsed = parseMeteoriteName(met.name, met);
+  document.getElementById('detail-name').textContent = parsed.name;
+  document.getElementById('detail-category').textContent = parsed.category;
+  document.getElementById('detail-weight').textContent = parsed.weight;
   document.getElementById('detail-desc').textContent = met.description || '';
 
   const imgContainer = document.getElementById('detail-images');
@@ -1083,13 +1223,36 @@ function showDetail(met) {
     imgContainer.appendChild(imgEl);
   });
 
-  setStatus(`${met.images.length} photos of ${met.name}`);
+  // Sub-folders (for folders that contain photos AND sub-folders)
+  const subWrap = document.getElementById('detail-subfolders');
+  subWrap.innerHTML = '';
+  const node = getTreeNodeAt([...met.categories, met.name]);
+  const metPath = [...met.categories, met.name];
+  const subCount = node
+    ? Object.keys(node.children).length + (node.meteorites || []).length
+    : 0;
+  if (subCount > 0) {
+    const heading = document.createElement('div');
+    heading.className = 'detail-subfolders-heading';
+    heading.textContent = `Sub-folders (${subCount})`;
+    subWrap.appendChild(heading);
+
+    const grid = document.createElement('div');
+    grid.className = 'subfolder-grid';
+    appendHierarchyCards(grid, metPath, node, metPath);
+    subWrap.appendChild(grid);
+    subWrap.style.display = 'block';
+  } else {
+    subWrap.style.display = 'none';
+  }
+
   window.scrollTo(0, 0);
 }
 
 function hideDetail() {
   document.getElementById('detail-view').classList.remove('active');
   document.getElementById('gallery').style.display = 'grid';
+  document.getElementById('status-bar').style.display = '';
 }
 
 // ═══════════════════════════════════════════════════════════════
@@ -1155,36 +1318,41 @@ function updateLightboxImage() {
 
   currentLightboxPhoto = photo;
 
-  // Show spinner
-  spinner.style.display = 'block';
+  // Capture current panzoom transform before swap
+  let savedTransform = null;
+  if (panzoomInstance) {
+    savedTransform = panzoomInstance.getTransform();
+  }
 
-  img.classList.add('fade-out');
-  setTimeout(() => {
-    // Use Full path for high-res image
-    const fullSrc = encodeImagePath(toFullPath(photo.src));
-    img.src = fullSrc;
-    img.alt = photo.caption;
-    img.classList.remove('fade-out');
-  }, 300);
+  // Immediately show thumbnail (Photos/ path) - no spinner
+  const thumbSrc = encodeImagePath(photo.src);
+  if (img.src !== thumbSrc) {
+    img.src = thumbSrc;
+  }
+  img.alt = photo.caption;
 
   document.getElementById('lightbox-caption').textContent = photo.caption;
   document.getElementById('lightbox-counter').textContent =
     `${lightboxIndex + 1} / ${lightboxImages.length}`;
 
-  // Handle image load for panzoom init
-  const onLoad = () => {
-    spinner.style.display = 'none';
-    img.removeEventListener('load', onLoad);
-    img.removeEventListener('error', onError);
+  // Load full-res in background
+  const fullSrc = encodeImagePath(toFullPath(photo.src));
+  const fullImg = new Image();
+  fullImg.src = fullSrc;
 
-    // Calculate max zoom: 4x over 1:1 pixel ratio
-    // 1:1 scale = naturalWidth / displayedWidth
-    const scaleTo1to1 = img.naturalWidth / img.clientWidth;
-    const maxScale = scaleTo1to1 * 4;
+  const onFullLoad = () => {
+    // Swap to full-res seamlessly
+    img.src = fullSrc;
 
+    // Re-initialize panzoom with preserved transform
     if (panzoomInstance) {
       panzoomInstance.dispose();
     }
+
+    // Calculate max zoom: 4x over 1:1 pixel ratio
+    const scaleTo1to1 = fullImg.naturalWidth / img.clientWidth;
+    const maxScale = scaleTo1to1 * 4;
+
     panzoomInstance = panzoom(img, {
       maxZoom: maxScale,
       minZoom: 0.1,
@@ -1193,23 +1361,39 @@ function updateLightboxImage() {
       boundsPadding: 0.1,
       zoomDoubleClickSpeed: 1,
     });
-  };
 
-  const onError = () => {
-    // Fallback to Photos version
-    spinner.style.display = 'none';
-    img.removeEventListener('load', onLoad);
-    img.removeEventListener('error', onError);
-    const fallbackSrc = encodeImagePath(photo.src);
-    if (img.src !== fallbackSrc) {
-      img.src = fallbackSrc;
-      // Re-attach load handler for fallback
-      img.addEventListener('load', onLoad, { once: true });
+    // Restore zoom/pan if we had a previous transform
+    if (savedTransform) {
+      panzoomInstance.zoomAbs(savedTransform.x, savedTransform.y, savedTransform.scale);
     }
   };
 
-  img.addEventListener('load', onLoad, { once: true });
-  img.addEventListener('error', onError, { once: true });
+  const onFullError = () => {
+    // Full-res failed, keep thumbnail and init panzoom on it
+    if (panzoomInstance) {
+      panzoomInstance.dispose();
+    }
+    const scaleTo1to1 = img.naturalWidth / img.clientWidth;
+    const maxScale = scaleTo1to1 * 4;
+    panzoomInstance = panzoom(img, {
+      maxZoom: maxScale,
+      minZoom: 0.1,
+      contain: 'outside',
+      bounds: true,
+      boundsPadding: 0.1,
+      zoomDoubleClickSpeed: 1,
+    });
+    if (savedTransform) {
+      panzoomInstance.zoomAbs(savedTransform.x, savedTransform.y, savedTransform.scale);
+    }
+  };
+
+  if (fullImg.complete) {
+    onFullLoad();
+  } else {
+    fullImg.onload = onFullLoad;
+    fullImg.onerror = onFullError;
+  }
 }
 
 function lightboxNav(dir) {
