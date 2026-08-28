@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Domjan Svilković Meteorite Collection</title>
+<script src="https://unpkg.com/panzoom@9.4.3/dist/panzoom.min.js"></script>
 <style>
 /* ─── Reset & Base ───────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -268,7 +269,7 @@ a:hover { color: var(--accent-hover); }
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.95);
+  background: #000;
   z-index: 1000;
   justify-content: center;
   align-items: center;
@@ -405,7 +406,10 @@ a:hover { color: var(--accent-hover); }
 <div id="lightbox">
   <div id="lightbox-counter"></div>
   <button id="lightbox-close" title="Close">✕</button>
-  <img id="lightbox-img" src="" alt="">
+  <div id="lightbox-img-wrap" style="position:relative;display:flex;align-items:center;justify-content:center;">
+    <div id="lightbox-spinner" class="spinner" style="position:absolute;display:none;"></div>
+    <img id="lightbox-img" src="" alt="">
+  </div>
   <div id="lightbox-caption"></div>
   <div id="lightbox-nav">
     <button id="lb-prev">◄ Prev</button>
@@ -435,6 +439,8 @@ let lightboxImages = [];
 let lightboxIndex = 0;
 let lightboxTimer = null;
 let lightboxPlaying = false;
+let panzoomInstance = null;
+let currentLightboxPhoto = null;
 
 // Flag to prevent pushState during popstate handling
 let _suppressPush = false;
@@ -1118,6 +1124,10 @@ function startSlideshow() {
   startLightboxTimer();
 }
 
+function toFullPath(photoSrc) {
+  return photoSrc.replace(/^Photos\//, 'Full/');
+}
+
 function showLightbox() {
   const lb = document.getElementById('lightbox');
   lb.classList.add('active');
@@ -1130,15 +1140,29 @@ function closeLightbox() {
   clearInterval(lightboxTimer);
   lightboxTimer = null;
   lightboxPlaying = false;
+  if (panzoomInstance) {
+    panzoomInstance.dispose();
+    panzoomInstance = null;
+  }
+  document.getElementById('lightbox-img').src = '';
+  currentLightboxPhoto = null;
 }
 
 function updateLightboxImage() {
   const img = document.getElementById('lightbox-img');
+  const spinner = document.getElementById('lightbox-spinner');
   const photo = lightboxImages[lightboxIndex];
+
+  currentLightboxPhoto = photo;
+
+  // Show spinner
+  spinner.style.display = 'block';
 
   img.classList.add('fade-out');
   setTimeout(() => {
-    img.src = encodeImagePath(photo.src);
+    // Use Full path for high-res image
+    const fullSrc = encodeImagePath(toFullPath(photo.src));
+    img.src = fullSrc;
     img.alt = photo.caption;
     img.classList.remove('fade-out');
   }, 300);
@@ -1146,9 +1170,54 @@ function updateLightboxImage() {
   document.getElementById('lightbox-caption').textContent = photo.caption;
   document.getElementById('lightbox-counter').textContent =
     `${lightboxIndex + 1} / ${lightboxImages.length}`;
+
+  // Handle image load for panzoom init
+  const onLoad = () => {
+    spinner.style.display = 'none';
+    img.removeEventListener('load', onLoad);
+    img.removeEventListener('error', onError);
+
+    // Calculate max zoom: 4x over 1:1 pixel ratio
+    // 1:1 scale = naturalWidth / displayedWidth
+    const scaleTo1to1 = img.naturalWidth / img.clientWidth;
+    const maxScale = scaleTo1to1 * 4;
+
+    if (panzoomInstance) {
+      panzoomInstance.dispose();
+    }
+    panzoomInstance = panzoom(img, {
+      maxZoom: maxScale,
+      minZoom: 0.1,
+      contain: 'outside',
+      bounds: true,
+      boundsPadding: 0.1,
+      zoomDoubleClickSpeed: 1,
+    });
+  };
+
+  const onError = () => {
+    // Fallback to Photos version
+    spinner.style.display = 'none';
+    img.removeEventListener('load', onLoad);
+    img.removeEventListener('error', onError);
+    const fallbackSrc = encodeImagePath(photo.src);
+    if (img.src !== fallbackSrc) {
+      img.src = fallbackSrc;
+      // Re-attach load handler for fallback
+      img.addEventListener('load', onLoad, { once: true });
+    }
+  };
+
+  img.addEventListener('load', onLoad, { once: true });
+  img.addEventListener('error', onError, { once: true });
 }
 
 function lightboxNav(dir) {
+  // Reset zoom/pan before navigating
+  if (panzoomInstance) {
+    panzoomInstance.moveTo(0, 0);
+    panzoomInstance.zoomTo(1);
+  }
   lightboxIndex = (lightboxIndex + dir + lightboxImages.length) % lightboxImages.length;
   updateLightboxImage();
   if (lightboxPlaying) { clearInterval(lightboxTimer); startLightboxTimer(); }
