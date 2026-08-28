@@ -79,16 +79,22 @@ a:hover { color: var(--accent-hover); }
 /* ─── Toolbar ────────────────────────────────────────────────── */
 #toolbar {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+  flex-direction: column;
+  gap: 0.4rem;
   align-items: center;
-  justify-content: center;
   padding: 0.8rem 1rem;
   background: var(--bg2);
   border-bottom: 1px solid var(--border);
   position: sticky;
   top: 0;
   z-index: 100;
+}
+.toolbar-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn-group {
@@ -139,8 +145,8 @@ a:hover { color: var(--accent-hover); }
   flex-wrap: wrap;
   gap: 0.2rem;
   align-items: center;
-  padding: 0.6rem 1rem;
-  font-size: 0.85rem;
+  justify-content: center;
+  font-size: 1.2rem;
   color: var(--fg-dim);
 }
 .crumb { cursor: pointer; color: var(--accent); }
@@ -157,12 +163,16 @@ a:hover { color: var(--accent-hover); }
 
 /* ─── Grid ───────────────────────────────────────────────────── */
 #gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
   padding: 1rem;
   max-width: 1600px;
   margin: 0 auto;
+}
+#gallery > .card {
+  flex: 0 0 200px;
 }
 
 .card {
@@ -205,6 +215,42 @@ a:hover { color: var(--accent-hover); }
   color: var(--fg-dim);
   font-size: 0.7rem;
 }
+/* Overlays for category cards: centered label + corner count */
+.card-overlay-label {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #fff;
+  text-shadow: 0 1px 3px #000, 0 0 6px #000;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  pointer-events: none;
+  z-index: 2;
+}
+.card-overlay-label.short {
+  font-size: 2.3rem;
+}
+.card-overlay-count {
+  position: absolute;
+  right: 0.45rem;
+  bottom: 0.45rem;
+  padding: 0.12rem 0.5rem;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-shadow: 0 1px 2px #000;
+  pointer-events: none;
+  z-index: 2;
+}
 .met-category {
   font-style: italic;
 }
@@ -246,11 +292,13 @@ a:hover { color: var(--accent-hover); }
   white-space: pre-wrap;
   text-align: left;
   max-width: 800px;
+  margin-bottom: 30px;
 }
 #detail-images {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: flex-start;
   gap: 0.8rem;
 }
 #detail-images img {
@@ -273,9 +321,13 @@ a:hover { color: var(--accent-hover); }
   padding-bottom: 0.4rem;
 }
 .subfolder-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
+}
+.subfolder-grid > .card {
+  flex: 0 0 220px;
 }
 
 /* ─── Pagination ─────────────────────────────────────────────── */
@@ -320,12 +372,21 @@ a:hover { color: var(--accent-hover); }
 }
 #lightbox img.fade-out { opacity: 0; }
 #lightbox-caption {
-  margin-top: 0.8rem;
+  position: absolute;
+  left: 0.75rem;
+  bottom: 0.75rem;
   font-size: 0.85rem;
-  color: var(--fg-dim);
-  text-align: center;
+  color: #fff;
+  text-align: left;
+  text-shadow: 0 1px 3px #000, 0 0 8px #000;
   max-width: 80vw;
+  pointer-events: none;
+  z-index: 1;
+  line-height: 1.4;
 }
+#lightbox-caption .lb-name { font-weight: 700; font-size: 1.05rem; }
+#lightbox-caption .lb-category { font-style: italic; color: var(--accent); font-size: 0.85rem; }
+#lightbox-caption .lb-weight { font-size: 0.8rem; color: var(--fg); }
 #lightbox-close {
   position: absolute;
   top: 1rem; right: 1rem;
@@ -378,7 +439,8 @@ a:hover { color: var(--accent-hover); }
 
 /* ─── Responsive ─────────────────────────────────────────────── */
 @media (max-width: 600px) {
-  #gallery { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 0.5rem; padding: 0.5rem; }
+  #gallery { gap: 0.5rem; padding: 0.5rem; }
+  #gallery > .card { flex-basis: 140px; }
   #header h1 { font-size: 1.2rem; }
   #toolbar { gap: 0.3rem; padding: 0.5rem; }
   .btn-group button, .tool-btn { padding: 0.3rem 0.5rem; font-size: 0.72rem; }
@@ -407,22 +469,22 @@ a:hover { color: var(--accent-hover); }
 
 <!-- ─── Toolbar ──────────────────────────────────────────────── -->
 <div id="toolbar">
-  <div class="btn-group" id="mode-btns">
-    <button class="active" data-mode="hierarchy" title="Browse category hierarchy">Types</button>
-    <button data-mode="collapsed" title="All meteorites in current category">Meteorites</button>
-    <button data-mode="photos" title="All individual photos">Photos</button>
+  <div class="toolbar-row">
+    <div class="btn-group" id="mode-btns">
+      <button class="active" data-mode="hierarchy" title="Browse category hierarchy">Types</button>
+      <button data-mode="collapsed" title="All meteorites in current category">Meteorites</button>
+      <button data-mode="photos" title="All individual photos">Photos</button>
+    </div>
+    <div class="btn-group" id="sort-btns">
+      <button class="active" data-sort="category" title="Sort by full category path">Type</button>
+      <button data-sort="name" title="Sort by meteorite name">Name</button>
+      <button data-sort="random" title="Random order">Random</button>
+    </div>
+    <input id="search-box" type="text" placeholder="🔍 Search name or description…">
+    <button class="tool-btn" id="slideshow-btn" title="Start fullscreen slideshow">Slideshow</button>
   </div>
-  <div class="btn-group" id="sort-btns">
-    <button class="active" data-sort="category" title="Sort by full category path">Type</button>
-    <button data-sort="name" title="Sort by meteorite name">Name</button>
-    <button data-sort="random" title="Random order">Random</button>
-  </div>
-  <input id="search-box" type="text" placeholder="🔍 Search name or description…">
-  <button class="tool-btn" id="slideshow-btn" title="Start fullscreen slideshow">Slideshow</button>
+  <div id="breadcrumbs"></div>
 </div>
-
-<!-- ─── Breadcrumbs ──────────────────────────────────────────── -->
-<div id="breadcrumbs"></div>
 
 <!-- ─── Status ───────────────────────────────────────────────── -->
 <div id="status-bar"></div>
@@ -449,8 +511,12 @@ a:hover { color: var(--accent-hover); }
   <div id="lightbox-img-wrap" style="position:relative;display:flex;align-items:center;justify-content:center;">
     <div id="lightbox-spinner" class="spinner" style="position:absolute;display:none;"></div>
     <img id="lightbox-img" src="" alt="">
+    <div id="lightbox-caption">
+      <div class="lb-name"></div>
+      <div class="lb-category"></div>
+      <div class="lb-weight"></div>
+    </div>
   </div>
-  <div id="lightbox-caption"></div>
   <div id="lightbox-nav">
     <button id="lb-prev">◄ Prev</button>
     <button id="lb-pause">⏸ Pause</button>
@@ -574,7 +640,7 @@ function renderGalleryView() {
   const pagination = document.getElementById('pagination');
 
   gallery.innerHTML = '';
-  gallery.style.display = 'grid';
+  gallery.style.display = 'flex';
   detailView.classList.remove('active');
   pagination.innerHTML = '';
   document.getElementById('status-bar').style.display = '';
@@ -780,7 +846,7 @@ function collectAllImages(meteorites) {
   const images = [];
   for (const met of meteorites) {
     for (const img of met.images) {
-      images.push({ src: met.path + '/' + img, caption: met.name });
+      images.push({ src: met.path + '/' + img, caption: met.name, met });
     }
   }
   return images;
@@ -806,7 +872,7 @@ function render() {
   const pagination = document.getElementById('pagination');
 
   gallery.innerHTML = '';
-  gallery.style.display = 'grid';
+  gallery.style.display = 'flex';
   detailView.classList.remove('active');
   pagination.innerHTML = '';
   document.getElementById('status-bar').style.display = '';
@@ -1072,10 +1138,8 @@ function createCategoryCard(name, meteorites, onClickOverride) {
     <div class="card-img-wrap">
       <img src="${imgSrc}" alt="${escapeHtml(name)}" loading="lazy">
       <img class="slideshow-next" alt="" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1s ease-in-out;">
-    </div>
-    <div class="card-label">
-      ${escapeHtml(name)}
-      <span class="count">(${meteorites.length})</span>
+      <div class="card-overlay-label${name.length < 4 ? ' short' : ''}">${escapeHtml(name)}</div>
+      <div class="card-overlay-count">${meteorites.length}</div>
     </div>
   `;
 
@@ -1148,7 +1212,7 @@ function createMeteoriteCard(met, noSlideshow = false) {
   const imgSrc = encodeImagePath(getRandomImage(met));
   const parsed = parseMeteoriteName(met.name, met);
 
-  let labelHtml = `<div class="met-name">${escapeHtml(parsed.name)} <span class="count">(${met.images.length} ${met.images.length>1 ? 'photos' : 'photo'})</span></div>`;
+  let labelHtml = `<div class="met-name">${escapeHtml(parsed.name)} <span class="count">(${met.images.length})</span></div>`;
   if (parsed.category) {
     labelHtml += `<div class="met-category" style="color:var(--accent);font-size:0.7rem;">${escapeHtml(parsed.category)}</div>`;
   }
@@ -1203,7 +1267,8 @@ function showDetail(met) {
   document.getElementById('detail-name').textContent = parsed.name;
   document.getElementById('detail-category').textContent = parsed.category;
   document.getElementById('detail-weight').textContent = parsed.weight;
-  document.getElementById('detail-desc').textContent = met.description || '';
+  const desc = met.description || '';
+  document.getElementById('detail-desc').textContent = desc.includes('\n') ? desc.slice(desc.indexOf('\n') + 1) : desc;
 
   const imgContainer = document.getElementById('detail-images');
   imgContainer.innerHTML = '';
@@ -1216,7 +1281,8 @@ function showDetail(met) {
     imgEl.addEventListener('click', () => {
       const photos = met.images.map(i => ({
         src: met.path + '/' + i,
-        caption: met.name
+        caption: met.name,
+        met
       }));
       openLightboxForPhotos(photos, idx);
     });
@@ -1251,7 +1317,7 @@ function showDetail(met) {
 
 function hideDetail() {
   document.getElementById('detail-view').classList.remove('active');
-  document.getElementById('gallery').style.display = 'grid';
+  document.getElementById('gallery').style.display = 'flex';
   document.getElementById('status-bar').style.display = '';
 }
 
@@ -1331,7 +1397,18 @@ function updateLightboxImage() {
   }
   img.alt = photo.caption;
 
-  document.getElementById('lightbox-caption').textContent = photo.caption;
+  // Overlay caption: name / category / weight (same parsing as detail view)
+  const parsed = parseMeteoriteName(photo.caption, photo.met);
+  const capEl = document.getElementById('lightbox-caption');
+  const setLine = (cls, value) => {
+    const el = capEl.querySelector('.' + cls);
+    el.textContent = value;
+    el.style.display = value ? '' : 'none';
+  };
+  setLine('lb-name', parsed.name);
+  setLine('lb-category', parsed.category);
+  setLine('lb-weight', parsed.weight);
+
   document.getElementById('lightbox-counter').textContent =
     `${lightboxIndex + 1} / ${lightboxImages.length}`;
 

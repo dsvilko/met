@@ -165,3 +165,8 @@ let currentLightboxPhoto = null; // track current photo for Full path resolution
 - **Large images**: Served directly from filesystem - use a real web server for production (http.server OK for dev)
 - **panzoom disposal**: Use `panzoomInstance.dispose()` not `.destroy()` (library API)
 - **Crossfade slideshows**: Two overlapping `<img>` elements swap roles via reference swap (not src swap) to avoid flash
+
+## Skill/MCP instructions
+
+- always prefer to use grill me skill for clarifying questions
+- even though DevTools is usually available, use it only for debugging - let user visually inspect your work and report any problems
