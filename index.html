@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Domjan Svilković Meteorite Collection</title>
+<style>
+/* ─── Reset & Base ───────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #111;
+  --bg2: #1a1a1a;
+  --bg3: #222;
+  --fg: #e0e0e0;
+  --fg-dim: #888;
+  --accent: #c8a050;
+  --accent-hover: #dbb060;
+  --border: #333;
+  --radius: 8px;
+  --transition: 0.3s ease;
+}
+
+html { font-size: 16px; }
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  min-height: 100vh;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { color: var(--accent-hover); }
+
+/* ─── Header ────────────────────────────────────────────────── */
+#header {
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+  border-bottom: 1px solid var(--border);
+}
+#header h1 {
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+}
+#header .subtitle {
+  font-size: 0.85rem;
+  color: var(--fg-dim);
+  margin-top: 0.3rem;
+}
+
+/* ─── Info Toggle ────────────────────────────────────────────── */
+#info-toggle {
+  text-align: center;
+  margin: 0.5rem 0;
+}
+#info-toggle button {
+  background: none; border: none; color: var(--accent);
+  cursor: pointer; font-size: 0.85rem; padding: 0.3rem 0.8rem;
+  text-decoration: underline;
+}
+#info-panel {
+  display: none;
+  max-width: 800px;
+  margin: 0 auto 1rem;
+  padding: 1.2rem 1.5rem;
+  background: var(--bg2);
+  border-radius: var(--radius);
+  font-size: 0.85rem;
+  line-height: 1.7;
+  color: var(--fg-dim);
+}
+#info-panel.open { display: block; }
+#info-panel h3 { color: var(--fg); margin: 1rem 0 0.3rem; font-size: 0.9rem; }
+#info-panel a { color: var(--accent); }
+
+/* ─── Toolbar ────────────────────────────────────────────────── */
+#toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 1rem;
+  background: var(--bg2);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.btn-group {
+  display: flex;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.btn-group button, .tool-btn {
+  background: var(--bg3);
+  border: none;
+  color: var(--fg-dim);
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: background var(--transition), color var(--transition);
+  white-space: nowrap;
+}
+.btn-group button:not(:last-child) { border-right: 1px solid var(--border); }
+.btn-group button.active, .btn-group button:hover {
+  background: var(--accent);
+  color: #111;
+}
+.tool-btn {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.tool-btn:hover {
+  background: var(--accent);
+  color: #111;
+}
+
+#search-box {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--fg);
+  padding: 0.4rem 0.8rem;
+  font-size: 0.8rem;
+  width: 200px;
+  outline: none;
+}
+#search-box:focus { border-color: var(--accent); }
+
+/* ─── Breadcrumbs ────────────────────────────────────────────── */
+#breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem;
+  align-items: center;
+  padding: 0.6rem 1rem;
+  font-size: 0.85rem;
+  color: var(--fg-dim);
+}
+.crumb { cursor: pointer; color: var(--accent); }
+.crumb:hover { text-decoration: underline; }
+.crumb-sep { margin: 0 0.1rem; color: var(--fg-dim); }
+
+/* ─── Status bar ─────────────────────────────────────────────── */
+#status-bar {
+  text-align: center;
+  padding: 0.4rem;
+  font-size: 0.78rem;
+  color: var(--fg-dim);
+}
+
+/* ─── Grid ───────────────────────────────────────────────────── */
+#gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.card {
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--bg2);
+  cursor: pointer;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+}
+.card-img-wrap {
+  position: relative;
+  width: 100%;
+  padding-top: 100%; /* square */
+  background: #000;
+  overflow: hidden;
+}
+.card-img-wrap img {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 1s ease-in-out;
+}
+.card-img-wrap img.fade-out {
+  opacity: 0;
+}
+.card-label {
+  padding: 0.5rem 0.6rem;
+  font-size: 0.78rem;
+  line-height: 1.3;
+  color: var(--fg);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card-label .count {
+  color: var(--fg-dim);
+  font-size: 0.7rem;
+}
+
+/* ─── Detail View (single meteorite) ──────────────────────── */
+#detail-view {
+  display: none;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+#detail-view.active { display: block; }
+#detail-name {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+#detail-desc {
+  font-size: 0.85rem;
+  color: var(--fg-dim);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  white-space: pre-wrap;
+}
+#detail-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 0.8rem;
+}
+#detail-images img {
+  width: 100%;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: transform var(--transition);
+}
+#detail-images img:hover { transform: scale(1.02); }
+
+/* ─── Pagination ─────────────────────────────────────────────── */
+#pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+#pagination button {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  color: var(--fg);
+  padding: 0.4rem 0.9rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+#pagination button:hover { background: var(--accent); color: #111; }
+#pagination button:disabled { opacity: 0.3; cursor: default; }
+#pagination .page-info { font-size: 0.8rem; color: var(--fg-dim); }
+
+/* ─── Lightbox / Slideshow ───────────────────────────────────── */
+#lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.95);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#lightbox.active { display: flex; }
+#lightbox img {
+  max-width: 95vw;
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: 4px;
+  transition: opacity 0.6s ease-in-out;
+}
+#lightbox img.fade-out { opacity: 0; }
+#lightbox-caption {
+  margin-top: 0.8rem;
+  font-size: 0.85rem;
+  color: var(--fg-dim);
+  text-align: center;
+  max-width: 80vw;
+}
+#lightbox-close {
+  position: absolute;
+  top: 1rem; right: 1rem;
+  background: none; border: none;
+  color: var(--fg); font-size: 2rem;
+  cursor: pointer;
+  z-index: 1001;
+}
+#lightbox-nav {
+  position: absolute;
+  bottom: 1rem;
+  display: flex;
+  gap: 1rem;
+  z-index: 1001;
+}
+#lightbox-nav button {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: var(--fg);
+  padding: 0.5rem 1.2rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+#lightbox-nav button:hover { background: rgba(255,255,255,0.2); }
+#lightbox-counter {
+  position: absolute;
+  top: 1rem; left: 1rem;
+  font-size: 0.8rem;
+  color: var(--fg-dim);
+}
+
+/* ─── Loading ────────────────────────────────────────────────── */
+#loading {
+  text-align: center;
+  padding: 4rem;
+  font-size: 1.1rem;
+  color: var(--fg-dim);
+}
+.spinner {
+  display: inline-block;
+  width: 30px; height: 30px;
+  border: 3px solid var(--border);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin-bottom: 1rem;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ─── Responsive ─────────────────────────────────────────────── */
+@media (max-width: 600px) {
+  #gallery { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 0.5rem; padding: 0.5rem; }
+  #header h1 { font-size: 1.2rem; }
+  #toolbar { gap: 0.3rem; padding: 0.5rem; }
+  .btn-group button, .tool-btn { padding: 0.3rem 0.5rem; font-size: 0.72rem; }
+  #search-box { width: 140px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ─── Header ──────────────────────────────────────────────── -->
+<div id="header">
+  <h1>Domjan Svilković Meteorite Collection</h1>
+  <div class="subtitle">Macro Photography Gallery</div>
+</div>
+
+<div id="info-toggle">
+  <button onclick="document.getElementById('info-panel').classList.toggle('open')">ℹ About this collection</button>
+</div>
+<div id="info-panel">
+  <p>Welcome to the photo album of my meteorite collection. For any inquiries, I can be contacted at <a href="mailto:dsvilko@gmail.com">dsvilko@gmail.com</a>. Please note that due to a large demand, I can no longer help identify stones you have found and suspect might be a meteorite. There are dedicated websites as well as excellent Facebook groups that can help you to ID your rock.</p>
+  <h3>About Me</h3>
+  <p>I'm a physics teacher, meteorite collector and macro photographer from Zagreb, Croatia. Due to my very limited budget, most of my meteorite collection is in a form of micro fragments and small slices but it covers a huge range of different meteoritic material. I've started collecting in 2019 and my collection currently contains samples of over 200 different meteorites, making it the most varied meteorite collection in Croatia. The collection is also often used for STEM outreach, especially to school kids. I would especially like to thank all the generous meteorite dealers and my "meteoritic" friends that have over these last few years helped grow my collection. Needless to say that without such help, my collection would be nowhere near this extensive.</p>
+  <h3>Photo Licensing</h3>
+  <p>All of these macro photos are copyrighted by me. If you want to use my photos, please contact me at <a href="mailto:dsvilko@gmail.com">dsvilko@gmail.com</a>. In general, if it's purely for educational/outreach, non-commercial use, I'll probably grant free use of my photos. If it's for commercial use, we will work something out.</p>
+</div>
+
+<!-- ─── Toolbar ──────────────────────────────────────────────── -->
+<div id="toolbar">
+  <div class="btn-group" id="mode-btns">
+    <button class="active" data-mode="hierarchy" title="Browse category hierarchy">🗂 Hierarchy</button>
+    <button data-mode="collapsed" title="All meteorites in current category">📦 Collapsed</button>
+    <button data-mode="photos" title="All individual photos">🖼 Photos</button>
+  </div>
+  <div class="btn-group" id="sort-btns">
+    <button class="active" data-sort="category" title="Sort by full category path">A→Z Path</button>
+    <button data-sort="name" title="Sort by meteorite name">A→Z Name</button>
+    <button data-sort="random" title="Random order">🎲 Random</button>
+  </div>
+  <input id="search-box" type="text" placeholder="🔍 Search name or description…">
+  <button class="tool-btn" id="slideshow-btn" title="Start fullscreen slideshow">▶ Slideshow</button>
+</div>
+
+<!-- ─── Breadcrumbs ──────────────────────────────────────────── -->
+<div id="breadcrumbs"></div>
+
+<!-- ─── Status ───────────────────────────────────────────────── -->
+<div id="status-bar"></div>
+
+<!-- ─── Main Content ─────────────────────────────────────────── -->
+<div id="loading"><div class="spinner"></div><br>Loading manifest…</div>
+<div id="gallery"></div>
+<div id="detail-view">
+  <div id="detail-name"></div>
+  <div id="detail-desc"></div>
+  <div id="detail-images"></div>
+</div>
+<div id="pagination"></div>
+
+<!-- ─── Lightbox ──────────────────────────────────────────────── -->
+<div id="lightbox">
+  <div id="lightbox-counter"></div>
+  <button id="lightbox-close" title="Close">✕</button>
+  <img id="lightbox-img" src="" alt="">
+  <div id="lightbox-caption"></div>
+  <div id="lightbox-nav">
+    <button id="lb-prev">◄ Prev</button>
+    <button id="lb-pause">⏸ Pause</button>
+    <button id="lb-next">Next ►</button>
+  </div>
+</div>
+
+<script>
+// ═══════════════════════════════════════════════════════════════
+// STATE
+// ═══════════════════════════════════════════════════════════════
+let manifest = null;        // full manifest.json data
+let currentPath = [];       // breadcrumb path into the hierarchy
+let displayMode = 'hierarchy'; // hierarchy | collapsed | photos
+let sortMode = 'category';    // category | name | random
+let searchQuery = '';
+let currentPage = 1;
+let detailMeteoriteName = null; // name of meteorite in detail view, or null
+const PAGE_SIZE = 100;
+
+// Slideshow timers for category cards
+const slideshowTimers = new Map();
+
+// Lightbox state
+let lightboxImages = [];
+let lightboxIndex = 0;
+let lightboxTimer = null;
+let lightboxPlaying = false;
+
+// Flag to prevent pushState during popstate handling
+let _suppressPush = false;
+
+// ═══════════════════════════════════════════════════════════════
+// URL STATE MANAGEMENT
+// ═══════════════════════════════════════════════════════════════
+
+/** Serialize current state into a URL hash string. */
+function stateToHash() {
+  const params = new URLSearchParams();
+  if (currentPath.length > 0) params.set('path', currentPath.join('/'));
+  if (displayMode !== 'hierarchy') params.set('mode', displayMode);
+  if (sortMode !== 'category') params.set('sort', sortMode);
+  if (searchQuery) params.set('q', searchQuery);
+  if (currentPage > 1) params.set('page', String(currentPage));
+  if (detailMeteoriteName) params.set('detail', detailMeteoriteName);
+  const str = params.toString();
+  return str ? '#' + str : '#';
+}
+
+/** Restore state from the current URL hash. */
+function hashToState() {
+  const hash = window.location.hash.slice(1); // remove '#'
+  if (!hash) {
+    currentPath = [];
+    displayMode = 'hierarchy';
+    sortMode = 'category';
+    searchQuery = '';
+    currentPage = 1;
+    detailMeteoriteName = null;
+    return;
+  }
+  const params = new URLSearchParams(hash);
+  currentPath = params.has('path') ? params.get('path').split('/') : [];
+  displayMode = params.get('mode') || 'hierarchy';
+  sortMode = params.get('sort') || 'category';
+  searchQuery = params.get('q') || '';
+  currentPage = parseInt(params.get('page')) || 1;
+  detailMeteoriteName = params.get('detail') || null;
+}
+
+/** Push current state to browser history. */
+function pushState() {
+  if (_suppressPush) return;
+  const hash = stateToHash();
+  if (window.location.hash !== hash && !(window.location.hash === '' && hash === '#')) {
+    history.pushState(null, '', hash);
+  }
+}
+
+/** Sync toolbar UI buttons to match current state variables. */
+function syncToolbarUI() {
+  document.querySelectorAll('#mode-btns button').forEach(b => {
+    b.classList.toggle('active', b.dataset.mode === displayMode);
+  });
+  document.querySelectorAll('#sort-btns button').forEach(b => {
+    b.classList.toggle('active', b.dataset.sort === sortMode);
+  });
+  document.getElementById('search-box').value = searchQuery;
+}
+
+// Listen for browser back/forward
+window.addEventListener('popstate', () => {
+  if (!manifest) return;
+  _suppressPush = true;
+  hashToState();
+  syncToolbarUI();
+  if (detailMeteoriteName) {
+    const met = manifest.meteorites.find(m => m.name === detailMeteoriteName);
+    if (met) {
+      renderGalleryView();
+      showDetail(met);
+    } else {
+      detailMeteoriteName = null;
+      renderGalleryView();
+    }
+  } else {
+    renderGalleryView();
+  }
+  _suppressPush = false;
+});
+
+/** Render the gallery/grid view from current state (no pushState). */
+function renderGalleryView() {
+  slideshowTimers.forEach(t => clearInterval(t));
+  slideshowTimers.clear();
+
+  const gallery = document.getElementById('gallery');
+  const detailView = document.getElementById('detail-view');
+  const pagination = document.getElementById('pagination');
+
+  gallery.innerHTML = '';
+  gallery.style.display = 'grid';
+  detailView.classList.remove('active');
+  pagination.innerHTML = '';
+
+  renderBreadcrumbs();
+
+  if (searchQuery) {
+    renderSearchResults();
+    return;
+  }
+
+  if (displayMode === 'hierarchy') {
+    renderHierarchy();
+  } else if (displayMode === 'collapsed') {
+    renderCollapsed();
+  } else {
+    renderPhotos();
+  }
+}
+
+// ═══════════════════════════════════════════════════════════════
+// INIT
+// ═══════════════════════════════════════════════════════════════
+document.addEventListener('DOMContentLoaded', async () => {
+  try {
+    const resp = await fetch('manifest.json');
+    if (!resp.ok) throw new Error('manifest.json not found — run generate_manifest.py first');
+    manifest = await resp.json();
+    document.getElementById('loading').style.display = 'none';
+    // Restore state from URL hash before first render
+    hashToState();
+    setupToolbar();
+    syncToolbarUI();
+    if (detailMeteoriteName) {
+      const met = manifest.meteorites.find(m => m.name === detailMeteoriteName);
+      if (met) {
+        renderGalleryView();
+        showDetail(met);
+      } else {
+        detailMeteoriteName = null;
+        render();
+      }
+    } else {
+      render();
+    }
+  } catch (e) {
+    document.getElementById('loading').innerHTML =
+      `<p style="color:#e55">Error: ${e.message}</p>
+       <p style="margin-top:1rem;font-size:0.85rem">Run <code>python3 generate_manifest.py</code> to generate the manifest.</p>`;
+  }
+});
+
+// ═══════════════════════════════════════════════════════════════
+// TOOLBAR SETUP
+// ═══════════════════════════════════════════════════════════════
+function setupToolbar() {
+  // Mode buttons
+  document.querySelectorAll('#mode-btns button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('#mode-btns button').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      displayMode = btn.dataset.mode;
+      currentPage = 1;
+      render();
+    });
+  });
+
+  // Sort buttons
+  document.querySelectorAll('#sort-btns button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('#sort-btns button').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      sortMode = btn.dataset.sort;
+      currentPage = 1;
+      render();
+    });
+  });
+
+  // Search
+  let searchTimeout;
+  document.getElementById('search-box').addEventListener('input', (e) => {
+    clearTimeout(searchTimeout);
+    searchTimeout = setTimeout(() => {
+      searchQuery = e.target.value.trim().toLowerCase();
+      currentPage = 1;
+      render();
+    }, 300);
+  });
+
+  // Slideshow
+  document.getElementById('slideshow-btn').addEventListener('click', startSlideshow);
+
+  // Lightbox controls
+  document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+  document.getElementById('lb-prev').addEventListener('click', () => lightboxNav(-1));
+  document.getElementById('lb-next').addEventListener('click', () => lightboxNav(1));
+  document.getElementById('lb-pause').addEventListener('click', toggleLightboxPause);
+
+  document.getElementById('lightbox').addEventListener('click', (e) => {
+    if (e.target.id === 'lightbox') closeLightbox();
+  });
+
+  // Keyboard
+  document.addEventListener('keydown', (e) => {
+    if (document.getElementById('lightbox').classList.contains('active')) {
+      if (e.key === 'Escape') closeLightbox();
+      else if (e.key === 'ArrowLeft') lightboxNav(-1);
+      else if (e.key === 'ArrowRight') lightboxNav(1);
+      else if (e.key === ' ') { e.preventDefault(); toggleLightboxPause(); }
+    } else if (e.key === 'Escape' && document.getElementById('detail-view').classList.contains('active')) {
+      hideDetail();
+      render();
+    }
+  });
+}
+
+// ═══════════════════════════════════════════════════════════════
+// DATA HELPERS
+// ═══════════════════════════════════════════════════════════════
+
+/** Get the tree node at the current path. */
+function getTreeNode() {
+  let node = manifest.tree;
+  for (const seg of currentPath) {
+    if (node.children && node.children[seg]) {
+      node = node.children[seg];
+    } else {
+      return null;
+    }
+  }
+  return node;
+}
+
+/** Get meteorites matching current path (at this level or below). */
+function getMeteoritesBelow(path) {
+  const prefix = path.length > 0 ? path.join('/') : null;
+  return manifest.meteorites.filter(m => {
+    if (prefix === null) return true;
+    const metCatPath = m.categories.join('/');
+    return metCatPath === prefix || metCatPath.startsWith(prefix + '/');
+  });
+}
+
+/** Get meteorites matching search query. */
+function searchMeteorites(query) {
+  return manifest.meteorites.filter(m => {
+    return m.name.toLowerCase().includes(query) ||
+           m.description.toLowerCase().includes(query) ||
+           m.categories.join(' ').toLowerCase().includes(query);
+  });
+}
+
+/** Sort a list of meteorites. */
+function sortMeteorites(list) {
+  const sorted = [...list];
+  if (sortMode === 'category') {
+    sorted.sort((a, b) => a.path.localeCompare(b.path));
+  } else if (sortMode === 'name') {
+    sorted.sort((a, b) => a.name.localeCompare(b.name));
+  } else {
+    // Fisher-Yates shuffle
+    for (let i = sorted.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [sorted[i], sorted[j]] = [sorted[j], sorted[i]];
+    }
+  }
+  return sorted;
+}
+
+/** Sort strings array. */
+function sortStrings(arr) {
+  if (sortMode === 'random') {
+    const s = [...arr];
+    for (let i = s.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [s[i], s[j]] = [s[j], s[i]];
+    }
+    return s;
+  }
+  return [...arr].sort((a, b) => a.localeCompare(b));
+}
+
+/** Get a random image path for a meteorite. */
+function getRandomImage(met) {
+  const img = met.images[Math.floor(Math.random() * met.images.length)];
+  return met.path + '/' + img;
+}
+
+/** Collect all images (with captions) for meteorites matching the current view. */
+function collectAllImages(meteorites) {
+  const images = [];
+  for (const met of meteorites) {
+    for (const img of met.images) {
+      images.push({ src: met.path + '/' + img, caption: met.name });
+    }
+  }
+  return images;
+}
+
+// ═══════════════════════════════════════════════════════════════
+// RENDERING
+// ═══════════════════════════════════════════════════════════════
+
+function render() {
+  // Clear detail state when rendering grid
+  detailMeteoriteName = null;
+
+  // Push state to URL
+  pushState();
+
+  // Clean up any running slideshow timers
+  slideshowTimers.forEach(t => clearInterval(t));
+  slideshowTimers.clear();
+
+  const gallery = document.getElementById('gallery');
+  const detailView = document.getElementById('detail-view');
+  const pagination = document.getElementById('pagination');
+
+  gallery.innerHTML = '';
+  gallery.style.display = 'grid';
+  detailView.classList.remove('active');
+  pagination.innerHTML = '';
+
+  renderBreadcrumbs();
+
+  // Search mode
+  if (searchQuery) {
+    renderSearchResults();
+    return;
+  }
+
+  if (displayMode === 'hierarchy') {
+    renderHierarchy();
+  } else if (displayMode === 'collapsed') {
+    renderCollapsed();
+  } else {
+    renderPhotos();
+  }
+}
+
+function renderBreadcrumbs() {
+  const bc = document.getElementById('breadcrumbs');
+  bc.innerHTML = '';
+
+  const home = document.createElement('span');
+  home.className = 'crumb';
+  home.textContent = '🏠 Home';
+  home.addEventListener('click', () => { currentPath = []; currentPage = 1; render(); });
+  bc.appendChild(home);
+
+  currentPath.forEach((seg, i) => {
+    const sep = document.createElement('span');
+    sep.className = 'crumb-sep';
+    sep.textContent = ' › ';
+    bc.appendChild(sep);
+
+    const crumb = document.createElement('span');
+    crumb.className = 'crumb';
+    crumb.textContent = seg;
+    crumb.addEventListener('click', () => {
+      currentPath = currentPath.slice(0, i + 1);
+      currentPage = 1;
+      render();
+    });
+    bc.appendChild(crumb);
+  });
+}
+
+function setStatus(text) {
+  document.getElementById('status-bar').textContent = text;
+}
+
+// ─── Hierarchy Mode ─────────────────────────────────────────
+function renderHierarchy() {
+  const node = getTreeNode();
+  if (!node) { setStatus('Category not found.'); return; }
+
+  const gallery = document.getElementById('gallery');
+  const childKeys = Object.keys(node.children);
+
+  // If there are subcategories, show them
+  if (childKeys.length > 0) {
+    const sorted = sortStrings(childKeys);
+    sorted.forEach(key => {
+      const childMeteorites = getMeteoritesBelow([...currentPath, key]);
+      const card = createCategoryCard(key, childMeteorites);
+      gallery.appendChild(card);
+    });
+    setStatus(`${childKeys.length} subcategories`);
+  }
+
+  // If there are direct meteorite references at this level
+  if (node.meteorites && node.meteorites.length > 0) {
+    const directMeteorites = node.meteorites.map(name =>
+      manifest.meteorites.find(m => m.name === name)
+    ).filter(Boolean);
+
+    const sorted = sortMeteorites(directMeteorites);
+    sorted.forEach(met => {
+      const card = createMeteoriteCard(met);
+      gallery.appendChild(card);
+    });
+
+    if (childKeys.length > 0) {
+      setStatus(`${childKeys.length} subcategories, ${directMeteorites.length} meteorites`);
+    } else {
+      setStatus(`${directMeteorites.length} meteorites`);
+    }
+  }
+
+  if (childKeys.length === 0 && (!node.meteorites || node.meteorites.length === 0)) {
+    setStatus('Empty category.');
+  }
+}
+
+// ─── Collapsed Mode ─────────────────────────────────────────
+function renderCollapsed() {
+  const meteorites = sortMeteorites(getMeteoritesBelow(currentPath));
+  renderPaginatedCards(meteorites, met => createMeteoriteCard(met, true));
+}
+
+// ─── Photos Mode ────────────────────────────────────────────
+function renderPhotos() {
+  const meteorites = getMeteoritesBelow(currentPath);
+  let allPhotos = [];
+  for (const met of meteorites) {
+    for (const img of met.images) {
+      allPhotos.push({ src: met.path + '/' + img, caption: met.name, met });
+    }
+  }
+
+  // Sort
+  if (sortMode === 'category') {
+    allPhotos.sort((a, b) => a.src.localeCompare(b.src));
+  } else if (sortMode === 'name') {
+    allPhotos.sort((a, b) => a.caption.localeCompare(b.caption));
+  } else {
+    for (let i = allPhotos.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [allPhotos[i], allPhotos[j]] = [allPhotos[j], allPhotos[i]];
+    }
+  }
+
+  renderPaginatedPhotos(allPhotos);
+}
+
+// ─── Search ─────────────────────────────────────────────────
+function renderSearchResults() {
+  const results = sortMeteorites(searchMeteorites(searchQuery));
+  setStatus(`${results.length} results for "${searchQuery}"`);
+  renderPaginatedCards(results, met => createMeteoriteCard(met, true));
+}
+
+// ─── Pagination helper (for meteorite cards) ────────────────
+function renderPaginatedCards(items, cardFactory) {
+  const totalPages = Math.ceil(items.length / PAGE_SIZE);
+  const page = Math.min(currentPage, totalPages || 1);
+  const start = (page - 1) * PAGE_SIZE;
+  const pageItems = items.slice(start, start + PAGE_SIZE);
+
+  const gallery = document.getElementById('gallery');
+  pageItems.forEach(item => gallery.appendChild(cardFactory(item)));
+
+  setStatus(`${items.length} meteorites` + (totalPages > 1 ? ` — page ${page} of ${totalPages}` : ''));
+  renderPagination(totalPages, page);
+}
+
+// ─── Pagination helper (for individual photos) ──────────────
+function renderPaginatedPhotos(photos) {
+  const totalPages = Math.ceil(photos.length / PAGE_SIZE);
+  const page = Math.min(currentPage, totalPages || 1);
+  const start = (page - 1) * PAGE_SIZE;
+  const pagePhotos = photos.slice(start, start + PAGE_SIZE);
+
+  const gallery = document.getElementById('gallery');
+  pagePhotos.forEach((photo, idx) => {
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.innerHTML = `
+      <div class="card-img-wrap">
+        <img src="${encodeImagePath(photo.src)}" alt="${escapeHtml(photo.caption)}" loading="lazy">
+      </div>
+      <div class="card-label">${escapeHtml(photo.caption)}</div>
+    `;
+    card.addEventListener('click', () => {
+      // Open lightbox at this photo within the full set
+      openLightboxForPhotos(photos, start + idx);
+    });
+    gallery.appendChild(card);
+  });
+
+  setStatus(`${photos.length} photos` + (totalPages > 1 ? ` — page ${page} of ${totalPages}` : ''));
+  renderPagination(totalPages, page);
+}
+
+function renderPagination(totalPages, currentPg) {
+  const pag = document.getElementById('pagination');
+  pag.innerHTML = '';
+  if (totalPages <= 1) return;
+
+  const prevBtn = document.createElement('button');
+  prevBtn.textContent = '← Prev';
+  prevBtn.disabled = currentPg <= 1;
+  prevBtn.addEventListener('click', () => { currentPage--; render(); window.scrollTo(0, 0); });
+  pag.appendChild(prevBtn);
+
+  const info = document.createElement('span');
+  info.className = 'page-info';
+  info.textContent = `Page ${currentPg} of ${totalPages}`;
+  pag.appendChild(info);
+
+  const nextBtn = document.createElement('button');
+  nextBtn.textContent = 'Next →';
+  nextBtn.disabled = currentPg >= totalPages;
+  nextBtn.addEventListener('click', () => { currentPage++; render(); window.scrollTo(0, 0); });
+  pag.appendChild(nextBtn);
+}
+
+// ═══════════════════════════════════════════════════════════════
+// CARD FACTORIES
+// ═══════════════════════════════════════════════════════════════
+
+/** Create a card for a subcategory with a slowly rotating slideshow thumbnail. */
+function createCategoryCard(name, meteorites) {
+  const card = document.createElement('div');
+  card.className = 'card';
+
+  // Pick a random starting meteorite
+  const randomMet = meteorites.length > 0
+    ? meteorites[Math.floor(Math.random() * meteorites.length)]
+    : null;
+
+  const imgSrc = randomMet ? encodeImagePath(getRandomImage(randomMet)) : '';
+
+  card.innerHTML = `
+    <div class="card-img-wrap">
+      <img src="${imgSrc}" alt="${escapeHtml(name)}" loading="lazy">
+    </div>
+    <div class="card-label">
+      ${escapeHtml(name)}
+      <span class="count">(${meteorites.length})</span>
+    </div>
+  `;
+
+  // Set up the rotating slideshow every 5 seconds
+  if (meteorites.length > 0) {
+    const imgEl = card.querySelector('img');
+    const timer = setInterval(() => {
+      const rMet = meteorites[Math.floor(Math.random() * meteorites.length)];
+      const newSrc = encodeImagePath(getRandomImage(rMet));
+      imgEl.classList.add('fade-out');
+      setTimeout(() => {
+        imgEl.src = newSrc;
+        imgEl.classList.remove('fade-out');
+      }, 500);
+    }, 5000);
+    slideshowTimers.set(name, timer);
+  }
+
+  card.addEventListener('click', () => {
+    currentPath.push(name);
+    currentPage = 1;
+    render();
+    window.scrollTo(0, 0);
+  });
+
+  return card;
+}
+
+/** Create a card for an individual meteorite. */
+function createMeteoriteCard(met, noSlideshow = false) {
+  const card = document.createElement('div');
+  card.className = 'card';
+
+  const imgSrc = encodeImagePath(getRandomImage(met));
+
+  card.innerHTML = `
+    <div class="card-img-wrap">
+      <img src="${imgSrc}" alt="${escapeHtml(met.name)}" loading="lazy">
+    </div>
+    <div class="card-label">
+      ${escapeHtml(met.name)}
+      <span class="count">(${met.images.length} photos)</span>
+    </div>
+  `;
+
+  // Slideshow for hierarchy mode
+  if (!noSlideshow && met.images.length > 1) {
+    const imgEl = card.querySelector('img');
+    const timer = setInterval(() => {
+      const newSrc = encodeImagePath(getRandomImage(met));
+      imgEl.classList.add('fade-out');
+      setTimeout(() => {
+        imgEl.src = newSrc;
+        imgEl.classList.remove('fade-out');
+      }, 500);
+    }, 5000);
+    slideshowTimers.set('met-' + met.name, timer);
+  }
+
+  card.addEventListener('click', () => {
+    showDetail(met);
+  });
+
+  return card;
+}
+
+// ═══════════════════════════════════════════════════════════════
+// DETAIL VIEW
+// ═══════════════════════════════════════════════════════════════
+
+function showDetail(met) {
+  // Track detail state for URL
+  detailMeteoriteName = met.name;
+  pushState();
+
+  // Stop card slideshows
+  slideshowTimers.forEach(t => clearInterval(t));
+  slideshowTimers.clear();
+
+  const gallery = document.getElementById('gallery');
+  const detailView = document.getElementById('detail-view');
+  const pagination = document.getElementById('pagination');
+
+  gallery.style.display = 'none';
+  pagination.innerHTML = '';
+  detailView.classList.add('active');
+
+  document.getElementById('detail-name').textContent = met.name;
+  document.getElementById('detail-desc').textContent = met.description || '';
+
+  const imgContainer = document.getElementById('detail-images');
+  imgContainer.innerHTML = '';
+
+  met.images.forEach((img, idx) => {
+    const imgEl = document.createElement('img');
+    imgEl.src = encodeImagePath(met.path + '/' + img);
+    imgEl.alt = met.name;
+    imgEl.loading = 'lazy';
+    imgEl.addEventListener('click', () => {
+      const photos = met.images.map(i => ({
+        src: met.path + '/' + i,
+        caption: met.name
+      }));
+      openLightboxForPhotos(photos, idx);
+    });
+    imgContainer.appendChild(imgEl);
+  });
+
+  setStatus(`${met.images.length} photos of ${met.name}`);
+  window.scrollTo(0, 0);
+}
+
+function hideDetail() {
+  document.getElementById('detail-view').classList.remove('active');
+  document.getElementById('gallery').style.display = 'grid';
+}
+
+// ═══════════════════════════════════════════════════════════════
+// LIGHTBOX
+// ═══════════════════════════════════════════════════════════════
+
+function openLightboxForPhotos(photos, startIndex) {
+  lightboxImages = photos;
+  lightboxIndex = startIndex || 0;
+  lightboxPlaying = false;
+  showLightbox();
+}
+
+function startSlideshow() {
+  const meteorites = searchQuery
+    ? searchMeteorites(searchQuery)
+    : getMeteoritesBelow(currentPath);
+
+  const photos = collectAllImages(meteorites);
+  if (photos.length === 0) return;
+
+  // Shuffle
+  for (let i = photos.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [photos[i], photos[j]] = [photos[j], photos[i]];
+  }
+
+  lightboxImages = photos;
+  lightboxIndex = 0;
+  lightboxPlaying = true;
+  showLightbox();
+  startLightboxTimer();
+}
+
+function showLightbox() {
+  const lb = document.getElementById('lightbox');
+  lb.classList.add('active');
+  updateLightboxImage();
+  updatePauseBtn();
+}
+
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('active');
+  clearInterval(lightboxTimer);
+  lightboxTimer = null;
+  lightboxPlaying = false;
+}
+
+function updateLightboxImage() {
+  const img = document.getElementById('lightbox-img');
+  const photo = lightboxImages[lightboxIndex];
+
+  img.classList.add('fade-out');
+  setTimeout(() => {
+    img.src = encodeImagePath(photo.src);
+    img.alt = photo.caption;
+    img.classList.remove('fade-out');
+  }, 300);
+
+  document.getElementById('lightbox-caption').textContent = photo.caption;
+  document.getElementById('lightbox-counter').textContent =
+    `${lightboxIndex + 1} / ${lightboxImages.length}`;
+}
+
+function lightboxNav(dir) {
+  lightboxIndex = (lightboxIndex + dir + lightboxImages.length) % lightboxImages.length;
+  updateLightboxImage();
+  if (lightboxPlaying) { clearInterval(lightboxTimer); startLightboxTimer(); }
+}
+
+function toggleLightboxPause() {
+  lightboxPlaying = !lightboxPlaying;
+  if (lightboxPlaying) {
+    startLightboxTimer();
+  } else {
+    clearInterval(lightboxTimer);
+    lightboxTimer = null;
+  }
+  updatePauseBtn();
+}
+
+function startLightboxTimer() {
+  lightboxTimer = setInterval(() => {
+    lightboxIndex = (lightboxIndex + 1) % lightboxImages.length;
+    updateLightboxImage();
+  }, 4000);
+}
+
+function updatePauseBtn() {
+  document.getElementById('lb-pause').textContent = lightboxPlaying ? '⏸ Pause' : '▶ Play';
+}
+
+// ═══════════════════════════════════════════════════════════════
+// UTILS
+// ═══════════════════════════════════════════════════════════════
+
+function escapeHtml(text) {
+  const d = document.createElement('div');
+  d.textContent = text;
+  return d.innerHTML;
+}
+
+function encodeImagePath(path) {
+  // Encode each path segment individually to handle special chars in filenames
+  return path.split('/').map(seg => encodeURIComponent(seg)).join('/');
+}
+</script>
+</body>
+</html>
