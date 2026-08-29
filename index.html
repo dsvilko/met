@@ -35,20 +35,46 @@ a:hover { color: var(--accent-hover); }
 
 /* ─── Header ────────────────────────────────────────────────── */
 #header {
+  position: relative;
+  overflow: hidden;
   text-align: center;
   padding: 2rem 1rem 1rem;
   border-bottom: 1px solid var(--border);
 }
+#header-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+#header-bg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
 #header h1 {
+  position: relative;
+  z-index: 1;
   font-size: 1.8rem;
-  font-weight: 300;
+  font-weight: 600;
   letter-spacing: 0.05em;
   color: var(--accent);
+  text-shadow: 0 1px 5px rgba(0,0,0,.9), 0 0 10px rgba(0, 0, 0, 0.916);
 }
 #header .subtitle {
+  position: relative;
+  z-index: 1;
   font-size: 0.85rem;
-  color: var(--fg-dim);
+  color: white;
   margin-top: 0.3rem;
+  text-shadow: 0 1px 3px rgba(0,0,0,.9), 0 0 10px rgba(0,0,0,.7);
 }
 
 /* ─── Info Toggle ────────────────────────────────────────────── */
@@ -127,17 +153,20 @@ a:hover { color: var(--accent-hover); }
   color: #111;
 }
 
-#search-box {
+#search-name,
+#search-desc {
   background: var(--bg3);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   color: var(--fg);
   padding: 0.4rem 0.8rem;
+  padding-right: 10px;
   font-size: 0.8rem;
-  width: 200px;
+  width: 160px;
   outline: none;
 }
-#search-box:focus { border-color: var(--accent); }
+#search-name:focus,
+#search-desc:focus { border-color: var(--accent); }
 
 /* ─── Breadcrumbs ────────────────────────────────────────────── */
 #breadcrumbs {
@@ -146,12 +175,29 @@ a:hover { color: var(--accent-hover); }
   gap: 0.2rem;
   align-items: center;
   justify-content: center;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: var(--fg-dim);
+  padding-top: 15px;
 }
-.crumb { cursor: pointer; color: var(--accent); }
+.crumb { cursor: pointer; color: white; font-weight: 600; }
 .crumb:hover { text-decoration: underline; }
 .crumb-sep { margin: 0 0.1rem; color: var(--fg-dim); }
+
+/* ─── Folder header ──────────────────────────────────────────── */
+#folder-header {
+  display: none;
+  font-size: 1rem;
+  color: var(--fg-dim);
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0.2rem auto 0;
+  margin-top: 30px;
+  padding: 0 1rem;
+  text-align: left;
+  white-space: pre-wrap;
+}
+#folder-header a { color: var(--accent); }
+#folder-header a:hover { text-decoration: underline; }
 
 /* ─── Status bar ─────────────────────────────────────────────── */
 #status-bar {
@@ -278,7 +324,9 @@ a:hover { color: var(--accent-hover); }
   font-style: italic;
   color: var(--accent);
   margin-bottom: 0.2rem;
+  cursor: pointer;
 }
+#detail-category:hover { text-decoration: underline; }
 #detail-weight {
   font-size: 0.95rem;
   color: var(--fg);
@@ -301,14 +349,31 @@ a:hover { color: var(--accent-hover); }
   align-items: flex-start;
   gap: 0.8rem;
 }
-#detail-images img {
+#detail-images .img-wrap {
+  position: relative;
   flex: 0 1 280px;
+  min-width: 0;
+}
+#detail-images img {
+  display: block;
+  width: 100%;
   min-width: 0;
   border-radius: var(--radius);
   cursor: pointer;
   transition: transform var(--transition);
 }
 #detail-images img:hover { transform: scale(1.02); }
+.mpix-label {
+  position: absolute;
+  top: 0.3rem;
+  left: 0.3rem;
+  z-index: 1;
+  color: #fff;
+  text-shadow: 0 0 2px #000, 0 0 3px #000, 1px 1px 2px #000;
+  font-size: 0.75rem;
+  font-weight: 600;
+  pointer-events: none;
+}
 
 /* Sub-folders shown inside the detail view */
 #detail-subfolders { margin-top: 2rem; }
@@ -364,8 +429,8 @@ a:hover { color: var(--accent-hover); }
 }
 #lightbox.active { display: flex; }
 #lightbox img {
-  max-width: 95vw;
-  max-height: 85vh;
+  max-width: 100vw;
+  max-height: 100vh;
   object-fit: contain;
   border-radius: 4px;
   transition: opacity 0.6s ease-in-out;
@@ -374,19 +439,20 @@ a:hover { color: var(--accent-hover); }
 #lightbox-caption {
   position: absolute;
   left: 0.75rem;
-  bottom: 0.75rem;
+  top: 0.75rem;
   font-size: 0.85rem;
   color: #fff;
   text-align: left;
   text-shadow: 0 1px 3px #000, 0 0 8px #000;
   max-width: 80vw;
-  pointer-events: none;
-  z-index: 1;
+  pointer-events: auto;
+  cursor: pointer;
+  z-index: 1001;
   line-height: 1.4;
 }
-#lightbox-caption .lb-name { font-weight: 700; font-size: 1.05rem; }
-#lightbox-caption .lb-category { font-style: italic; color: var(--accent); font-size: 0.85rem; }
-#lightbox-caption .lb-weight { font-size: 0.8rem; color: var(--fg); }
+#lightbox-caption .lb-name { font-weight: 700; font-size: 1.5rem; }
+#lightbox-caption .lb-category { font-style: italic; color: var(--accent); font-size: 1rem; }
+#lightbox-caption .lb-weight { font-size: 1rem; color: var(--fg); }
 #lightbox-close {
   position: absolute;
   top: 1rem; right: 1rem;
@@ -394,6 +460,22 @@ a:hover { color: var(--accent-hover); }
   color: var(--fg); font-size: 2rem;
   cursor: pointer;
   z-index: 1001;
+}
+#lightbox-rotate {
+  position: absolute;
+  top: 1.3rem; right: 4.5rem;
+  background: none; border: none;
+  color: var(--fg-dim); font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 1001;
+}
+#lightbox-rotate:hover { color: var(--fg); }
+#lightbox-rotate.active { color: var(--accent); }
+#lightbox-rotate.active:hover { color: var(--accent-hover); }
+#lightbox-rotator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #lightbox-nav {
   position: absolute;
@@ -403,7 +485,7 @@ a:hover { color: var(--accent-hover); }
   z-index: 1001;
 }
 #lightbox-nav button {
-  background: rgba(255,255,255,0.1);
+  background: rgba(0, 0, 0, 0.3);
   border: 1px solid rgba(255,255,255,0.2);
   color: var(--fg);
   padding: 0.5rem 1.2rem;
@@ -411,12 +493,13 @@ a:hover { color: var(--accent-hover); }
   cursor: pointer;
   font-size: 0.85rem;
 }
-#lightbox-nav button:hover { background: rgba(0, 0, 0, 0.331); }
+#lightbox-nav button:hover { background: rgba(0, 0, 0, 0.5); }
 #lightbox-counter {
   position: absolute;
-  top: 1rem; left: 1rem;
+  bottom: 1rem; left: 1rem;
   font-size: 0.8rem;
   color: var(--fg-dim);
+  z-index: 1001;
 }
 
 /* ─── Loading ────────────────────────────────────────────────── */
@@ -444,7 +527,7 @@ a:hover { color: var(--accent-hover); }
   #header h1 { font-size: 1.2rem; }
   #toolbar { gap: 0.3rem; padding: 0.5rem; }
   .btn-group button, .tool-btn { padding: 0.3rem 0.5rem; font-size: 0.72rem; }
-  #search-box { width: 140px; }
+  #search-name, #search-desc { width: 120px; }
 }
 </style>
 </head>
@@ -452,6 +535,7 @@ a:hover { color: var(--accent-hover); }
 
 <!-- ─── Header ──────────────────────────────────────────────── -->
 <div id="header">
+  <div id="header-bg"><img alt=""><img alt=""></div>
   <h1>Domjan Svilković Meteorite Collection</h1>
   <div class="subtitle">Macro Photography Gallery</div>
 </div>
@@ -480,13 +564,15 @@ a:hover { color: var(--accent-hover); }
       <button data-sort="name" title="Sort by meteorite name">Name</button>
       <button data-sort="random" title="Random order">Random</button>
     </div>
-    <input id="search-box" type="text" placeholder="🔍 Search name or description…">
+    <input id="search-name" type="text" placeholder="🔍 Search name…">
+    <input id="search-desc" type="text" placeholder="📝 Search description…">
     <button class="tool-btn" id="slideshow-btn" title="Start fullscreen slideshow">Slideshow</button>
   </div>
   <div id="breadcrumbs"></div>
 </div>
 
 <!-- ─── Status ───────────────────────────────────────────────── -->
+<div id="folder-header"></div>
 <div id="status-bar"></div>
 
 <!-- ─── Main Content ─────────────────────────────────────────── -->
@@ -507,15 +593,18 @@ a:hover { color: var(--accent-hover); }
 <!-- ─── Lightbox ──────────────────────────────────────────────── -->
 <div id="lightbox">
   <div id="lightbox-counter"></div>
+  <button id="lightbox-rotate" title="Auto-rotate: on (click to disable)">⟳</button>
   <button id="lightbox-close" title="Close">✕</button>
   <div id="lightbox-img-wrap" style="position:relative;display:flex;align-items:center;justify-content:center;">
     <div id="lightbox-spinner" class="spinner" style="position:absolute;display:none;"></div>
-    <img id="lightbox-img" src="" alt="">
-    <div id="lightbox-caption">
-      <div class="lb-name"></div>
-      <div class="lb-category"></div>
-      <div class="lb-weight"></div>
+    <div id="lightbox-rotator">
+      <img id="lightbox-img" src="" alt="">
     </div>
+  </div>
+  <div id="lightbox-caption">
+    <div class="lb-name"></div>
+    <div class="lb-category"></div>
+    <div class="lb-weight"></div>
   </div>
   <div id="lightbox-nav">
     <button id="lb-prev">◄ Prev</button>
@@ -532,7 +621,8 @@ let manifest = null;        // full manifest.json data
 let currentPath = [];       // breadcrumb path into the hierarchy
 let displayMode = 'hierarchy'; // hierarchy | collapsed | photos
 let sortMode = 'category';    // category | name | random
-let searchQuery = '';
+let searchNameQuery = '';     // name-only search
+let searchDescQuery = '';     // description text search
 let currentPage = 1;
 let detailMeteoriteName = null; // name of meteorite in detail view, or null
 const PAGE_SIZE = 100;
@@ -547,6 +637,13 @@ let lightboxTimer = null;
 let lightboxPlaying = false;
 let panzoomInstance = null;
 let currentLightboxPhoto = null;
+let hashLightboxImg = null; // img= param from current URL hash (restoration)
+
+// Auto-rotation (lightbox): rotate a photo 90° when its orientation
+// mismatches the viewport orientation, so it fills the screen better
+let autoRotateEnabled = true;   // user toggle (⟳ button), default on
+let lightboxRotated = false;    // is the current photo displayed rotated?
+let lightboxNaturalDims = null; // {w, h, isFull} of the shown image
 
 // Flag to prevent pushState during popstate handling
 let _suppressPush = false;
@@ -561,9 +658,11 @@ function stateToHash() {
   if (currentPath.length > 0) params.set('path', currentPath.join('/'));
   if (displayMode !== 'hierarchy') params.set('mode', displayMode);
   if (sortMode !== 'category') params.set('sort', sortMode);
-  if (searchQuery) params.set('q', searchQuery);
+  if (searchNameQuery) params.set('qn', searchNameQuery);
+  if (searchDescQuery) params.set('qd', searchDescQuery);
   if (currentPage > 1) params.set('page', String(currentPage));
   if (detailMeteoriteName) params.set('detail', detailMeteoriteName);
+  if (currentLightboxPhoto) params.set('img', currentLightboxPhoto.src);
   const str = params.toString();
   return str ? '#' + str : '#';
 }
@@ -575,27 +674,56 @@ function hashToState() {
     currentPath = [];
     displayMode = 'hierarchy';
     sortMode = 'category';
-    searchQuery = '';
+    searchNameQuery = '';
+    searchDescQuery = '';
     currentPage = 1;
     detailMeteoriteName = null;
+    hashLightboxImg = null;
     return;
   }
   const params = new URLSearchParams(hash);
   currentPath = params.has('path') ? params.get('path').split('/') : [];
   displayMode = params.get('mode') || 'hierarchy';
   sortMode = params.get('sort') || 'category';
-  searchQuery = params.get('q') || '';
+  searchNameQuery = params.get('qn') || '';
+  searchDescQuery = params.get('qd') || '';
   currentPage = parseInt(params.get('page')) || 1;
   detailMeteoriteName = params.get('detail') || null;
+  hashLightboxImg = params.get('img') || null;
 }
 
-/** Push current state to browser history. */
-function pushState() {
+/** Push (or replace) current state in browser history. */
+function pushState(replace = false) {
   if (_suppressPush) return;
   const hash = stateToHash();
   if (window.location.hash !== hash && !(window.location.hash === '' && hash === '#')) {
-    history.pushState(null, '', hash);
+    if (replace) history.replaceState(null, '', hash);
+    else history.pushState(null, '', hash);
   }
+}
+
+/**
+ * Find the meteorite owning a Photos/... src and open the lightbox on it
+ * (prev/next context = that meteorite's images). No-ops if not found.
+ */
+function restoreLightboxFromSrc(src) {
+  const met = manifest.meteorites.find(m =>
+    m.images.some(img => m.path + '/' + img === src)
+  );
+  if (!met) return false;
+  const photos = collectAllImages([met]);
+  const idx = photos.findIndex(p => p.src === src);
+  if (idx < 0) return false;
+  lightboxImages = photos;
+  lightboxIndex = idx;
+  const lb = document.getElementById('lightbox');
+  if (lb.classList.contains('active')) {
+    updateLightboxImage();
+  } else {
+    lightboxPlaying = false;
+    showLightbox();
+  }
+  return true;
 }
 
 /** Sync toolbar UI buttons to match current state variables. */
@@ -606,7 +734,8 @@ function syncToolbarUI() {
   document.querySelectorAll('#sort-btns button').forEach(b => {
     b.classList.toggle('active', b.dataset.sort === sortMode);
   });
-  document.getElementById('search-box').value = searchQuery;
+  document.getElementById('search-name').value = searchNameQuery;
+  document.getElementById('search-desc').value = searchDescQuery;
 }
 
 // Listen for browser back/forward
@@ -627,6 +756,15 @@ window.addEventListener('popstate', () => {
   } else {
     renderGalleryView();
   }
+  // Lightbox from hash: open/switch to the encoded image, or close if absent
+  if (hashLightboxImg) {
+    if (!restoreLightboxFromSrc(hashLightboxImg)) {
+      hashLightboxImg = null;
+      closeLightbox();
+    }
+  } else if (document.getElementById('lightbox').classList.contains('active')) {
+    closeLightbox();
+  }
   _suppressPush = false;
 });
 
@@ -646,8 +784,9 @@ function renderGalleryView() {
   document.getElementById('status-bar').style.display = '';
 
   renderBreadcrumbs();
+  renderFolderHeader();
 
-  if (searchQuery) {
+  if (hasSearchQuery()) {
     renderSearchResults();
     return;
   }
@@ -669,11 +808,13 @@ document.addEventListener('DOMContentLoaded', async () => {
     const resp = await fetch('manifest.json');
     if (!resp.ok) throw new Error('manifest.json not found — run generate_manifest.py first');
     manifest = await resp.json();
+    await loadFolderHeaders();
     document.getElementById('loading').style.display = 'none';
     // Restore state from URL hash before first render
     hashToState();
     setupToolbar();
     syncToolbarUI();
+    startHeaderSlideshow();
     if (detailMeteoriteName) {
       const met = manifest.meteorites.find(m => m.name === detailMeteoriteName);
       if (met) {
@@ -685,6 +826,10 @@ document.addEventListener('DOMContentLoaded', async () => {
       }
     } else {
       render();
+    }
+    // Deep-link to a specific lightbox image (img= param)
+    if (hashLightboxImg) {
+      if (!restoreLightboxFromSrc(hashLightboxImg)) hashLightboxImg = null;
     }
   } catch (e) {
     document.getElementById('loading').innerHTML =
@@ -719,16 +864,19 @@ function setupToolbar() {
     });
   });
 
-  // Search
+  // Search: two fields share one debounced handler
   let searchTimeout;
-  document.getElementById('search-box').addEventListener('input', (e) => {
+  function onSearchInput() {
     clearTimeout(searchTimeout);
     searchTimeout = setTimeout(() => {
-      searchQuery = e.target.value.trim().toLowerCase();
+      searchNameQuery = document.getElementById('search-name').value.trim().toLowerCase();
+      searchDescQuery = document.getElementById('search-desc').value.trim().toLowerCase();
       currentPage = 1;
       render();
     }, 300);
-  });
+  }
+  document.getElementById('search-name').addEventListener('input', onSearchInput);
+  document.getElementById('search-desc').addEventListener('input', onSearchInput);
 
   // Slideshow
   document.getElementById('slideshow-btn').addEventListener('click', startSlideshow);
@@ -738,6 +886,34 @@ function setupToolbar() {
   document.getElementById('lb-prev').addEventListener('click', () => lightboxNav(-1));
   document.getElementById('lb-next').addEventListener('click', () => lightboxNav(1));
   document.getElementById('lb-pause').addEventListener('click', toggleLightboxPause);
+
+  // Click on the caption: open the detail view of the shown meteorite
+  document.getElementById('lightbox-caption').addEventListener('click', () => {
+    const met = currentLightboxPhoto && currentLightboxPhoto.met;
+    if (met) {
+      closeLightbox();
+      showDetail(met);
+    }
+  });
+
+  // Auto-rotate toggle
+  document.getElementById('lightbox-rotate').addEventListener('click', () => {
+    autoRotateEnabled = !autoRotateEnabled;
+    updateRotateBtn();
+    // Re-fit the current photo with the new rotation setting
+    if (lightboxNaturalDims &&
+        document.getElementById('lightbox').classList.contains('active')) {
+      applyLightboxLayout(lightboxNaturalDims);
+    }
+  });
+
+  // Re-fit the lightbox image when the viewport changes (e.g. device rotation)
+  window.addEventListener('resize', () => {
+    if (lightboxNaturalDims &&
+        document.getElementById('lightbox').classList.contains('active')) {
+      applyLightboxLayout(lightboxNaturalDims);
+    }
+  });
 
   document.getElementById('lightbox').addEventListener('click', (e) => {
     // Close when clicking the lightbox background (not image, caption, nav, close btn)
@@ -796,12 +972,29 @@ function getMeteoritesBelow(path) {
   });
 }
 
-/** Get meteorites matching search query. */
-function searchMeteorites(query) {
+/** True if either search field has a query. */
+function hasSearchQuery() {
+  return !!(searchNameQuery || searchDescQuery);
+}
+
+/** True if query occurs in text at a word start (preceded by nothing or a non-word char). */
+function matchesWordStart(text, query) {
+  const lower = text.toLowerCase();
+  let i = lower.indexOf(query);
+  while (i !== -1) {
+    if (i === 0 || !/\w/.test(lower[i - 1])) return true;
+    i = lower.indexOf(query, i + 1);
+  }
+  return false;
+}
+
+/** Get meteorites matching both search fields (AND when both are set). */
+function searchMeteorites() {
+  if (!hasSearchQuery()) return manifest.meteorites;
   return manifest.meteorites.filter(m => {
-    return m.name.toLowerCase().includes(query) ||
-           m.description.toLowerCase().includes(query) ||
-           m.categories.join(' ').toLowerCase().includes(query);
+    if (searchNameQuery && !matchesWordStart(m.name, searchNameQuery)) return false;
+    if (searchDescQuery && !m.description.toLowerCase().includes(searchDescQuery)) return false;
+    return true;
   });
 }
 
@@ -820,19 +1013,6 @@ function sortMeteorites(list) {
     }
   }
   return sorted;
-}
-
-/** Sort strings array. */
-function sortStrings(arr) {
-  if (sortMode === 'random') {
-    const s = [...arr];
-    for (let i = s.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [s[i], s[j]] = [s[j], s[i]];
-    }
-    return s;
-  }
-  return [...arr].sort((a, b) => a.localeCompare(b));
 }
 
 /** Get a random image path for a meteorite. */
@@ -878,9 +1058,10 @@ function render() {
   document.getElementById('status-bar').style.display = '';
 
   renderBreadcrumbs();
+  renderFolderHeader();
 
   // Search mode
-  if (searchQuery) {
+  if (hasSearchQuery()) {
     renderSearchResults();
     return;
   }
@@ -926,6 +1107,64 @@ function setStatus(text) {
   document.getElementById('status-bar').textContent = text;
 }
 
+// ─── Folder headers (headers.md) ────────────────────────────
+let folderHeaders = null;
+
+/** Fetch and parse headers.md into a Map: folder path -> {desc, link}. */
+async function loadFolderHeaders() {
+  try {
+    const resp = await fetch('headers.md');
+    if (!resp.ok) return;
+    const text = await resp.text();
+    folderHeaders = parseFolderHeaders(text);
+  } catch (e) { /* headers.md is optional */ }
+}
+
+/** Parse headers.md: records start with '# ./path', followed by a
+ *  description and an optional "Wikipedia: <url>" line. */
+function parseFolderHeaders(text) {
+  const map = new Map();
+  let cur = null;
+  text.split('\n').forEach(line => {
+    const t = line.trim();
+    if (t.startsWith('# ')) {
+      cur = { desc: '', link: null };
+      map.set(t.slice(2).trim().replace(/^\.\//, ''), cur);
+    } else if (cur && t) {
+      const m = t.match(/^wikipedia:\s*(\S+)/i);
+      if (m) {
+        cur.link = m[1];
+      } else {
+        cur.desc += (cur.desc ? '\n' : '') + t;
+      }
+    }
+  });
+  return map;
+}
+
+/** Show the description/link for the currently selected folder
+ *  above the status bar; hidden if none exists. */
+function renderFolderHeader() {
+  const el = document.getElementById('folder-header');
+  el.innerHTML = '';
+  const entry = folderHeaders && folderHeaders.get(currentPath.join('/'));
+  if (!entry || (!entry.desc && !entry.link)) {
+    el.style.display = 'none';
+    return;
+  }
+  if (entry.desc) el.textContent = entry.desc;
+  if (entry.link) {
+    const a = document.createElement('a');
+    a.href = entry.link;
+    a.target = '_blank';
+    a.rel = 'noopener';
+    a.textContent = 'Wikipedia';
+    el.appendChild(document.createElement('br'));
+    el.appendChild(a);
+  }
+  el.style.display = 'block';
+}
+
 // ─── Hierarchy Mode ─────────────────────────────────────────
 /** Append category + meteorite cards for a tree node into a container.
  *  Folders that are themselves a meteorite (photos AND sub-folders) are
@@ -936,10 +1175,22 @@ function appendHierarchyCards(container, path, node, onClickBase) {
   let subtypeCount = 0;
   const childKeys = Object.keys(node.children);
   if (childKeys.length > 0) {
-    sortStrings(childKeys).forEach(key => {
-      if (getMeteoriteAtPath([...path, key])) return;
-      subtypeCount++;
+    const childCards = childKeys.map(key => {
       const childPath = [...path, key];
+      return { key, childPath, mets: getMeteoritesBelow(childPath) };
+    }).filter(c => !getMeteoriteAtPath(c.childPath));
+    subtypeCount = childCards.length;
+    if (sortMode === 'random') {
+      // Fisher-Yates shuffle
+      for (let i = childCards.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [childCards[i], childCards[j]] = [childCards[j], childCards[i]];
+      }
+    } else {
+      // Largest sub-item count first, alphabetical tiebreak
+      childCards.sort((a, b) => b.mets.length - a.mets.length || a.key.localeCompare(b.key));
+    }
+    childCards.forEach(({ key, childPath, mets }) => {
       const onClick = onClickBase
         ? () => {
             currentPath = [...onClickBase, key];
@@ -948,7 +1199,7 @@ function appendHierarchyCards(container, path, node, onClickBase) {
             window.scrollTo(0, 0);
           }
         : undefined;
-      container.appendChild(createCategoryCard(key, getMeteoritesBelow(childPath), onClick));
+      container.appendChild(createCategoryCard(key, mets, onClick));
     });
   }
 
@@ -1014,8 +1265,11 @@ function renderPhotos() {
 
 // ─── Search ─────────────────────────────────────────────────
 function renderSearchResults() {
-  const results = sortMeteorites(searchMeteorites(searchQuery));
-  setStatus(`${results.length} results for "${searchQuery}"`);
+  const results = sortMeteorites(searchMeteorites());
+  const parts = [];
+  if (searchNameQuery) parts.push(`name "${searchNameQuery}"`);
+  if (searchDescQuery) parts.push(`description "${searchDescQuery}"`);
+  setStatus(`${results.length} results for ${parts.join(' and ')}`);
   renderPaginatedCards(results, met => createMeteoriteCard(met, true));
 }
 
@@ -1117,6 +1371,79 @@ function setupSlideshow(card, getNextSrc, timerKey) {
     slideshowTimers.set(timerKey, intervalTimer);
   }, initialDelay);
   slideshowTimers.set(timerKey + '-init', timer);
+}
+
+// ═══════════════════════════════════════════════════════════════
+// HEADER BACKGROUND SLIDESHOW
+// ═══════════════════════════════════════════════════════════════
+
+/** Pick a random image from the entire collection. Returns {src, portrait}. */
+function pickRandomHeaderImage() {
+  const met = manifest.meteorites[Math.floor(Math.random() * manifest.meteorites.length)];
+  const img = met.images[Math.floor(Math.random() * met.images.length)];
+  const dims = met.dims && met.dims[img];
+  return {
+    src: encodeImagePath(met.path + '/' + img),
+    portrait: !!(dims && dims[1] > dims[0])
+  };
+}
+
+/**
+ * Size a header background img to fully cover the header.
+ * Portrait images (dataset.portrait='1') get their element box swapped to
+ * headerH x headerW and rotated -90° about the shared center, so the
+ * long edge fills the header width; object-fit: cover handles the crop.
+ */
+function fitHeaderImg(img) {
+  const header = document.getElementById('header');
+  const W = header.clientWidth;
+  const H = header.clientHeight;
+  if (img.dataset.portrait === '1' && W > H) {
+    img.style.width = H + 'px';
+    img.style.height = W + 'px';
+    img.style.left = ((W - H) / 2) + 'px';
+    img.style.top = ((H - W) / 2) + 'px';
+    img.style.transform = 'rotate(-90deg)';
+  } else {
+    img.style.width = '100%';
+    img.style.height = '100%';
+    img.style.left = '0';
+    img.style.top = '0';
+    img.style.transform = 'none';
+  }
+}
+
+/** Full-collection crossfade slideshow behind the header text (8s interval). */
+function startHeaderSlideshow() {
+  const imgs = document.querySelectorAll('#header-bg img');
+  let currentImg = imgs[0];
+  let nextImg = imgs[1];
+
+  const showNext = () => {
+    const pick = pickRandomHeaderImage();
+    // Preload so we never crossfade to a blank image
+    const temp = new Image();
+    temp.onload = () => {
+      nextImg.dataset.portrait = pick.portrait ? '1' : '0';
+      nextImg.src = pick.src;
+      fitHeaderImg(nextImg);
+      nextImg.style.opacity = '1';
+      currentImg.style.opacity = '0';
+      setTimeout(() => {
+        [currentImg, nextImg] = [nextImg, currentImg];
+      }, 1500);
+    };
+    temp.src = pick.src;
+  };
+
+  showNext();
+  setInterval(showNext, 8000);
+
+  // Re-fit current images when the header box changes size/orientation
+  window.addEventListener('resize', () => {
+    fitHeaderImg(currentImg);
+    fitHeaderImg(nextImg);
+  });
 }
 
 // ═══════════════════════════════════════════════════════════════
@@ -1262,10 +1589,19 @@ function showDetail(met) {
   pagination.innerHTML = '';
   detailView.classList.add('active');
   document.getElementById('status-bar').style.display = 'none';
+  document.getElementById('folder-header').style.display = 'none';
 
   const parsed = parseMeteoriteName(met.name, met);
   document.getElementById('detail-name').textContent = parsed.name;
-  document.getElementById('detail-category').textContent = parsed.category;
+  // Category acts as a link to the parent folder of this meteorite
+  const catEl = document.getElementById('detail-category');
+  catEl.textContent = parsed.category;
+  catEl.title = 'Go to ' + (met.categories.join(' › ') || 'Home');
+  catEl.onclick = () => {
+    currentPath = [...met.categories];
+    currentPage = 1;
+    render();
+  };
   document.getElementById('detail-weight').textContent = parsed.weight;
   const desc = met.description || '';
   document.getElementById('detail-desc').textContent = desc.includes('\n') ? desc.slice(desc.indexOf('\n') + 1) : desc;
@@ -1273,20 +1609,40 @@ function showDetail(met) {
   const imgContainer = document.getElementById('detail-images');
   imgContainer.innerHTML = '';
 
-  met.images.forEach((img, idx) => {
+  // Per-image full-res pixel data, available for other uses within showDetail:
+  // [{ img, w, h, mpix }] — sorted by Mpix, largest first
+  const mpixData = met.images.map(img => {
+    const d = met.dims ? met.dims[img] : null;
+    const [w, h] = d || [0, 0];
+    return { img, w, h, mpix: (w * h) / 1e6 };
+  }).sort((a, b) => b.mpix - a.mpix);
+
+  mpixData.forEach((info, idx) => {
+    const img = info.img;
+    const wrap = document.createElement('div');
+    wrap.className = 'img-wrap';
+
+    if (info.w && info.h) {
+      const label = document.createElement('span');
+      label.className = 'mpix-label';
+      label.textContent = Math.round(info.mpix) + ' Mpix';
+      wrap.appendChild(label);
+    }
+
     const imgEl = document.createElement('img');
     imgEl.src = encodeImagePath(met.path + '/' + img);
     imgEl.alt = met.name;
     imgEl.loading = 'lazy';
     imgEl.addEventListener('click', () => {
-      const photos = met.images.map(i => ({
-        src: met.path + '/' + i,
+      const photos = mpixData.map(i => ({
+        src: met.path + '/' + i.img,
         caption: met.name,
         met
       }));
       openLightboxForPhotos(photos, idx);
     });
-    imgContainer.appendChild(imgEl);
+    wrap.appendChild(imgEl);
+    imgContainer.appendChild(wrap);
   });
 
   // Sub-folders (for folders that contain photos AND sub-folders)
@@ -1319,6 +1675,7 @@ function hideDetail() {
   document.getElementById('detail-view').classList.remove('active');
   document.getElementById('gallery').style.display = 'flex';
   document.getElementById('status-bar').style.display = '';
+  renderFolderHeader();
 }
 
 // ═══════════════════════════════════════════════════════════════
@@ -1330,11 +1687,12 @@ function openLightboxForPhotos(photos, startIndex) {
   lightboxIndex = startIndex || 0;
   lightboxPlaying = false;
   showLightbox();
+  pushState(); // new history entry so Back closes the lightbox
 }
 
 function startSlideshow() {
-  const meteorites = searchQuery
-    ? searchMeteorites(searchQuery)
+  const meteorites = hasSearchQuery()
+    ? searchMeteorites()
     : getMeteoritesBelow(currentPath);
 
   const photos = collectAllImages(meteorites);
@@ -1350,6 +1708,7 @@ function startSlideshow() {
   lightboxIndex = 0;
   lightboxPlaying = true;
   showLightbox();
+  pushState();
   startLightboxTimer();
 }
 
@@ -1357,9 +1716,126 @@ function toFullPath(photoSrc) {
   return photoSrc.replace(/^Photos\//, 'Full/');
 }
 
+/** Full-resolution dimensions of a photo from the manifest, or null. */
+function getManifestDims(photo) {
+  const filename = photo.src.split('/').pop();
+  const d = photo.met && photo.met.dims ? photo.met.dims[filename] : null;
+  return d && d[0] > 0 && d[1] > 0 ? { w: d[0], h: d[1] } : null;
+}
+
+function isPortraitViewport() {
+  return window.innerHeight > window.innerWidth;
+}
+
+/** Rotate when the image orientation mismatches the viewport orientation
+ *  (landscape photo on a portrait screen, or portrait photo on a
+ *  landscape screen) so the long edge spans the larger dimension. */
+function shouldAutoRotate(dims) {
+  if (!autoRotateEnabled || !dims || dims.w === dims.h) return false;
+  return (dims.w > dims.h) === isPortraitViewport();
+}
+
+/** Size the lightbox image (and its rotator box) to fit the viewport,
+ *  applying a 90° rotation when shouldAutoRotate() says so, then
+ *  (re-)initialize panzoom on the rotator box.
+ *  panzoom owns the rotator's transform, so the rotation lives on the
+ *  img inside it - this keeps pan/zoom aligned with the screen. */
+function applyLightboxLayout(dims, opts = {}) {
+  const img = document.getElementById('lightbox-img');
+  const rotator = document.getElementById('lightbox-rotator');
+  lightboxNaturalDims = dims;
+  lightboxRotated = shouldAutoRotate(dims);
+
+  const maxW = window.innerWidth;
+  const maxH = window.innerHeight;
+  // When rotated, the visual width/height are the img's height/width
+  const s = lightboxRotated
+    ? Math.min(maxW / dims.h, maxH / dims.w)
+    : Math.min(maxW / dims.w, maxH / dims.h);
+
+  const imgW = Math.max(1, Math.round(dims.w * s));
+  const imgH = Math.max(1, Math.round(dims.h * s));
+
+  // Explicit sizing overrides the CSS max-width/max-height fallback
+  img.style.maxWidth = 'none';
+  img.style.maxHeight = 'none';
+  img.style.width = imgW + 'px';
+  img.style.height = imgH + 'px';
+  img.style.transform = lightboxRotated ? 'rotate(-90deg)' : '';
+
+  // Rotator box = the image's on-screen (post-rotation) footprint
+  rotator.style.width = (lightboxRotated ? imgH : imgW) + 'px';
+  rotator.style.height = (lightboxRotated ? imgW : imgH) + 'px';
+
+  initLightboxPanzoom(opts.preserveTransform === true);
+}
+
+/** Clear explicit sizing so the CSS fallback rules take over. */
+function resetLightboxLayout() {
+  const img = document.getElementById('lightbox-img');
+  const rotator = document.getElementById('lightbox-rotator');
+  lightboxNaturalDims = null;
+  lightboxRotated = false;
+  img.style.maxWidth = '';
+  img.style.maxHeight = '';
+  img.style.width = '';
+  img.style.height = '';
+  img.style.transform = '';
+  rotator.style.width = '';
+  rotator.style.height = '';
+}
+
+/** (Re-)create the panzoom controller on the rotator box. */
+function initLightboxPanzoom(preserveTransform) {
+  const img = document.getElementById('lightbox-img');
+  const rotator = document.getElementById('lightbox-rotator');
+  const savedTransform = (preserveTransform && panzoomInstance)
+    ? panzoomInstance.getTransform()
+    : null;
+  if (panzoomInstance) {
+    panzoomInstance.dispose();
+  }
+
+  // Max zoom: 4x over 1:1 pixel ratio (one image pixel = one CSS pixel)
+  let maxScale = 4;
+  if (lightboxNaturalDims && img.clientWidth > 0) {
+    maxScale = Math.max(1, (lightboxNaturalDims.w / img.clientWidth) * 4);
+  }
+
+  panzoomInstance = panzoom(rotator, {
+    maxZoom: maxScale,
+    minZoom: 0.1,
+    contain: 'outside',
+    bounds: true,
+    boundsPadding: 0.1,
+    zoomDoubleClickSpeed: 1,
+  });
+
+  // Restore zoom/pan only if the saved transform is fully valid
+  // (a partial zoomTo() can silently poison panzoom's scale with NaN)
+  if (savedTransform &&
+      Number.isFinite(savedTransform.x) &&
+      Number.isFinite(savedTransform.y) &&
+      Number.isFinite(savedTransform.scale)) {
+    panzoomInstance.zoomAbs(savedTransform.x, savedTransform.y, savedTransform.scale);
+  } else {
+    panzoomInstance.moveTo(0, 0);
+    panzoomInstance.zoomAbs(0, 0, 1);
+  }
+}
+
+function updateRotateBtn() {
+  const btn = document.getElementById('lightbox-rotate');
+  btn.classList.toggle('active', autoRotateEnabled);
+  btn.title = autoRotateEnabled
+    ? 'Auto-rotate: on (click to disable)'
+    : 'Auto-rotate: off (click to enable)';
+}
+
 function showLightbox() {
   const lb = document.getElementById('lightbox');
   lb.classList.add('active');
+  updateRotateBtn();
   updateLightboxImage();
   updatePauseBtn();
 }
@@ -1373,22 +1849,17 @@ function closeLightbox() {
     panzoomInstance.dispose();
     panzoomInstance = null;
   }
+  resetLightboxLayout();
   document.getElementById('lightbox-img').src = '';
   currentLightboxPhoto = null;
+  pushState(true); // drop img= from the hash
 }
 
 function updateLightboxImage() {
   const img = document.getElementById('lightbox-img');
-  const spinner = document.getElementById('lightbox-spinner');
   const photo = lightboxImages[lightboxIndex];
 
   currentLightboxPhoto = photo;
-
-  // Capture current panzoom transform before swap
-  let savedTransform = null;
-  if (panzoomInstance) {
-    savedTransform = panzoomInstance.getTransform();
-  }
 
   // Immediately show thumbnail (Photos/ path) - no spinner
   const thumbSrc = encodeImagePath(photo.src);
@@ -1412,61 +1883,49 @@ function updateLightboxImage() {
   document.getElementById('lightbox-counter').textContent =
     `${lightboxIndex + 1} / ${lightboxImages.length}`;
 
+  // Layout: prefer manifest dims (full-res), fall back to the loaded
+  // thumbnail's natural size (same aspect ratio)
+  const dims = getManifestDims(photo);
+  if (dims) {
+    applyLightboxLayout(dims, { preserveTransform: true });
+  } else {
+    resetLightboxLayout();
+    const onThumbMeta = () => {
+      if (currentLightboxPhoto === photo && img.naturalWidth > 0) {
+        applyLightboxLayout({ w: img.naturalWidth, h: img.naturalHeight });
+      }
+    };
+    if (img.complete && img.naturalWidth > 0) {
+      onThumbMeta();
+    } else {
+      img.addEventListener('load', onThumbMeta, { once: true });
+    }
+  }
+
   // Load full-res in background
   const fullSrc = encodeImagePath(toFullPath(photo.src));
   const fullImg = new Image();
   fullImg.src = fullSrc;
 
   const onFullLoad = () => {
-    // Swap to full-res seamlessly
+    // Swap to full-res seamlessly and re-fit layout at true resolution
     img.src = fullSrc;
-
-    // Re-initialize panzoom with preserved transform
-    if (panzoomInstance) {
-      panzoomInstance.dispose();
-    }
-
-    // Calculate max zoom: 4x over 1:1 pixel ratio
-    const scaleTo1to1 = fullImg.naturalWidth / img.clientWidth;
-    const maxScale = scaleTo1to1 * 4;
-
-    panzoomInstance = panzoom(img, {
-      maxZoom: maxScale,
-      minZoom: 0.1,
-      contain: 'outside',
-      bounds: true,
-      boundsPadding: 0.1,
-      zoomDoubleClickSpeed: 1,
-    });
-
-    // Restore zoom/pan if we had a previous transform
-    if (savedTransform) {
-      panzoomInstance.zoomAbs(savedTransform.x, savedTransform.y, savedTransform.scale);
-    }
+    applyLightboxLayout(
+      { w: fullImg.naturalWidth, h: fullImg.naturalHeight, isFull: true },
+      { preserveTransform: true }
+    );
   };
 
   const onFullError = () => {
-    // Full-res failed, keep thumbnail and init panzoom on it
-    if (panzoomInstance) {
-      panzoomInstance.dispose();
-    }
-    const scaleTo1to1 = img.naturalWidth / img.clientWidth;
-    const maxScale = scaleTo1to1 * 4;
-    panzoomInstance = panzoom(img, {
-      maxZoom: maxScale,
-      minZoom: 0.1,
-      contain: 'outside',
-      bounds: true,
-      boundsPadding: 0.1,
-      zoomDoubleClickSpeed: 1,
-    });
-    if (savedTransform) {
-      panzoomInstance.zoomAbs(savedTransform.x, savedTransform.y, savedTransform.scale);
+    // Full-res failed, keep the thumbnail and fit around it
+    if (img.naturalWidth > 0) {
+      applyLightboxLayout({ w: img.naturalWidth, h: img.naturalHeight });
     }
   };
 
   if (fullImg.complete) {
-    onFullLoad();
+    if (fullImg.naturalWidth > 0) onFullLoad();
+    else onFullError();
   } else {
     fullImg.onload = onFullLoad;
     fullImg.onerror = onFullError;
@@ -1475,12 +1934,14 @@ function updateLightboxImage() {
 
 function lightboxNav(dir) {
   // Reset zoom/pan before navigating
+  // (zoomTo() needs all three args - zoomTo(1) poisons the transform)
   if (panzoomInstance) {
     panzoomInstance.moveTo(0, 0);
-    panzoomInstance.zoomTo(1);
+    panzoomInstance.zoomAbs(0, 0, 1);
   }
   lightboxIndex = (lightboxIndex + dir + lightboxImages.length) % lightboxImages.length;
   updateLightboxImage();
+  pushState(true); // keep img= in sync without a new history entry
   if (lightboxPlaying) { clearInterval(lightboxTimer); startLightboxTimer(); }
 }
 
@@ -1499,6 +1960,7 @@ function startLightboxTimer() {
   lightboxTimer = setInterval(() => {
     lightboxIndex = (lightboxIndex + 1) % lightboxImages.length;
     updateLightboxImage();
+    pushState(true);
   }, 4000);
 }
 

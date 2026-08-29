@@ -20,7 +20,37 @@
     "2022-11-30-17.28.33-ZS-DMap-01.jpeg",
     "[Group 0]-2022-12-03-13.22.17-ZS-DMap_2022-12-03-13.26.35-ZS-DMap-4 images-01.jpeg",
     "[Group 0]-2022-12-03-13.28.33-ZS-DMap_2022-12-03-13.33.00-ZS-DMap-4 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2022-11-30-17.24.41-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2022-11-30-17.25.36-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2022-11-30-17.27.04-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2022-11-30-17.27.04-ZS-DMap-02.jpeg": [
+     5184,
+     3456
+    ],
+    "2022-11-30-17.28.33-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "[Group 0]-2022-12-03-13.22.17-ZS-DMap_2022-12-03-13.26.35-ZS-DMap-4 images-01.jpeg": [
+     6823,
+     3663
+    ],
+    "[Group 0]-2022-12-03-13.28.33-ZS-DMap_2022-12-03-13.33.00-ZS-DMap-4 images-01.jpeg": [
+     6845,
+     3651
+    ]
+   }
   },
   {
    "name": "Almahatta Sita MS-322 (fine-grained ureilite) - 35mg",
@@ -32,7 +62,13 @@
    "description": "Almahatta Sita MS-322 (fine-grained ureilite) - 35mg",
    "images": [
     "2022-11-30-17.23.45-ZS-retouched-01.jpg"
-   ]
+   ],
+   "dims": {
+    "2022-11-30-17.23.45-ZS-retouched-01.jpg": [
+     5184,
+     3456
+    ]
+   }
   },
   {
    "name": "Almahatta Sita MS-325 (fine-variable-sized ureilite) - 9mg",
@@ -44,7 +80,13 @@
    "description": "Almahatta Sita MS-325 (fine-variable-sized ureilite) - 9mg",
    "images": [
     "2022-11-30-17.04.56-ZS-retouched-01.jpg"
-   ]
+   ],
+   "dims": {
+    "2022-11-30-17.04.56-ZS-retouched-01.jpg": [
+     5184,
+     3456
+    ]
+   }
   },
   {
    "name": "Almahatta Sita MS-315 (E-chondrite ELb 5-6) - 15mg",
@@ -58,7 +100,21 @@
     "2022-11-30-17.06.47-ZS-DMap-01.jpeg",
     "2022-11-30-17.15.09-ZS-DMap-01.jpeg",
     "2022-12-03-13.21.11-ZS-DMap-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2022-11-30-17.06.47-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2022-11-30-17.15.09-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2022-12-03-13.21.11-ZS-DMap-01.jpeg": [
+     5184,
+     3325
+    ]
+   }
   },
   {
    "name": "Saint-Pierre-le-Viger (L5-6, asteroid 2023 CX1) - 0.63g",
@@ -75,7 +131,37 @@
     "[Group 0]-2023-03-25-14.33.22-ZS-DMap_2023-03-25-14.40.20-ZS-retouched-10 images-01.jpeg",
     "[Group 1]-2023-03-21-15.42.14-ZS-retouched_2023-03-21-16.11.16-ZS-retouched-3 images-02.jpeg",
     "[Group 2]-2023-03-21-15.26.23-ZS-retouched_2023-03-21-15.35.07-ZS-retouched-3 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2023-03-21-18.09.16-ZS-retouched-03.jpeg": [
+     5184,
+     3456
+    ],
+    "IMG_20230320_201226-01.jpeg": [
+     4032,
+     3024
+    ],
+    "IMG_20230320_201304-01.jpeg": [
+     4032,
+     3024
+    ],
+    "[Group 0]-2023-03-25-12.36.23-ZS-retouched_2023-03-25-13.38.52-ZS-retouched-10 images (1)-01.jpeg": [
+     6418,
+     3895
+    ],
+    "[Group 0]-2023-03-25-14.33.22-ZS-DMap_2023-03-25-14.40.20-ZS-retouched-10 images-01.jpeg": [
+     6364,
+     3928
+    ],
+    "[Group 1]-2023-03-21-15.42.14-ZS-retouched_2023-03-21-16.11.16-ZS-retouched-3 images-02.jpeg": [
+     6553,
+     3814
+    ],
+    "[Group 2]-2023-03-21-15.26.23-ZS-retouched_2023-03-21-15.35.07-ZS-retouched-3 images-01.jpeg": [
+     6282,
+     3978
+    ]
+   }
   },
   {
    "name": "Saint-Pierre-le-Viger (L5-6, asteroid 2023 CX1) - micro from Roberto Vargas",
@@ -87,7 +173,13 @@
    "description": "Saint-Pierre-le-Viger (L5-6, asteroid 2023 CX1) - micro from Roberto Vargas",
    "images": [
     "2023-06-27-17.55.38-ZS-retouched-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2023-06-27-17.55.38-ZS-retouched-01.jpeg": [
+     3907,
+     2807
+    ]
+   }
   },
   {
    "name": "Saint-Pierre-le-Viger (L5-6, asteroid 2023 CX1) - ",
@@ -99,7 +191,13 @@
    "description": "Saint-Pierre-le-Viger (L5-6, asteroid 2023 CX1) -",
    "images": [
     "2023-04-07-10.00.26-ZS-retouched-01.jpg"
-   ]
+   ],
+   "dims": {
+    "2023-04-07-10.00.26-ZS-retouched-01.jpg": [
+     5184,
+     3456
+    ]
+   }
   },
   {
    "name": "NWA 14683 (diogenite-olivine) - thin section",
@@ -113,7 +211,17 @@
    "images": [
     "[Group 0]-2023-06-08-10.39.54-ZS-DMap_2023-06-08-10.53.01-ZS-DMap-19 images-01.jpeg",
     "[Group 0]-2023-06-08-10.39.54-ZS-DMap_2023-06-08-10.53.01-ZS-DMap-19 images_N_0-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2023-06-08-10.39.54-ZS-DMap_2023-06-08-10.53.01-ZS-DMap-19 images-01.jpeg": [
+     6412,
+     3898
+    ],
+    "[Group 0]-2023-06-08-10.39.54-ZS-DMap_2023-06-08-10.53.01-ZS-DMap-19 images_N_0-01.jpeg": [
+     6412,
+     3898
+    ]
+   }
   },
   {
    "name": "NWA 14056 (diogenite)",
@@ -126,7 +234,13 @@
    "description": "NWA 14056 (diogenite)\nA gift from Mohamed Ali Loud!",
    "images": [
     "[Group 5]-IMG_7658_IMG_7682-25 images-01.jpg"
-   ]
+   ],
+   "dims": {
+    "[Group 5]-IMG_7658_IMG_7682-25 images-01.jpg": [
+     6232,
+     4010
+    ]
+   }
   },
   {
    "name": "NWA 7490 (diogenite)",
@@ -139,7 +253,13 @@
    "description": "NWA 7490 (diogenite)\nDominant ortopyroxene with minor olivine. \"Johnstown-like\".\nA gift from Marcin.",
    "images": [
     "[Group 0]-2022-03-30-08.35.41-ZS-DMap_2022-03-30-08.51.40-ZS-DMap-4 images-01-01.jpg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2022-03-30-08.35.41-ZS-DMap_2022-03-30-08.51.40-ZS-DMap-4 images-01-01.jpg": [
+     5422,
+     4610
+    ]
+   }
   },
   {
    "name": "NWA 16548 (diogenite melt breccia) - multiple micros",
@@ -154,7 +274,21 @@
     "[Group 0]-2024-04-21-19.14.32-ZS-retouched_2024-04-21-19.17.55-ZS-retouched-3 images-01.jpeg",
     "[Group 0]-2024-04-21-20.11.17-ZS-DMap_2024-04-21-20.15.14-ZS-DMap-7 images-01.jpeg",
     "[Group 0]-IMG_9505_IMG_9515-11 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2024-04-21-19.14.32-ZS-retouched_2024-04-21-19.17.55-ZS-retouched-3 images-01.jpeg": [
+     6463,
+     3256
+    ],
+    "[Group 0]-2024-04-21-20.11.17-ZS-DMap_2024-04-21-20.15.14-ZS-DMap-7 images-01.jpeg": [
+     6471,
+     3839
+    ],
+    "[Group 0]-IMG_9505_IMG_9515-11 images-01.jpeg": [
+     5884,
+     4248
+    ]
+   }
   },
   {
    "name": "NWA 7831 (diogenite) - tiny polished crystal",
@@ -169,7 +303,21 @@
     "2024-06-02-14.30.47-ZS-retouched.jpg",
     "2024-06-03-17.39.29-ZS-retouched.jpg",
     "2024-06-03-18.03.32-ZS-retouched.jpg"
-   ]
+   ],
+   "dims": {
+    "2024-06-02-14.30.47-ZS-retouched.jpg": [
+     4900,
+     3355
+    ],
+    "2024-06-03-17.39.29-ZS-retouched.jpg": [
+     5051,
+     3326
+    ],
+    "2024-06-03-18.03.32-ZS-retouched.jpg": [
+     4983,
+     3372
+    ]
+   }
   },
   {
    "name": "NWA 7831 (Diogenite) - 1.5g",
@@ -185,7 +333,25 @@
     "2019-06-18-17.48.12 ZS retouched-01.jpeg",
     "2021-06-13-19.12.26-ZS-retouched-01.jpeg",
     "[Group 0]-2023-02-21-16.04.42-ZS-retouched_2023-02-21-16.17.53-ZS-retouched-3 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2019-06-18-17.40.14 ZS retouched-01.jpeg": [
+     4345,
+     3261
+    ],
+    "2019-06-18-17.48.12 ZS retouched-01.jpeg": [
+     4217,
+     3165
+    ],
+    "2021-06-13-19.12.26-ZS-retouched-01.jpeg": [
+     3675,
+     2842
+    ],
+    "[Group 0]-2023-02-21-16.04.42-ZS-retouched_2023-02-21-16.17.53-ZS-retouched-3 images-01.jpeg": [
+     6019,
+     4153
+    ]
+   }
   },
   {
    "name": "NWA 13903 (diogenite)",
@@ -198,7 +364,13 @@
    "description": "NWA 13903 (diogenite)\nOlivine bearing diogenite, 90% pyroxene.\nA gift from main mass holder, Matthew Stream.",
    "images": [
     "[Group 0]-2023-03-18-16.30.09-ZS-retouched_2023-03-18-16.49.23-ZS-retouched-6 images-01.jpg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2023-03-18-16.30.09-ZS-retouched_2023-03-18-16.49.23-ZS-retouched-6 images-01.jpg": [
+     5598,
+     4465
+    ]
+   }
   },
   {
    "name": "NWA 15735 (diogenite) - 0.201g",
@@ -213,7 +385,21 @@
     "2023-06-06-09.58.40-ZS-retouched-01.jpeg",
     "[Group 1]-2023-06-04-20.58.27-ZS-DMap_2023-06-04-21.00.28-ZS-DMap-2 images-01-01.jpeg",
     "[Group 2]-2023-06-03-21.12.18-ZS-DMap_2023-06-03-21.19.31-ZS-retouched-6 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2023-06-06-09.58.40-ZS-retouched-01.jpeg": [
+     4855,
+     3355
+    ],
+    "[Group 1]-2023-06-04-20.58.27-ZS-DMap_2023-06-04-21.00.28-ZS-DMap-2 images-01-01.jpeg": [
+     4129,
+     3912
+    ],
+    "[Group 2]-2023-06-03-21.12.18-ZS-DMap_2023-06-03-21.19.31-ZS-retouched-6 images-01.jpeg": [
+     4841,
+     4733
+    ]
+   }
   },
   {
    "name": "NWA 14056 (diogenite) - 1g",
@@ -226,7 +412,13 @@
    "description": "NWA 14056 (diogenite) - 1g\nA gift from Sean.",
    "images": [
     "[Group 1]-2022-04-14-12.50.26-ZS-DMap_2022-04-14-12.56.18-ZS-DMap-10 images-01.jpg"
-   ]
+   ],
+   "dims": {
+    "[Group 1]-2022-04-14-12.50.26-ZS-DMap_2022-04-14-12.56.18-ZS-DMap-10 images-01.jpg": [
+     5383,
+     4643
+    ]
+   }
   },
   {
    "name": "Unclassified NWA (diogenite)",
@@ -240,7 +432,17 @@
    "images": [
     "[Group 0]-2022-10-27-14.09.39-ZS-DMap_2022-10-27-14.16.44-ZS-DMap-9 images-02.jpeg",
     "[Group 0]-IMG_9937_IMG_9960-24 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2022-10-27-14.09.39-ZS-DMap_2022-10-27-14.16.44-ZS-DMap-9 images-02.jpeg": [
+     5909,
+     4230
+    ],
+    "[Group 0]-IMG_9937_IMG_9960-24 images-01.jpeg": [
+     5557,
+     4498
+    ]
+   }
   },
   {
    "name": "Tatahouine (diogenite) - 0.7g",
@@ -254,7 +456,17 @@
    "images": [
     "2021-05-12-17.15.43-ZS-retouched-01.jpeg",
     "2021-05-13-15.10.30-ZS-retouched-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2021-05-12-17.15.43-ZS-retouched-01.jpeg": [
+     5109,
+     3453
+    ],
+    "2021-05-13-15.10.30-ZS-retouched-01.jpeg": [
+     4890,
+     3114
+    ]
+   }
   },
   {
    "name": "NWA 14683 (diogenite-olivine) - 1.6g",
@@ -269,7 +481,21 @@
     "[Group 0]-2023-01-01-09.50.58-ZS-retouched_2023-01-01-10.01.19-ZS-retouched-3 images-01.jpeg",
     "[Group 0]-2023-01-02-17.14.16-ZS-retouched_2023-01-02-17.27.12-ZS-retouched-3 images-01.jpeg",
     "[Group 1]-2023-01-02-15.53.11-ZS-DMap_2023-01-02-16.00.24-ZS-DMap-11 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2023-01-01-09.50.58-ZS-retouched_2023-01-01-10.01.19-ZS-retouched-3 images-01.jpeg": [
+     6346,
+     3938
+    ],
+    "[Group 0]-2023-01-02-17.14.16-ZS-retouched_2023-01-02-17.27.12-ZS-retouched-3 images-01.jpeg": [
+     6113,
+     4089
+    ],
+    "[Group 1]-2023-01-02-15.53.11-ZS-DMap_2023-01-02-16.00.24-ZS-DMap-11 images-01.jpeg": [
+     5349,
+     4672
+    ]
+   }
   },
   {
    "name": "NWA 12342 (eucrite melt breccia) - slice and end cut",
@@ -283,7 +509,17 @@
    "images": [
     "[Group 0]-2023-01-12-10.06.25-ZS-DMap_2023-01-12-10.10.50-ZS-DMap-6 images-01.jpeg",
     "[Group 0]-2023-01-12-10.11.29-ZS-DMap_2023-01-12-10.14.24-ZS-DMap-5 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2023-01-12-10.06.25-ZS-DMap_2023-01-12-10.10.50-ZS-DMap-6 images-01.jpeg": [
+     5232,
+     4778
+    ],
+    "[Group 0]-2023-01-12-10.11.29-ZS-DMap_2023-01-12-10.14.24-ZS-DMap-5 images-01.jpeg": [
+     7126,
+     3507
+    ]
+   }
   },
   {
    "name": "NWA 11576 (eucrite melt breccia) - 1.8g",
@@ -301,7 +537,33 @@
     "IMG_7513-01.jpeg",
     "IMG_7516-01.jpeg",
     "IMG_7529-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2021-04-12-12.25.35 ZS DMap-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2021-04-12-12.39.04 ZS retouched-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2021-09-30-20.00.25-ZS-retouched-01.jpeg": [
+     5184,
+     3456
+    ],
+    "IMG_7513-01.jpeg": [
+     3249,
+     2496
+    ],
+    "IMG_7516-01.jpeg": [
+     3319,
+     2598
+    ],
+    "IMG_7529-01.jpeg": [
+     3727,
+     2951
+    ]
+   }
   },
   {
    "name": "NWA 14131 (eucrite)",
@@ -315,7 +577,17 @@
    "images": [
     "2022-08-28-10.23.19-ZS-DMap-01.jpeg",
     "[Group 3]-2022-08-28-10.24.19-ZS-DMap_2022-08-28-10.45.37-ZS-DMap-10 images-02.jpeg"
-   ]
+   ],
+   "dims": {
+    "2022-08-28-10.23.19-ZS-DMap-01.jpeg": [
+     4853,
+     3325
+    ],
+    "[Group 3]-2022-08-28-10.24.19-ZS-DMap_2022-08-28-10.45.37-ZS-DMap-10 images-02.jpeg": [
+     6506,
+     3841
+    ]
+   }
   },
   {
    "name": "Tirhert (eucrite) - crusted micro",
@@ -328,7 +600,13 @@
    "description": "Tirhert (eucrite) - crusted micro\nA gift from Sean Mahoney!",
    "images": [
     "tirhert.jpg"
-   ]
+   ],
+   "dims": {
+    "tirhert.jpg": [
+     3598,
+     5041
+    ]
+   }
   },
   {
    "name": "NWA 16592  (eucrite melt breccia) - a few micros",
@@ -342,7 +620,17 @@
    "images": [
     "[Group 1]-2024-05-07-18.14.58-ZS-DMap_2024-05-07-18.16.58-ZS-retouched-3 images-01.jpeg",
     "[Group 2]-2024-05-07-18.11.41-ZS-DMap_2024-05-07-18.13.52-ZS-DMap-2 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "[Group 1]-2024-05-07-18.14.58-ZS-DMap_2024-05-07-18.16.58-ZS-retouched-3 images-01.jpeg": [
+     4833,
+     4183
+    ],
+    "[Group 2]-2024-05-07-18.11.41-ZS-DMap_2024-05-07-18.13.52-ZS-DMap-2 images-01.jpeg": [
+     5164,
+     4841
+    ]
+   }
   },
   {
    "name": "NWA 10364 (Eucrite - unbrecciated) - 0.83g",
@@ -365,7 +653,53 @@
     "2019-05-23-16.30.34 ZS DMap-01.jpeg",
     "2019-05-23-16.34.31 ZS DMap-01.jpeg",
     "Screenshot_2019-05-09-21-02-53-567_com.ebay.mobile-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2019-05-22-15.48.47 ZS DMap-01-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-05-22-15.51.30 ZS DMap-01-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-05-23-16.07.37 ZS retouched-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-05-23-16.12.27 ZS retouched-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-05-23-16.17.38 ZS retouched-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-05-23-16.22.49 ZS retouched-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-05-23-16.28.38 ZS retouched-02.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-05-23-16.30.34 ZS DMap-01-01.jpeg": [
+     3388,
+     2194
+    ],
+    "2019-05-23-16.30.34 ZS DMap-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-05-23-16.34.31 ZS DMap-01.jpeg": [
+     4898,
+     3265
+    ],
+    "Screenshot_2019-05-09-21-02-53-567_com.ebay.mobile-01.jpeg": [
+     1080,
+     720
+    ]
+   }
   },
   {
    "name": "NWA 13493 (Eucrite) - 1.57g",
@@ -378,7 +712,13 @@
    "description": "NWA 13493 (Eucrite) - 1.57g\nDoleritic texture.",
    "images": [
     "NWA13148-G-01 (1).jpg"
-   ]
+   ],
+   "dims": {
+    "NWA13148-G-01 (1).jpg": [
+     6637,
+     3766
+    ]
+   }
   },
   {
    "name": "NWA 14289 (eucrite) - 3 micros",
@@ -391,7 +731,13 @@
    "description": "NWA 14289 (eucrite) - 3 micros\nFrom a huge donation of Jesper Grønne!",
    "images": [
     "[Group 0]-2024-04-28-13.40.02-ZS-DMap_2024-04-28-13.42.14-ZS-DMap-3 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2024-04-28-13.40.02-ZS-DMap_2024-04-28-13.42.14-ZS-DMap-3 images-01.jpeg": [
+     6048,
+     3956
+    ]
+   }
   },
   {
    "name": "NWA xxx (eucrite)",
@@ -405,7 +751,17 @@
    "images": [
     "2022-07-11-18.53.23-ZS-DMap-01.jpeg",
     "[Group 0]-2022-07-11-18.55.28-ZS-DMap_IMG_5664-8 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2022-07-11-18.53.23-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "[Group 0]-2022-07-11-18.55.28-ZS-DMap_IMG_5664-8 images-01.jpeg": [
+     4739,
+     5274
+    ]
+   }
   },
   {
    "name": "Gourara 003 (eucrite mmict)",
@@ -425,7 +781,41 @@
     "[Group 0]-2022-01-15-08.30.38-ZS-DMap_2022-01-15-11.52.51-ZS-DMap-7 images-01.jpeg",
     "[Group 0]-2022-01-15-15.56.51-ZS-retouched_2022-01-15-16.07.02-ZS-retouched-3 images-01.jpeg",
     "[Group 1]-2022-01-07-17.47.03-ZS-DMap_2022-01-07-17.53.20-ZS-retouched-2 images-02.jpeg"
-   ]
+   ],
+   "dims": {
+    "2022-01-07-17.45.06-ZS-DMap-01.jpeg": [
+     4970,
+     3298
+    ],
+    "2022-01-07-17.56.29-ZS-retouched-02.jpeg": [
+     5002,
+     3453
+    ],
+    "2022-01-15-16.10.45-ZS-retouched-1-01.jpeg": [
+     4867,
+     3290
+    ],
+    "2022-01-15-16.18.01-ZS-retouched-1-01.jpeg": [
+     4827,
+     3194
+    ],
+    "[Group 0]-2022-01-07-18.00.47-ZS-retouched_2022-01-07-18.20.38-ZS-retouched-6 images-01.jpeg": [
+     5338,
+     4683
+    ],
+    "[Group 0]-2022-01-15-08.30.38-ZS-DMap_2022-01-15-11.52.51-ZS-DMap-7 images-01.jpeg": [
+     6554,
+     3813
+    ],
+    "[Group 0]-2022-01-15-15.56.51-ZS-retouched_2022-01-15-16.07.02-ZS-retouched-3 images-01.jpeg": [
+     5717,
+     4372
+    ],
+    "[Group 1]-2022-01-07-17.47.03-ZS-DMap_2022-01-07-17.53.20-ZS-retouched-2 images-02.jpeg": [
+     6483,
+     3466
+    ]
+   }
   },
   {
    "name": "NWA 13763 (Eucrite - mmict) - 3.95g in 3 slices",
@@ -438,7 +828,13 @@
    "description": "NWA 13763 (Eucrite - mmict) - 3.95g in 3 slices\nA gift from Douglas Chenin.",
    "images": [
     "[Group 1]-IMG_8457_IMG_8461-5 images-01.jpg"
-   ]
+   ],
+   "dims": {
+    "[Group 1]-IMG_8457_IMG_8461-5 images-01.jpg": [
+     3227,
+     4940
+    ]
+   }
   },
   {
    "name": "NWA 13149 (eucrite) - 0.55g",
@@ -452,7 +848,17 @@
    "images": [
     "2021-04-20-17.11.57-ZS-DMap-01.jpeg",
     "2021-04-20-17.19.46-ZS-retouched-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2021-04-20-17.11.57-ZS-DMap-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2021-04-20-17.19.46-ZS-retouched-01.jpeg": [
+     4898,
+     3265
+    ]
+   }
   },
   {
    "name": "NWA 13148 (eucrite) - 1.35g",
@@ -466,7 +872,17 @@
    "images": [
     "[Group 0]-IMG_7986_IMG_8043-57 images-01.jpeg",
     "[Group 0]-IMG_8048_IMG_8102-55 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-IMG_7986_IMG_8043-57 images-01.jpeg": [
+     6154,
+     4062
+    ],
+    "[Group 0]-IMG_8048_IMG_8102-55 images-01.jpeg": [
+     5921,
+     4222
+    ]
+   }
   },
   {
    "name": "Jikharra 001 (eucrite melt breccia)",
@@ -480,7 +896,17 @@
    "images": [
     "[Group 0]-2023-06-11-16.15.56-ZS-DMap_2023-06-11-16.23.29-ZS-DMap-12 images-01.jpeg",
     "[Group 6]-2023-06-11-14.08.26-ZS-DMap_2023-06-11-14.10.48-ZS-DMap-4 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2023-06-11-16.15.56-ZS-DMap_2023-06-11-16.23.29-ZS-DMap-12 images-01.jpeg": [
+     6630,
+     3769
+    ],
+    "[Group 6]-2023-06-11-14.08.26-ZS-DMap_2023-06-11-14.10.48-ZS-DMap-4 images-01.jpeg": [
+     5518,
+     3914
+    ]
+   }
   },
   {
    "name": "Dhofar 007 (Eucrite-Cumulate) - 1.09g",
@@ -503,7 +929,53 @@
     "2019-05-12-11.53.45 ZS DMap-01-01.jpeg",
     "[Group 0]-2021-08-25-13.47.20-ZS-DMap_2021-08-25-14.03.28-ZS-DMap-21 images-01.jpeg",
     "[Group 1]-IMG_8556_IMG_8563-8 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2019-05-10-13.06.54 ZS retouched-01-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-05-11-16.12.21 ZS retouched-01-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-05-11-16.22.31 ZS retouched-01-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-05-11-16.29.01 ZS DMap-01-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-05-11-18.33.56 ZS retouched-01-01-01.jpeg": [
+     4249,
+     2839
+    ],
+    "2019-05-11-18.38.38 ZS DMap-01-01-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-05-11-18.42.24 ZS retouched-01-01-01.jpeg": [
+     4067,
+     2716
+    ],
+    "2019-05-12-11.51.33 ZS retouched-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-05-12-11.53.45 ZS DMap-01-01.jpeg": [
+     4898,
+     3265
+    ],
+    "[Group 0]-2021-08-25-13.47.20-ZS-DMap_2021-08-25-14.03.28-ZS-DMap-21 images-01.jpeg": [
+     5913,
+     4226
+    ],
+    "[Group 1]-IMG_8556_IMG_8563-8 images-01.jpeg": [
+     6108,
+     4091
+    ]
+   }
   },
   {
    "name": "Another fragment from Timur Kryachko.",
@@ -519,7 +991,21 @@
     "2021-06-22-18.26.12-ZS-DMap-pano-8PN-01.jpeg",
     "2021-06-22-18.40.01-ZS-DMap-02.jpeg",
     "2021-06-22-18.41.45-ZS-DMap-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2021-06-22-18.26.12-ZS-DMap-pano-8PN-01.jpeg": [
+     4066,
+     6148
+    ],
+    "2021-06-22-18.40.01-ZS-DMap-02.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-06-22-18.41.45-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ]
+   }
   },
   {
    "name": "NWA 11753 (eucrite polymict)",
@@ -532,7 +1018,13 @@
    "description": "NWA 11753 (eucrite polymict)\nFine-grained polymict breccia consisting of mm-sized basalt clasts (subophitic and granulitic textures) and mineral fragments set in a fine-grained clastic matrix made of related debris. Most pyroxenes exhibit augite exsolution lamellae. Fragments of diogenitic low-Ca pyroxene are admixed (<10 vol%). Accessories are silica polymorph, ilmenite, chromite, troilite, and Cr-Al-spinel.\nA gift from Chalom Malka!",
    "images": [
     "[Group 0]-2022-09-24-18.08.51-ZS-DMap_2022-09-24-18.13.04-ZS-DMap-6 images-01.jpg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2022-09-24-18.08.51-ZS-DMap_2022-09-24-18.13.04-ZS-DMap-6 images-01.jpg": [
+     5598,
+     4465
+    ]
+   }
   },
   {
    "name": "NWA XXX (Eucrite) - 0.56g",
@@ -548,7 +1040,25 @@
     "2021-05-23-14.28.20-ZS-DMap-01.jpeg",
     "2021-05-23-14.34.27-ZS-DMap-02.jpeg",
     "2021-05-23-14.47.38-ZS-retouched-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2021-05-23-14.23.57-ZS-DMap-01.jpeg": [
+     4644,
+     3090
+    ],
+    "2021-05-23-14.28.20-ZS-DMap-01.jpeg": [
+     4569,
+     3052
+    ],
+    "2021-05-23-14.34.27-ZS-DMap-02.jpeg": [
+     4575,
+     3047
+    ],
+    "2021-05-23-14.47.38-ZS-retouched-01.jpeg": [
+     4356,
+     2903
+    ]
+   }
   },
   {
    "name": "Qiquanhu (eucrite) - multiple micros",
@@ -561,7 +1071,13 @@
    "description": "Qiquanhu (eucrite) - multiple micros\nObserved fall in China, Jan 15 2021.\nThe meteorite consists of 62% pyroxene, 35% plagioclase, 2% silica, and less than 1% minor minerals (ilmenite, chromite, and apatite). This rock is fractured, and grain size up to 1 mm.\nKindly provided by Sang-Hyeok Lee.",
    "images": [
     "2023-04-20-08.06.43-ZS-retouched-01.jpg"
-   ]
+   ],
+   "dims": {
+    "2023-04-20-08.06.43-ZS-retouched-01.jpg": [
+     4398,
+     3026
+    ]
+   }
   },
   {
    "name": "NWA 14016 (eucrite melt breccia) - 2.17g",
@@ -574,7 +1090,13 @@
    "description": "NWA 14016 (eucrite melt breccia) - 2.17g",
    "images": [
     "[Group 1]-IMG_9599_IMG_9617-19 images-01.jpg"
-   ]
+   ],
+   "dims": {
+    "[Group 1]-IMG_9599_IMG_9617-19 images-01.jpg": [
+     5528,
+     4521
+    ]
+   }
   },
   {
    "name": "NWA 16237 (howardite) - micro",
@@ -587,7 +1109,13 @@
    "description": "NWA 16237 (howardite) - micro\nFrom a huge donation of Jesper Grønne!",
    "images": [
     "2024-04-04-18.54.56-ZS-DMap-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2024-04-04-18.54.56-ZS-DMap-01.jpeg": [
+     5252,
+     3705
+    ]
+   }
   },
   {
    "name": "NWA 11490 (S-low, W-low) - 0.67g",
@@ -608,7 +1136,45 @@
     "pano_share-03.jpeg",
     "pano_share-04-01.jpeg",
     "pano_share-04.jpeg"
-   ]
+   ],
+   "dims": {
+    "2019-09-27-15.28.26 ZS DMap-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-09-27-15.30.08 ZS DMap-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2021-06-21-22.01.41-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-06-21-22.08.08-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-06-22-16.26.50-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-06-22-16.32.29-ZS-retouched-01.jpeg": [
+     5184,
+     3456
+    ],
+    "pano_share-03.jpeg": [
+     3518,
+     4547
+    ],
+    "pano_share-04-01.jpeg": [
+     3578,
+     2526
+    ],
+    "pano_share-04.jpeg": [
+     3457,
+     4628
+    ]
+   }
   },
   {
    "name": "NWA 12905 (howardite) - 90mg",
@@ -622,7 +1188,17 @@
    "images": [
     "2021-06-21-21.59.37-ZS-DMap-01.jpeg",
     "[Group 0]-2023-06-08-10.54.12-ZS-DMap_2023-06-08-10.57.40-ZS-DMap-6 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2021-06-21-21.59.37-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "[Group 0]-2023-06-08-10.54.12-ZS-DMap_2023-06-08-10.57.40-ZS-DMap-6 images-01.jpeg": [
+     5502,
+     4242
+    ]
+   }
   },
   {
    "name": "NWA xxx (HED) - 1g",
@@ -637,7 +1213,21 @@
     "[Group 0]-IMG_0144_IMG_0173-30 images-01.jpeg",
     "[Group 0]-IMG_0178_IMG_0212-35 images-01.jpeg",
     "[Group 1]-2023-06-06-09.52.28-ZS-DMap_2023-06-06-09.54.56-ZS-DMap-4 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-IMG_0144_IMG_0173-30 images-01.jpeg": [
+     6479,
+     4248
+    ],
+    "[Group 0]-IMG_0178_IMG_0212-35 images-01.jpeg": [
+     5845,
+     4084
+    ],
+    "[Group 1]-2023-06-06-09.52.28-ZS-DMap_2023-06-06-09.54.56-ZS-DMap-4 images-01.jpeg": [
+     5615,
+     3669
+    ]
+   }
   },
   {
    "name": "NWA xxx (ungrouped, dunite breccia - in classification) - 0.40g, 10.5mm",
@@ -650,7 +1240,17 @@
    "images": [
     "2023-02-05-11.34.42-ZS-retouched-01.jpeg",
     "[Group 0]-2023-01-23-11.11.58-ZS-DMap_2023-01-23-11.17.19-ZS-DMap-7 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2023-02-05-11.34.42-ZS-retouched-01.jpeg": [
+     4795,
+     3273
+    ],
+    "[Group 0]-2023-01-23-11.11.58-ZS-DMap_2023-01-23-11.17.19-ZS-DMap-7 images-01.jpeg": [
+     6190,
+     4038
+    ]
+   }
   },
   {
    "name": "Wan Zawatin 001 (achondrite-ung, anorthite-rich with diogenitic affinities) - 0.37g in multiple fragments",
@@ -669,7 +1269,41 @@
     "2023-07-14-17.33.08-ZS-DMap-01.jpeg",
     "2023-07-14-17.35.05-ZS-DMap-01.jpeg",
     "IMG_20230714_190321-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2023-07-14-16.48.00-ZS-retouched-01.jpeg": [
+     4164,
+     3184
+    ],
+    "2023-07-14-16.57.29-ZS-retouched-01.jpeg": [
+     4410,
+     3354
+    ],
+    "2023-07-14-17.02.30-ZS-DMap-01.jpeg": [
+     4570,
+     3029
+    ],
+    "2023-07-14-17.08.00-ZS-DMap-01.jpeg": [
+     3851,
+     2808
+    ],
+    "2023-07-14-17.30.57-ZS-DMap-01.jpeg": [
+     3854,
+     3031
+    ],
+    "2023-07-14-17.33.08-ZS-DMap-01.jpeg": [
+     4440,
+     3279
+    ],
+    "2023-07-14-17.35.05-ZS-DMap-01.jpeg": [
+     4292,
+     3199
+    ],
+    "IMG_20230714_190321-01.jpeg": [
+     2686,
+     2035
+    ]
+   }
   },
   {
    "name": "NWA 13272 (achondrite-un) - slice and a thin section",
@@ -687,7 +1321,37 @@
     "[Group 0]-IMG_9735_IMG_9763-29 images-01.jpeg",
     "[Group 0]-IMG_9773_IMG_9820-46 images-01.jpeg",
     "[Group 1]-IMG_9701_IMG_9732-31 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2023-05-29-16.56.05-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2023-05-29-16.57.44-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "[Group 0]-2023-05-29-16.59.11-ZS-DMap_2023-05-29-17.00.51-ZS-DMap-3 images-01.jpeg": [
+     5733,
+     3861
+    ],
+    "[Group 0]-2023-05-29-19.05.49-ZS-DMap_2023-05-29-19.08.22-ZS-DMap-4 images-02.jpeg": [
+     6687,
+     3543
+    ],
+    "[Group 0]-IMG_9735_IMG_9763-29 images-01.jpeg": [
+     6216,
+     4021
+    ],
+    "[Group 0]-IMG_9773_IMG_9820-46 images-01.jpeg": [
+     5341,
+     4499
+    ],
+    "[Group 1]-IMG_9701_IMG_9732-31 images-01.jpeg": [
+     6257,
+     3994
+    ]
+   }
   },
   {
    "name": "Erg Chech 002",
@@ -707,7 +1371,45 @@
     "MAP20210421_121748-01.jpeg",
     "[Group 0]-2023-02-15-09.58.39-ZS-DMap_2023-02-15-10.17.53-ZS-DMap-10 images-01.jpeg",
     "[Group 0]-2023-02-15-10.51.10-ZS-retouched_2023-02-15-11.13.19-ZS-retouched-3 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2021-04-10-12.11.11 ZS retouched-01-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2021-04-10-12.17.35 ZS retouched-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2021-04-15-12.49.58 ZS retouched-01.jpeg": [
+     4232,
+     3328
+    ],
+    "2021-06-15-19.49.11-ZS-retouched-01.jpeg": [
+     4917,
+     2673
+    ],
+    "2021-06-15-19.51.20-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "IMG_20210410_145249-02.jpeg": [
+     3558,
+     2872
+    ],
+    "MAP20210421_121748-01.jpeg": [
+     5352,
+     2989
+    ],
+    "[Group 0]-2023-02-15-09.58.39-ZS-DMap_2023-02-15-10.17.53-ZS-DMap-10 images-01.jpeg": [
+     6085,
+     4108
+    ],
+    "[Group 0]-2023-02-15-10.51.10-ZS-retouched_2023-02-15-11.13.19-ZS-retouched-3 images-01.jpeg": [
+     6149,
+     4064
+    ]
+   }
   },
   {
    "name": "NWA 011 - paired (ungrouped achondrite)",
@@ -722,7 +1424,25 @@
     "2022-03-11-16.57.44-ZS-DMap-01.jpeg",
     "[Group 0]-2022-03-18-17.50.09-ZS-retouched_2022-03-18-18.03.50-ZS-retouched-3 images-01.jpeg",
     "[Group 2]-2022-03-11-17.00.07-ZS-DMap_2022-03-11-17.07.13-ZS-DMap-10 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2022-03-10-17.08.50-ZS-retouched2-01.jpeg": [
+     5184,
+     3370
+    ],
+    "2022-03-11-16.57.44-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "[Group 0]-2022-03-18-17.50.09-ZS-retouched_2022-03-18-18.03.50-ZS-retouched-3 images-01.jpeg": [
+     9274,
+     2634
+    ],
+    "[Group 2]-2022-03-11-17.00.07-ZS-DMap_2022-03-11-17.07.13-ZS-DMap-10 images-01.jpeg": [
+     6125,
+     4081
+    ]
+   }
   },
   {
    "name": "NWA 13791 (achondrite-ung) - thin slice",
@@ -735,7 +1455,17 @@
    "images": [
     "2022-08-25-19.35.55-ZS-DMap-1-01.jpeg",
     "[Group 0]-2022-08-23-15.33.01-ZS-DMap_2022-08-24-15.13.52-ZS-DMap-4 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2022-08-25-19.35.55-ZS-DMap-1-01.jpeg": [
+     5077,
+     3352
+    ],
+    "[Group 0]-2022-08-23-15.33.01-ZS-DMap_2022-08-24-15.13.52-ZS-DMap-4 images-01.jpeg": [
+     6693,
+     3734
+    ]
+   }
   },
   {
    "name": "NWA 6704 (achondrite-un) - 0.28g",
@@ -748,7 +1478,17 @@
    "images": [
     "[Group 0]-2021-10-27-09.58.33-ZS-DMap_2021-10-27-10.05.46-ZS-DMap-6 images-01.jpeg",
     "[Group 0]-2021-11-02-13.54.49-ZS-retouched_2021-11-02-14.03.24-ZS-retouched-3 images-1-01-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2021-10-27-09.58.33-ZS-DMap_2021-10-27-10.05.46-ZS-DMap-6 images-01.jpeg": [
+     4240,
+     5894
+    ],
+    "[Group 0]-2021-11-02-13.54.49-ZS-retouched_2021-11-02-14.03.24-ZS-retouched-3 images-1-01-01.jpeg": [
+     4027,
+     6208
+    ]
+   }
   },
   {
    "name": "NWA 13921 (achondrite-ung) - 0.35g",
@@ -763,7 +1503,25 @@
     "NWA13921.jpg",
     "Pat-PB012-rt.jpg",
     "[Group 0]-2025-02-05-20.32.51-ZS-DMap_2025-02-05-20.36.39-ZS-DMap-4 images.jpg"
-   ]
+   ],
+   "dims": {
+    "NWA13921-back.jpg": [
+     11092,
+     8963
+    ],
+    "NWA13921.jpg": [
+     11256,
+     8792
+    ],
+    "Pat-PB012-rt.jpg": [
+     4515,
+     5537
+    ],
+    "[Group 0]-2025-02-05-20.32.51-ZS-DMap_2025-02-05-20.36.39-ZS-DMap-4 images.jpg": [
+     5809,
+     4303
+    ]
+   }
   },
   {
    "name": "NWA 15915 (achondrite-ung, Mg-rich clinopyroxenite) - multiple broken fragments",
@@ -777,7 +1535,21 @@
     "2024-05-25-19.21.25-ZS-DMap (1).jpg",
     "2024-05-30-13.13.15-ZS-retouched.jpg",
     "[Group 0]-2024-05-25-19.23.36-ZS-DMap_2024-05-25-19.28.16-ZS-DMap-3 images (1).jpg"
-   ]
+   ],
+   "dims": {
+    "2024-05-25-19.21.25-ZS-DMap (1).jpg": [
+     5039,
+     3355
+    ],
+    "2024-05-30-13.13.15-ZS-retouched.jpg": [
+     4394,
+     3285
+    ],
+    "[Group 0]-2024-05-25-19.23.36-ZS-DMap_2024-05-25-19.28.16-ZS-DMap-3 images (1).jpg": [
+     6270,
+     3987
+    ]
+   }
   },
   {
    "name": "NWA 13446 (anchodrite-un) - 0.87g",
@@ -793,7 +1565,29 @@
     "2021-09-11-18.21.48-ZS-DMap-01.jpeg",
     "[Group 0]-2021-09-11-11.48.53-ZS-DMap_2021-09-11-11.56.45-ZS-DMap-15 images-g-03.jpeg",
     "[Group 0]-2021-09-11-16.24.36-ZS-DMap_2021-09-11-16.34.13-ZS-DMap-15 images-G-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2021-09-11-18.18.48-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-09-11-18.20.15-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-09-11-18.21.48-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "[Group 0]-2021-09-11-11.48.53-ZS-DMap_2021-09-11-11.56.45-ZS-DMap-15 images-g-03.jpeg": [
+     4623,
+     5407
+    ],
+    "[Group 0]-2021-09-11-16.24.36-ZS-DMap_2021-09-11-16.34.13-ZS-DMap-15 images-G-01.jpeg": [
+     4593,
+     5441
+    ]
+   }
   },
   {
    "name": "Ksar Ghilane 022, before NEA 050 (ungrouped, Mg-rich clinopyroxenite)",
@@ -812,7 +1606,41 @@
     "[Group 0]-2024-05-25-13.07.42-ZS-DMap_2024-05-25-13.10.10-ZS-DMap-4 images.jpg",
     "[Group 0]-2024-05-26-16.44.58-ZS-DMap_2024-05-26-16.50.27-ZS-DMap-9 images.jpg",
     "[Group 0]-IMG_0757_IMG_0782-26 images.jpg"
-   ]
+   ],
+   "dims": {
+    "2024-05-25-13.05.51-ZS-DMap.jpg": [
+     4855,
+     3355
+    ],
+    "IMG_2120.JPG-clean-G.jpg": [
+     5184,
+     3456
+    ],
+    "IMG_2121.jpg": [
+     5184,
+     3456
+    ],
+    "IMG_2126.jpg": [
+     5184,
+     3456
+    ],
+    "IMG_2127.jpg": [
+     5184,
+     3456
+    ],
+    "[Group 0]-2024-05-25-13.07.42-ZS-DMap_2024-05-25-13.10.10-ZS-DMap-4 images.jpg": [
+     7080,
+     3530
+    ],
+    "[Group 0]-2024-05-26-16.44.58-ZS-DMap_2024-05-26-16.50.27-ZS-DMap-9 images.jpg": [
+     6065,
+     4261
+    ],
+    "[Group 0]-IMG_0757_IMG_0782-26 images.jpg": [
+     10951,
+     8512
+    ]
+   }
   },
   {
    "name": "Erg Atouila 001 (achondrite-un, albitite) - 66mg",
@@ -826,7 +1654,21 @@
     "2024-03-09-16.16.20-ZS-DMap-01.jpeg",
     "[Group 2]-2024-02-18-11.18.07-ZS-DMap_2024-02-18-11.40.14-ZS-DMap-21 images-01.jpeg",
     "[Group 2]-2024-02-18-11.18.07-ZS-DMap_2024-02-18-11.40.14-ZS-DMap-21 images2-01-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2024-03-09-16.16.20-ZS-DMap-01.jpeg": [
+     4855,
+     3355
+    ],
+    "[Group 2]-2024-02-18-11.18.07-ZS-DMap_2024-02-18-11.40.14-ZS-DMap-21 images-01.jpeg": [
+     7028,
+     3557
+    ],
+    "[Group 2]-2024-02-18-11.18.07-ZS-DMap_2024-02-18-11.40.14-ZS-DMap-21 images2-01-01.jpeg": [
+     6046,
+     4134
+    ]
+   }
   },
   {
    "name": "NWA 8159 (Martian augite basalt - 1-1)",
@@ -845,7 +1687,33 @@
     "[Group 0]-2021-09-17-10.34.59-ZS-retouched_2021-09-17-10.44.13-ZS-retouched-3 images-02.jpeg",
     "[Group 0]-2021-09-17-11.00.21-ZS-retouched_2021-09-17-11.22.52-ZS-retouched-4 images-02.jpeg",
     "[Group 1]-2021-09-16-16.43.33-ZS-retouched_2021-09-16-16.54.15-ZS-retouched-3 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2021-09-17-10.15.12-ZS-retouched-02.jpeg": [
+     3882,
+     2753
+    ],
+    "2021-09-17-10.22.04-ZS-retouched-01.jpeg": [
+     3875,
+     2887
+    ],
+    "[Group 0]-2021-09-16-16.58.42-ZS-retouched_2021-09-16-17.04.52-ZS-retouched-3 images-01.jpeg": [
+     3550,
+     5403
+    ],
+    "[Group 0]-2021-09-17-10.34.59-ZS-retouched_2021-09-17-10.44.13-ZS-retouched-3 images-02.jpeg": [
+     3542,
+     5570
+    ],
+    "[Group 0]-2021-09-17-11.00.21-ZS-retouched_2021-09-17-11.22.52-ZS-retouched-4 images-02.jpeg": [
+     4129,
+     6054
+    ],
+    "[Group 1]-2021-09-16-16.43.33-ZS-retouched_2021-09-16-16.54.15-ZS-retouched-3 images-01.jpeg": [
+     3756,
+     5835
+    ]
+   }
   },
   {
    "name": "Shergotty (Enriched Mafic Diabasic) - micro",
@@ -859,7 +1727,13 @@
    "description": "Shergotty (Enriched Mafic Diabasic) - micro\nA 5kg meteorite fell on August 25th, 1865, in Shergati, India. There has been talk that certain features within its interior are suggestive of being remnants of biofilm and their associated microbial communities.",
    "images": [
     "2022-10-15-15.37.34-ZS-retouched-01.jpg"
-   ]
+   ],
+   "dims": {
+    "2022-10-15-15.37.34-ZS-retouched-01.jpg": [
+     5184,
+     3456
+    ]
+   }
   },
   {
    "name": "NWA 14607 (evolved pyroxene-phyric shergottite basalt)",
@@ -876,7 +1750,25 @@
     "[Group 0]-2022-04-05-09.59.52-ZS-DMap_2022-04-05-10.04.19-ZS-DMap-6 images-01.jpeg",
     "[Group 0]-2023-02-22-16.13.37-ZS-DMap_2023-02-22-16.30.43-ZS-DMap-24 images-01.jpeg",
     "[Group 1]-2022-04-05-10.05.02-ZS-DMap_2022-04-05-10.37.26-ZS-DMap-1-6 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2023-02-22-16.16.01-ZS-DMap-02.jpeg": [
+     4936,
+     3351
+    ],
+    "[Group 0]-2022-04-05-09.59.52-ZS-DMap_2022-04-05-10.04.19-ZS-DMap-6 images-01.jpeg": [
+     5345,
+     4677
+    ],
+    "[Group 0]-2023-02-22-16.13.37-ZS-DMap_2023-02-22-16.30.43-ZS-DMap-24 images-01.jpeg": [
+     5302,
+     4715
+    ],
+    "[Group 1]-2022-04-05-10.05.02-ZS-DMap_2022-04-05-10.37.26-ZS-DMap-1-6 images-01.jpeg": [
+     5301,
+     4716
+    ]
+   }
   },
   {
    "name": "NWA xxx (probable Martian shergottite)",
@@ -893,7 +1785,25 @@
     "[Group 0]-2022-03-11-17.21.50-ZS-retouched_2022-03-11-17.26.08-ZS-DMap-4 images-01.jpeg",
     "[Group 1]-2022-03-10-17.09.49-ZS-DMap_2022-03-10-17.17.22-ZS-DMap-4 images-01.jpeg",
     "[Group 1]-2022-03-11-17.10.23-ZS-retouched_2022-03-11-17.19.09-ZS-retouched-4 images-02.jpeg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2022-03-10-17.19.11-ZS-DMap_2022-03-10-17.22.31-ZS-DMap-4 images-01.jpeg": [
+     6396,
+     3908
+    ],
+    "[Group 0]-2022-03-11-17.21.50-ZS-retouched_2022-03-11-17.26.08-ZS-DMap-4 images-01.jpeg": [
+     6250,
+     3999
+    ],
+    "[Group 1]-2022-03-10-17.09.49-ZS-DMap_2022-03-10-17.17.22-ZS-DMap-4 images-01.jpeg": [
+     6067,
+     4119
+    ],
+    "[Group 1]-2022-03-11-17.10.23-ZS-retouched_2022-03-11-17.19.09-ZS-retouched-4 images-02.jpeg": [
+     6102,
+     4097
+    ]
+   }
   },
   {
    "name": "NWA 13031 (shergottite - aphyric, pigeonite-rich with sparse macrocrysts) - 0.537g",
@@ -909,7 +1819,21 @@
     "2022-04-10-17.51.56-ZS-DMap-1-01.jpeg",
     "2022-04-10-17.57.20-ZS-retouched-1-01.jpeg",
     "[Group 0]-2022-04-05-10.14.08-ZS-DMap_2022-04-05-10.20.39-ZS-DMap-11 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2022-04-10-17.51.56-ZS-DMap-1-01.jpeg": [
+     5050,
+     3346
+    ],
+    "2022-04-10-17.57.20-ZS-retouched-1-01.jpeg": [
+     5184,
+     3456
+    ],
+    "[Group 0]-2022-04-05-10.14.08-ZS-DMap_2022-04-05-10.20.39-ZS-DMap-11 images-01.jpeg": [
+     6164,
+     4055
+    ]
+   }
   },
   {
    "name": "NWA 13190 (shergottite, doleritic) - 60mg",
@@ -926,7 +1850,25 @@
     "[Group 2]-2022-08-25-17.30.28-ZS-DMap_2022-08-25-17.35.39-ZS-DMap-5 images-01.jpeg",
     "[Group 4]-2022-08-25-17.36.30-ZS-DMap_2022-08-25-17.40.30-ZS-DMap-5 images-01.jpeg",
     "[Group 5]-2022-08-25-17.41.16-ZS-DMap_2022-08-25-17.44.37-ZS-DMap-5 images-02.jpeg"
-   ]
+   ],
+   "dims": {
+    "[Group 1]-2022-08-25-17.19.31-ZS-DMap_2022-08-25-17.29.31-ZS-DMap-6 images-01.jpeg": [
+     4726,
+     5288
+    ],
+    "[Group 2]-2022-08-25-17.30.28-ZS-DMap_2022-08-25-17.35.39-ZS-DMap-5 images-01.jpeg": [
+     4903,
+     5098
+    ],
+    "[Group 4]-2022-08-25-17.36.30-ZS-DMap_2022-08-25-17.40.30-ZS-DMap-5 images-01.jpeg": [
+     4409,
+     5669
+    ],
+    "[Group 5]-2022-08-25-17.41.16-ZS-DMap_2022-08-25-17.44.37-ZS-DMap-5 images-02.jpeg": [
+     4417,
+     5659
+    ]
+   }
   },
   {
    "name": "Zagami (Enriched Mafic Fine-Intergranular) - 0.14g",
@@ -942,7 +1884,21 @@
     "[Group 0]-2022-12-10-13.42.00-ZS-DMap_2022-12-10-13.42.57-ZS-DMap-2 images-01.jpeg",
     "[Group 0]-2023-02-24-11.14.06-ZS-DMap_2023-02-24-11.33.06-ZS-DMap-30 images-01.jpeg",
     "[Group 1]-2022-12-31-13.46.27-ZS-DMap_2022-12-31-13.49.41-ZS-DMap-4 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2022-12-10-13.42.00-ZS-DMap_2022-12-10-13.42.57-ZS-DMap-2 images-01.jpeg": [
+     6076,
+     2716
+    ],
+    "[Group 0]-2023-02-24-11.14.06-ZS-DMap_2023-02-24-11.33.06-ZS-DMap-30 images-01.jpeg": [
+     6839,
+     3655
+    ],
+    "[Group 1]-2022-12-31-13.46.27-ZS-DMap_2022-12-31-13.49.41-ZS-DMap-4 images-01.jpeg": [
+     7290,
+     3429
+    ]
+   }
   },
   {
    "name": "NWA 12241 (olivine-gabbroic - poikilitic shergottite) - 20mg",
@@ -958,7 +1914,21 @@
     "2023-04-06-15.42.48-ZS-retouched-01.jpeg",
     "2023-04-06-15.53.52-ZS-retouched-01.jpeg",
     "[Group 0]-2023-04-07-16.58.00-ZS-retouched_2023-04-07-17.43.57-ZS-retouched-6 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2023-04-06-15.42.48-ZS-retouched-01.jpeg": [
+     3245,
+     2593
+    ],
+    "2023-04-06-15.53.52-ZS-retouched-01.jpeg": [
+     3420,
+     3023
+    ],
+    "[Group 0]-2023-04-07-16.58.00-ZS-retouched_2023-04-07-17.43.57-ZS-retouched-6 images-01.jpeg": [
+     5429,
+     4604
+    ]
+   }
   },
   {
    "name": "NWA 14899 (shergottite, olivine-gabroic) - 0.101g",
@@ -974,7 +1944,21 @@
     "2024-06-01-16.34.02-ZS-DMap (1) (2).jpg",
     "2024-06-01-16.34.02-ZS-DMap.jpg",
     "image (2).jpg"
-   ]
+   ],
+   "dims": {
+    "2024-06-01-16.34.02-ZS-DMap (1) (2).jpg": [
+     3772,
+     3232
+    ],
+    "2024-06-01-16.34.02-ZS-DMap.jpg": [
+     4855,
+     3355
+    ],
+    "image (2).jpg": [
+     5555,
+     4499
+    ]
+   }
   },
   {
    "name": "NWA 6963 (shergottite, gabbroic) - 0.07g",
@@ -996,7 +1980,45 @@
     "IMG_4743-01.jpeg",
     "IMG_4744-01-01.jpeg",
     "IMG_4750-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2019-04-26-18.10.06 ZS retouched-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-04-27-14.56.31 ZS retouched-01.jpeg": [
+     3570,
+     2678
+    ],
+    "2021-04-16-16.10.17-ZS-retouched-01.jpeg": [
+     4334,
+     2890
+    ],
+    "2021-05-04-08.05.03-ZS-DMap-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2021-05-04-16.55.36-ZS-retouched-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2021-05-04-17.01.19-ZS-retouched-01.jpeg": [
+     4898,
+     3265
+    ],
+    "IMG_4743-01.jpeg": [
+     3543,
+     2657
+    ],
+    "IMG_4744-01-01.jpeg": [
+     3356,
+     2518
+    ],
+    "IMG_4750-01.jpeg": [
+     3495,
+     2855
+    ]
+   }
   },
   {
    "name": "NWA xxx (unclassified achondrite) - micro",
@@ -1015,7 +2037,33 @@
     "2024-02-29-10.36.50-ZS-DMap-01.jpeg",
     "[Group 0]-2024-03-02-12.09.14-ZS-retouched_2024-03-02-12.14.34-ZS-retouched-2 images-01.jpeg",
     "[Group 0]-2024-03-02-12.17.28-ZS-retouched_2024-03-02-12.34.29-ZS-retouched-6 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2024-02-29-10.30.51-ZS-retouched-01.jpeg": [
+     4250,
+     3268
+    ],
+    "2024-02-29-10.32.58-ZS-DMap-01.jpeg": [
+     4380,
+     3226
+    ],
+    "2024-02-29-10.34.53-ZS-DMap-01.jpeg": [
+     4401,
+     3268
+    ],
+    "2024-02-29-10.36.50-ZS-DMap-01.jpeg": [
+     4358,
+     3308
+    ],
+    "[Group 0]-2024-03-02-12.09.14-ZS-retouched_2024-03-02-12.14.34-ZS-retouched-2 images-01.jpeg": [
+     4258,
+     5098
+    ],
+    "[Group 0]-2024-03-02-12.17.28-ZS-retouched_2024-03-02-12.34.29-ZS-retouched-6 images-01.jpeg": [
+     4589,
+     4647
+    ]
+   }
   },
   {
    "name": "Plateau du Tademait 008 (paired, olivine-phyric shergottite) - 0.5g",
@@ -1030,7 +2078,17 @@
    "images": [
     "[Group 0]-2023-05-02-17.19.23-ZS-DMap_2023-05-02-17.23.49-ZS-DMap-2 images-01.jpeg",
     "[Group 0]-2023-05-02-17.26.28-ZS-DMap_2023-05-02-17.28.29-ZS-DMap-2 images-01-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2023-05-02-17.19.23-ZS-DMap_2023-05-02-17.23.49-ZS-DMap-2 images-01.jpeg": [
+     4282,
+     4307
+    ],
+    "[Group 0]-2023-05-02-17.26.28-ZS-DMap_2023-05-02-17.28.29-ZS-DMap-2 images-01-01.jpeg": [
+     4645,
+     4219
+    ]
+   }
   },
   {
    "name": "Amgala 001 (shergottite, olivine-phyric) - 0.81g",
@@ -1045,7 +2103,17 @@
    "images": [
     "[Group 0]-2025-01-12-18.26.27-ZS-DMap_2025-01-12-19.04.46-ZS-DMap-31 images.jpg",
     "[Group 0]-2025-01-13-18.00.18-ZS-DMap_2025-01-13-18.02.54-ZS-DMap-4 images.jpg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2025-01-12-18.26.27-ZS-DMap_2025-01-12-19.04.46-ZS-DMap-31 images.jpg": [
+     5705,
+     4231
+    ],
+    "[Group 0]-2025-01-13-18.00.18-ZS-DMap_2025-01-13-18.02.54-ZS-DMap-4 images.jpg": [
+     5774,
+     4329
+    ]
+   }
   },
   {
    "name": "Amgala 001 (olivine-phyric shergottite) - 4.6g",
@@ -1064,7 +2132,33 @@
     "[Group 0]-2024-03-04-10.39.50-ZS-DMap_2024-03-04-10.43.26-ZS-DMap-3 images-01.jpeg",
     "[Group 0]-2024-03-04-10.46.44-ZS-DMap_2024-03-04-11.01.21-ZS-DMap-5 images-01.jpeg",
     "javav38md_20240225_122054246-01-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2024-03-04-11.48.09-ZS-DMap-01.jpeg": [
+     4855,
+     3287
+    ],
+    "2024-03-04-11.50.04-ZS-DMap-01.jpeg": [
+     4855,
+     3287
+    ],
+    "[Group 0]-2024-02-24-17.31.57-ZS-DMap_2024-02-24-17.41.04-ZS-DMap-4 images-01-01.jpeg": [
+     5875,
+     3665
+    ],
+    "[Group 0]-2024-03-04-10.39.50-ZS-DMap_2024-03-04-10.43.26-ZS-DMap-3 images-01.jpeg": [
+     5567,
+     4678
+    ],
+    "[Group 0]-2024-03-04-10.46.44-ZS-DMap_2024-03-04-11.01.21-ZS-DMap-5 images-01.jpeg": [
+     5122,
+     4331
+    ],
+    "javav38md_20240225_122054246-01-01.jpeg": [
+     4080,
+     3060
+    ]
+   }
   },
   {
    "name": "Tissint (olivine-phyric shergottite) - micro",
@@ -1080,7 +2174,21 @@
     "2022-08-08-13.25.50-ZS-retouched-01.jpeg",
     "2022-08-08-13.31.31-ZS-DMap-01.jpeg",
     "2022-08-08-13.38.04-ZS-retouched-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2022-08-08-13.25.50-ZS-retouched-01.jpeg": [
+     3394,
+     2774
+    ],
+    "2022-08-08-13.31.31-ZS-DMap-01.jpeg": [
+     3426,
+     2967
+    ],
+    "2022-08-08-13.38.04-ZS-retouched-01.jpeg": [
+     3768,
+     2871
+    ]
+   }
   },
   {
    "name": "Smeïra 003 (shergottite, olivine-phyric) - 70mg (2pc)",
@@ -1096,7 +2204,21 @@
     "[Group 0]-2025-01-17-15.44.34-ZS-DMap_2025-01-17-15.46.24-ZS-DMap-2 images.jpg",
     "[Group 0]-2025-01-18-19.14.52-ZS-DMap_2025-01-18-19.16.07-ZS-DMap-2 images.jpg",
     "[Group 0]-2025-01-18-19.49.39-ZS-DMap_2025-01-18-19.53.14-ZS-DMap-2 images.jpg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2025-01-17-15.44.34-ZS-DMap_2025-01-17-15.46.24-ZS-DMap-2 images.jpg": [
+     4515,
+     4365
+    ],
+    "[Group 0]-2025-01-18-19.14.52-ZS-DMap_2025-01-18-19.16.07-ZS-DMap-2 images.jpg": [
+     4689,
+     3966
+    ],
+    "[Group 0]-2025-01-18-19.49.39-ZS-DMap_2025-01-18-19.53.14-ZS-DMap-2 images.jpg": [
+     4651,
+     4292
+    ]
+   }
   },
   {
    "name": "Plateau du Tademait 008 (olivine-phyric shergottite) - 0.5g slice",
@@ -1111,7 +2233,17 @@
    "images": [
     "[Group 0]-2023-05-06-14.29.16-ZS-DMap_2023-05-06-14.44.02-ZS-DMap-15 images-01.jpeg",
     "[Group 1]-2023-06-11-14.11.32-ZS-DMap_2023-06-11-14.18.18-ZS-DMap-12 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2023-05-06-14.29.16-ZS-DMap_2023-05-06-14.44.02-ZS-DMap-15 images-01.jpeg": [
+     5823,
+     4292
+    ],
+    "[Group 1]-2023-06-11-14.11.32-ZS-DMap_2023-06-11-14.18.18-ZS-DMap-12 images-01.jpeg": [
+     5694,
+     4803
+    ]
+   }
   },
   {
    "name": "NEA 053 (martian shergottite, olivine-bearing) - 0.44g",
@@ -1125,7 +2257,13 @@
    "description": "NEA 053 (martian shergottite, olivine-bearing) - 0.44g\nOlivine grains up to 2.5mm. Lathy maskelynite.\nPurchased from Mohamed Ali Loud.",
    "images": [
     "[Group 0]-2025-01-12-13.20.42-ZS-DMap_2025-01-12-13.59.51-ZS-DMap-29 images.jpg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2025-01-12-13.20.42-ZS-DMap_2025-01-12-13.59.51-ZS-DMap-29 images.jpg": [
+     3288,
+     8247
+    ]
+   }
   },
   {
    "name": "NWA 13366 (poikilitic shergottite)",
@@ -1140,7 +2278,17 @@
    "images": [
     "[Group 0]-2022-04-05-10.08.40-ZS-DMap_2022-04-05-10.10.49-ZS-DMap-3 images-01.jpeg",
     "[Group 0]-2022-04-05-10.11.43-ZS-DMap_2022-04-05-10.13.31-ZS-DMap-3 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2022-04-05-10.08.40-ZS-DMap_2022-04-05-10.10.49-ZS-DMap-3 images-01.jpeg": [
+     6887,
+     3630
+    ],
+    "[Group 0]-2022-04-05-10.11.43-ZS-DMap_2022-04-05-10.13.31-ZS-DMap-3 images-01.jpeg": [
+     6795,
+     3679
+    ]
+   }
   },
   {
    "name": "NWA 15876 (poikilitic shergottite) - 0.14g",
@@ -1157,7 +2305,25 @@
     "[Group 1]-2023-04-26-11.24.29-ZS-DMap_2023-04-26-11.31.04-ZS-DMap-5 images-01.jpeg",
     "[Group 1]-2023-04-27-17.51.40-ZS-DMap_2023-04-27-17.57.26-ZS-DMap-5 images-01.jpeg",
     "[Group 2]-2023-04-26-11.18.21-ZS-DMap_2023-04-26-11.23.45-ZS-DMap-5 images-02.jpeg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2023-04-27-18.05.16-ZS-DMap_2023-04-27-18.12.23-ZS-DMap-5 images-01.jpeg": [
+     7413,
+     3371
+    ],
+    "[Group 1]-2023-04-26-11.24.29-ZS-DMap_2023-04-26-11.31.04-ZS-DMap-5 images-01.jpeg": [
+     7527,
+     3321
+    ],
+    "[Group 1]-2023-04-27-17.51.40-ZS-DMap_2023-04-27-17.57.26-ZS-DMap-5 images-01.jpeg": [
+     7591,
+     3293
+    ],
+    "[Group 2]-2023-04-26-11.18.21-ZS-DMap_2023-04-26-11.23.45-ZS-DMap-5 images-02.jpeg": [
+     7611,
+     3283
+    ]
+   }
   },
   {
    "name": "Chassigny (chassignite type fall) - micro",
@@ -1170,7 +2336,13 @@
    "description": "Chassigny (chassignite type fall) - micro\nFell at Chassigny, Haute-Marne, France in 1815. There has been only one other chassignite recovered NWA 2737.\nChassigny is an olivine cumulate rock (dunite). It consists almost entirely of olivine with intercumulus pyroxene, feldspar, and oxides.",
    "images": [
     "2022-10-15-15.23.05-ZS-retouched-02.jpg"
-   ]
+   ],
+   "dims": {
+    "2022-10-15-15.23.05-ZS-retouched-02.jpg": [
+     5184,
+     3456
+    ]
+   }
   },
   {
    "name": "NWA 2737 (chassignite W-low) - micro",
@@ -1186,7 +2358,25 @@
     "2021-06-10-07.56.08-ZS-DMap-pano-3PL-01-01.jpeg",
     "2021-09-21-10.20.11-ZS-retouched-01.jpeg",
     "[Group 0]-2023-02-28-12.11.26-ZS-retouched_2023-02-28-12.20.48-ZS-retouched-4 images-01-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2021-06-10-07.46.27-ZS-DMap-pano-3PN-01-01.jpeg": [
+     4434,
+     5637
+    ],
+    "2021-06-10-07.56.08-ZS-DMap-pano-3PL-01-01.jpeg": [
+     4263,
+     5864
+    ],
+    "2021-09-21-10.20.11-ZS-retouched-01.jpeg": [
+     5184,
+     3456
+    ],
+    "[Group 0]-2023-02-28-12.11.26-ZS-retouched_2023-02-28-12.20.48-ZS-retouched-4 images-01-01.jpeg": [
+     5979,
+     4181
+    ]
+   }
   },
   {
    "name": "NWA 15200 (nakhlite) - 171mg",
@@ -1203,7 +2393,29 @@
     "[Group 0]-2022-12-31-18.50.10-ZS-retouched_2022-12-31-19.19.41-ZS-retouched-3 images-01.jpeg",
     "[Group 0]-2023-01-03-19.35.45-ZS-retouched_2023-01-03-19.57.36-ZS-retouched-3 images2-01.jpeg",
     "image-126.jpeg"
-   ]
+   ],
+   "dims": {
+    "2023-02-16-16.14.18-ZS-retouched-01.jpeg": [
+     4810,
+     3330
+    ],
+    "[Group 0]-2022-12-10-20.14.16-ZS-retouched_2022-12-10-20.36.13-ZS-retouched-3 images-01.jpeg": [
+     5691,
+     4392
+    ],
+    "[Group 0]-2022-12-31-18.50.10-ZS-retouched_2022-12-31-19.19.41-ZS-retouched-3 images-01.jpeg": [
+     5791,
+     4316
+    ],
+    "[Group 0]-2023-01-03-19.35.45-ZS-retouched_2023-01-03-19.57.36-ZS-retouched-3 images2-01.jpeg": [
+     5819,
+     4295
+    ],
+    "image-126.jpeg": [
+     4206,
+     3272
+    ]
+   }
   },
   {
    "name": "Nakhla (nakhlite type fall) - multiple micros",
@@ -1217,7 +2429,17 @@
    "images": [
     "2021-09-21-10.26.52-ZS-retouched-01.jpeg",
     "2022-10-09-09.06.02-ZS-retouched-1-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2021-09-21-10.26.52-ZS-retouched-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2022-10-09-09.06.02-ZS-retouched-1-01.jpeg": [
+     5184,
+     3456
+    ]
+   }
   },
   {
    "name": "NWA 15364 (nakhlite) - 0.228g",
@@ -1237,7 +2459,41 @@
     "[Group 0]-2023-06-04-07.36.16-ZS-retouched_2023-06-04-07.55.34-ZS-retouched-4 images-02.jpeg",
     "[Group 0]-2023-06-19-17.51.35-ZS-DMap_2023-06-19-18.01.36-ZS-DMap-15 images-01.jpeg",
     "image-191.jpeg"
-   ]
+   ],
+   "dims": {
+    "NWA15364-1.jpeg": [
+     1600,
+     1259
+    ],
+    "NWA15364-1b.jpeg": [
+     1600,
+     1600
+    ],
+    "NWA15364-2.jpeg": [
+     1600,
+     1323
+    ],
+    "NWA15364-3.jpeg": [
+     1415,
+     1600
+    ],
+    "[Group 0]-2023-06-03-21.30.05-ZS-retouched_2023-06-03-21.35.31-ZS-retouched-2 images-01.jpeg": [
+     4551,
+     5147
+    ],
+    "[Group 0]-2023-06-04-07.36.16-ZS-retouched_2023-06-04-07.55.34-ZS-retouched-4 images-02.jpeg": [
+     4218,
+     5112
+    ],
+    "[Group 0]-2023-06-19-17.51.35-ZS-DMap_2023-06-19-18.01.36-ZS-DMap-15 images-01.jpeg": [
+     5211,
+     4102
+    ],
+    "image-191.jpeg": [
+     5111,
+     4227
+    ]
+   }
   },
   {
    "name": "NWA 10645 (nakhlite) - 48mg",
@@ -1253,7 +2509,25 @@
     "2021-04-21-11.11.39-ZS-retouched-01-01.jpeg",
     "2021-04-21-11.16.36-ZS-DMap-01-01.jpeg",
     "2021-05-13-18.33.45-ZS-retouched-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2021-04-21-11.00.58-ZS-retouched-02-01.jpeg": [
+     4927,
+     3282
+    ],
+    "2021-04-21-11.11.39-ZS-retouched-01-01.jpeg": [
+     4430,
+     2954
+    ],
+    "2021-04-21-11.16.36-ZS-DMap-01-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2021-05-13-18.33.45-ZS-retouched-01.jpeg": [
+     5184,
+     3456
+    ]
+   }
   },
   {
    "name": "NWA 11220 (7034 paired) - Black Beauty",
@@ -1270,7 +2544,29 @@
     "2021-05-26-19.06.09-ZS-DMap-pano-5PL-01-01.jpeg",
     "2021-05-26-19.19.09-ZS-retouched-pano-4PN-01-01.jpeg",
     "IMG_20210526_223436-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2021-05-25-15.03.14-ZS-DMap-pano-4PN-01.jpeg": [
+     5973,
+     4185
+    ],
+    "2021-05-25-15.09.34-ZS-DMap-pano-4PN-01.jpeg": [
+     5788,
+     4142
+    ],
+    "2021-05-26-19.06.09-ZS-DMap-pano-5PL-01-01.jpeg": [
+     5858,
+     4266
+    ],
+    "2021-05-26-19.19.09-ZS-retouched-pano-4PN-01-01.jpeg": [
+     5816,
+     4298
+    ],
+    "IMG_20210526_223436-01.jpeg": [
+     2532,
+     1902
+    ]
+   }
   },
   {
    "name": "Swayyah 001 (Lunar mare gabbro) - micro",
@@ -1285,7 +2581,21 @@
     "2022-06-29-19.16.21-ZS-DMap-1-01.jpeg",
     "2022-07-01-08.34.16-ZS-retouched-1-01.jpeg",
     "2022-07-01-08.43.06-ZS-retouched-1-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2022-06-29-19.16.21-ZS-DMap-1-01.jpeg": [
+     5420,
+     3692
+    ],
+    "2022-07-01-08.34.16-ZS-retouched-1-01.jpeg": [
+     5091,
+     3453
+    ],
+    "2022-07-01-08.43.06-ZS-retouched-1-01.jpeg": [
+     5080,
+     3595
+    ]
+   }
   },
   {
    "name": "NWA 6950 (Lunar gabbro)",
@@ -1299,7 +2609,17 @@
    "images": [
     "[Group 0]-2022-08-08-16.49.09-ZS-DMap_2022-08-08-16.51.07-ZS-DMap-3 images-01.jpeg",
     "[Group 1]-2022-08-08-16.44.13-ZS-DMap_2022-08-08-16.48.18-ZS-DMap-3 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2022-08-08-16.49.09-ZS-DMap_2022-08-08-16.51.07-ZS-DMap-3 images-01.jpeg": [
+     6094,
+     4102
+    ],
+    "[Group 1]-2022-08-08-16.44.13-ZS-DMap_2022-08-08-16.48.18-ZS-DMap-3 images-01.jpeg": [
+     6156,
+     4061
+    ]
+   }
   },
   {
    "name": "NWA 16372 (Lunar troctolitic anorthosite) - 0.42g",
@@ -1314,7 +2634,21 @@
     "2024-06-11-18.47.53-ZS-retouched.jpg",
     "2024-06-11-18.51.58-ZS-retouched.jpg",
     "[Group 0]-IMG_2466_IMG_2471-6 images.jpg"
-   ]
+   ],
+   "dims": {
+    "2024-06-11-18.47.53-ZS-retouched.jpg": [
+     5057,
+     3355
+    ],
+    "2024-06-11-18.51.58-ZS-retouched.jpg": [
+     5057,
+     3355
+    ],
+    "[Group 0]-IMG_2466_IMG_2471-6 images.jpg": [
+     6005,
+     4503
+    ]
+   }
   },
   {
    "name": "NWA 8599 (Lunar Troctolitic breccia) - 20mg",
@@ -1328,7 +2662,17 @@
    "images": [
     "2021-07-27-14.53.27-ZS-retouched-01.jpeg",
     "2021-07-27-15.05.28-ZS-DMap-pano-7PL-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2021-07-27-14.53.27-ZS-retouched-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-07-27-15.05.28-ZS-DMap-pano-7PL-01.jpeg": [
+     7103,
+     3519
+    ]
+   }
   },
   {
    "name": "NWA 14729 (lunar polymict anorthositic troctolite melt breccia) - 90mg",
@@ -1341,7 +2685,13 @@
    "description": "NWA 14729 (lunar polymict anorthositic troctolite melt breccia) - 90mg\nMetbul: A polymict lunar melt breccia with an anorthositic troctolite host rock consisting of fine-grained olivine and lesser amounts of pyroxene poikilitically enclosed in plagioclase. The matrix consists of vesicular melt rock. and very fine-grained minerals and rock clasts. Trace amounts of chromite, ilmenite, troilite, and Fe-metal (low Ni) were detected. Composition in consistent with that of the Apollo Lunar Mg-suite.",
    "images": [
     "[Group 2]-2023-08-11-17.24.18-ZS-DMap_2023-08-11-17.26.23-ZS-DMap-3 images-01.jpg"
-   ]
+   ],
+   "dims": {
+    "[Group 2]-2023-08-11-17.24.18-ZS-DMap_2023-08-11-17.26.23-ZS-DMap-3 images-01.jpg": [
+     6051,
+     3833
+    ]
+   }
   },
   {
    "name": "NWA 12971 (lunar troctolite melt) - 0.1g",
@@ -1356,7 +2706,21 @@
     "2023-08-17-18.53.37-ZS-DMap-01.jpeg",
     "[Group 0]-2023-08-18-20.25.06-ZS-DMap_2023-08-18-20.29.25-ZS-DMap-4 images-01.jpeg",
     "[Group 1]-2023-08-18-20.23.13-ZS-DMap_2023-08-18-20.24.07-ZS-DMap-2 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2023-08-17-18.53.37-ZS-DMap-01.jpeg": [
+     5007,
+     3355
+    ],
+    "[Group 0]-2023-08-18-20.25.06-ZS-DMap_2023-08-18-20.29.25-ZS-DMap-4 images-01.jpeg": [
+     5213,
+     4266
+    ],
+    "[Group 1]-2023-08-18-20.23.13-ZS-DMap_2023-08-18-20.24.07-ZS-DMap-2 images-01.jpeg": [
+     5307,
+     4567
+    ]
+   }
   },
   {
    "name": "Gadamis 003 (Lunar ferroan anorthosite) - 81mg",
@@ -1371,7 +2735,21 @@
     "[Group 0]-2022-04-04-19.11.25-ZS-DMap_2022-04-04-19.13.10-ZS-DMap-4 images-01.jpeg",
     "[Group 0]-2022-04-11-16.51.15-ZS-DMap_2022-04-11-16.52.07-ZS-DMap-2 images-02.jpeg",
     "image-147.jpeg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2022-04-04-19.11.25-ZS-DMap_2022-04-04-19.13.10-ZS-DMap-4 images-01.jpeg": [
+     5350,
+     4672
+    ],
+    "[Group 0]-2022-04-11-16.51.15-ZS-DMap_2022-04-11-16.52.07-ZS-DMap-2 images-02.jpeg": [
+     5346,
+     4676
+    ],
+    "image-147.jpeg": [
+     5350,
+     4672
+    ]
+   }
   },
   {
    "name": "Adrar 013 (Lunar melt breccia - anorthositic norite-gabbro) - 0.366g",
@@ -1387,7 +2765,25 @@
     "2024-06-01-16.32.50-ZS-DMap (1).jpg",
     "[Group 0]-2024-05-30-16.10.25-ZS-DMap_2024-05-30-16.17.28-ZS-DMap-12 images.jpg",
     "[Group 0]-2024-05-30-17.30.52-ZS-DMap_2024-05-30-17.32.38-ZS-DMap-3 images.jpg"
-   ]
+   ],
+   "dims": {
+    "2024-06-01-16.31.56-ZS-retouched.jpg": [
+     4855,
+     3355
+    ],
+    "2024-06-01-16.32.50-ZS-DMap (1).jpg": [
+     4855,
+     3355
+    ],
+    "[Group 0]-2024-05-30-16.10.25-ZS-DMap_2024-05-30-16.17.28-ZS-DMap-12 images.jpg": [
+     6085,
+     4108
+    ],
+    "[Group 0]-2024-05-30-17.30.52-ZS-DMap_2024-05-30-17.32.38-ZS-DMap-3 images.jpg": [
+     6111,
+     4090
+    ]
+   }
   },
   {
    "name": "NWA 16535 (Lunar melt breccia - anorthositic norite-gabbro) - 0.578g",
@@ -1402,7 +2798,21 @@
     "[Group 0]-2024-05-01-10.12.07-ZS-DMap_2024-05-01-10.24.04-ZS-retouched-14 images-G.jpg",
     "[Group 0]-2024-05-01-11.00.04-ZS-retouched_2024-05-01-11.08.00-ZS-retouched-3 images.jpg",
     "lunar-NWA16535.jpg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2024-05-01-10.12.07-ZS-DMap_2024-05-01-10.24.04-ZS-retouched-14 images-G.jpg": [
+     10088,
+     8729
+    ],
+    "[Group 0]-2024-05-01-11.00.04-ZS-retouched_2024-05-01-11.08.00-ZS-retouched-3 images.jpg": [
+     7876,
+     5093
+    ],
+    "lunar-NWA16535.jpg": [
+     9572,
+     10226
+    ]
+   }
   },
   {
    "name": "NWA 13788 (Lunar melt breccia) - 42mg",
@@ -1415,7 +2825,13 @@
    "description": "NWA 13788 (Lunar melt breccia) - 42mg\nAn impact melt breccia composed of angular to sub-rounded mineral and lithic clasts (<4 mm) set in a predominantly vitreous matrix composed of brown, flow-banded, vesicular, partly devitrified glass and fine-grained crystalline impact melt. Lithic clasts consist primarily of anorthitic plagioclase (some partially coverted to maskelynite) with smaller quantities of olivine, pigeonite, low-Ca pyroxene, sub-calcic augite, and Si-Na-Ca-Mg-rich glass; a variety of lithic clasts were observed to display poikilitic, granulitic, dendritic, porphyritic, or subophitic textures in thin section. Accessory phases present include kamacite, troilite, chromite (some containing Ti), and ilmenite.\nA gift from Matt Stream.",
    "images": [
     "[Group 1]-2023-01-07-17.35.20-ZS-DMap_2023-01-07-17.43.17-ZS-DMap-13 images-02.jpg"
-   ]
+   ],
+   "dims": {
+    "[Group 1]-2023-01-07-17.35.20-ZS-DMap_2023-01-07-17.43.17-ZS-DMap-13 images-02.jpg": [
+     4846,
+     5157
+    ]
+   }
   },
   {
    "name": "Gadamis 003 (Lunar ferroan anorthosite) - 81mg",
@@ -1429,7 +2845,17 @@
    "images": [
     "NWA14188-03.jpeg",
     "[Group 3]-2022-08-08-16.34.29-ZS-DMap_2022-08-08-16.38.51-ZS-DMap-3 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "NWA14188-03.jpeg": [
+     6915,
+     3615
+    ],
+    "[Group 3]-2022-08-08-16.34.29-ZS-DMap_2022-08-08-16.38.51-ZS-DMap-3 images-01.jpeg": [
+     6330,
+     3949
+    ]
+   }
   },
   {
    "name": "El Hareicha 001 (lunar basalt-gabbroic breccia) - 0.76g",
@@ -1443,7 +2869,17 @@
    "images": [
     "EH001-back2-01.jpeg",
     "[Group 0]-2022-10-11-12.24.30-ZS-DMap_2022-10-11-12.42.06-ZS-DMap-27 images2-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "EH001-back2-01.jpeg": [
+     6811,
+     3669
+    ],
+    "[Group 0]-2022-10-11-12.24.30-ZS-DMap_2022-10-11-12.42.06-ZS-DMap-27 images2-01.jpeg": [
+     7326,
+     3411
+    ]
+   }
   },
   {
    "name": "NWA 16349 (Lunar bas-gab breccia) - 0.09g",
@@ -1460,7 +2896,29 @@
     "[Group 0]-2024-05-30-19.09.45-ZS-retouched_2024-05-30-19.11.48-ZS-retouched-2 images.jpg",
     "[Group 0]-2024-06-11-18.38.27-ZS-DMap_2024-06-11-18.39.36-ZS-DMap-2 images.jpg",
     "[Group 1]-2024-05-30-19.04.48-ZS-DMap_2024-05-30-19.07.53-ZS-DMap-3 images.jpg"
-   ]
+   ],
+   "dims": {
+    "2024-05-30-19.00.42-ZS-retouched.jpg": [
+     5190,
+     3764
+    ],
+    "2024-05-30-19.03.00-ZS-DMap (1).jpg": [
+     5011,
+     3837
+    ],
+    "[Group 0]-2024-05-30-19.09.45-ZS-retouched_2024-05-30-19.11.48-ZS-retouched-2 images.jpg": [
+     4830,
+     3857
+    ],
+    "[Group 0]-2024-06-11-18.38.27-ZS-DMap_2024-06-11-18.39.36-ZS-DMap-2 images.jpg": [
+     4778,
+     4532
+    ],
+    "[Group 1]-2024-05-30-19.04.48-ZS-DMap_2024-05-30-19.07.53-ZS-DMap-3 images.jpg": [
+     6327,
+     3950
+    ]
+   }
   },
   {
    "name": "Bechar 006 (Lunar feldspathic breccia) - 1.61g",
@@ -1473,7 +2931,13 @@
    "description": "Bechar 006 (Lunar feldspathic breccia) - 1.61g\nFrom Sean Mahoney.",
    "images": [
     "[Group 0]-IMG_0496_IMG_0536-41 imagesG-01.jpg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-IMG_0496_IMG_0536-41 imagesG-01.jpg": [
+     5605,
+     4460
+    ]
+   }
   },
   {
    "name": "NWA 11303 (Lunar felds. breccia) - 3 micros",
@@ -1488,7 +2952,21 @@
     "2024-03-28-17.43.49-ZS-DMap-02.jpeg",
     "2024-03-28-17.45.19-ZS-DMap-02.jpeg",
     "20240328_173916-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2024-03-28-17.43.49-ZS-DMap-02.jpeg": [
+     4731,
+     3007
+    ],
+    "2024-03-28-17.45.19-ZS-DMap-02.jpeg": [
+     4855,
+     3257
+    ],
+    "20240328_173916-01.jpeg": [
+     2822,
+     3131
+    ]
+   }
   },
   {
    "name": "NWA 11273 (Lunar feldsp. breccia) - 0.34g",
@@ -1502,7 +2980,17 @@
    "images": [
     "[Group 0]-2022-03-27-14.22.21-ZS-DMap_2022-03-27-14.33.14-ZS-DMap-15 images-01.jpeg",
     "[Group 1]-2022-03-27-14.35.42-ZS-DMap_2022-03-27-14.45.15-ZS-DMap-15 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2022-03-27-14.22.21-ZS-DMap_2022-03-27-14.33.14-ZS-DMap-15 images-01.jpeg": [
+     6759,
+     3697
+    ],
+    "[Group 1]-2022-03-27-14.35.42-ZS-DMap_2022-03-27-14.45.15-ZS-DMap-15 images-01.jpeg": [
+     6724,
+     3718
+    ]
+   }
   },
   {
    "name": "NWA 5000 (lunar, fieldspathic breccia) - 0.446g",
@@ -1521,7 +3009,37 @@
     "2019-05-25-18.25.18 ZS retouched-01.jpeg",
     "2019-05-25-18.29.02 ZS retouched-01.jpeg",
     "nwa5000-01-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2019-04-17-15.44.52 ZS PMax-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-05-01-18.19.49 ZS PMax-01-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-05-01-18.28.33 ZS retouched-01.jpeg": [
+     4543,
+     3026
+    ],
+    "2019-05-01-18.35.53 ZS retouched-01-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-05-25-18.25.18 ZS retouched-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-05-25-18.29.02 ZS retouched-01.jpeg": [
+     4898,
+     3265
+    ],
+    "nwa5000-01-01.jpeg": [
+     4763,
+     5247
+    ]
+   }
   },
   {
    "name": "NWA 11788 (Lunar feldsp. breccia) - 0.36g",
@@ -1544,7 +3062,53 @@
     "2021-06-17-10.18.48-ZS-DMap-01.jpeg",
     "2021-06-17-10.21.23-ZS-DMap-01.jpeg",
     "[Group 0]-2023-03-04-20.37.26-ZS-DMap_2023-03-04-20.43.10-ZS-DMap-7 images-02.jpeg"
-   ]
+   ],
+   "dims": {
+    "2021-06-13-19.18.22-ZS-DMap-01.jpeg": [
+     3875,
+     2582
+    ],
+    "2021-06-13-19.20.52-ZS-DMap-01.jpeg": [
+     4115,
+     2742
+    ],
+    "2021-06-13-19.27.24-ZS-DMap-01.jpeg": [
+     4233,
+     2828
+    ],
+    "2021-06-14-16.20.38-ZS-DMap-01.jpeg": [
+     3837,
+     2555
+    ],
+    "2021-06-14-16.26.17-ZS-DMap-01.jpeg": [
+     3816,
+     2545
+    ],
+    "2021-06-14-18.10.12-ZS-DMap-pano-4PN-01-01.jpeg": [
+     5642,
+     4240
+    ],
+    "2021-06-17-10.14.24-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-06-17-10.16.05-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-06-17-10.18.48-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-06-17-10.21.23-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "[Group 0]-2023-03-04-20.37.26-ZS-DMap_2023-03-04-20.43.10-ZS-DMap-7 images-02.jpeg": [
+     6044,
+     4135
+    ]
+   }
   },
   {
    "name": "Bachar 006 (Lunar feldsp. breccia) - micro",
@@ -1559,7 +3123,21 @@
     "[Group 1]-2022-08-23-15.41.29-ZS-DMap_2022-08-23-15.44.48-ZS-DMap-5 images-01.jpeg",
     "[Group 2]-2022-08-23-15.37.57-ZS-DMap_2022-08-23-15.40.46-ZS-DMap-5 images-01.jpeg",
     "image-114.jpeg"
-   ]
+   ],
+   "dims": {
+    "[Group 1]-2022-08-23-15.41.29-ZS-DMap_2022-08-23-15.44.48-ZS-DMap-5 images-01.jpeg": [
+     5065,
+     4934
+    ],
+    "[Group 2]-2022-08-23-15.37.57-ZS-DMap_2022-08-23-15.40.46-ZS-DMap-5 images-01.jpeg": [
+     5057,
+     4943
+    ],
+    "image-114.jpeg": [
+     5065,
+     4934
+    ]
+   }
   },
   {
    "name": "NWA 11474 (lunar felds. breccia) - 5.6mm end cut",
@@ -1572,7 +3150,13 @@
    "description": "NWA 11474 (lunar felds. breccia) - 5.6mm end cut\nA gift from Chalom Malka.",
    "images": [
     "[Group 0]-2023-01-17-08.51.52-ZS-retouched_2023-01-17-08.53.48-ZS-retouched-2 images-01.jpg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2023-01-17-08.51.52-ZS-retouched_2023-01-17-08.53.48-ZS-retouched-2 images-01.jpg": [
+     5801,
+     4309
+    ]
+   }
   },
   {
    "name": "NWA 5000 (lunar feldsp. breccia) - 20mg",
@@ -1586,7 +3170,17 @@
    "images": [
     "2023-04-07-09.45.45-ZS-retouched-01.jpeg",
     "2023-04-07-09.54.29-ZS-retouched-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2023-04-07-09.45.45-ZS-retouched-01.jpeg": [
+     3113,
+     2341
+    ],
+    "2023-04-07-09.54.29-ZS-retouched-01.jpeg": [
+     3175,
+     2315
+    ]
+   }
   },
   {
    "name": "Tisserlitine 001 (feldspathic regolithic breccia, partially hydrothermally-altered) - 0.15g",
@@ -1602,7 +3196,25 @@
     "2021-05-02-16.11.03-ZS-retouched-01.jpeg",
     "[Group 0]-2023-02-22-10.38.08-ZS-DMap_2023-02-22-10.50.25-ZS-DMap-9 images-01.jpeg",
     "pano_share-13.jpeg"
-   ]
+   ],
+   "dims": {
+    "2021-05-02-16.04.44-ZS-retouched-01.jpeg": [
+     4032,
+     2691
+    ],
+    "2021-05-02-16.11.03-ZS-retouched-01.jpeg": [
+     4898,
+     3265
+    ],
+    "[Group 0]-2023-02-22-10.38.08-ZS-DMap_2023-02-22-10.50.25-ZS-DMap-9 images-01.jpeg": [
+     6759,
+     3697
+    ],
+    "pano_share-13.jpeg": [
+     3262,
+     4904
+    ]
+   }
   },
   {
    "name": "NWA 13408 (Lunar feldspathic breccia - Golden Lunar) - 0.1g of fragments",
@@ -1617,7 +3229,21 @@
     "2021-04-10-12.03.56 ZS retouched-01-01.jpeg",
     "2021-06-15-18.23.15-ZS-DMap-pano-7PL-01.jpeg",
     "IMG_20210410_145249-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2021-04-10-12.03.56 ZS retouched-01-01.jpeg": [
+     4722,
+     3453
+    ],
+    "2021-06-15-18.23.15-ZS-DMap-pano-7PL-01.jpeg": [
+     4959,
+     5040
+    ],
+    "IMG_20210410_145249-01.jpeg": [
+     3666,
+     2789
+    ]
+   }
   },
   {
    "name": "NWA 13951 (Lunar feldsp. breccia)",
@@ -1633,7 +3259,25 @@
     "[Group 0]-IMG_2325_IMG_2332-8 images-01.jpeg",
     "[Group 0]-IMG_2725_IMG_2742-18 images-01.jpeg",
     "[Group 0]-IMG_2743_IMG_2747-5 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-IMG_2300_IMG_2324-25 images-03.jpeg": [
+     5589,
+     4473
+    ],
+    "[Group 0]-IMG_2325_IMG_2332-8 images-01.jpeg": [
+     4971,
+     3420
+    ],
+    "[Group 0]-IMG_2725_IMG_2742-18 images-01.jpeg": [
+     5595,
+     4467
+    ],
+    "[Group 0]-IMG_2743_IMG_2747-5 images-01.jpeg": [
+     5652,
+     4422
+    ]
+   }
   },
   {
    "name": "NWA 16286 (Lunar mare basalt, olivine phyric) - 0.27g",
@@ -1647,7 +3291,17 @@
    "images": [
     "NWA16286-lunar mare basalt.jpg",
     "[Group 2]-2024-05-26-07.42.25-ZS-DMap_2024-05-26-07.46.16-ZS-DMap-5 images.jpg"
-   ]
+   ],
+   "dims": {
+    "NWA16286-lunar mare basalt.jpg": [
+     6785,
+     3683
+    ],
+    "[Group 2]-2024-05-26-07.42.25-ZS-DMap_2024-05-26-07.46.16-ZS-DMap-5 images.jpg": [
+     7350,
+     3401
+    ]
+   }
   },
   {
    "name": "NWA 14526 (Lunar mare basalt) - 4 fragments",
@@ -1662,7 +3316,21 @@
     "[Group 3]-2022-08-09-12.33.50-ZS-DMap_2022-08-09-12.41.21-ZS-retouched-3 images-01.jpeg",
     "[Group 4]-2022-08-09-12.44.46-ZS-retouched_2022-08-09-12.52.11-ZS-retouched-3 images-01.jpeg",
     "[Group 6]-2022-08-08-16.27.42-ZS-DMap_2022-08-08-16.29.15-ZS-DMap-2 images-02.jpeg"
-   ]
+   ],
+   "dims": {
+    "[Group 3]-2022-08-09-12.33.50-ZS-DMap_2022-08-09-12.41.21-ZS-retouched-3 images-01.jpeg": [
+     7675,
+     3256
+    ],
+    "[Group 4]-2022-08-09-12.44.46-ZS-retouched_2022-08-09-12.52.11-ZS-retouched-3 images-01.jpeg": [
+     7678,
+     3255
+    ],
+    "[Group 6]-2022-08-08-16.27.42-ZS-DMap_2022-08-08-16.29.15-ZS-DMap-2 images-02.jpeg": [
+     7616,
+     3281
+    ]
+   }
   },
   {
    "name": "NWA 15859 (Lunar feldspathic fragmental breccia) - 0.22g in 2 frag.",
@@ -1676,7 +3344,17 @@
    "images": [
     "[Group 0]-2025-01-14-18.06.00-ZS-DMap_2025-01-14-18.11.49-ZS-DMap-8 images.jpg",
     "[Group 0]-2025-01-14-18.12.26-ZS-DMap_2025-01-14-18.19.30-ZS-DMap-9 images.jpg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2025-01-14-18.06.00-ZS-DMap_2025-01-14-18.11.49-ZS-DMap-8 images.jpg": [
+     3938,
+     6346
+    ],
+    "[Group 0]-2025-01-14-18.12.26-ZS-DMap_2025-01-14-18.19.30-ZS-DMap-9 images.jpg": [
+     3989,
+     6264
+    ]
+   }
   },
   {
    "name": "NWA 15374 (Lunar frag. breccia)",
@@ -1691,7 +3369,21 @@
     "2023-01-02-21.58.11-ZS-retouched-01.jpeg",
     "[Group 0]-2022-12-31-13.50.49-ZS-DMap_2022-12-31-13.53.16-ZS-DMap-3 images-01.jpeg",
     "[Group 1]-2023-01-02-12.41.49-ZS-retouched_2023-01-02-12.50.51-ZS-retouched-3 images-02-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2023-01-02-21.58.11-ZS-retouched-01.jpeg": [
+     4714,
+     3373
+    ],
+    "[Group 0]-2022-12-31-13.50.49-ZS-DMap_2022-12-31-13.53.16-ZS-DMap-3 images-01.jpeg": [
+     6203,
+     4029
+    ],
+    "[Group 1]-2023-01-02-12.41.49-ZS-retouched_2023-01-02-12.50.51-ZS-retouched-3 images-02-01.jpeg": [
+     6250,
+     4000
+    ]
+   }
   },
   {
    "name": "NWA 14900 (Lunar fragmental breccia) -135mg",
@@ -1705,7 +3397,17 @@
    "images": [
     "[Group 0]-2022-09-09-15.55.20-ZS-DMap_2022-09-09-16.01.14-ZS-DMap-4 images-01.jpeg",
     "[Group 1]-2022-09-09-15.49.51-ZS-DMap_2022-09-09-15.54.31-ZS-DMap-4 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2022-09-09-15.55.20-ZS-DMap_2022-09-09-16.01.14-ZS-DMap-4 images-01.jpeg": [
+     7131,
+     3505
+    ],
+    "[Group 1]-2022-09-09-15.49.51-ZS-DMap_2022-09-09-15.54.31-ZS-DMap-4 images-01.jpeg": [
+     7006,
+     3568
+    ]
+   }
   },
   {
    "name": "NWA 14685 (Lunar frag. breccia) - 4.69g",
@@ -1719,7 +3421,17 @@
    "images": [
     "2025-01-11-16.25.59-ZS-DMap.jpg",
     "[Group 0]-IMG_3181_IMG_3212-32 images.jpg"
-   ]
+   ],
+   "dims": {
+    "2025-01-11-16.25.59-ZS-DMap.jpg": [
+     4855,
+     3355
+    ],
+    "[Group 0]-IMG_3181_IMG_3212-32 images.jpg": [
+     10004,
+     8432
+    ]
+   }
   },
   {
    "name": "NWA 13916 (Polymict fragmental lunar breccia) - 1.9g",
@@ -1741,7 +3453,49 @@
     "2021-05-16-11.25.30-ZS-DMap-01.jpeg",
     "2021-05-16-11.27.29-ZS-DMap-01.jpeg",
     "2021-05-16-11.29.31-ZS-DMap-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2021-04-26-19.18.18-ZS-DMap-01.jpeg": [
+     3525,
+     2351
+    ],
+    "2021-04-26-19.23.00-ZS-DMap-01.jpeg": [
+     3171,
+     2308
+    ],
+    "2021-04-26-19.27.43-ZS-DMap-01.jpeg": [
+     3084,
+     2395
+    ],
+    "2021-04-28-19.43.57-ZS-retouched-pano-3PN-01-03.jpeg": [
+     6501,
+     3845
+    ],
+    "2021-05-16-11.18.06-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-05-16-11.20.01-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-05-16-11.22.37-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-05-16-11.25.30-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-05-16-11.27.29-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-05-16-11.29.31-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ]
+   }
   },
   {
    "name": "Oued Namous 001 (angrite)",
@@ -1755,7 +3509,17 @@
    "images": [
     "[Group 0]-2023-09-02-20.11.13-ZS-DMap_2023-09-02-20.50.03-ZS-DMap-16 images2.jpg",
     "[Group 1]-2023-05-06-14.24.22-ZS-DMap_2023-05-06-14.28.16-ZS-DMap-5 images-01-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2023-09-02-20.11.13-ZS-DMap_2023-09-02-20.50.03-ZS-DMap-16 images2.jpg": [
+     9844,
+     9771
+    ],
+    "[Group 1]-2023-05-06-14.24.22-ZS-DMap_2023-05-06-14.28.16-ZS-DMap-5 images-01-01.jpeg": [
+     5198,
+     4808
+    ]
+   }
   },
   {
    "name": "NWA 16536 (angrite)",
@@ -1771,7 +3535,25 @@
     "[Group 1]-IMG_9446_IMG_9457-12 images-01.jpeg",
     "[Group 3]-IMG_9406_IMG_9416-11 images (1)-01.jpeg",
     "angrite-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-IMG_9465_IMG_9474-10 images-01.jpeg": [
+     5594,
+     4468
+    ],
+    "[Group 1]-IMG_9446_IMG_9457-12 images-01.jpeg": [
+     5340,
+     4360
+    ],
+    "[Group 3]-IMG_9406_IMG_9416-11 images (1)-01.jpeg": [
+     5096,
+     4376
+    ],
+    "angrite-01.jpeg": [
+     6964,
+     4259
+    ]
+   }
   },
   {
    "name": "Rafsa 007 (plutonic angrite) - 0.15g in two slices",
@@ -1787,7 +3569,25 @@
     "[Group 0]-2024-02-17-21.20.58-ZS-DMap_2024-02-17-21.25.07-ZS-DMap-5 images-01.jpeg",
     "[Group 1]-2024-02-18-11.15.31-ZS-DMap_2024-02-18-11.17.02-ZS-DMap-3 images-01.jpeg",
     "out2-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "IMG_20240218_124330-01.jpeg": [
+     3259,
+     2673
+    ],
+    "[Group 0]-2024-02-17-21.20.58-ZS-DMap_2024-02-17-21.25.07-ZS-DMap-5 images-01.jpeg": [
+     6620,
+     3369
+    ],
+    "[Group 1]-2024-02-18-11.15.31-ZS-DMap_2024-02-18-11.17.02-ZS-DMap-3 images-01.jpeg": [
+     9235,
+     3782
+    ],
+    "out2-01.jpeg": [
+     4504,
+     3182
+    ]
+   }
   },
   {
    "name": "Fezzou 002 (angrite, allotriomorphic-granular) - 0.24g",
@@ -1802,7 +3602,21 @@
     "2024-05-30-16.22.20-ZS-DMap.jpg",
     "2024-05-30-16.27.06-ZS-DMap.jpg",
     "[Group 0]-2024-05-25-12.07.57-ZS-DMap_2024-05-25-12.14.18-ZS-DMap-8 images (1).jpg"
-   ]
+   ],
+   "dims": {
+    "2024-05-30-16.22.20-ZS-DMap.jpg": [
+     5043,
+     3355
+    ],
+    "2024-05-30-16.27.06-ZS-DMap.jpg": [
+     4950,
+     3275
+    ],
+    "[Group 0]-2024-05-25-12.07.57-ZS-DMap_2024-05-25-12.14.18-ZS-DMap-8 images (1).jpg": [
+     5982,
+     4034
+    ]
+   }
   },
   {
    "name": "d'Orbigney (Angrite) - 81mg",
@@ -1819,7 +3633,29 @@
     "2021-09-14-16.47.53-ZS-retouched (1)-01.jpeg",
     "[Group 0]-2021-09-28-16.46.48-ZS-retouched_2021-09-28-17.01.36-ZS-DMap-7 images-02.jpeg",
     "[Group 2]-2021-09-13-14.31.10-ZS-retouched_2021-09-13-14.39.20-ZS-retouched-2 images-02.jpeg"
-   ]
+   ],
+   "dims": {
+    "2021-09-14-16.34.50-ZS-retouched (1)-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-09-14-16.36.10-ZS-DMap-G-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-09-14-16.47.53-ZS-retouched (1)-01.jpeg": [
+     4789,
+     3266
+    ],
+    "[Group 0]-2021-09-28-16.46.48-ZS-retouched_2021-09-28-17.01.36-ZS-DMap-7 images-02.jpeg": [
+     5887,
+     4246
+    ],
+    "[Group 2]-2021-09-13-14.31.10-ZS-retouched_2021-09-13-14.39.20-ZS-retouched-2 images-02.jpeg": [
+     3356,
+     4189
+    ]
+   }
   },
   {
    "name": "NWA xxx (prob. ureilite) - 0.687g",
@@ -1837,7 +3673,33 @@
     "[Group 0]-2023-08-25-17.45.03-ZS-DMap_2023-08-25-17.45.59-ZS-DMap-2 images-01.jpeg",
     "[Group 1]-2023-08-25-19.11.05-ZS-DMap_2023-08-25-19.17.44-ZS-DMap-6 images-01.jpeg",
     "ureilite-nr-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2023-08-15-19.44.41-ZS-DMap_2023-08-15-19.51.13-ZS-DMap-14 images-01.jpeg": [
+     5422,
+     4610
+    ],
+    "[Group 0]-2023-08-25-17.40.26-ZS-DMap_2023-08-25-17.42.26-ZS-DMap-3 images-01-01.jpeg": [
+     6418,
+     3623
+    ],
+    "[Group 0]-2023-08-25-17.43.15-ZS-DMap_2023-08-25-17.44.01-ZS-DMap-2 images-01.jpeg": [
+     5400,
+     4356
+    ],
+    "[Group 0]-2023-08-25-17.45.03-ZS-DMap_2023-08-25-17.45.59-ZS-DMap-2 images-01.jpeg": [
+     5278,
+     4622
+    ],
+    "[Group 1]-2023-08-25-19.11.05-ZS-DMap_2023-08-25-19.17.44-ZS-DMap-6 images-01.jpeg": [
+     4843,
+     4703
+    ],
+    "ureilite-nr-01.jpeg": [
+     5379,
+     4647
+    ]
+   }
   },
   {
    "name": "NWA 5771 (ureilite) - corner cut",
@@ -1851,7 +3713,17 @@
    "images": [
     "2024-03-09-17.17.00-ZS-DMap-01.jpeg",
     "u-02.jpeg"
-   ]
+   ],
+   "dims": {
+    "2024-03-09-17.17.00-ZS-DMap-01.jpeg": [
+     5113,
+     3355
+    ],
+    "u-02.jpeg": [
+     6555,
+     3748
+    ]
+   }
   },
   {
    "name": "NWA 13239 (ureilite S-low, W-low) - 0.207g",
@@ -1868,7 +3740,29 @@
     "2021-05-08-19.27.27-ZS-DMap-01.jpeg",
     "2021-05-08-19.29.13-ZS-DMap-01.jpeg",
     "2021-05-08-19.30.41-ZS-DMap-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2021-04-22-10.15.13-ZS-DMap-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2021-04-23-08.28.17-ZS-DMap-pano-4PL-01.jpeg": [
+     5272,
+     3035
+    ],
+    "2021-05-08-19.27.27-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-05-08-19.29.13-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-05-08-19.30.41-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ]
+   }
   },
   {
    "name": "NWA 13135 (ureilite, W-low, S-low) - 0.76g",
@@ -1885,7 +3779,29 @@
     "2021-08-04-09.17.45-ZS-DMap-01.jpeg",
     "IMG_6044-01.jpeg",
     "[Group 0]-2021-08-20-15.23.08-ZS-DMap_2021-08-20-15.32.54-ZS-DMap-7 images-03.jpeg"
-   ]
+   ],
+   "dims": {
+    "2021-07-27-10.27.10-ZS-retouched-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-08-04-09.14.22-ZS-retouched-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-08-04-09.17.45-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "IMG_6044-01.jpeg": [
+     3949,
+     2780
+    ],
+    "[Group 0]-2021-08-20-15.23.08-ZS-DMap_2021-08-20-15.32.54-ZS-DMap-7 images-03.jpeg": [
+     4359,
+     5735
+    ]
+   }
   },
   {
    "name": "Djoua 001 (aubrite) - 3.12g",
@@ -1900,7 +3816,21 @@
     "2022-01-06-13.09.59-ZS-DMap-02.jpeg",
     "2022-01-06-13.16.54-ZS-DMap-01.jpeg",
     "[Group 0]-2022-01-14-18.22.45-ZS-DMap_2022-01-14-18.37.17-ZS-DMap-17 images-01-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2022-01-06-13.09.59-ZS-DMap-02.jpeg": [
+     2204,
+     1875
+    ],
+    "2022-01-06-13.16.54-ZS-DMap-01.jpeg": [
+     2389,
+     2208
+    ],
+    "[Group 0]-2022-01-14-18.22.45-ZS-DMap_2022-01-14-18.37.17-ZS-DMap-17 images-01-01.jpeg": [
+     4906,
+     5095
+    ]
+   }
   },
   {
    "name": "Tiglit (aubrite) - two micros",
@@ -1916,7 +3846,25 @@
     "2022-04-08-17.09.50-ZS-retouched-01.jpeg",
     "2022-08-08-16.55.38-ZS-DMap-01.jpeg",
     "[Group 0]-2022-08-09-12.19.41-ZS-retouched_2022-08-09-12.22.14-ZS-DMap-2 images-02.jpeg"
-   ]
+   ],
+   "dims": {
+    "2022-04-08-16.58.25-ZS-retouched-01.jpeg": [
+     5048,
+     3298
+    ],
+    "2022-04-08-17.09.50-ZS-retouched-01.jpeg": [
+     5125,
+     3456
+    ],
+    "2022-08-08-16.55.38-ZS-DMap-01.jpeg": [
+     5001,
+     3334
+    ],
+    "[Group 0]-2022-08-09-12.19.41-ZS-retouched_2022-08-09-12.22.14-ZS-DMap-2 images-02.jpeg": [
+     5008,
+     3937
+    ]
+   }
   },
   {
    "name": "Ribbeck (asteriod 2024 BX1) - 3 micros",
@@ -1933,7 +3881,29 @@
     "2024-03-02-12.00.37-ZS-DMap-01.jpeg",
     "[Group 0]-2024-02-29-11.49.56-ZS-retouched_2024-02-29-11.57.36-ZS-retouched-2 images-01.jpeg",
     "[Group 0]-2024-02-29-12.01.37-ZS-retouched_2024-02-29-12.10.56-ZS-retouched-2 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2024-02-29-10.24.00-ZS-DMap (1)-01.jpeg": [
+     2219,
+     2121
+    ],
+    "2024-02-29-10.25.06-ZS-DMap-02.jpeg": [
+     2392,
+     2180
+    ],
+    "2024-03-02-12.00.37-ZS-DMap-01.jpeg": [
+     3456,
+     2571
+    ],
+    "[Group 0]-2024-02-29-11.49.56-ZS-retouched_2024-02-29-11.57.36-ZS-retouched-2 images-01.jpeg": [
+     5097,
+     4904
+    ],
+    "[Group 0]-2024-02-29-12.01.37-ZS-retouched_2024-02-29-12.10.56-ZS-retouched-2 images-01.jpeg": [
+     4766,
+     5245
+    ]
+   }
   },
   {
    "name": "SEBKHA EL MELAH 001 (aubrite) - 0.9g, 2.36cm",
@@ -1946,7 +3916,13 @@
    "description": "SEBKHA EL MELAH 001 (aubrite) - 0.9g, 2.36cm\nA single enstatite crystal from a new Mali aubrite find. Preliminary classification work indicates that this is the most enstatite rich aubrite yet discovered (98% enstatite)! Also has the lowest measured iron content.",
    "images": [
     "[Group 0]-2022-09-11-17.33.17-ZS-DMap_2022-09-11-17.50.12-ZS-DMap-3 images-01.jpg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2022-09-11-17.33.17-ZS-DMap_2022-09-11-17.50.12-ZS-DMap-3 images-01.jpg": [
+     9719,
+     2572
+    ]
+   }
   },
   {
    "name": "Norton County - 0.19g crusted + 0.12g of fragments",
@@ -1965,7 +3941,37 @@
     "2021-04-22-10.28.08-ZS-DMap-01.jpeg",
     "2021-04-22-10.40.52-ZS-retouched-01.jpeg",
     "2021-05-15-20.05.26-ZS-retouched-02.jpeg"
-   ]
+   ],
+   "dims": {
+    "2021-04-09-16.40.59 ZS retouched-01-01.jpeg": [
+     4899,
+     3266
+    ],
+    "2021-04-09-17.19.49 ZS retouched-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2021-04-21-11.39.05-ZS-DMap-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2021-04-22-10.21.58-ZS-DMap-01-01.jpeg": [
+     3348,
+     2898
+    ],
+    "2021-04-22-10.28.08-ZS-DMap-01.jpeg": [
+     3356,
+     2980
+    ],
+    "2021-04-22-10.40.52-ZS-retouched-01.jpeg": [
+     3243,
+     2626
+    ],
+    "2021-05-15-20.05.26-ZS-retouched-02.jpeg": [
+     4607,
+     3010
+    ]
+   }
   },
   {
    "name": "Norton County (aubrite) - micro from Maxime",
@@ -1979,7 +3985,17 @@
    "images": [
     "2024-02-24-17.46.19-ZS-retouched-01.jpeg",
     "[Group 0]-2024-02-22-18.14.42-ZS-retouched_2024-02-22-18.32.56-ZS-retouched-2 images (1)-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2024-02-24-17.46.19-ZS-retouched-01.jpeg": [
+     5038,
+     3456
+    ],
+    "[Group 0]-2024-02-22-18.14.42-ZS-retouched_2024-02-22-18.32.56-ZS-retouched-2 images (1)-01.jpeg": [
+     4223,
+     5222
+    ]
+   }
   },
   {
    "name": "Djoua 001 (aubrite) - few micros",
@@ -1994,7 +4010,21 @@
     "[Group 0]-2024-03-26-15.44.04-ZS-DMap_2024-03-26-15.45.34-ZS-DMap-3 images-01.jpeg",
     "[Group 0]-2024-03-26-15.47.05-ZS-DMap_2024-03-26-15.53.20-ZS-DMap-4 images-02.jpeg",
     "[Group 0]-2024-03-28-17.49.15-ZS-DMap_2024-03-28-17.51.59-ZS-DMap-3 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2024-03-26-15.44.04-ZS-DMap_2024-03-26-15.45.34-ZS-DMap-3 images-01.jpeg": [
+     7401,
+     3183
+    ],
+    "[Group 0]-2024-03-26-15.47.05-ZS-DMap_2024-03-26-15.53.20-ZS-DMap-4 images-02.jpeg": [
+     6514,
+     3249
+    ],
+    "[Group 0]-2024-03-28-17.49.15-ZS-DMap_2024-03-28-17.51.59-ZS-DMap-3 images-01.jpeg": [
+     7093,
+     3523
+    ]
+   }
   },
   {
    "name": "Rantila (aubrite, provisional) - 0.1g",
@@ -2010,7 +4040,25 @@
     "2023-01-16-18.28.39-ZS-retouched-01.jpeg",
     "2023-01-16-18.36.14-ZS-retouched-01.jpeg",
     "[Group 0]-2023-01-16-19.06.18-ZS-retouched_2023-01-16-19.25.33-ZS-retouched-2 images-02.jpeg"
-   ]
+   ],
+   "dims": {
+    "2023-01-16-18.24.47-ZS-retouched-01.jpeg": [
+     3474,
+     2732
+    ],
+    "2023-01-16-18.28.39-ZS-retouched-01.jpeg": [
+     3569,
+     2667
+    ],
+    "2023-01-16-18.36.14-ZS-retouched-01.jpeg": [
+     5163,
+     3841
+    ],
+    "[Group 0]-2023-01-16-19.06.18-ZS-retouched_2023-01-16-19.25.33-ZS-retouched-2 images-02.jpeg": [
+     5327,
+     4693
+    ]
+   }
   },
   {
    "name": "Mount Egerton (aubrite-an, 1-6)",
@@ -2023,7 +4071,13 @@
    "description": "Mount Egerton (aubrite-an, 1/6)",
    "images": [
     "[Group 0]-2022-05-09-15.28.07-ZS-DMap_2022-05-09-15.31.38-ZS-DMap-4 images-01.jpg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2022-05-09-15.28.07-ZS-DMap_2022-05-09-15.31.38-ZS-DMap-4 images-01.jpg": [
+     7798,
+     3205
+    ]
+   }
   },
   {
    "name": "Tiglit (aubrite) - 0.191g",
@@ -2041,7 +4095,33 @@
     "[Group 0]-2024-04-20-10.11.33-ZS-retouched_2024-04-20-11.31.57-ZS-DMap-3 images-01.jpeg",
     "[Group 0]-2024-04-20-11.35.35-ZS-DMap_2024-04-20-11.45.16-ZS-retouched-3 images-01.jpeg",
     "[Group 0]-2024-04-20-20.04.24-ZS-DMap_2024-04-20-20.14.20-ZS-DMap-4 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2024-04-20-20.21.24-ZS-DMap-01.jpeg": [
+     4855,
+     3355
+    ],
+    "2024-04-20-20.26.07-ZS-DMap-01.jpeg": [
+     4855,
+     3237
+    ],
+    "[Group 0]-2024-04-19-19.13.11-ZS-DMap_2024-04-19-19.27.43-ZS-DMap-6 images-03.jpeg": [
+     4920,
+     4836
+    ],
+    "[Group 0]-2024-04-20-10.11.33-ZS-retouched_2024-04-20-11.31.57-ZS-DMap-3 images-01.jpeg": [
+     6476,
+     3498
+    ],
+    "[Group 0]-2024-04-20-11.35.35-ZS-DMap_2024-04-20-11.45.16-ZS-retouched-3 images-01.jpeg": [
+     5995,
+     3757
+    ],
+    "[Group 0]-2024-04-20-20.04.24-ZS-DMap_2024-04-20-20.14.20-ZS-DMap-4 images-01.jpeg": [
+     5461,
+     4577
+    ]
+   }
   },
   {
    "name": "NWA 15372 (acapulcoite) - 0.9g",
@@ -2056,7 +4136,21 @@
     "[Group 0]-2023-06-06-09.59.41-ZS-DMap_2023-06-06-10.04.01-ZS-DMap-6 images-01.jpeg",
     "[Group 0]-IMG_0697_IMG_0705-9 images-01.jpeg",
     "[Group 2]-2023-06-15-09.26.04-ZS-DMap_2023-06-15-09.29.38-ZS-DMap-3 images-03.jpeg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2023-06-06-09.59.41-ZS-DMap_2023-06-06-10.04.01-ZS-DMap-6 images-01.jpeg": [
+     4998,
+     4231
+    ],
+    "[Group 0]-IMG_0697_IMG_0705-9 images-01.jpeg": [
+     5484,
+     4120
+    ],
+    "[Group 2]-2023-06-15-09.26.04-ZS-DMap_2023-06-15-09.29.38-ZS-DMap-3 images-03.jpeg": [
+     6297,
+     3798
+    ]
+   }
   },
   {
    "name": "NWA 8287 (acapulcoite) - 34mg",
@@ -2070,7 +4164,17 @@
    "images": [
     "2022-05-05-15.56.35-ZS-DMap-01.jpeg",
     "[Group 0]-2022-05-05-15.50.58-ZS-DMap_2022-05-05-15.53.37-ZS-DMap-3 images-02.jpeg"
-   ]
+   ],
+   "dims": {
+    "2022-05-05-15.56.35-ZS-DMap-01.jpeg": [
+     3757,
+     2659
+    ],
+    "[Group 0]-2022-05-05-15.50.58-ZS-DMap_2022-05-05-15.53.37-ZS-DMap-3 images-02.jpeg": [
+     6033,
+     4142
+    ]
+   }
   },
   {
    "name": "NWA 4969 (Brachinite) - 70mg, 8.5mm",
@@ -2084,7 +4188,17 @@
    "images": [
     "[Group 0]-2023-01-23-21.09.32-ZS-DMap_2023-01-23-21.11.59-ZS-DMap-3 images-01.jpeg",
     "[Group 0]-2023-02-27-18.38.02-ZS-DMap_2023-02-27-18.53.30-ZS-DMap-16 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2023-01-23-21.09.32-ZS-DMap_2023-01-23-21.11.59-ZS-DMap-3 images-01.jpeg": [
+     7702,
+     3245
+    ],
+    "[Group 0]-2023-02-27-18.38.02-ZS-DMap_2023-02-27-18.53.30-ZS-DMap-16 images-01.jpeg": [
+     8394,
+     2978
+    ]
+   }
   },
   {
    "name": "NWA 15303 (brachinite-like) - 0.12g",
@@ -2097,7 +4211,13 @@
    "description": "NWA 15303 (brachinite-like) - 0.12g\nMetbul: Predominantly olivine with subordinate orthopyroxene and augite plus accessory low-Ti chromite, altered kamacite, taenite and troilite\nA gift from Roberto Vargas (his classification)!",
    "images": [
     "[Group 0]-2023-06-21-10.15.55-ZS-retouched_2023-06-21-10.17.40-ZS-DMap-3 images-01.jpg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2023-06-21-10.15.55-ZS-retouched_2023-06-21-10.17.40-ZS-DMap-3 images-01.jpg": [
+     5760,
+     3858
+    ]
+   }
   },
   {
    "name": "NWA XXX (prob. brachinite) - 3.45g in 2 slices",
@@ -2118,7 +4238,45 @@
     "2021-10-25-17.56.31-ZS-DMap-01.jpeg",
     "2021-10-25-17.57.20-ZS-DMap-02.jpeg",
     "[Group 1]-IMG_8437_IMG_8445-8 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2021-10-25-17.51.13-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-10-25-17.51.57-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-10-25-17.52.48-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-10-25-17.53.53-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-10-25-17.54.39-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-10-25-17.55.26-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-10-25-17.56.31-ZS-DMap-01.jpeg": [
+     5124,
+     3416
+    ],
+    "2021-10-25-17.57.20-ZS-DMap-02.jpeg": [
+     5082,
+     3389
+    ],
+    "[Group 1]-IMG_8437_IMG_8445-8 images-01.jpeg": [
+     4429,
+     2813
+    ]
+   }
   },
   {
    "name": "NWA 5400 (achondrite-un, originally brachinite-like) - 0.7g",
@@ -2131,7 +4289,13 @@
    "description": "NWA 5400 (achondrite-un, originally brachinite-like) - 0.7g\nWith oxygen isotopes plotting on the TFL line (as Moon rocks and lunar meteorites), NWA 5400 primitive achondrite was at least formed on the same reservoir than Earth/Moon, and is proposed sometimes to be a fragment of Theia, the planetesimal impacted the proto-Earth on the early solar system, allowing the formation of the Moon... Recent papers strongly disfavor this hypothesis, but it's still a unique and interesting ungrouped achondrite.\nThe ancient crystallization age of this meteorite (~4.54 Ga) suggests that it formed just after chondrites did, along with the other achondritic meteorites.",
    "images": [
     "[Group 0]-2023-02-23-11.53.24-ZS-DMap_2023-02-23-12.15.59-ZS-DMap-15 images-01.jpg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2023-02-23-11.53.24-ZS-DMap_2023-02-23-12.15.59-ZS-DMap-15 images-01.jpg": [
+     5751,
+     4346
+    ]
+   }
   },
   {
    "name": "NWA 11756 (brachinite) - 1.57g",
@@ -2148,7 +4312,29 @@
     "[Group 0]-IMG_3207_IMG_3221-15 images-02.jpeg",
     "[Group 2]-2023-07-15-19.12.13-ZS-DMap_2023-07-15-19.14.50-ZS-DMap-2 images-01.jpeg",
     "[Group 3]-2023-07-15-19.15.46-ZS-DMap_2023-07-15-19.17.50-ZS-DMap-3 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "20230716_130016-COLLAGE-01.jpeg": [
+     2400,
+     3196
+    ],
+    "[Group 0]-IMG_3109_IMG_3122-14 images-01.jpeg": [
+     5513,
+     4533
+    ],
+    "[Group 0]-IMG_3207_IMG_3221-15 images-02.jpeg": [
+     5307,
+     4433
+    ],
+    "[Group 2]-2023-07-15-19.12.13-ZS-DMap_2023-07-15-19.14.50-ZS-DMap-2 images-01.jpeg": [
+     5172,
+     4162
+    ],
+    "[Group 3]-2023-07-15-19.15.46-ZS-DMap_2023-07-15-19.17.50-ZS-DMap-3 images-01.jpeg": [
+     6375,
+     3747
+    ]
+   }
   },
   {
    "name": "NWA 14635 (achondrite, brachinite-like) - fragments",
@@ -2163,7 +4349,21 @@
     "2022-09-24-14.47.27-ZS-DMap-01.jpeg",
     "2022-09-24-14.48.54-ZS-DMap-01.jpeg",
     "image-37.jpeg"
-   ]
+   ],
+   "dims": {
+    "2022-09-24-14.47.27-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2022-09-24-14.48.54-ZS-DMap-01.jpeg": [
+     5184,
+     3411
+    ],
+    "image-37.jpeg": [
+     4596,
+     3159
+    ]
+   }
   },
   {
    "name": "ERRACHIDIA 004, a couple of micros",
@@ -2177,7 +4377,17 @@
    "images": [
     "2021-05-29-16.39.20-ZS-retouched-pano-2PL-01.jpeg",
     "2021-05-29-16.53.22-ZS-DMap-pano-2PL-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2021-05-29-16.39.20-ZS-retouched-pano-2PL-01.jpeg": [
+     4127,
+     5618
+    ],
+    "2021-05-29-16.53.22-ZS-DMap-pano-2PL-01.jpeg": [
+     2880,
+     4350
+    ]
+   }
   },
   {
    "name": "NWA 15120 (winonaite) - thin section",
@@ -2190,7 +4400,13 @@
    "description": "NWA 15120 (winonaite) - thin section\nMade and donated by Michael Kelly!",
    "images": [
     "[Group 0]-IMG_9668_IMG_9697-30 images-01.jpg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-IMG_9668_IMG_9697-30 images-01.jpg": [
+     6106,
+     4094
+    ]
+   }
   },
   {
    "name": "NWA 725 (winonaite, proposed tissemouminite) - 1.46g",
@@ -2205,7 +4421,21 @@
     "2023-06-15-09.42.44-ZS-DMap-01.jpeg",
     "[Group 0]-IMG_9985_IMG_0010-25 images-01.jpeg",
     "[Group 1]-2023-06-15-09.31.27-ZS-DMap_2023-06-15-09.36.45-ZS-DMap-4 images-01-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2023-06-15-09.42.44-ZS-DMap-01.jpeg": [
+     3646,
+     3125
+    ],
+    "[Group 0]-IMG_9985_IMG_0010-25 images-01.jpeg": [
+     6701,
+     3730
+    ],
+    "[Group 1]-2023-06-15-09.31.27-ZS-DMap_2023-06-15-09.36.45-ZS-DMap-4 images-01-01.jpeg": [
+     6780,
+     3686
+    ]
+   }
   },
   {
    "name": "NWA 5890 (Winonaite) - 1g",
@@ -2219,7 +4449,17 @@
    "images": [
     "[Group 0]-2022-02-02-20.47.24-ZS-DMap-1_2022-02-02-21.09.05-ZS-DMap-8 images-01.jpeg",
     "[Group 1]-2022-07-11-16.52.16-ZS-DMap_2022-07-11-17.02.58-ZS-DMap-8 images-02.jpeg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2022-02-02-20.47.24-ZS-DMap-1_2022-02-02-21.09.05-ZS-DMap-8 images-01.jpeg": [
+     6261,
+     3992
+    ],
+    "[Group 1]-2022-07-11-16.52.16-ZS-DMap_2022-07-11-17.02.58-ZS-DMap-8 images-02.jpeg": [
+     6106,
+     4094
+    ]
+   }
   },
   {
    "name": "NWA 15061 (winonaite) - 0.49g",
@@ -2233,7 +4473,17 @@
    "images": [
     "[Group 0]-2023-02-21-15.50.53-ZS-DMap_2023-02-21-15.59.37-ZS-DMap-14 images-01.jpeg",
     "[Group 4]-IMG_7633_IMG_7657-1-25 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2023-02-21-15.50.53-ZS-DMap_2023-02-21-15.59.37-ZS-DMap-14 images-01.jpeg": [
+     5597,
+     4466
+    ],
+    "[Group 4]-IMG_7633_IMG_7657-1-25 images-01.jpeg": [
+     5769,
+     4332
+    ]
+   }
   },
   {
    "name": "NWA 8251 (lodranite) - 0.37g",
@@ -2254,7 +4504,45 @@
     "2022-04-02-14.38.49-ZS-retouched-01.jpeg",
     "[Group 0]-2022-03-29-19.17.47-ZS-DMap_2022-03-29-19.23.25-ZS-DMap-7 images-01-01.jpeg",
     "[Group 0]-2022-03-29-19.29.23-ZS-DMap_2022-03-29-19.35.17-ZS-DMap-7 images-01-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2022-03-30-10.11.14-ZS-retouched-1-02-01.jpeg": [
+     4142,
+     2978
+    ],
+    "2022-03-30-10.12.46-ZS-DMap-1-01-01.jpeg": [
+     4473,
+     3325
+    ],
+    "2022-04-02-14.15.13-ZS-retouched-01.jpeg": [
+     4987,
+     3325
+    ],
+    "2022-04-02-14.19.39-ZS-retouched-01.jpeg": [
+     4987,
+     3325
+    ],
+    "2022-04-02-14.24.22-ZS-retouched-01.jpeg": [
+     4987,
+     3325
+    ],
+    "2022-04-02-14.29.17-ZS-retouched-01.jpeg": [
+     4987,
+     3325
+    ],
+    "2022-04-02-14.38.49-ZS-retouched-01.jpeg": [
+     4987,
+     3325
+    ],
+    "[Group 0]-2022-03-29-19.17.47-ZS-DMap_2022-03-29-19.23.25-ZS-DMap-7 images-01-01.jpeg": [
+     5465,
+     4574
+    ],
+    "[Group 0]-2022-03-29-19.29.23-ZS-DMap_2022-03-29-19.35.17-ZS-DMap-7 images-01-01.jpeg": [
+     5463,
+     4576
+    ]
+   }
   },
   {
    "name": "NWA 13758 (R3) - thin section",
@@ -2271,7 +4559,33 @@
     "[Group 0]-IMG_1038_IMG_1081-38 images_N_0G-01.jpeg",
     "[Group 1]-2023-06-10-15.35.18-ZS-DMap_2023-06-10-15.36.53-ZS-DMap-3 images-01.jpeg",
     "[Group 2]-2023-06-10-15.32.08-ZS-DMap_2023-06-10-15.34.27-ZS-DMap-4 images_N_0-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2023-06-10-15.40.12-ZS-DMap-01.jpeg": [
+     4855,
+     3355
+    ],
+    "[Group 0]-2023-06-10-15.37.41-ZS-DMap_2023-06-10-15.39.19-ZS-DMap-3 images-01.jpeg": [
+     6074,
+     3974
+    ],
+    "[Group 0]-IMG_1038_IMG_1081-38 images_Blended layerG-01.jpeg": [
+     6088,
+     4106
+    ],
+    "[Group 0]-IMG_1038_IMG_1081-38 images_N_0G-01.jpeg": [
+     6088,
+     4106
+    ],
+    "[Group 1]-2023-06-10-15.35.18-ZS-DMap_2023-06-10-15.36.53-ZS-DMap-3 images-01.jpeg": [
+     5627,
+     3731
+    ],
+    "[Group 2]-2023-06-10-15.32.08-ZS-DMap_2023-06-10-15.34.27-ZS-DMap-4 images_N_0-01.jpeg": [
+     3031,
+     3459
+    ]
+   }
   },
   {
    "name": "NWA 13758 (R3) - 0.15g",
@@ -2283,7 +4597,13 @@
    "description": "NWA 13758 (R3) - 0.15g\nA gift from Sean.",
    "images": [
     "[Group 0]-2022-04-14-12.44.10-ZS-DMap_2022-04-14-12.48.46-ZS-DMap-6 images-02.jpg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2022-04-14-12.44.10-ZS-DMap_2022-04-14-12.48.46-ZS-DMap-6 images-02.jpg": [
+     7220,
+     3461
+    ]
+   }
   },
   {
    "name": "NWA 13758 (R3) - 8.01g",
@@ -2295,7 +4615,13 @@
    "description": "NWA 13758 (R3) - 8.01g",
    "images": [
     "[Group 0]-IMG_9624_IMG_9653-30 images-01.jpg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-IMG_9624_IMG_9653-30 images-01.jpg": [
+     5874,
+     4255
+    ]
+   }
   },
   {
    "name": "NWA 13727 (R3-5 S-low W-low)",
@@ -2307,7 +4633,13 @@
    "description": "NWA 13727 (R3-5 S-low W-low)\nFrom a huge donation of Jesper Grønne!",
    "images": [
     "[Group 0]-IMG_7636_IMG_7640-5 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-IMG_7636_IMG_7640-5 images-01.jpeg": [
+     5469,
+     3046
+    ]
+   }
   },
   {
    "name": "NWA 12858 (R3 S3 W2) - 1.49g",
@@ -2324,7 +4656,33 @@
     "2021-05-13-15.24.05-ZS-retouched-02.jpeg",
     "2021-05-13-15.25.50-ZS-DMap-01.jpeg",
     "2021-05-13-15.31.14-ZS-DMap-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2021-05-12-17.20.16-ZS-DMap-01-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-05-12-17.23.23-ZS-DMap-pano-2PN-01.jpeg": [
+     5985,
+     3006
+    ],
+    "2021-05-13-15.13.05-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-05-13-15.24.05-ZS-retouched-02.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-05-13-15.25.50-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-05-13-15.31.14-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ]
+   }
   },
   {
    "name": "NWA 11263 (R3 S3 W2) - 0.76",
@@ -2342,7 +4700,37 @@
     "2019-07-11-12.55.36 ZS DMap-01.jpeg",
     "2021-04-08-09.53.13 ZS retouched-01-01.jpeg",
     "2021-06-14-16.06.29-ZS-DMap-pano-7PN-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2019-06-13-15.26.03 ZS DMap-01.jpeg": [
+     4612,
+     3451
+    ],
+    "2019-06-13-15.33.31 ZS retouched-01.jpeg": [
+     4382,
+     3293
+    ],
+    "2019-06-13-17.06.18 ZS DMap-01.jpeg": [
+     4419,
+     3314
+    ],
+    "2019-06-13-17.11.19 ZS DMap-01.jpeg": [
+     4457,
+     3341
+    ],
+    "2019-07-11-12.55.36 ZS DMap-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2021-04-08-09.53.13 ZS retouched-01-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2021-06-14-16.06.29-ZS-DMap-pano-7PN-01.jpeg": [
+     5175,
+     4830
+    ]
+   }
   },
   {
    "name": "NWA 13518 (R4-5 C-S3 W-low)",
@@ -2356,7 +4744,21 @@
     "[Group 0]-2022-08-27-17.54.57-ZS-DMap_2022-08-27-18.02.50-ZS-DMap-9 images-01.jpeg",
     "[Group 0]-2022-08-27-18.04.25-ZS-DMap_2022-08-27-18.12.38-ZS-DMap-10 images-01.jpeg",
     "[Group 0]-2023-02-05-11.12.34-ZS-retouched_2023-02-05-11.28.53-ZS-DMap-11 images-02.jpeg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2022-08-27-17.54.57-ZS-DMap_2022-08-27-18.02.50-ZS-DMap-9 images-01.jpeg": [
+     6532,
+     3827
+    ],
+    "[Group 0]-2022-08-27-18.04.25-ZS-DMap_2022-08-27-18.12.38-ZS-DMap-10 images-01.jpeg": [
+     6798,
+     3677
+    ],
+    "[Group 0]-2023-02-05-11.12.34-ZS-retouched_2023-02-05-11.28.53-ZS-DMap-11 images-02.jpeg": [
+     6453,
+     3874
+    ]
+   }
   },
   {
    "name": "NWA 16230 (EL6) - multiple micros",
@@ -2379,7 +4781,53 @@
     "[Group 0]-2024-04-05-07.10.58-ZS-retouched_2024-04-05-07.13.05-ZS-retouched-2 images-01.jpeg",
     "[Group 0]-2024-04-05-16.04.52-ZS-DMap_2024-04-05-16.09.15-ZS-retouched-4 images-01.jpeg",
     "[Group 1]-2024-04-05-07.07.06-ZS-retouched_2024-04-05-07.09.02-ZS-retouched-2 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2024-04-04-22.02.23-ZS-DMap-01.jpeg": [
+     5268,
+     3767
+    ],
+    "2024-04-04-22.04.39-ZS-DMap-01.jpeg": [
+     5411,
+     3795
+    ],
+    "2024-04-05-07.15.34-ZS-DMap-02-01.jpeg": [
+     4873,
+     3255
+    ],
+    "2024-04-05-16.03.38-ZS-retouched-01.jpeg": [
+     4855,
+     3355
+    ],
+    "2024-04-05-16.11.52-ZS-DMap-01.jpeg": [
+     4855,
+     3355
+    ],
+    "2024-04-05-16.14.22-ZS-DMap-01.jpeg": [
+     4855,
+     3355
+    ],
+    "2024-04-06-14.43.20-ZS-retouched-01.jpeg": [
+     4839,
+     3355
+    ],
+    "2024-04-06-14.47.35-ZS-retouched-01.jpeg": [
+     4075,
+     2909
+    ],
+    "[Group 0]-2024-04-05-07.10.58-ZS-retouched_2024-04-05-07.13.05-ZS-retouched-2 images-01.jpeg": [
+     4879,
+     4598
+    ],
+    "[Group 0]-2024-04-05-16.04.52-ZS-DMap_2024-04-05-16.09.15-ZS-retouched-4 images-01.jpeg": [
+     5764,
+     4257
+    ],
+    "[Group 1]-2024-04-05-07.07.06-ZS-retouched_2024-04-05-07.09.02-ZS-retouched-2 images-01.jpeg": [
+     4643,
+     4740
+    ]
+   }
   },
   {
    "name": "NWA 4799 (EH-melt)",
@@ -2393,7 +4841,17 @@
    "images": [
     "[Group 1]-2022-08-09-12.26.36-ZS-DMap_2022-08-09-12.29.22-ZS-DMap-3 images-01.jpeg",
     "[Group 2]-2022-08-09-12.30.33-ZS-DMap_2022-08-09-12.32.51-ZS-DMap-3 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "[Group 1]-2022-08-09-12.26.36-ZS-DMap_2022-08-09-12.29.22-ZS-DMap-3 images-01.jpeg": [
+     6746,
+     3704
+    ],
+    "[Group 2]-2022-08-09-12.30.33-ZS-DMap_2022-08-09-12.32.51-ZS-DMap-3 images-01.jpeg": [
+     6806,
+     3673
+    ]
+   }
   },
   {
    "name": "NWA 4844 (EL-melt W-high)",
@@ -2408,7 +4866,21 @@
     "2021-04-06-15.31.53 ZS DMap-01-01.jpeg",
     "2021-04-13-12.02.39 ZS DMap-01.jpeg",
     "2021-04-13-12.04.07 ZS DMap-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2021-04-06-15.31.53 ZS DMap-01-01.jpeg": [
+     4115,
+     3290
+    ],
+    "2021-04-13-12.02.39 ZS DMap-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2021-04-13-12.04.07 ZS DMap-01.jpeg": [
+     4898,
+     3265
+    ]
+   }
   },
   {
    "name": "Al Haggounia 001 (EL-melt) - 0.44g",
@@ -2421,7 +4893,13 @@
    "description": "Al Haggounia 001 (EL-melt) - 0.44g\nThe outer surface is rusty brown due to severe alteration. Looks like a sedimentary breccia cemented by iron oxide and carbonate. Color changes from bluish gray to rusty brown closest to the fractures are observed. Yellow patches of sulfur (alteration) are widespread. The rocks are significantly porous with pore sizes from several cm to hundreds of microns. Dominated by enstatite and plagioclase. Troilite, graphite daubreelite, oldhamite, kamacite rich in Si and schreibersite are present.",
    "images": [
     "2021-04-20-16.54.05-ZS-DMap-01.jpg"
-   ]
+   ],
+   "dims": {
+    "2021-04-20-16.54.05-ZS-DMap-01.jpg": [
+     4898,
+     3265
+    ]
+   }
   },
   {
    "name": "Itqiy (EH-an) - 0.214g",
@@ -2438,7 +4916,29 @@
     "[Group 0]-2021-10-19-18.16.27-ZS-DMap_2021-10-19-18.17.30-ZS-DMap-2 images (1)-01.jpeg",
     "[Group 0]-2021-10-31-17.09.10-ZS-retouched_2021-10-31-17.17.13-ZS-retouched-2 images-01.jpeg",
     "[Group 0]-2023-07-25-18.44.24-ZS-DMap_2023-07-25-18.46.26-ZS-DMap-3 images-03.jpeg"
-   ]
+   ],
+   "dims": {
+    "2021-10-31-16.57.36-ZS-retouched-01-01.jpeg": [
+     4721,
+     3147
+    ],
+    "2021-10-31-17.03.51-ZS-retouched-01.jpeg": [
+     4768,
+     3179
+    ],
+    "[Group 0]-2021-10-19-18.16.27-ZS-DMap_2021-10-19-18.17.30-ZS-DMap-2 images (1)-01.jpeg": [
+     4570,
+     4797
+    ],
+    "[Group 0]-2021-10-31-17.09.10-ZS-retouched_2021-10-31-17.17.13-ZS-retouched-2 images-01.jpeg": [
+     4245,
+     4799
+    ],
+    "[Group 0]-2023-07-25-18.44.24-ZS-DMap_2023-07-25-18.46.26-ZS-DMap-3 images-03.jpeg": [
+     5316,
+     4702
+    ]
+   }
   },
   {
    "name": "Ait Saoun (EH3) - 4mm crusted frag.",
@@ -2452,7 +4952,17 @@
    "images": [
     "2025-01-17-14.36.17-ZS-DMap.jpg",
     "[Group 0]-2025-01-17-12.51.20-ZS-DMap_2025-01-17-13.01.13-ZS-DMap-8 images.jpg"
-   ]
+   ],
+   "dims": {
+    "2025-01-17-14.36.17-ZS-DMap.jpg": [
+     3355,
+     4855
+    ],
+    "[Group 0]-2025-01-17-12.51.20-ZS-DMap_2025-01-17-13.01.13-ZS-DMap-8 images.jpg": [
+     3937,
+     5746
+    ]
+   }
   },
   {
    "name": "NWA 14425 (EH3 S2 W2) - 0.19g",
@@ -2467,7 +4977,21 @@
     "[Group 0]-2023-06-25-13.32.16-ZS-DMap_2023-06-25-13.35.15-ZS-DMap-4 images-01.jpeg",
     "[Group 0]-2023-06-26-16.10.09-ZS-DMap_2023-06-26-16.12.16-ZS-DMap-4 images-01-01.jpeg",
     "[Group 1]-2023-06-25-13.28.27-ZS-DMap_2023-06-25-13.31.19-ZS-DMap-4 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2023-06-25-13.32.16-ZS-DMap_2023-06-25-13.35.15-ZS-DMap-4 images-01.jpeg": [
+     6659,
+     3754
+    ],
+    "[Group 0]-2023-06-26-16.10.09-ZS-DMap_2023-06-26-16.12.16-ZS-DMap-4 images-01-01.jpeg": [
+     6641,
+     3763
+    ],
+    "[Group 1]-2023-06-25-13.28.27-ZS-DMap_2023-06-25-13.31.19-ZS-DMap-4 images-01.jpeg": [
+     6662,
+     3751
+    ]
+   }
   },
   {
    "name": "Nebka (L5 S3 W0)",
@@ -2484,7 +5008,25 @@
     "2023-07-21-18.23.02-ZS-DMap-01.jpeg",
     "2023-07-21-18.25.26-ZS-DMap-01.jpeg",
     "2023-07-21-18.27.24-ZS-DMap-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2023-07-21-18.20.42-ZS-DMap-01.jpeg": [
+     5051,
+     3355
+    ],
+    "2023-07-21-18.23.02-ZS-DMap-01.jpeg": [
+     4416,
+     3224
+    ],
+    "2023-07-21-18.25.26-ZS-DMap-01.jpeg": [
+     4884,
+     3354
+    ],
+    "2023-07-21-18.27.24-ZS-DMap-01.jpeg": [
+     5051,
+     3355
+    ]
+   }
   },
   {
    "name": "NWA 14278 (L5 melt) - 9.2g",
@@ -2502,7 +5044,29 @@
     "IMG_20220318_155617-01.jpeg",
     "IMG_20220318_155827-01.jpeg",
     "[Group 0]-IMG_20220304_164558_IMG_20220304_164934-37 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "IMG_20220304_163903-01.jpeg": [
+     3024,
+     4032
+    ],
+    "IMG_20220304_164331-01.jpeg": [
+     3024,
+     4032
+    ],
+    "IMG_20220318_155617-01.jpeg": [
+     4032,
+     3024
+    ],
+    "IMG_20220318_155827-01.jpeg": [
+     4032,
+     3024
+    ],
+    "[Group 0]-IMG_20220304_164558_IMG_20220304_164934-37 images-01.jpeg": [
+     5532,
+     4519
+    ]
+   }
   },
   {
    "name": "Viñales (L6 S3 W0)",
@@ -2517,7 +5081,17 @@
    "images": [
     "[Group 1]-IMG_9145_IMG_9150-6 images-01-01.jpeg",
     "[Group 2]-IMG_9132_IMG_9138-7 images-02.jpeg"
-   ]
+   ],
+   "dims": {
+    "[Group 1]-IMG_9145_IMG_9150-6 images-01-01.jpeg": [
+     7136,
+     3348
+    ],
+    "[Group 2]-IMG_9132_IMG_9138-7 images-02.jpeg": [
+     7088,
+     3318
+    ]
+   }
   },
   {
    "name": "HaH 346 Gadamis (L6 S5 W0) - 11.4g",
@@ -2534,7 +5108,25 @@
     "IMG_20230426_115422-01.jpeg",
     "IMG_20230426_115446-01.jpeg",
     "IMG_20230430_205359-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "IMG_20230426_115351-01.jpeg": [
+     3354,
+     2600
+    ],
+    "IMG_20230426_115422-01.jpeg": [
+     3375,
+     2428
+    ],
+    "IMG_20230426_115446-01.jpeg": [
+     3402,
+     2490
+    ],
+    "IMG_20230430_205359-01.jpeg": [
+     2631,
+     2307
+    ]
+   }
   },
   {
    "name": "Ozerki (L6 S4-5 W-low) - 3.14g",
@@ -2551,7 +5143,25 @@
     "2021-06-10-18.36.54-ZS-DMap-01.jpeg",
     "2021-06-13-11.06.33-ZS-DMap-pano-4PL-02.jpeg",
     "2021-06-13-11.18.42-ZS-DMap-pano-6PN-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2021-06-10-18.35.34-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-06-10-18.36.54-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-06-13-11.06.33-ZS-DMap-pano-4PL-02.jpeg": [
+     5658,
+     4418
+    ],
+    "2021-06-13-11.18.42-ZS-DMap-pano-6PN-01.jpeg": [
+     5468,
+     4572
+    ]
+   }
   },
   {
    "name": "Viñales (L6 S3 W0) - 10mg",
@@ -2566,7 +5176,17 @@
    "images": [
     "2022-04-14-11.03.44-ZS-retouched-01.jpeg",
     "[Group 0]-2022-04-14-11.05.13-ZS-DMap_2022-04-14-11.06.28-ZS-DMap-2 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2022-04-14-11.03.44-ZS-retouched-01.jpeg": [
+     4951,
+     3301
+    ],
+    "[Group 0]-2022-04-14-11.05.13-ZS-DMap_2022-04-14-11.06.28-ZS-DMap-2 images-01.jpeg": [
+     6639,
+     2882
+    ]
+   }
   },
   {
    "name": "NWA 100 (L6) - 1.2g",
@@ -2580,7 +5200,13 @@
    "description": "NWA 100 (L6) - 1.2g\nGift from Maxime!",
    "images": [
     "[Group 0]-IMG_3855_IMG_3891-37 images-02.jpg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-IMG_3855_IMG_3891-37 images-02.jpg": [
+     5801,
+     4308
+    ]
+   }
   },
   {
    "name": "NWA 8784 (L3 S2 W2) - 1.23g",
@@ -2601,7 +5227,41 @@
     "2019-05-14-11.29.35 ZS DMap-01.jpeg",
     "2019-05-14-11.32.23 ZS DMap-01.jpeg",
     "2021-05-08-19.26.14-ZS-DMap-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2019-05-14-11.13.32 ZS retouched-01.jpeg": [
+     4361,
+     2908
+    ],
+    "2019-05-14-11.15.25 ZS DMap-01.jpeg": [
+     4345,
+     2897
+    ],
+    "2019-05-14-11.21.39 ZS retouched-01.jpeg": [
+     4382,
+     2924
+    ],
+    "2019-05-14-11.26.10 ZS retouched-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-05-14-11.27.58 ZS DMap-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-05-14-11.29.35 ZS DMap-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-05-14-11.32.23 ZS DMap-01.jpeg": [
+     4334,
+     2897
+    ],
+    "2021-05-08-19.26.14-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ]
+   }
   },
   {
    "name": "L3 probable, unclassified 5.18g slice",
@@ -2634,7 +5294,89 @@
     "2021-08-11-19.41.27-ZS-DMap-01.jpeg",
     "2021-08-11-19.42.12-ZS-DMap-01.jpeg",
     "IMG_5226-pano-175PN (1).jpg"
-   ]
+   ],
+   "dims": {
+    "2021-08-08-15.46.02 ZS DMap-01-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-08-08-15.48.44 ZS DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-08-08-15.50.37 ZS DMap-02.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-08-08-15.56.03 ZS DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-08-08-16.00.53 ZS DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-08-08-16.03.04 ZS DMap-02.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-08-08-16.05.00 ZS DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-08-08-16.07.20 ZS DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-08-08-16.09.12 ZS DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-08-11-09.59.12-ZS-DMap-01.jpeg": [
+     3456,
+     5184
+    ],
+    "2021-08-11-10.00.45-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-08-11-10.04.17-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-08-11-10.08.39-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-08-11-19.37.31-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-08-11-19.38.36-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-08-11-19.39.39-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-08-11-19.40.38-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-08-11-19.41.27-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-08-11-19.42.12-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "IMG_5226-pano-175PN (1).jpg": [
+     9883,
+     9850
+    ]
+   }
   },
   {
    "name": "Aba Panu (L3.6 S4 W0) - 3.85g",
@@ -2667,7 +5409,89 @@
     "[Group 0]-2023-02-20-16.38.35-ZS-DMap_2023-02-20-16.39.33-ZS-DMap-2 images-01.jpeg",
     "[Group 0]-IMG_1959_IMG_2059-99 imagesGR-01.jpeg",
     "[Group 1]-2022-04-10-12.43.22-ZS-DMap_2022-04-10-12.47.40-ZS-DMap-4 images-02.jpeg"
-   ]
+   ],
+   "dims": {
+    "2022-04-10-12.42.32-ZS-DMap-01.jpeg": [
+     5055,
+     3370
+    ],
+    "2022-04-10-12.48.29-ZS-DMap-01.jpeg": [
+     5055,
+     3370
+    ],
+    "2022-04-10-12.49.09-ZS-DMap-01.jpeg": [
+     5055,
+     3370
+    ],
+    "2022-04-10-12.49.50-ZS-DMap-01.jpeg": [
+     5055,
+     3370
+    ],
+    "2022-04-10-12.52.41-ZS-DMap-01.jpeg": [
+     5055,
+     3370
+    ],
+    "2022-04-10-12.53.58-ZS-DMap-01.jpeg": [
+     5055,
+     3370
+    ],
+    "2022-04-10-12.58.15-ZS-DMap-01.jpeg": [
+     5055,
+     3370
+    ],
+    "2023-02-20-16.32.25-ZS-DMap-01.jpeg": [
+     4936,
+     3338
+    ],
+    "2023-02-20-16.33.48-ZS-DMap-01.jpeg": [
+     4936,
+     3338
+    ],
+    "2023-02-20-16.41.14-ZS-DMap-01.jpeg": [
+     4936,
+     3338
+    ],
+    "2023-02-20-16.42.11-ZS-DMap-01.jpeg": [
+     4936,
+     3338
+    ],
+    "2023-02-20-16.43.46-ZS-DMap-01.jpeg": [
+     4132,
+     3058
+    ],
+    "[Group 0]-2022-04-10-12.38.08-ZS-DMap_2022-04-10-12.38.54-ZS-DMap-2 images-01.jpeg": [
+     3921,
+     4555
+    ],
+    "[Group 0]-2022-04-10-12.51.10-ZS-DMap_2022-04-10-12.51.50-ZS-DMap-2 images-01.jpeg": [
+     4568,
+     5471
+    ],
+    "[Group 0]-2022-04-10-12.55.53-ZS-DMap_2022-04-10-12.56.44-ZS-DMap-2 images.jpg": [
+     4186,
+     5229
+    ],
+    "[Group 0]-2023-02-19-12.55.29-ZS-DMap_2023-02-19-14.07.29-ZS-DMap-71 images-01.jpeg": [
+     6089,
+     4105
+    ],
+    "[Group 0]-2023-02-20-16.35.54-ZS-DMap_2023-02-20-16.37.39-ZS-DMap-3 images-01.jpeg": [
+     6048,
+     4132
+    ],
+    "[Group 0]-2023-02-20-16.38.35-ZS-DMap_2023-02-20-16.39.33-ZS-DMap-2 images-01.jpeg": [
+     5244,
+     3952
+    ],
+    "[Group 0]-IMG_1959_IMG_2059-99 imagesGR-01.jpeg": [
+     5865,
+     4262
+    ],
+    "[Group 1]-2022-04-10-12.43.22-ZS-DMap_2022-04-10-12.47.40-ZS-DMap-4 images-02.jpeg": [
+     5980,
+     4179
+    ]
+   }
   },
   {
    "name": "ABA PANU (L3 S4 W0) - 0.77g",
@@ -2712,7 +5536,137 @@
     "IMG_6139-01.jpeg",
     "Screenshot_2019-05-09-20-59-31-344_com.ebay.mobile-01.jpeg",
     "[Group 0]-IMG_0764_IMG_0802-39 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2019-05-22-15.41.49 ZS retouched-01-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-05-22-15.46.40 ZS retouched-01-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-05-23-20.02.56 ZS DMap-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-05-23-20.05.50 ZS DMap-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-05-23-20.09.40 ZS retouched-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-05-23-20.10.50 ZS DMap-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-05-23-20.12.43 ZS DMap-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-05-23-20.16.43 ZS retouched-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-05-23-20.19.20 ZS DMap-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-05-23-20.21.44 ZS retouched-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-05-23-20.23.03 ZS DMap-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-05-23-20.25.06 ZS DMap-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-05-23-20.28.13 ZS DMap-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-05-23-20.30.32 ZS DMap-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-05-24-13.39.17 ZS retouched-pano-3PL-01.jpeg": [
+     3052,
+     5242
+    ],
+    "2019-05-24-15.13.52 ZS retouched-pano-3PN-01.jpeg": [
+     3122,
+     5125
+    ],
+    "2019-05-26-19.00.21 ZS retouched-01.jpeg": [
+     4414,
+     2945
+    ],
+    "2019-05-27-17.24.22 ZS DMap-01.jpeg": [
+     4345,
+     2903
+    ],
+    "2020-04-19-14.15.20 ZS DMap-01.jpeg": [
+     4259,
+     2839
+    ],
+    "2020-04-19-14.18.22 ZS DMap-01.jpeg": [
+     4553,
+     3036
+    ],
+    "2020-04-19-16.32.26 ZS DMap-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2020-04-19-16.40.29 ZS DMap-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2020-04-19-16.45.16 ZS DMap-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2021-05-02-18.14.00-ZS-DMap-01.jpeg": [
+     4056,
+     2705
+    ],
+    "2021-05-02-18.15.02-ZS-DMap-01.jpeg": [
+     4254,
+     2833
+    ],
+    "2021-05-02-18.16.08-ZS-DMap-01.jpeg": [
+     4650,
+     3100
+    ],
+    "AbaPanu-bulk-TS.jpg": [
+     13990,
+     6706
+    ],
+    "IMG_1036-01.jpeg": [
+     4601,
+     3063
+    ],
+    "IMG_1057-01.jpeg": [
+     4340,
+     2892
+    ],
+    "IMG_6139-01.jpeg": [
+     2907,
+     1935
+    ],
+    "Screenshot_2019-05-09-20-59-31-344_com.ebay.mobile-01.jpeg": [
+     950,
+     634
+    ],
+    "[Group 0]-IMG_0764_IMG_0802-39 images-01.jpeg": [
+     7220,
+     3461
+    ]
+   }
   },
   {
    "name": "NWA 14058 (L3 C-S1 W2-3)",
@@ -2730,7 +5684,29 @@
     "2023-02-18-16.37.39-ZS-DMap-01.jpeg",
     "[Group 0]-IMG_7124_IMG_7148-25 images-01.jpeg",
     "[Group 0]-IMG_7185_IMG_7199-15 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2023-02-18-16.35.29-ZS-DMap-01.jpeg": [
+     4936,
+     3298
+    ],
+    "2023-02-18-16.36.21-ZS-DMap-01.jpeg": [
+     4936,
+     3298
+    ],
+    "2023-02-18-16.37.39-ZS-DMap-01.jpeg": [
+     4936,
+     3298
+    ],
+    "[Group 0]-IMG_7124_IMG_7148-25 images-01.jpeg": [
+     5614,
+     4452
+    ],
+    "[Group 0]-IMG_7185_IMG_7199-15 images-01.jpeg": [
+     5583,
+     4477
+    ]
+   }
   },
   {
    "name": "NWA 869 (L3-6) - 8.8g",
@@ -2745,7 +5721,17 @@
    "images": [
     "2021-04-02-10.49.56 ZS retouched-01.jpeg",
     "2021-08-03-13.12.34-ZS-DMap-pano-6PL-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2021-04-02-10.49.56 ZS retouched-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2021-08-03-13.12.34-ZS-DMap-pano-6PL-01.jpeg": [
+     4980,
+     5019
+    ]
+   }
   },
   {
    "name": "NWA 16464 (L3.15 S3 W1) - 5.094g",
@@ -2760,7 +5746,17 @@
    "images": [
     "2025-01-25-18.57.10-ZS-DMap.jpg",
     "[Group 0]-IMG_5417_IMG_5509-93 imagesG.jpg"
-   ]
+   ],
+   "dims": {
+    "2025-01-25-18.57.10-ZS-DMap.jpg": [
+     4299,
+     3219
+    ],
+    "[Group 0]-IMG_5417_IMG_5509-93 imagesG.jpg": [
+     10000,
+     8449
+    ]
+   }
   },
   {
    "name": "Taussat-n-Amouzzour 001 (L3.2 S1 W0-1) - 3.74g",
@@ -2782,7 +5778,45 @@
     "[Group 0]-2024-04-23-16.01.48-ZS-DMap_2024-04-23-16.02.27-ZS-DMap-2 images-01.jpeg",
     "[Group 0]-IMG_9595_IMG_9627-33 images-G.jpg",
     "[Group 0]-IMG_9645_IMG_9673-29 images-G.jpg"
-   ]
+   ],
+   "dims": {
+    "2024-04-23-16.00.12-ZS-DMap-01.jpeg": [
+     5089,
+     3355
+    ],
+    "2024-04-23-16.01.09-ZS-DMap-01.jpeg": [
+     5089,
+     3355
+    ],
+    "2024-04-23-16.03.15-ZS-DMap-01.jpeg": [
+     5089,
+     3355
+    ],
+    "2024-04-23-16.04.42-ZS-DMap-01.jpeg": [
+     5089,
+     3355
+    ],
+    "2024-04-23-16.07.16-ZS-retouched-01.jpeg": [
+     5089,
+     3355
+    ],
+    "2024-04-23-16.08.28-ZS-DMap-01.jpeg": [
+     5089,
+     3355
+    ],
+    "[Group 0]-2024-04-23-16.01.48-ZS-DMap_2024-04-23-16.02.27-ZS-DMap-2 images-01.jpeg": [
+     4918,
+     4751
+    ],
+    "[Group 0]-IMG_9595_IMG_9627-33 images-G.jpg": [
+     11341,
+     4842
+    ],
+    "[Group 0]-IMG_9645_IMG_9673-29 images-G.jpg": [
+     11173,
+     4624
+    ]
+   }
   },
   {
    "name": "EHOH 002 (L4 S1 W0)",
@@ -2797,7 +5831,17 @@
    "images": [
     "[Group 0]-IMG_4790_IMG_4816-27 images-02.jpeg",
     "[Group 1]-2022-09-11-17.26.27-ZS-DMap-1_2022-09-11-17.29.40-ZS-DMap-1-4 images.jpg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-IMG_4790_IMG_4816-27 images-02.jpeg": [
+     6512,
+     3839
+    ],
+    "[Group 1]-2022-09-11-17.26.27-ZS-DMap-1_2022-09-11-17.29.40-ZS-DMap-1-4 images.jpg": [
+     8548,
+     5129
+    ]
+   }
   },
   {
    "name": "NWA 15468 (OC4-melt breccia) - 5.25g",
@@ -2813,7 +5857,25 @@
     "[Group 0]-2023-08-20-19.45.45-ZS-DMap_2023-08-20-19.48.26-ZS-DMap-5 images-01-01.jpeg",
     "[Group 0]-2023-08-20-19.49.04-ZS-DMap_2023-08-20-19.51.06-ZS-DMap-4 images-01.jpeg",
     "[Group 0]-IMG_4202_IMG_4226-25 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2023-08-20-19.39.51-ZS-DMap_2023-08-20-19.43.59-ZS-DMap-7 images-01-01.jpeg": [
+     4065,
+     3995
+    ],
+    "[Group 0]-2023-08-20-19.45.45-ZS-DMap_2023-08-20-19.48.26-ZS-DMap-5 images-01-01.jpeg": [
+     7085,
+     2698
+    ],
+    "[Group 0]-2023-08-20-19.49.04-ZS-DMap_2023-08-20-19.51.06-ZS-DMap-4 images-01.jpeg": [
+     6808,
+     3375
+    ],
+    "[Group 0]-IMG_4202_IMG_4226-25 images-01.jpeg": [
+     7151,
+     3317
+    ]
+   }
   },
   {
    "name": "El Mrira 001 (H4-6 S2 W2) - multiple micros",
@@ -2828,7 +5890,17 @@
    "images": [
     "2024-04-04-16.47.39-ZS-retouched-02.jpeg",
     "[Group 0]-2024-04-04-22.08.32-ZS-DMap_2024-04-04-22.09.21-ZS-DMap-2 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2024-04-04-16.47.39-ZS-retouched-02.jpeg": [
+     4109,
+     3839
+    ],
+    "[Group 0]-2024-04-04-22.08.32-ZS-DMap_2024-04-04-22.09.21-ZS-DMap-2 images-01.jpeg": [
+     4677,
+     4824
+    ]
+   }
   },
   {
    "name": "Buzzard Coulee (H4) - 30mg",
@@ -2846,7 +5918,29 @@
     "2021-10-08-16.54.37-ZS-retouched-02.jpeg",
     "2021-10-08-16.59.32-ZS-retouched-01-01.jpeg",
     "2021-10-08-17.04.39-ZS-retouched-02.jpeg"
-   ]
+   ],
+   "dims": {
+    "2021-10-04-20.22.04-ZS-retouched (1)-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-10-04-20.31.22-ZS-retouched (1)-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-10-08-16.54.37-ZS-retouched-02.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-10-08-16.59.32-ZS-retouched-01-01.jpeg": [
+     4434,
+     3193
+    ],
+    "2021-10-08-17.04.39-ZS-retouched-02.jpeg": [
+     5184,
+     3456
+    ]
+   }
   },
   {
    "name": "NWA 11236 (H4-6 S2 W2) - 1cm part slice",
@@ -2860,7 +5954,13 @@
    "description": "NWA 11236 (H4-6 S2 W2) - 1cm part slice\nFrom a huge donation of Jesper Grønne!",
    "images": [
     "[Group 0]-2024-03-24-13.49.37-ZS-DMap_2024-03-24-13.53.49-ZS-DMap-7 images-02.jpeg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2024-03-24-13.49.37-ZS-DMap_2024-03-24-13.53.49-ZS-DMap-7 images-02.jpeg": [
+     5627,
+     4065
+    ]
+   }
   },
   {
    "name": "NWA 2335 (H3.05 S1 W1) - 0.45g in 3 fragments",
@@ -2876,7 +5976,21 @@
     "[Group 0]-2022-09-15-15.04.21-ZS-DMap_2022-09-15-15.10.59-ZS-DMap-6 images-01.jpeg",
     "[Group 0]-2022-09-30-17.25.21-ZS-DMap_2022-09-30-17.33.29-ZS-DMap-5 images-01.jpeg",
     "[Group 0]-2022-10-01-11.15.35-ZS-DMap_2022-10-01-11.20.14-ZS-DMap-5 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2022-09-15-15.04.21-ZS-DMap_2022-09-15-15.10.59-ZS-DMap-6 images-01.jpeg": [
+     5872,
+     4256
+    ],
+    "[Group 0]-2022-09-30-17.25.21-ZS-DMap_2022-09-30-17.33.29-ZS-DMap-5 images-01.jpeg": [
+     4856,
+     5147
+    ],
+    "[Group 0]-2022-10-01-11.15.35-ZS-DMap_2022-10-01-11.20.14-ZS-DMap-5 images-01.jpeg": [
+     4832,
+     5173
+    ]
+   }
   },
   {
    "name": "Cranfield (H3-5 S3 W0) - 68mg (crusted)",
@@ -2890,7 +6004,13 @@
    "description": "Cranfield (H3-5 S3 W0) - 68mg (crusted)\nObserved meteorite fall, Mississippi on 27 Apr, 2022. It will forever be famous as the first fresh meteorite find for a lot of my meteoritical friends!\nThis fragment was among the first ones found, by Roberto Vargas and Matt Stream. Donated by Pat Brown.",
    "images": [
     "[Group 0]-2022-08-08-13.57.19-ZS-retouched_2022-08-08-14.28.27-ZS-DMap-3 images-01.jpg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2022-08-08-13.57.19-ZS-retouched_2022-08-08-14.28.27-ZS-DMap-3 images-01.jpg": [
+     6408,
+     3901
+    ]
+   }
   },
   {
    "name": "NWA 14588 (H5 S2 W1) - 5g",
@@ -2914,7 +6034,53 @@
     "2021-10-23-12.36.27-ZS-DMap-01.jpeg",
     "2021-10-23-12.37.36-ZS-DMap-01.jpeg",
     "[Group 0]-IMG_7791_IMG_7833-42 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2021-10-23-12.28.19-ZS-retouched-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-10-23-12.29.04-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-10-23-12.31.38-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-10-23-12.32.15-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-10-23-12.33.10-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-10-23-12.33.49-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-10-23-12.34.25-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-10-23-12.35.39-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-10-23-12.36.27-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-10-23-12.37.36-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "[Group 0]-IMG_7791_IMG_7833-42 images-01.jpeg": [
+     4669,
+     5353
+    ]
+   }
   },
   {
    "name": "GAO-GUENIE (H5) - 17.3g",
@@ -2930,7 +6096,21 @@
     "2019-05-30-16.46.37 ZS retouched-01.jpeg",
     "2019-05-30-16.53.06 ZS retouched-pano-2PL-01.jpeg",
     "2019-05-30-17.00.34 ZS DMap-pano-2PL-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2019-05-30-16.46.37 ZS retouched-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-05-30-16.53.06 ZS retouched-pano-2PL-01.jpeg": [
+     3526,
+     4536
+    ],
+    "2019-05-30-17.00.34 ZS DMap-pano-2PL-01.jpeg": [
+     3510,
+     4558
+    ]
+   }
   },
   {
    "name": "Aiquile (H5 S3 W0)",
@@ -2945,7 +6125,17 @@
    "images": [
     "2022-05-07-18.01.19-ZS-retouched-01.jpeg",
     "2022-05-07-18.04.48-ZS-retouched-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2022-05-07-18.01.19-ZS-retouched-01.jpeg": [
+     3395,
+     2018
+    ],
+    "2022-05-07-18.04.48-ZS-retouched-01.jpeg": [
+     3473,
+     2147
+    ]
+   }
   },
   {
    "name": "Gao-Guenie (H5) - 17.7g endcut",
@@ -2960,7 +6150,17 @@
    "images": [
     "2022-01-07-18.23.27-ZS-DMap-01.jpeg",
     "2022-01-07-18.26.49-ZS-DMap-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2022-01-07-18.23.27-ZS-DMap-01.jpeg": [
+     4984,
+     3400
+    ],
+    "2022-01-07-18.26.49-ZS-DMap-01.jpeg": [
+     3259,
+     3177
+    ]
+   }
   },
   {
    "name": "Travis County (a) (H5) - 0.45g",
@@ -2975,7 +6175,17 @@
    "images": [
     "2024-03-09-17.15.25-ZS-DMap-01.jpeg",
     "[Group 0]-2024-03-09-17.12.17-ZS-DMap_2024-03-09-17.14.23-ZS-DMap-4 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2024-03-09-17.15.25-ZS-DMap-01.jpeg": [
+     4684,
+     3172
+    ],
+    "[Group 0]-2024-03-09-17.12.17-ZS-DMap_2024-03-09-17.14.23-ZS-DMap-4 images-01.jpeg": [
+     6023,
+     4150
+    ]
+   }
   },
   {
    "name": "El Sauz (prov) - 17mg",
@@ -2988,7 +6198,13 @@
    "description": "El Sauz (prov) - 17mg\nTexas fall from 15 Feb 2023, 2 days after the 2023 CX1 fall and a day after a fall in Italy.\nThis was the first time in recorded history that 3 observed falls were recovered on three consecutive days. Even though I have two of those in my collection, no recovered material of the Italian fall ended up on the open market and so is an unobtainable at this time.",
    "images": [
     "2023-04-06-15.38.03-ZS-retouched-01.jpg"
-   ]
+   ],
+   "dims": {
+    "2023-04-06-15.38.03-ZS-retouched-01.jpg": [
+     3260,
+     2528
+    ]
+   }
   },
   {
    "name": "NWA xxx (OC, unclassified) - 0.35g",
@@ -3001,7 +6217,13 @@
    "description": "NWA xxx (OC, unclassified) - 0.35g\nA gift from Justin Boros.",
    "images": [
     "[Group 0]-IMG_0215_IMG_0234-20 images-01.jpg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-IMG_0215_IMG_0234-20 images-01.jpg": [
+     7621,
+     3280
+    ]
+   }
   },
   {
    "name": "NWA XXX (OC poss type H4) - 1.6g",
@@ -3019,7 +6241,33 @@
     "2021-10-25-17.49.35-ZS-DMap-01.jpeg",
     "2021-10-25-17.50.29-ZS-DMap-01.jpeg",
     "[Group 0]-IMG_8429_IMG_8436-8 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2021-10-25-17.47.29-ZS-DMap-02.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-10-25-17.48.25-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-10-25-17.48.59-ZS-DMap-01.jpeg": [
+     2000,
+     1333
+    ],
+    "2021-10-25-17.49.35-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-10-25-17.50.29-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "[Group 0]-IMG_8429_IMG_8436-8 images-01.jpeg": [
+     3879,
+     3106
+    ]
+   }
   },
   {
    "name": "Unclass. OC (pos L3) - 3.997g",
@@ -3032,7 +6280,13 @@
    "description": "Unclass. OC (L3?) - 3.997g\n\nA gift from Pat Brown!",
    "images": [
     "Group 0--IMG_5303_IMG_5381-79 images (1).jpg"
-   ]
+   ],
+   "dims": {
+    "Group 0--IMG_5303_IMG_5381-79 images (1).jpg": [
+     4692,
+     5328
+    ]
+   }
   },
   {
    "name": "Muskogee (prov, OC under classification)",
@@ -3046,7 +6300,17 @@
    "images": [
     "2023-06-27-17.59.54-ZS-DMap-01.jpeg",
     "[Group 0]-2023-06-27-18.45.40-ZS-DMap_2023-06-27-18.52.02-ZS-DMap-5 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2023-06-27-17.59.54-ZS-DMap-01.jpeg": [
+     3082,
+     2898
+    ],
+    "[Group 0]-2023-06-27-18.45.40-ZS-DMap_2023-06-27-18.52.02-ZS-DMap-5 images-01.jpeg": [
+     5004,
+     4741
+    ]
+   }
   },
   {
    "name": "NWA xxx (OC, unclassified) - 3g",
@@ -3059,7 +6323,13 @@
    "description": "NWA xxx (OC, unclassified) - 3g",
    "images": [
     "[Group 1]-IMG_1361_IMG_1383-23 images-01.jpg"
-   ]
+   ],
+   "dims": {
+    "[Group 1]-IMG_1361_IMG_1383-23 images-01.jpg": [
+     5281,
+     4371
+    ]
+   }
   },
   {
    "name": "Unclassified sample - few micros",
@@ -3072,7 +6342,13 @@
    "description": "Unclassified sample - few micros\nFrom a huge donation of Jesper Grønne!",
    "images": [
     "image-05.jpg"
-   ]
+   ],
+   "dims": {
+    "image-05.jpg": [
+     5160,
+     4289
+    ]
+   }
   },
   {
    "name": "OC type 3",
@@ -3085,7 +6361,13 @@
    "description": "OC type 3\nA gift from Jason Bliss!",
    "images": [
     "[Group 0]-IMG_2479_IMG_2504-26 images (1).jpg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-IMG_2479_IMG_2504-26 images (1).jpg": [
+     8116,
+     5533
+    ]
+   }
   },
   {
    "name": "Ordinary chondrite (under classification, poss L6)",
@@ -3098,7 +6380,13 @@
    "description": "Ordinary chondrite (under classification, L6?)\nA gift from Chalom Malka!",
    "images": [
     "[Group 0]-2022-09-18-13.23.18-ZS-DMap_2022-09-18-13.27.07-ZS-DMap-5 images-01.jpg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2022-09-18-13.23.18-ZS-DMap_2022-09-18-13.27.07-ZS-DMap-5 images-01.jpg": [
+     4987,
+     5012
+    ]
+   }
   },
   {
    "name": "Unclassified (PD012 from Pat Brown) - 9.8g",
@@ -3111,7 +6399,13 @@
    "description": "Unclassified (PD012 from Pat Brown) - 9.8g\nPossible H5/6.",
    "images": [
     "Pat-PB012-rt.jpg"
-   ]
+   ],
+   "dims": {
+    "Pat-PB012-rt.jpg": [
+     4515,
+     5537
+    ]
+   }
   },
   {
    "name": "Kheneg Ljouâd (LL5-6 S3 W0) - 0.29g",
@@ -3125,7 +6419,13 @@
    "description": "Kheneg Ljouâd (LL5/6 S3 W0) - 0.29g\nRange of chondrule types, though largely recrystallized and integrated with the matrix, the chondrules still recognizable including a large BO (to 5 mm), PO and PP. Feldspar shows a range of sizes, some grains to 200 μm, though majority <50 μm. Metal and troilite heterogeneously distributed across the mount, largest grains to 100 μm. Metal dominated by tetrataenite, with only two small (20 μm) grains of kamacite found. Metallic Cu rare, as three grains (~5 μm) found at tetrataenite/troilite boundary. Metal+troilite occupy <2 vol% of the section. Troilite single crystal with rare twin lamellae. Pentlandite, <20 μm, is rare occurring as subhedral grains within troilite. Chromite is common as large, to 200 μm, anhedral grains and small, <5 μm, subhedral and euhedral grains in feldspar. A few small melt pockets observed in the mount are consistent with shock stage S3 .",
    "images": [
     "2021-04-20-17.01.38-ZS-retouched-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2021-04-20-17.01.38-ZS-retouched-01.jpeg": [
+     4898,
+     3265
+    ]
+   }
   },
   {
    "name": "NWA 16231 (LL5 melt breccia) - 2 fragments",
@@ -3140,7 +6440,17 @@
    "images": [
     "[Group 0]-2024-04-28-13.29.27-ZS-DMap_2024-04-28-13.31.48-ZS-DMap-4 images-01.jpeg",
     "[Group 0]-2024-04-28-13.42.56-ZS-DMap_2024-04-28-13.46.19-ZS-DMap-7 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2024-04-28-13.29.27-ZS-DMap_2024-04-28-13.31.48-ZS-DMap-4 images-01.jpeg": [
+     6439,
+     3881
+    ],
+    "[Group 0]-2024-04-28-13.42.56-ZS-DMap_2024-04-28-13.46.19-ZS-DMap-7 images-01.jpeg": [
+     6295,
+     3868
+    ]
+   }
   },
   {
    "name": "CHELYABINSK (LL5 S4 W0) - 0.72g",
@@ -3158,7 +6468,29 @@
     "2019-04-28-19.10.15 ZS retouched-01.jpeg",
     "2019-05-07-10.39.32 ZS retouched-01.jpeg",
     "IMG_4607-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2019-04-28-14.00.49 ZS retouched-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-04-28-14.07.47 ZS retouched-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-04-28-19.10.15 ZS retouched-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-05-07-10.39.32 ZS retouched-01.jpeg": [
+     4898,
+     3265
+    ],
+    "IMG_4607-01.jpeg": [
+     4898,
+     3265
+    ]
+   }
   },
   {
    "name": "Chelyabinsk - multiple fragments",
@@ -3177,7 +6509,33 @@
     "2022-10-02-10.12.14-ZS-DMap-01.jpeg",
     "2022-10-02-10.14.05-ZS-DMap-01.jpeg",
     "IMG_20221002_095435-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2022-09-18-17.34.07-ZS-retouched-01.jpeg": [
+     3426,
+     2822
+    ],
+    "2022-09-18-17.36.22-ZS-DMap-01.jpeg": [
+     3460,
+     3288
+    ],
+    "2022-09-19-12.24.04-ZS-DMap-01.jpeg": [
+     3244,
+     2742
+    ],
+    "2022-10-02-10.12.14-ZS-DMap-01.jpeg": [
+     4735,
+     3357
+    ],
+    "2022-10-02-10.14.05-ZS-DMap-01.jpeg": [
+     4879,
+     3421
+    ],
+    "IMG_20221002_095435-01.jpeg": [
+     2569,
+     1726
+    ]
+   }
   },
   {
    "name": "NWA 16218 (LL4) - 2 fragments",
@@ -3191,7 +6549,13 @@
    "description": "NWA 16218 (LL4) - 2 fragments\nFrom a huge donation of Jesper Grønne!",
    "images": [
     "[Group 0]-2024-04-28-13.32.28-ZS-DMap_2024-04-28-13.38.34-ZS-DMap-10 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2024-04-28-13.32.28-ZS-DMap_2024-04-28-13.38.34-ZS-DMap-10 images-01.jpeg": [
+     6771,
+     3623
+    ]
+   }
   },
   {
    "name": "NWA 14680 (LL3 C-S1 W3)",
@@ -3210,7 +6574,33 @@
     "2023-02-18-16.33.31-ZS-DMap-01.jpeg",
     "2023-02-18-16.34.38-ZS-DMap-01.jpeg",
     "[Group 0]-IMG_7366_IMG_7408-43 images SCALE (1).jpg"
-   ]
+   ],
+   "dims": {
+    "2023-02-18-16.28.44-ZS-DMap-01.jpeg": [
+     4936,
+     3298
+    ],
+    "2023-02-18-16.30.43-ZS-DMap-01.jpeg": [
+     4936,
+     3298
+    ],
+    "2023-02-18-16.32.47-ZS-DMap-01.jpeg": [
+     4936,
+     3298
+    ],
+    "2023-02-18-16.33.31-ZS-DMap-01.jpeg": [
+     3911,
+     2861
+    ],
+    "2023-02-18-16.34.38-ZS-DMap-01.jpeg": [
+     4936,
+     3298
+    ],
+    "[Group 0]-IMG_7366_IMG_7408-43 images SCALE (1).jpg": [
+     11458,
+     8469
+    ]
+   }
   },
   {
    "name": "Toconao 001 (LL3)",
@@ -3224,7 +6614,13 @@
    "description": "Toconao 001 (LL3)",
    "images": [
     "2021-06-10-18.24.12-ZS-DMap-pano-6PL-01 (1).jpg"
-   ]
+   ],
+   "dims": {
+    "2021-06-10-18.24.12-ZS-DMap-pano-6PL-01 (1).jpg": [
+     8076,
+     3095
+    ]
+   }
   },
   {
    "name": "Metameur 005 (LL3 W4) - 0.71g",
@@ -3238,7 +6634,13 @@
    "description": "Metameur 005 (LL3 W4) - 0.71g\nVery closely packed chondrules.\nA gift from Maxime!",
    "images": [
     "[Group 0]-2023-04-06-15.54.45-ZS-DMap_2023-04-06-16.07.39-ZS-DMap-15 images-02.jpg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2023-04-06-15.54.45-ZS-DMap_2023-04-06-16.07.39-ZS-DMap-15 images-02.jpg": [
+     5225,
+     4783
+    ]
+   }
   },
   {
    "name": "NWA 15376 (LL3-6 S3 W2) - 0.969g",
@@ -3252,7 +6654,13 @@
    "description": "NWA 15376 (LL3-6 S3 W2) - 0.969g\nGenomict breccia comprised of mm to cm-sized sub-angular clasts, and few chondrules, set within a fine-grained matrix containing melt-rich regions (Daniel Sheikh).",
    "images": [
     "[Group 0]-2023-06-18-14.28.22-ZS-DMap_2023-06-18-14.36.27-ZS-DMap-14 images-01.jpg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2023-06-18-14.28.22-ZS-DMap_2023-06-18-14.36.27-ZS-DMap-14 images-01.jpg": [
+     5582,
+     4293
+    ]
+   }
   },
   {
    "name": "NWA 11234 (LL3 S2 W1) - 1.2g",
@@ -3277,7 +6685,57 @@
     "2021-05-07-21.02.24-ZS-DMap-01.jpeg",
     "2021-05-07-21.14.50-ZS-DMap-01.jpeg",
     "2021-05-07-21.19.22-ZS-DMap-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2019-06-08-14.10.06 ZS DMap-pano-3PN-01.jpeg": [
+     3160,
+     5062
+    ],
+    "2019-06-08-14.15.16 ZS DMap-pano-3PN-01.jpeg": [
+     3237,
+     4942
+    ],
+    "2019-06-08-14.53.10 ZS DMap-pano-3PN-01.jpeg": [
+     3157,
+     5066
+    ],
+    "2019-06-08-14.57.50 ZS DMap-pano-3PN-01.jpeg": [
+     3281,
+     4876
+    ],
+    "2019-06-08-18.37.09 ZS DMap (1)-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-06-08-18.38.23 ZS DMap-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-06-08-18.40.43 ZS DMap-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-06-08-18.41.57 ZS DMap-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2021-05-07-21.00.47-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-05-07-21.02.24-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-05-07-21.14.50-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-05-07-21.19.22-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ]
+   }
   },
   {
    "name": "Chondrule bleaching",
@@ -3294,7 +6752,21 @@
     "2021-05-07-21.03.52-ZS-DMap-01.jpeg",
     "2021-05-07-21.10.43-ZS-DMap-01.jpeg",
     "2021-05-07-21.16.34-ZS-DMap-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2021-05-07-21.03.52-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-05-07-21.10.43-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-05-07-21.16.34-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ]
+   }
   },
   {
    "name": "NWA 4910  Begaa (LL3.1 S2 W1) - 0.337g",
@@ -3309,7 +6781,17 @@
    "images": [
     "[Group 0]-2023-06-03-11.59.05-ZS-DMap_2023-06-03-12.13.22-ZS-DMap-10 images-01.jpeg",
     "[Group 0]-2023-06-03-12.13.59-ZS-DMap_2023-06-03-12.47.10-ZS-DMap-10 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2023-06-03-11.59.05-ZS-DMap_2023-06-03-12.13.22-ZS-DMap-10 images-01.jpeg": [
+     6114,
+     3974
+    ],
+    "[Group 0]-2023-06-03-12.13.59-ZS-DMap_2023-06-03-12.47.10-ZS-DMap-10 images-01.jpeg": [
+     6200,
+     3899
+    ]
+   }
   },
   {
    "name": "NWA 16550 (LL6 melt breccia, S2 W1) - 12.43g",
@@ -3323,7 +6805,13 @@
    "description": "NWA 16550 (LL6 melt breccia, S2 W1) - 12.43g\nFrom Marcin Cimala.\nNWA 16592  (eucrite melt breccia) - a few micros\nFrom a huge donation of Jesper Grønne!",
    "images": [
     "[Group 0]-IMG_0384_IMG_0494-111 images-G62.jpg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-IMG_0384_IMG_0494-111 images-G62.jpg": [
+     12416,
+     7902
+    ]
+   }
   },
   {
    "name": "SaU 290 (CH3) - 0.14g",
@@ -3340,7 +6828,29 @@
     "[Group 0]-2023-07-15-19.18.43-ZS-DMap_2023-07-15-19.20.44-ZS-DMap-4 images-01.jpeg",
     "[Group 1]-2023-07-15-13.59.11-ZS-DMap_2023-07-15-14.01.57-ZS-DMap-4 images-01.jpeg",
     "[Group 1]-2023-07-15-14.02.46-ZS-DMap_2023-07-15-14.04.16-ZS-DMap-3 images-01-final-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2023-07-14-16.30.23-ZS-DMap_2023-07-15-14.06.45-ZS-DMap-7 images_N_0-gimp-01.jpeg": [
+     7419,
+     3369
+    ],
+    "[Group 0]-2023-07-14-16.33.28-ZS-DMap_IMG_2931-12 images_N_0-gimp-01.jpeg": [
+     7492,
+     3277
+    ],
+    "[Group 0]-2023-07-15-19.18.43-ZS-DMap_2023-07-15-19.20.44-ZS-DMap-4 images-01.jpeg": [
+     6666,
+     3749
+    ],
+    "[Group 1]-2023-07-15-13.59.11-ZS-DMap_2023-07-15-14.01.57-ZS-DMap-4 images-01.jpeg": [
+     6418,
+     3327
+    ],
+    "[Group 1]-2023-07-15-14.02.46-ZS-DMap_2023-07-15-14.04.16-ZS-DMap-3 images-01-final-01.jpeg": [
+     6282,
+     3830
+    ]
+   }
   },
   {
    "name": "ISHEYEVO (CH-CBb) - 0.5g",
@@ -3358,7 +6868,33 @@
     "IMG_7541-01.jpeg",
     "[Group 0]-2023-02-22-12.09.21-ZS-DMap_2023-02-22-12.11.49-ZS-DMap-4 images-01.jpeg",
     "[Group 0]-2023-02-22-12.12.37-ZS-DMap_2023-02-22-12.16.24-ZS-DMap-5 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2021-05-07-20.41.06-ZS-retouched-01.jpeg": [
+     5184,
+     3456
+    ],
+    "IMG_7535-01.jpeg": [
+     4767,
+     3355
+    ],
+    "IMG_7541-01-01.jpeg": [
+     3142,
+     1583
+    ],
+    "IMG_7541-01.jpeg": [
+     4754,
+     3364
+    ],
+    "[Group 0]-2023-02-22-12.09.21-ZS-DMap_2023-02-22-12.11.49-ZS-DMap-4 images-01.jpeg": [
+     7194,
+     3475
+    ],
+    "[Group 0]-2023-02-22-12.12.37-ZS-DMap_2023-02-22-12.16.24-ZS-DMap-5 images-01.jpeg": [
+     7162,
+     3489
+    ]
+   }
   },
   {
    "name": "Blue Angel-like CAI (first discovered in Murchison)",
@@ -3374,7 +6910,21 @@
     "2021-05-07-20.42.56-ZS-DMap-01.jpeg",
     "2021-05-07-20.45.45-ZS-DMap-01.jpeg",
     "2021-05-07-20.59.29-ZS-DMap-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2021-05-07-20.42.56-ZS-DMap-01.jpeg": [
+     3645,
+     2945
+    ],
+    "2021-05-07-20.45.45-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-05-07-20.59.29-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ]
+   }
   },
   {
    "name": "Tarda (C2-ung, S-low W0) - 57mg",
@@ -3388,7 +6938,17 @@
    "images": [
     "2021-04-24-15.18.52-ZS-DMap-01.jpeg",
     "2021-04-24-15.47.50-ZS-DMap-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2021-04-24-15.18.52-ZS-DMap-01.jpeg": [
+     3522,
+     2582
+    ],
+    "2021-04-24-15.47.50-ZS-DMap-01.jpeg": [
+     2918,
+     2871
+    ]
+   }
   },
   {
    "name": "NWA 11961 (C3-ung, prop. CX) - 50mg",
@@ -3401,7 +6961,13 @@
    "description": "NWA 11961 (C3-ung, prop. CX) - 50mg\nIt was suggested that this meteorite, together with a few others could belong to a new sub-type of carbonaceous chondrites with a proposed designation CX.",
    "images": [
     "[Group 1]-2023-06-04-20.54.35-ZS-DMap_2023-06-04-20.56.29-ZS-DMap-3 images-01.jpg"
-   ]
+   ],
+   "dims": {
+    "[Group 1]-2023-06-04-20.54.35-ZS-DMap_2023-06-04-20.56.29-ZS-DMap-3 images-01.jpg": [
+     5646,
+     4427
+    ]
+   }
   },
   {
    "name": "TAGISH LAKE (C2-un S1 W0) - 25mg",
@@ -3417,7 +6983,25 @@
     "2022-03-06-16.10-01.jpeg",
     "2022-03-06-16.19.51-ZS-DMap-1-01.jpeg",
     "Screenshot_2019-05-10-14-42-18-530_com.ebay.mobile-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2019-05-01-12.50.21 ZS retouched-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2022-03-06-16.10-01.jpeg": [
+     4956,
+     3304
+    ],
+    "2022-03-06-16.19.51-ZS-DMap-1-01.jpeg": [
+     4956,
+     3304
+    ],
+    "Screenshot_2019-05-10-14-42-18-530_com.ebay.mobile-01.jpeg": [
+     1080,
+     720
+    ]
+   }
   },
   {
    "name": "Tarda - broken individual and a few micros",
@@ -3430,7 +7014,13 @@
    "description": "Tarda - broken individual and a few micros\nFrom a huge donation of Jesper Grønne!",
    "images": [
     "[Group 0]-2024-04-30-19.26.03-ZS-retouched_2024-04-30-19.29.42-ZS-DMap-2 images-01.jpg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2024-04-30-19.26.03-ZS-retouched_2024-04-30-19.29.42-ZS-DMap-2 images-01.jpg": [
+     5072,
+     3955
+    ]
+   }
   },
   {
    "name": "NWA 12416 (C3-ung) - micro",
@@ -3445,7 +7035,21 @@
     "2023-01-01-12.04.54-ZS-retouched-01.jpeg",
     "2023-01-01-12.31.27-ZS-retouched-01.jpeg",
     "[Group 0]-2023-01-02-16.01.34-ZS-DMap_2023-01-02-16.02.49-ZS-DMap-2 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2023-01-01-12.04.54-ZS-retouched-01.jpeg": [
+     4819,
+     3305
+    ],
+    "2023-01-01-12.31.27-ZS-retouched-01.jpeg": [
+     4819,
+     3305
+    ],
+    "[Group 0]-2023-01-02-16.01.34-ZS-DMap_2023-01-02-16.02.49-ZS-DMap-2 images-01.jpeg": [
+     4018,
+     4112
+    ]
+   }
   },
   {
    "name": "Chwichiya 002 (C3.00-ung) - 14mg",
@@ -3460,7 +7064,21 @@
     "2022-02-28-20.17.29-ZS-retouched2-01.jpeg",
     "2022-03-01-16.29.27-ZS-retouched2-01.jpeg",
     "2022-03-01-16.44.44-ZS-retouched-1-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2022-02-28-20.17.29-ZS-retouched2-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2022-03-01-16.29.27-ZS-retouched2-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2022-03-01-16.44.44-ZS-retouched-1-01.jpeg": [
+     4185,
+     3330
+    ]
+   }
   },
   {
    "name": "Tarda (C2-ungrouped) - multiple fragments",
@@ -3478,7 +7096,33 @@
     "2023-07-16-19.08.08-ZS-DMap-01.jpeg",
     "[Group 0]-2023-07-16-18.57.28-ZS-DMap_2023-07-16-19.00.11-ZS-DMap-3 images-01.jpeg",
     "[Group 0]-2023-07-21-14.07.04-ZS-DMap_2023-07-21-18.18.03-ZS-DMap-8 images-01-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2023-07-16-19.01.52-ZS-DMap-01.jpeg": [
+     4855,
+     3355
+    ],
+    "2023-07-16-19.03.40-ZS-DMap-01.jpeg": [
+     4855,
+     3355
+    ],
+    "2023-07-16-19.05.32-ZS-DMap-01.jpeg": [
+     4855,
+     3355
+    ],
+    "2023-07-16-19.08.08-ZS-DMap-01.jpeg": [
+     4855,
+     3355
+    ],
+    "[Group 0]-2023-07-16-18.57.28-ZS-DMap_2023-07-16-19.00.11-ZS-DMap-3 images-01.jpeg": [
+     5581,
+     3976
+    ],
+    "[Group 0]-2023-07-21-14.07.04-ZS-DMap_2023-07-21-18.18.03-ZS-DMap-8 images-01-01.jpeg": [
+     5516,
+     4532
+    ]
+   }
   },
   {
    "name": "NWA 11533 (CVox3)",
@@ -3492,7 +7136,17 @@
    "images": [
     "[Group 0]-2022-05-01-18.02.01-ZS-DMap_2022-05-01-18.04.51-ZS-DMap-4 images-01.jpeg",
     "[Group 0]-2022-05-01-18.05.48-ZS-DMap_2022-05-01-18.09.18-ZS-DMap-4 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2022-05-01-18.02.01-ZS-DMap_2022-05-01-18.04.51-ZS-DMap-4 images-01.jpeg": [
+     5853,
+     4270
+    ],
+    "[Group 0]-2022-05-01-18.05.48-ZS-DMap_2022-05-01-18.09.18-ZS-DMap-4 images-01.jpeg": [
+     5675,
+     4405
+    ]
+   }
   },
   {
    "name": "NWA 11545 (CV3 W3) - 1.15g",
@@ -3525,7 +7179,93 @@
     "2021-05-07-21.28.28-ZS-DMap-01.jpeg",
     "2021-06-17-19.40.15-ZS-DMap-01.jpeg",
     "IMG_20190327_154136-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2019-04-29-17.50.27 ZS PMax-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-05-08-17.33.36 ZS PMax-01-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-05-16-16.31.40 ZS retouched-01-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-05-16-16.34.54 ZS DMap-01-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-05-16-16.48.35 ZS retouched-01-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-05-16-16.54.32 ZS retouched-01-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-05-16-16.57.49 ZS retouched-01-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-05-19-11.38.58 ZS DMap-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-05-19-11.46.26 ZS retouched-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-05-19-11.51.59 ZS retouched-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-05-19-11.57.39 ZS retouched-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-05-19-12.04.20 ZS retouched-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-05-19-12.10.02 ZS retouched-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-05-19-12.17.15 ZS retouched-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-05-19-12.27.07 ZS retouched-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-05-19-12.32.40 ZS retouched-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2021-05-07-21.24.16-ZS-DMap-01.jpeg": [
+     3800,
+     2967
+    ],
+    "2021-05-07-21.26.53-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-05-07-21.28.28-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-06-17-19.40.15-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "IMG_20190327_154136-01.jpeg": [
+     2921,
+     2192
+    ]
+   }
   },
   {
    "name": "NWA 10289 (CV3 S2 W-low) - 1.12g",
@@ -3544,7 +7284,37 @@
     "pano_share-05-01.jpeg",
     "pano_share-06.jpeg",
     "pano_share-09.jpeg"
-   ]
+   ],
+   "dims": {
+    "2020-04-19-12.59.48 ZS DMap-01-01.jpeg": [
+     2996,
+     4301
+    ],
+    "2020-04-19-14.06.19 ZS DMap-01-01.jpeg": [
+     2916,
+     4164
+    ],
+    "[Group 0]-2023-02-12-12.26.40-ZS-DMap_2023-02-12-12.38.09-ZS-DMap-20 images-01.jpeg": [
+     6088,
+     4106
+    ],
+    "pano_share-02-01.jpeg": [
+     3411,
+     4690
+    ],
+    "pano_share-05-01.jpeg": [
+     3349,
+     4775
+    ],
+    "pano_share-06.jpeg": [
+     3443,
+     4647
+    ],
+    "pano_share-09.jpeg": [
+     3339,
+     4791
+    ]
+   }
   },
   {
    "name": "NWA 11533 (CVox3) - 0.74g",
@@ -3559,7 +7329,21 @@
     "2019-05-10-13.54.27 ZS retouched-01-01.jpeg",
     "2019-05-10-14.01.53 ZS retouched-01-03.jpeg",
     "2019-05-11-17.30.08 ZS DMap-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2019-05-10-13.54.27 ZS retouched-01-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-05-10-14.01.53 ZS retouched-01-03.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-05-11-17.30.08 ZS DMap-01.jpeg": [
+     4898,
+     3265
+    ]
+   }
   },
   {
    "name": "NWA 16219 (CV3)",
@@ -3574,7 +7358,21 @@
     "[Group 0]-2024-04-02-21.50.46-ZS-DMap_2024-04-02-21.53.04-ZS-DMap-4 images-01.jpeg",
     "[Group 1]-2024-04-02-21.47.38-ZS-DMap_2024-04-02-21.49.51-ZS-DMap-3 images-01.jpeg",
     "[Group 2]-2024-04-02-21.44.24-ZS-DMap_2024-04-02-21.46.42-ZS-DMap-4 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2024-04-02-21.50.46-ZS-DMap_2024-04-02-21.53.04-ZS-DMap-4 images-01.jpeg": [
+     6755,
+     3318
+    ],
+    "[Group 1]-2024-04-02-21.47.38-ZS-DMap_2024-04-02-21.49.51-ZS-DMap-3 images-01.jpeg": [
+     5724,
+     4015
+    ],
+    "[Group 2]-2024-04-02-21.44.24-ZS-DMap_2024-04-02-21.46.42-ZS-DMap-4 images-01.jpeg": [
+     5616,
+     3879
+    ]
+   }
   },
   {
    "name": "NWA xxx (CV3, under class.) - 0.8g",
@@ -3588,7 +7386,17 @@
    "images": [
     "[Group 0]-2022-04-19-14.48.33-ZS-DMap_2022-04-19-14.55.32-ZS-DMap-7 images-01.jpeg",
     "[Group 1]-2022-04-14-11.07.23-ZS-DMap_2022-04-14-11.13.38-ZS-DMap-8 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2022-04-19-14.48.33-ZS-DMap_2022-04-19-14.55.32-ZS-DMap-7 images-01.jpeg": [
+     6889,
+     3628
+    ],
+    "[Group 1]-2022-04-14-11.07.23-ZS-DMap_2022-04-14-11.13.38-ZS-DMap-8 images-01.jpeg": [
+     6661,
+     3752
+    ]
+   }
   },
   {
    "name": "NWA 14345 (CVred3) - 5.87g",
@@ -3601,7 +7409,13 @@
    "description": "NWA 14345 (CVred3) - 5.87g\nThe reduced CV chondrites have intermediate magnetite abundance, and high contens of metal and sulfides; metal and sulfides are largely Ni-poor.\nA gift from Gregor Pacer!",
    "images": [
     "CVred3-GR-01 (1).jpg"
-   ]
+   ],
+   "dims": {
+    "CVred3-GR-01 (1).jpg": [
+     6666,
+     3750
+    ]
+   }
   },
   {
    "name": "NWA 1465 (CV3-an)",
@@ -3616,7 +7430,21 @@
     "2022-09-18-17.27.42-ZS-DMap-01.jpeg",
     "2022-09-24-14.46.28-ZS-DMap-01.jpeg",
     "[Group 0]-2022-09-24-14.01.26-ZS-DMap_2022-09-24-14.04.03-ZS-DMap-2 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2022-09-18-17.27.42-ZS-DMap-01.jpeg": [
+     4756,
+     3063
+    ],
+    "2022-09-24-14.46.28-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "[Group 0]-2022-09-24-14.01.26-ZS-DMap_2022-09-24-14.04.03-ZS-DMap-2 images-01.jpeg": [
+     4636,
+     5392
+    ]
+   }
   },
   {
    "name": "NWA 13766 (CVred3 S1 W-low) - 3.2g",
@@ -3636,7 +7464,41 @@
     "[Group 1]-2024-06-08-10.42.06-ZS-DMap_2024-06-08-10.44.36-ZS-DMap-4 images.jpg",
     "[Group 2]-2024-06-08-10.37.39-ZS-DMap_2024-06-08-10.41.21-ZS-DMap-6 images.jpg",
     "[Group 3]-2024-06-08-10.34.45-ZS-DMap_2024-06-08-10.36.57-ZS-DMap-4 images.jpg"
-   ]
+   ],
+   "dims": {
+    "2024-06-08-10.33.27-ZS-DMap.jpg": [
+     4855,
+     3355
+    ],
+    "2024-06-08-10.45.31-ZS-DMap.jpg": [
+     4855,
+     3355
+    ],
+    "NWA13766-back.jpg": [
+     7800,
+     7000
+    ],
+    "NWA13766-front.jpg": [
+     7800,
+     7000
+    ],
+    "[Group 0]-2024-06-08-10.46.11-ZS-DMap_2024-06-08-10.47.15-ZS-DMap-2 images.jpg": [
+     4728,
+     4763
+    ],
+    "[Group 1]-2024-06-08-10.42.06-ZS-DMap_2024-06-08-10.44.36-ZS-DMap-4 images.jpg": [
+     7046,
+     3548
+    ],
+    "[Group 2]-2024-06-08-10.37.39-ZS-DMap_2024-06-08-10.41.21-ZS-DMap-6 images.jpg": [
+     5313,
+     4704
+    ],
+    "[Group 3]-2024-06-08-10.34.45-ZS-DMap_2024-06-08-10.36.57-ZS-DMap-4 images.jpg": [
+     7406,
+     3374
+    ]
+   }
   },
   {
    "name": "Allende (CV3-ox) - 0.65g",
@@ -3665,7 +7527,77 @@
     "2023-02-08-18.40.47-ZS-DMap-01.jpeg",
     "2023-02-08-18.41.34-ZS-DMap-01.jpeg",
     "[Group 1]-2023-02-08-16.48.53-ZS-DMap_2023-02-08-16.59.31-ZS-DMap-18 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2021-05-20-20.33.50-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-05-20-20.36.55-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-05-25-12.41.24-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-05-25-12.42.51-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-05-25-12.45.35-ZS-DMap-02.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-05-25-12.47.11-ZS-DMap-02.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-05-25-12.48.33-ZS-DMap-02.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-05-25-12.50.01-ZS-DMap-02.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-05-25-12.51.32-ZS-DMap-02.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-05-25-12.53.04-ZS-DMap-02.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-05-25-13.02.01-ZS-DMap-02.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-05-25-13.03.46-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-05-25-13.06.23-ZS-DMap-02.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-05-25-15.01.04-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2023-02-08-18.40.47-ZS-DMap-01.jpeg": [
+     4564,
+     3453
+    ],
+    "2023-02-08-18.41.34-ZS-DMap-01.jpeg": [
+     4233,
+     3293
+    ],
+    "[Group 1]-2023-02-08-16.48.53-ZS-DMap_2023-02-08-16.59.31-ZS-DMap-18 images-01.jpeg": [
+     6294,
+     3971
+    ]
+   }
   },
   {
    "name": "NWA 8725 (CR2) - two end cuts 1.13g",
@@ -3679,7 +7611,17 @@
    "images": [
     "[Group 0]-2023-08-20-17.08.37-ZS-DMap_2023-08-20-17.17.09-ZS-DMap-3 images-01.jpeg",
     "[Group 1]-2023-08-20-17.04.15-ZS-DMap_2023-08-20-17.05.15-ZS-DMap-2 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2023-08-20-17.08.37-ZS-DMap_2023-08-20-17.17.09-ZS-DMap-3 images-01.jpeg": [
+     5133,
+     4220
+    ],
+    "[Group 1]-2023-08-20-17.04.15-ZS-DMap_2023-08-20-17.05.15-ZS-DMap-2 images-01.jpeg": [
+     5417,
+     4315
+    ]
+   }
   },
   {
    "name": "NWA 801 (CR2)",
@@ -3694,7 +7636,21 @@
     "2022-05-03-11.47.26-ZS-DMap-1-01.jpeg",
     "[Group 1]-2022-05-01-17.44.44-ZS-DMap_2022-05-01-17.49.00-ZS-DMap-2 images-01.jpeg",
     "[Group 1]-2022-05-05-15.58.52-ZS-DMap_2022-05-05-16.03.49-ZS-DMap-3 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2022-05-03-11.47.26-ZS-DMap-1-01.jpeg": [
+     5184,
+     3456
+    ],
+    "[Group 1]-2022-05-01-17.44.44-ZS-DMap_2022-05-01-17.49.00-ZS-DMap-2 images-01.jpeg": [
+     4964,
+     2584
+    ],
+    "[Group 1]-2022-05-05-15.58.52-ZS-DMap_2022-05-05-16.03.49-ZS-DMap-3 images-01.jpeg": [
+     4990,
+     5010
+    ]
+   }
   },
   {
    "name": "NWA 6992 (CR2) - a few small fragments (0.7g)",
@@ -3707,7 +7663,13 @@
    "description": "NWA 6992 (CR2) - a few small fragments (0.7g)\nA gift from Oz!",
    "images": [
     "[Group 0]-2023-01-02-21.59.26-ZS-DMap_2023-01-02-22.05.23-ZS-DMap-6 images-01.jpg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2023-01-02-21.59.26-ZS-DMap_2023-01-02-22.05.23-ZS-DMap-6 images-01.jpg": [
+     5124,
+     4878
+    ]
+   }
   },
   {
    "name": "NWA 16415 (CO3)",
@@ -3722,7 +7684,21 @@
     "[Group 0]-IMG_6245_IMG_6254-10 images-01.jpeg",
     "[Group 1]-2024-02-19-17.43.39-ZS-DMap_2024-02-19-17.49.31-ZS-DMap-9 images-02.jpeg",
     "[Group 1]-2024-02-20-16.51.46-ZS-DMap_2024-02-20-17.15.58-ZS-DMap-8 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-IMG_6245_IMG_6254-10 images-01.jpeg": [
+     5541,
+     4511
+    ],
+    "[Group 1]-2024-02-19-17.43.39-ZS-DMap_2024-02-19-17.49.31-ZS-DMap-9 images-02.jpeg": [
+     5438,
+     4269
+    ],
+    "[Group 1]-2024-02-20-16.51.46-ZS-DMap_2024-02-20-17.15.58-ZS-DMap-8 images-01.jpeg": [
+     5360,
+     4378
+    ]
+   }
   },
   {
    "name": "NWA 10393 (CO3 S2 W-low) - 0.73g",
@@ -3744,7 +7720,49 @@
     "2019-05-15-10.51.31 ZS DMap-02.jpeg",
     "2021-04-08-16.32.51 ZS DMap-01.jpeg",
     "2021-05-02-15.17.02-ZS-retouched-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2019-04-29-17.43.51 ZS PMax-01-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-04-29-17.48.17 ZS PMax-01-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-05-15-09.32.21 ZS DMap-01.jpeg": [
+     4516,
+     3015
+    ],
+    "2019-05-15-09.34.58 ZS DMap-02.jpeg": [
+     4601,
+     3063
+    ],
+    "2019-05-15-10.39.10 ZS DMap-01-01.jpeg": [
+     4169,
+     2785
+    ],
+    "2019-05-15-10.41.28 ZS DMap-01.jpeg": [
+     4185,
+     2801
+    ],
+    "2019-05-15-10.49.54 ZS DMap-02.jpeg": [
+     4553,
+     3036
+    ],
+    "2019-05-15-10.51.31 ZS DMap-02.jpeg": [
+     4575,
+     3052
+    ],
+    "2021-04-08-16.32.51 ZS DMap-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2021-05-02-15.17.02-ZS-retouched-01.jpeg": [
+     4083,
+     2721
+    ]
+   }
   },
   {
    "name": "NWA 11536 (CO3) - 1.2g",
@@ -3763,7 +7781,37 @@
     "Screenshot_2019-11-29-20-38-17-307_com.ebay.mobile-01.jpeg",
     "pano_share-07.jpeg",
     "pano_share-08.jpeg"
-   ]
+   ],
+   "dims": {
+    "2020-04-19-14.08.38 ZS DMap-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2020-04-19-14.12.47 ZS DMap-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2021-04-08-11.50.33 ZS retouched-01-01.jpeg": [
+     3452,
+     3954
+    ],
+    "2021-04-16-15.24.05-ZS-retouched-01.jpeg": [
+     4898,
+     3265
+    ],
+    "Screenshot_2019-11-29-20-38-17-307_com.ebay.mobile-01.jpeg": [
+     1080,
+     797
+    ],
+    "pano_share-07.jpeg": [
+     3927,
+     4073
+    ],
+    "pano_share-08.jpeg": [
+     3943,
+     4057
+    ]
+   }
   },
   {
    "name": "A large, 1100um BO chondrule",
@@ -3779,7 +7827,21 @@
     "2021-04-23-10.04.05-ZS-DMap-pano-2PL-01.jpeg",
     "2021-04-23-10.04.05-ZS-DMap-pano-2PL-02.jpeg",
     "2021-05-02-14.22.39-ZS-retouched-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2021-04-23-10.04.05-ZS-DMap-pano-2PL-01.jpeg": [
+     4495,
+     3558
+    ],
+    "2021-04-23-10.04.05-ZS-DMap-pano-2PL-02.jpeg": [
+     2248,
+     1849
+    ],
+    "2021-05-02-14.22.39-ZS-retouched-01.jpeg": [
+     4898,
+     3265
+    ]
+   }
   },
   {
    "name": "Gujba (CBa) - tiny end cut",
@@ -3793,7 +7855,17 @@
    "images": [
     "[Group 3]-2022-12-31-13.37.38-ZS-DMap_2022-12-31-14.07.39-ZS-DMap-12 images_Blended layer-01.jpeg",
     "[Group 3]-2022-12-31-13.37.38-ZS-DMap_2022-12-31-14.07.39-ZS-DMap-12 images_N_0-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "[Group 3]-2022-12-31-13.37.38-ZS-DMap_2022-12-31-14.07.39-ZS-DMap-12 images_Blended layer-01.jpeg": [
+     5705,
+     4381
+    ],
+    "[Group 3]-2022-12-31-13.37.38-ZS-DMap_2022-12-31-14.07.39-ZS-DMap-12 images_N_0-01.jpeg": [
+     5705,
+     4381
+    ]
+   }
   },
   {
    "name": "NWA 13400 (CL3.9) - 20mg",
@@ -3806,7 +7878,13 @@
    "description": "NWA 13400 (CL3.9) - 20mg",
    "images": [
     "2021-05-04-19.45.43-ZS-DMap-pano-6PN-01.jpg"
-   ]
+   ],
+   "dims": {
+    "2021-05-04-19.45.43-ZS-DMap-pano-6PN-01.jpg": [
+     3162,
+     7905
+    ]
+   }
   },
   {
    "name": "AGUAS ZARCAS (CM2 W0) - 0.34g",
@@ -3823,7 +7901,29 @@
     "2019-09-28-11.59.40 ZS retouched-01.jpeg",
     "2021-04-15-15.14.29 ZS retouched-01.jpeg",
     "Screenshot_2019-09-24-21-22-25-070_com.ebay.mobile-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2019-09-28-11.52.46 ZS retouched-01-01.jpeg": [
+     4660,
+     3117
+    ],
+    "2019-09-28-11.52.46 ZS retouched-01.jpeg": [
+     4660,
+     3117
+    ],
+    "2019-09-28-11.59.40 ZS retouched-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2021-04-15-15.14.29 ZS retouched-01.jpeg": [
+     5109,
+     3221
+    ],
+    "Screenshot_2019-09-24-21-22-25-070_com.ebay.mobile-01.jpeg": [
+     992,
+     990
+    ]
+   }
   },
   {
    "name": "Winchcombe (CM2) - micro",
@@ -3837,7 +7937,17 @@
    "images": [
     "2022-01-08-17.24.51-ZS-retouched (1)-01.jpeg",
     "2022-01-08-17.33.04-ZS-retouched-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2022-01-08-17.24.51-ZS-retouched (1)-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2022-01-08-17.33.04-ZS-retouched-01.jpeg": [
+     5184,
+     3456
+    ]
+   }
   },
   {
    "name": "Paris (CM) - micro",
@@ -3850,7 +7960,13 @@
    "description": "Paris (CM) - micro\nChondrules are more abundant and phyllosilicates less abundant than in CM2s. Significantly less aqueously altered than any known CM2.\nA gift from Travis!",
    "images": [
     "[Group 0]-2023-01-01-11.51.02-ZS-retouched_2023-01-01-11.57.58-ZS-retouched-2 images-01.jpg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2023-01-01-11.51.02-ZS-retouched_2023-01-01-11.57.58-ZS-retouched-2 images-01.jpg": [
+     6903,
+     3620
+    ]
+   }
   },
   {
    "name": "Murchison (CM2 W-low) - lt10mg",
@@ -3865,7 +7981,21 @@
     "2021-05-29-17.06.31-ZS-DMap-pano-2PL-01.jpeg",
     "2021-05-29-17.16.49-ZS-DMap-pano-2PL-01.jpeg",
     "IMG_20210528_193107-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2021-05-29-17.06.31-ZS-DMap-pano-2PL-01.jpeg": [
+     4893,
+     4588
+    ],
+    "2021-05-29-17.16.49-ZS-DMap-pano-2PL-01.jpeg": [
+     4974,
+     4500
+    ],
+    "IMG_20210528_193107-01.jpeg": [
+     2039,
+     2718
+    ]
+   }
   },
   {
    "name": "NWA 12815 (CM2 S1 W-low)",
@@ -3879,7 +8009,17 @@
    "images": [
     "2021-05-29-17.01.05-ZS-DMap-01.jpeg",
     "2021-07-04-10.10.10-ZS-DMap-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2021-05-29-17.01.05-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-07-04-10.10.10-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ]
+   }
   },
   {
    "name": "NWA 15811 (CM2 W-low) - 0.8g",
@@ -3892,7 +8032,13 @@
    "description": "NWA 15811 (CM2 W-low) - 0.8g",
    "images": [
     "[Group 0]-2023-03-30-16.20.57-ZS-DMap_2023-03-30-16.47.17-ZS-DMap-20 images-01.jpg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2023-03-30-16.20.57-ZS-DMap_2023-03-30-16.47.17-ZS-DMap-20 images-01.jpg": [
+     6770,
+     3692
+    ]
+   }
   },
   {
    "name": "Kolang (CM1-2) - 5mg",
@@ -3909,7 +8055,29 @@
     "2021-10-08-17.20.34-ZS-retouched-1-01.jpeg",
     "2021-10-09-12.18.21-ZS-retouched-01.jpeg",
     "2021-10-09-12.22.33-ZS-retouched-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2021-10-05-11.05.30-ZS-retouched-01.jpeg": [
+     3164,
+     2470
+    ],
+    "2021-10-05-11.11.12-ZS-retouched-01.jpeg": [
+     2974,
+     2389
+    ],
+    "2021-10-08-17.20.34-ZS-retouched-1-01.jpeg": [
+     3420,
+     2288
+    ],
+    "2021-10-09-12.18.21-ZS-retouched-01.jpeg": [
+     5052,
+     3368
+    ],
+    "2021-10-09-12.22.33-ZS-retouched-01.jpeg": [
+     5060,
+     3373
+    ]
+   }
   },
   {
    "name": "Murray (CM2) - micro",
@@ -3924,7 +8092,21 @@
     "2022-06-06-18.17.05-ZS-retouched (1)-01.jpeg",
     "2022-06-06-18.21.42-ZS-retouched (1)-01.jpeg",
     "IMG_20220606_180733-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2022-06-06-18.17.05-ZS-retouched (1)-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2022-06-06-18.21.42-ZS-retouched (1)-01.jpeg": [
+     5184,
+     3456
+    ],
+    "IMG_20220606_180733-01.jpeg": [
+     3616,
+     2758
+    ]
+   }
   },
   {
    "name": "NWA 11345 (CM2 W-low) - 0.3g, 20mg",
@@ -3954,7 +8136,81 @@
     "2021-07-03-21.21.16-ZS-DMap-01.jpeg",
     "2021-07-03-21.25.44-ZS-DMap-01.jpeg",
     "IMG_4697-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2019-04-17-15.39.22 ZS PMax-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2019-04-17-15.42.17 ZS PMax-01.jpeg": [
+     3693,
+     2764
+    ],
+    "2019-04-26-14.12.17 ZS PMax-01-01.jpeg": [
+     3175,
+     2379
+    ],
+    "2019-04-27-17.55.27 ZS retouched-01.jpeg": [
+     4787,
+     3341
+    ],
+    "2020-01-12-18.34.16 ZS DMap-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2020-01-12-18.36.42 ZS DMap-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2021-07-03-17.35.22-ZS-DMap-pano-5PN-01.jpeg": [
+     3976,
+     6265
+    ],
+    "2021-07-03-17.41.30-ZS-DMap-pano-5PN-01.jpeg": [
+     4095,
+     6105
+    ],
+    "2021-07-03-21.03.13-ZS-DMap-01.jpeg": [
+     5184,
+     3352
+    ],
+    "2021-07-03-21.05.29-ZS-DMap-01.jpeg": [
+     4992,
+     3360
+    ],
+    "2021-07-03-21.07.04-ZS-DMap-03.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-07-03-21.08.29-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-07-03-21.11.42-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-07-03-21.15.09-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-07-03-21.17.34-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-07-03-21.21.16-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-07-03-21.25.44-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "IMG_4697-01.jpeg": [
+     4104,
+     2368
+    ]
+   }
   },
   {
    "name": "CM2 in classification - micro fragment",
@@ -3967,7 +8223,13 @@
    "description": "CM2 in classification - micro fragment\nFrom a huge donation of Jesper Grønne!",
    "images": [
     "2024-04-02-21.57.58-ZS-DMap-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2024-04-02-21.57.58-ZS-DMap-01.jpeg": [
+     4643,
+     3354
+    ]
+   }
   },
   {
    "name": "NWA under classification (poss CR2)",
@@ -3984,7 +8246,29 @@
     "[Group 0]-2022-09-17-17.27.29-ZS-DMap_2022-09-17-17.31.59-ZS-DMap-7 images-01.jpeg",
     "[Group 0]-2022-09-17-17.35.21-ZS-DMap_2022-09-17-17.40.42-ZS-DMap-8 images-02.jpeg",
     "[Group 0]-2022-09-18-17.18.19-ZS-DMap_2022-09-18-17.23.59-ZS-DMap-8 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2022-09-17-12.55.00-ZS-DMap_2022-09-17-13.00.44-ZS-DMap-8 images-01.jpeg": [
+     6742,
+     3708
+    ],
+    "[Group 0]-2022-09-17-17.22.39-ZS-DMap_2022-09-17-17.26.43-ZS-DMap-6 images-01.jpeg": [
+     6121,
+     4084
+    ],
+    "[Group 0]-2022-09-17-17.27.29-ZS-DMap_2022-09-17-17.31.59-ZS-DMap-7 images-01.jpeg": [
+     5871,
+     4258
+    ],
+    "[Group 0]-2022-09-17-17.35.21-ZS-DMap_2022-09-17-17.40.42-ZS-DMap-8 images-02.jpeg": [
+     6648,
+     3760
+    ],
+    "[Group 0]-2022-09-18-17.18.19-ZS-DMap_2022-09-18-17.23.59-ZS-DMap-8 images-01.jpeg": [
+     6707,
+     3727
+    ]
+   }
   },
   {
    "name": "Unclassified NWA (possible CR2 or CVred3) - 18.5g",
@@ -4009,7 +8293,61 @@
     "2022-10-26-10.10.00-ZS-DMap-01.jpeg",
     "CR2-normal-01.jpeg",
     "CR2-xprl-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2022-10-26-09.55.23-ZS-DMap-01.jpeg": [
+     4593,
+     3284
+    ],
+    "2022-10-26-09.56.16-ZS-DMap-01.jpeg": [
+     4593,
+     3284
+    ],
+    "2022-10-26-09.57.19-ZS-DMap-01.jpeg": [
+     4593,
+     3284
+    ],
+    "2022-10-26-09.58.05-ZS-DMap-01.jpeg": [
+     4593,
+     3284
+    ],
+    "2022-10-26-10.00.24-ZS-DMap-01.jpeg": [
+     4593,
+     3284
+    ],
+    "2022-10-26-10.01.20-ZS-DMap-01.jpeg": [
+     4593,
+     3284
+    ],
+    "2022-10-26-10.05.20-ZS-DMap-01.jpeg": [
+     4593,
+     3284
+    ],
+    "2022-10-26-10.06.14-ZS-DMap-01.jpeg": [
+     4593,
+     3284
+    ],
+    "2022-10-26-10.07.11-ZS-DMap-01.jpeg": [
+     4593,
+     3284
+    ],
+    "2022-10-26-10.08.12-ZS-DMap-01.jpeg": [
+     4593,
+     3284
+    ],
+    "2022-10-26-10.10.00-ZS-DMap-01.jpeg": [
+     4593,
+     3284
+    ],
+    "CR2-normal-01.jpeg": [
+     5267,
+     4745
+    ],
+    "CR2-xprl-01.jpeg": [
+     5267,
+     4745
+    ]
+   }
   },
   {
    "name": "NWA 12671 (CK6 S2 W1) - 0.44g",
@@ -4022,7 +8360,13 @@
    "description": "NWA 12671 (CK6 S2 W1) - 0.44g\nHistory: The meteorite was purchased from a local meteorite dealer in Laayoune, Mauritania.\nMany small dark greyish fragments some of which are partly covered with fusion crust.\nThe meteorite displays a dark-grayish interior and predominantly consists of fine-grained recrystallized matrix dominated by ferrous olivine. Chondrules are only rarely encountered. Minor phases include intermediate plagioclase, low-Ca pyroxene, Ca-pyroxene, and FeNi-sulfides. Cr-rich magnetite is abundant; metal is virtually absent.",
    "images": [
     "2021-04-20-17.06.03-ZS-DMap-01.jpg"
-   ]
+   ],
+   "dims": {
+    "2021-04-20-17.06.03-ZS-DMap-01.jpg": [
+     4898,
+     3265
+    ]
+   }
   },
   {
    "name": "NWA 16790 (prov. CK5) - micro",
@@ -4035,7 +8379,13 @@
    "description": "NWA 16790 (prov. CK5) - micro\nA gift from Mohamed Ali Loud.",
    "images": [
     "[Group 0]-IMG_6485_IMG_6496-12 images.jpg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-IMG_6485_IMG_6496-12 images.jpg": [
+     3386,
+     6963
+    ]
+   }
   },
   {
    "name": "NWA xxx (probable CK)",
@@ -4048,7 +8398,13 @@
    "description": "NWA xxx (probable CK)\nA gift from Marcin.",
    "images": [
     "[Group 0]-2023-01-22-21.28.01-ZS-DMap_2023-01-22-21.37.42-ZS-DMap-17 images-01.jpg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2023-01-22-21.28.01-ZS-DMap_2023-01-22-21.37.42-ZS-DMap-17 images-01.jpg": [
+     5543,
+     4509
+    ]
+   }
   },
   {
    "name": "Oued Chebeika 002 (CI1) - 12mg",
@@ -4063,7 +8419,21 @@
     "2025-01-11-18.27.00-ZS-retouched.jpg",
     "2025-01-11-18.39.18-ZS-retouched.jpg",
     "[Group 0]-2025-01-16-17.01.19-ZS-DMap_2025-01-16-17.08.36-ZS-DMap-4 images.jpg"
-   ]
+   ],
+   "dims": {
+    "2025-01-11-18.27.00-ZS-retouched.jpg": [
+     4855,
+     3355
+    ],
+    "2025-01-11-18.39.18-ZS-retouched.jpg": [
+     4855,
+     3355
+    ],
+    "[Group 0]-2025-01-16-17.01.19-ZS-DMap_2025-01-16-17.08.36-ZS-DMap-4 images.jpg": [
+     5485,
+     4040
+    ]
+   }
   },
   {
    "name": "ORGUEIL (CI1) - a few mg",
@@ -4081,7 +8451,33 @@
     "2021-07-05-17.49.16-ZS-retouched-01.jpeg",
     "2021-07-05-18.05.17-ZS-retouched-01.jpeg",
     "Screenshot_2019-11-19-20-06-20-679_com.ebay.mobile-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2020-04-22-11.48.37 ZS retouched-02.jpeg": [
+     4036,
+     2731
+    ],
+    "2020-04-22-11.56.27 ZS retouched-01.jpeg": [
+     3829,
+     2860
+    ],
+    "2021-06-30-19.27.42-ZS-retouched-01-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-07-05-17.49.16-ZS-retouched-01.jpeg": [
+     4340,
+     3437
+    ],
+    "2021-07-05-18.05.17-ZS-retouched-01.jpeg": [
+     5184,
+     3456
+    ],
+    "Screenshot_2019-11-19-20-06-20-679_com.ebay.mobile-01.jpeg": [
+     1080,
+     800
+    ]
+   }
   },
   {
    "name": "Toufassour - 0.26g",
@@ -4093,7 +8489,13 @@
    "description": "Toufassour - 0.26g\nThe fusion crust is absent and the surface appears dark brown. Larger nodules of metal protrude here and there, and larger inclusions of silicates are seen, as greenish spots. Many of the smaller specimens were rich in metal, the phase, which best resisted weathering.",
    "images": [
     "2021-04-20-16.56.54-ZS-DMap-01.jpg"
-   ]
+   ],
+   "dims": {
+    "2021-04-20-16.56.54-ZS-DMap-01.jpg": [
+     4898,
+     3265
+    ]
+   }
   },
   {
    "name": "Unclassified NWA (possible mesosiderite)",
@@ -4106,7 +8508,17 @@
    "images": [
     "2024-03-24-11.57.34-ZS-DMap-01.jpeg",
     "[Group 0]-2024-03-21-11.14.48-ZS-DMap_2024-03-21-11.19.24-ZS-DMap-8 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2024-03-24-11.57.34-ZS-DMap-01.jpeg": [
+     4939,
+     3239
+    ],
+    "[Group 0]-2024-03-21-11.14.48-ZS-DMap_2024-03-21-11.19.24-ZS-DMap-8 images-01.jpeg": [
+     5966,
+     3903
+    ]
+   }
   },
   {
    "name": "Vaca Muerta - 1.28g",
@@ -4127,7 +8539,49 @@
     "2021-05-14-17.28.41-ZS-retouched-01.jpeg",
     "2021-05-14-17.31.57-ZS-DMap-01.jpeg",
     "[Group 0]-IMG_2751_IMG_2758-7 images-01-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2021-05-10-20.33.54-ZS-retouched-01.jpeg": [
+     4104,
+     2283
+    ],
+    "2021-05-14-16.17.58-ZS-DMap-pano-3PN-02.jpeg": [
+     7113,
+     3514
+    ],
+    "2021-05-14-16.30.33-ZS-DMap-pano-3PN-01.jpeg": [
+     6944,
+     3599
+    ],
+    "2021-05-14-16.42.52-ZS-retouched-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-05-14-16.49.18-ZS-retouched-01.jpeg": [
+     4601,
+     3317
+    ],
+    "2021-05-14-16.59.35-ZS-retouched-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-05-14-17.22.20-ZS-retouched2-01.jpeg": [
+     4810,
+     3314
+    ],
+    "2021-05-14-17.28.41-ZS-retouched-01.jpeg": [
+     4716,
+     3325
+    ],
+    "2021-05-14-17.31.57-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "[Group 0]-IMG_2751_IMG_2758-7 images-01-01.jpeg": [
+     6059,
+     4125
+    ]
+   }
   },
   {
    "name": "Bondoc (mesosiderite B4)",
@@ -4139,7 +8593,13 @@
    "description": "Bondoc (mesosiderite B4)\nGift from Maxime!",
    "images": [
     "2022-05-07-17.57.50-ZS-retouched-01.jpg"
-   ]
+   ],
+   "dims": {
+    "2022-05-07-17.57.50-ZS-retouched-01.jpg": [
+     4885,
+     3181
+    ]
+   }
   },
   {
    "name": "Gyarub Zangbo (pallasite)",
@@ -4152,7 +8612,13 @@
    "description": "Gyarub Zangbo (pallasite)\nAn unusual, unique pallasite (possibly previously unsampled parent body) with chemical affinities to carbonaceous pallasites such as the Eagel Station pallasite grouplet and Milton.\nA gift from dr. Yang Shun-Chung through Michael Kelly!",
    "images": [
     "[Group 0]-2023-08-17-15.01.51-ZS-DMap_2023-08-17-17.08.32-ZS-DMap-9 images-01.jpg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2023-08-17-15.01.51-ZS-DMap_2023-08-17-17.08.32-ZS-DMap-9 images-01.jpg": [
+     5611,
+     4333
+    ]
+   }
   },
   {
    "name": "Oued Bourdim 001 (pallasite, PES) - 0.412g",
@@ -4167,7 +8633,21 @@
     "[Group 0]-2023-08-19-16.59.11-ZS-DMap_2023-08-19-17.00.58-ZS-DMap-2 images-02.jpeg",
     "[Group 1]-2023-08-19-16.53.10-ZS-DMap_2023-08-19-16.57.25-ZS-DMap-5 images-01.jpeg",
     "[Group 2]-2023-08-18-20.19.07-ZS-DMap_2023-08-18-20.22.12-ZS-DMap-2 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2023-08-19-16.59.11-ZS-DMap_2023-08-19-17.00.58-ZS-DMap-2 images-02.jpeg": [
+     4792,
+     4431
+    ],
+    "[Group 1]-2023-08-19-16.53.10-ZS-DMap_2023-08-19-16.57.25-ZS-DMap-5 images-01.jpeg": [
+     5287,
+     4727
+    ],
+    "[Group 2]-2023-08-18-20.19.07-ZS-DMap_2023-08-18-20.22.12-ZS-DMap-2 images-01.jpeg": [
+     5212,
+     3951
+    ]
+   }
   },
   {
    "name": "Pallasovka (pallasite-mg)",
@@ -4181,7 +8661,17 @@
    "images": [
     "2021-10-05-08.30.37-ZS-retouched-01.jpeg",
     "2021-10-08-16.39-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2021-10-05-08.30.37-ZS-retouched-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-10-08-16.39-01.jpeg": [
+     5184,
+     3456
+    ]
+   }
   },
   {
    "name": "Sericho (pallasite) - 5g",
@@ -4195,7 +8685,17 @@
    "images": [
     "2022-07-26-16.34.37-ZS-DMap-01.jpeg",
     "IMG_20220719_175012-01-01-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2022-07-26-16.34.37-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "IMG_20220719_175012-01-01-01.jpeg": [
+     3065,
+     2229
+    ]
+   }
   },
   {
    "name": "Seymchan (pallasite, PMG)",
@@ -4209,7 +8709,17 @@
    "images": [
     "IMG_20220318_154510-01.jpeg",
     "IMG_20220318_154535-01-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "IMG_20220318_154510-01.jpeg": [
+     2851,
+     2236
+    ],
+    "IMG_20220318_154535-01-01.jpeg": [
+     2224,
+     1785
+    ]
+   }
   },
   {
    "name": "Brenham (pallasite-an) - 2.9g",
@@ -4223,7 +8733,17 @@
    "images": [
     "pano_share-11.jpeg",
     "pano_share-12.jpeg"
-   ]
+   ],
+   "dims": {
+    "pano_share-11.jpeg": [
+     3199,
+     5001
+    ],
+    "pano_share-12.jpeg": [
+     3075,
+     5202
+    ]
+   }
   },
   {
    "name": "Sericho (pallasite)",
@@ -4240,7 +8760,29 @@
     "2023-04-23-11.33.02-ZS-retouched-01.jpeg",
     "IMG_20230420_101739-01-01.jpeg",
     "image-153.jpeg"
-   ]
+   ],
+   "dims": {
+    "2023-04-23-11.27.16-ZS-DMap-01.jpeg": [
+     2881,
+     1920
+    ],
+    "2023-04-23-11.30.19-ZS-retouched-01.jpeg": [
+     2723,
+     1945
+    ],
+    "2023-04-23-11.33.02-ZS-retouched-01.jpeg": [
+     2503,
+     1808
+    ],
+    "IMG_20230420_101739-01-01.jpeg": [
+     2822,
+     2232
+    ],
+    "image-153.jpeg": [
+     3477,
+     2531
+    ]
+   }
   },
   {
    "name": "NWA 12862 (pallasite) -",
@@ -4254,7 +8796,17 @@
    "images": [
     "[Group 0]-2022-09-17-10.54.30-ZS-DMap_2022-09-17-10.58.14-ZS-DMap-5 images-01.jpeg",
     "[Group 0]-2022-10-18-17.07.40-ZS-DMap_2022-10-18-17.19.43-ZS-DMap-8 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2022-09-17-10.54.30-ZS-DMap_2022-09-17-10.58.14-ZS-DMap-5 images-01.jpeg": [
+     5174,
+     4831
+    ],
+    "[Group 0]-2022-10-18-17.07.40-ZS-DMap_2022-10-18-17.19.43-ZS-DMap-8 images-01.jpeg": [
+     6010,
+     4159
+    ]
+   }
   },
   {
    "name": "Jepara (pallasite, PMG) - 0.35g",
@@ -4268,7 +8820,17 @@
    "images": [
     "[Group 1]-IMG_4031_IMG_4052-22 images-01.jpeg",
     "[Group 2]-IMG_4054_IMG_4072-18 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "[Group 1]-IMG_4031_IMG_4052-22 images-01.jpeg": [
+     5120,
+     4882
+    ],
+    "[Group 2]-IMG_4054_IMG_4072-18 images-01.jpeg": [
+     4822,
+     5183
+    ]
+   }
   },
   {
    "name": "Arispe (IC iron, octahedrite) - micro",
@@ -4280,7 +8842,13 @@
    "description": "Arispe (IC iron, octahedrite) - micro\nIt was determined that very rare IC irons have the oldest differentiation age of all the iron groups, overlaping with the CAI formation and as such represent the oldest meteoritic material we have. The terrestrial age of Arispe is also very large - it fell around 240,000 years ago in today's Mexico.\nDonated by Alan Mazur.",
    "images": [
     "2022-10-16-08.51.43-ZS-DMap-01.jpg"
-   ]
+   ],
+   "dims": {
+    "2022-10-16-08.51.43-ZS-DMap-01.jpg": [
+     3990,
+     2416
+    ]
+   }
   },
   {
    "name": "Campo del Cielo (IAB coarse octahedrite to granular hexahedrite) - 4g",
@@ -4293,7 +8861,17 @@
    "images": [
     "2021-04-02-10.57.48 ZS retouched-01.jpeg",
     "2021-04-02-11.05.02 ZS retouched-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2021-04-02-10.57.48 ZS retouched-01.jpeg": [
+     4682,
+     3122
+    ],
+    "2021-04-02-11.05.02 ZS retouched-01.jpeg": [
+     4532,
+     3020
+    ]
+   }
   },
   {
    "name": "Hickman (iron, IAB complex) - 1.09g",
@@ -4306,7 +8884,17 @@
    "images": [
     "16587773187135029410944372184939-01.jpeg",
     "[Group 0]-IMG_20230213_173648_IMG_20230213_173835-18 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "16587773187135029410944372184939-01.jpeg": [
+     823,
+     617
+    ],
+    "[Group 0]-IMG_20230213_173648_IMG_20230213_173835-18 images-01.jpeg": [
+     5724,
+     3332
+    ]
+   }
   },
   {
    "name": "CANYON DIABLO (iron, IAB, coarse octahedrite) - 70g",
@@ -4318,7 +8906,13 @@
    "description": "CANYON DIABLO (iron, IAB, coarse octahedrite) - 70g\nGot it as a gift from a friend.\nThe asteroid, about 50m across, fell about 50,000 years ago, making 1200m wide and 170m deep Barringer Crater in Arizona on impact. It is the most well preserved large impact crater on Earth.\nIt is believed that the largest piece that ptoduced the crater completely vaporized during the impact sending huge shock waves. Smaller fragments falling behind got some of their carbon turned into diamonds by this shock wave.",
    "images": [
     "2019-05-01-18.17.10 ZS PMax-01-01.jpg"
-   ]
+   ],
+   "dims": {
+    "2019-05-01-18.17.10 ZS PMax-01-01.jpg": [
+     3265,
+     4898
+    ]
+   }
   },
   {
    "name": "Maslyanino (iron, IAB complex) - 4.74g",
@@ -4331,7 +8925,17 @@
    "images": [
     "Maslyanino99A.jpg",
     "Maslyanino99B-1.jpg"
-   ]
+   ],
+   "dims": {
+    "Maslyanino99A.jpg": [
+     9586,
+     10327
+    ],
+    "Maslyanino99B-1.jpg": [
+     9505,
+     10414
+    ]
+   }
   },
   {
    "name": "Gabel Kamil (ungrouped iron) - 27g",
@@ -4345,7 +8949,21 @@
     "IMG_20230702_172949-01.jpeg",
     "IMG_20230702_173015-01.jpeg",
     "IMG_20230702_173116-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "IMG_20230702_172949-01.jpeg": [
+     3525,
+     2581
+    ],
+    "IMG_20230702_173015-01.jpeg": [
+     3616,
+     2585
+    ],
+    "IMG_20230702_173116-01.jpeg": [
+     3367,
+     2245
+    ]
+   }
   },
   {
    "name": "Dronino (iron-ungrouped) - 3.9g",
@@ -4359,7 +8977,21 @@
     "2021-04-10-12.25.10 ZS retouched-01.jpeg",
     "2021-04-10-12.30.42 ZS retouched-01.jpeg",
     "2021-04-19-18.45.11-ZS-DMap-01-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2021-04-10-12.25.10 ZS retouched-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2021-04-10-12.30.42 ZS retouched-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2021-04-19-18.45.11-ZS-DMap-01-01.jpeg": [
+     4898,
+     3265
+    ]
+   }
   },
   {
    "name": "NWA 859 Taza (ungrouped iron) - 0.61g",
@@ -4377,7 +9009,37 @@
     "[Group 0]-2023-07-20-15.10.03-ZS-DMap_2023-07-20-15.11.54-ZS-DMap-2 images-01.jpeg",
     "[Group 0]-2023-07-20-15.12.56-ZS-DMap_2023-07-20-15.13.48-ZS-DMap-2 images-01.jpeg",
     "[Group 1]-2023-07-20-15.14.35-ZS-DMap_2023-07-20-15.15.24-ZS-DMap-2 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2023-07-20-15.20.11-ZS-DMap-01.jpeg": [
+     4855,
+     3181
+    ],
+    "2023-07-20-15.30.20-ZS-DMap-01.jpeg": [
+     4993,
+     3355
+    ],
+    "2023-07-21-09.49.23-ZS-DMap-03.jpeg": [
+     4855,
+     3097
+    ],
+    "[Group 0]-2023-07-20-15.07.17-ZS-DMap_2023-07-20-15.08.55-ZS-DMap-2 images-01.jpeg": [
+     4772,
+     3002
+    ],
+    "[Group 0]-2023-07-20-15.10.03-ZS-DMap_2023-07-20-15.11.54-ZS-DMap-2 images-01.jpeg": [
+     5038,
+     3229
+    ],
+    "[Group 0]-2023-07-20-15.12.56-ZS-DMap_2023-07-20-15.13.48-ZS-DMap-2 images-01.jpeg": [
+     5159,
+     2916
+    ],
+    "[Group 1]-2023-07-20-15.14.35-ZS-DMap_2023-07-20-15.15.24-ZS-DMap-2 images-01.jpeg": [
+     5079,
+     2788
+    ]
+   }
   },
   {
    "name": "Turgut (iron-un, finest octahedrite)",
@@ -4392,7 +9054,25 @@
     "IMG_20220620_175345-01-01.jpeg",
     "IMG_20220620_175500-01-02.jpeg",
     "[Group 0]-2023-02-11-18.57.03-ZS-DMap_2023-02-11-19.08.55-ZS-DMap-12 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "IMG_20220620_174728-01.jpeg": [
+     2585,
+     2253
+    ],
+    "IMG_20220620_175345-01-01.jpeg": [
+     2822,
+     2328
+    ],
+    "IMG_20220620_175500-01-02.jpeg": [
+     3446,
+     2477
+    ],
+    "[Group 0]-2023-02-11-18.57.03-ZS-DMap_2023-02-11-19.08.55-ZS-DMap-12 images-01.jpeg": [
+     4689,
+     5330
+    ]
+   }
   },
   {
    "name": "Gibeon (IVA fine octahedrite) - 1.2g",
@@ -4404,7 +9084,13 @@
    "description": "Gibeon (IVA fine octahedrite) - 1.2g\nThe meteorite fell in prehistoric times and was later discovered by the Nama people (Namibia) and used by them to make tools and weapons.\nA gift from Sean Mahoney.",
    "images": [
     "2021-04-20-16.49.10-ZS-retouched-01 (1).jpg"
-   ]
+   ],
+   "dims": {
+    "2021-04-20-16.49.10-ZS-retouched-01 (1).jpg": [
+     4898,
+     3265
+    ]
+   }
   },
   {
    "name": "Muonionalusta (iron, IVA, fine octahedrite) - 13.8g",
@@ -4418,7 +9104,21 @@
     "IMG_8075-01.jpeg",
     "pano_share-01-01-01.jpeg",
     "pano_share-01-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "IMG_8075-01.jpeg": [
+     4318,
+     3117
+    ],
+    "pano_share-01-01-01.jpeg": [
+     4512,
+     3545
+    ],
+    "pano_share-01-01.jpeg": [
+     2551,
+     3564
+    ]
+   }
   },
   {
    "name": "Muonionalusta (IVA iron) - 10cm slice",
@@ -4430,7 +9130,13 @@
    "description": "Muonionalusta (IVA iron) - 10cm slice\nPurchased from Sean Mahoney.",
    "images": [
     "Muonionalusta-Sean (1).jpg"
-   ]
+   ],
+   "dims": {
+    "Muonionalusta-Sean (1).jpg": [
+     3835,
+     6518
+    ]
+   }
   },
   {
    "name": "Muonionalusta",
@@ -4442,7 +9148,13 @@
    "description": "Muonionalusta\nFrom a huge donation of Jesper Grønne!",
    "images": [
     "[Group 0]-2024-04-04-18.55.32-ZS-DMap_2024-04-04-19.00.06-ZS-DMap-7 images-02.jpeg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2024-04-04-18.55.32-ZS-DMap_2024-04-04-19.00.06-ZS-DMap-7 images-02.jpeg": [
+     8187,
+     2878
+    ]
+   }
   },
   {
    "name": "Miles (iron, IIE) - 0.829g",
@@ -4454,7 +9166,13 @@
    "description": "Miles (iron, IIE) - 0.829g\nA very rare iron sub-type.\nFractionated. Contains 10-20% globular silicate inclusions that form interconnected network and that formed at significant depth experiencing slow cooling.",
    "images": [
     "[Group 0]-IMG_1179_IMG_1201-23 images-01.jpg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-IMG_1179_IMG_1201-23 images-01.jpg": [
+     5626,
+     4442
+    ]
+   }
   },
   {
    "name": "Aletai (iron, IIIE, octahedrite) - 5.28g",
@@ -4467,7 +9185,17 @@
    "images": [
     "IMG_20220312_104413-01.jpeg",
     "IMG_20220312_105931-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "IMG_20220312_104413-01.jpeg": [
+     2200,
+     1851
+    ],
+    "IMG_20220312_105931-01.jpeg": [
+     3604,
+     2943
+    ]
+   }
   },
   {
    "name": "Henbury (iron, IIIAB) - 2.53g",
@@ -4479,7 +9207,13 @@
    "description": "Henbury (iron, IIIAB) - 2.53g\nHenbury is one of five meteorite impact sites in Australia with remaining meteorite fragments and one of the world's best preserved examples of a small crater field. Henbury was the earliest documented example of impact cratering in Australia.",
    "images": [
     "[Group 0]-2022-09-10-15.40.30-ZS-DMap_2022-09-10-15.51.53-ZS-DMap-3 images-01.jpg"
-   ]
+   ],
+   "dims": {
+    "[Group 0]-2022-09-10-15.40.30-ZS-DMap_2022-09-10-15.51.53-ZS-DMap-3 images-01.jpg": [
+     6239,
+     4007
+    ]
+   }
   },
   {
    "name": "Lake Murray (IIAB iron)",
@@ -4491,7 +9225,13 @@
    "description": "Lake Murray (IIAB iron)\nFossil meteorite found in 1933. It fell to Earth about 90 to 110 million years ago.",
    "images": [
     "[Group 1]-2022-05-09-15.32.49-ZS-DMap_2022-05-09-15.36.08-ZS-DMap-3 images-01.jpg"
-   ]
+   ],
+   "dims": {
+    "[Group 1]-2022-05-09-15.32.49-ZS-DMap_2022-05-09-15.36.08-ZS-DMap-3 images-01.jpg": [
+     5685,
+     4397
+    ]
+   }
   },
   {
    "name": "Agoudal (IIAB) - 1.5g",
@@ -4504,7 +9244,17 @@
    "images": [
     "2021-05-12-17.01.11-ZS-retouched-01.jpeg",
     "2021-05-12-17.05.36-ZS-DMap-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2021-05-12-17.01.11-ZS-retouched-01.jpeg": [
+     3453,
+     4030
+    ],
+    "2021-05-12-17.05.36-ZS-DMap-01.jpeg": [
+     3299,
+     4083
+    ]
+   }
   },
   {
    "name": "Sikhote-Alin (iron, IIAB, coarse octahedrite) - 2.2g",
@@ -4518,7 +9268,21 @@
     "2019-05-15-16.20.23 ZS retouched-01.jpeg",
     "2019-05-15-16.46.50 ZS DMap-01.jpeg",
     "image-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2019-05-15-16.20.23 ZS retouched-01.jpeg": [
+     4644,
+     3100
+    ],
+    "2019-05-15-16.46.50 ZS DMap-01.jpeg": [
+     4762,
+     3175
+    ],
+    "image-01.jpeg": [
+     4898,
+     3265
+    ]
+   }
   },
   {
    "name": "Sikhote-Alin (iron, IIAB, coarse octahedrite) - 6.9g",
@@ -4532,7 +9296,21 @@
     "2021-04-01-18.33.53 ZS retouched-01.jpeg",
     "2021-04-01-18.51.12 ZS retouched-01.jpeg",
     "2021-04-01-18.59.24 ZS retouched-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2021-04-01-18.33.53 ZS retouched-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2021-04-01-18.51.12 ZS retouched-01.jpeg": [
+     4898,
+     3265
+    ],
+    "2021-04-01-18.59.24 ZS retouched-01.jpeg": [
+     4898,
+     3265
+    ]
+   }
   },
   {
    "name": "Mount Baldr A76002 (H6) - micro",
@@ -4543,7 +9321,13 @@
    "description": "Mount Baldr A76002 (H6) - micro\nThe second find of the first joined USA/Japanese Antarctic expedition.\nFrom Bill Cassidy's book:\nAt the top was a small patch of exposed ice about 3 × 3km in area, partially covered in a very patchy way by snow. It didn’t look very promising, but we got out and Keizo almost immediatedly spotted a meteorite near the helo. We were ecstatic, but while we were photographing it and admiring it, Keizo was scanning the ice with his binoculars. Presently he started running and we, of course, followed. Sam ran back to the helicopter and took off, following us at an elevation of about 2m, and 20m behind. In silhouette, it would have been a memorable, if puzzling, tableau: a figure running at top speed over the ice, two more people chasing him and a helicopter skimming along behind. I remember looking back and thinking that this is what an insect must feel like, being stalked by a praying mantis. Meanwhile, Keizo had spotted another meteorite. So Keizo Yanai had found our first two meteorites during our\nfirst 20 minutes in the field, and that is how it all began. We didn’t find another for the next six weeks!",
    "images": [
     "2021-10-12-16.29.41-ZS-retouched-01.jpg"
-   ]
+   ],
+   "dims": {
+    "2021-10-12-16.29.41-ZS-retouched-01.jpg": [
+     4249,
+     2833
+    ]
+   }
   },
   {
    "name": "Derrick Peak A78008 (IIAB iron)",
@@ -4554,7 +9338,13 @@
    "description": "Derrick Peak A78008 (IIAB iron)\nDerrick Peak pairing group is the largest Antarctic iron meteorite find. The first fragments were found  by a group of geologists from New Zeland. Bill Casidy's team soon joined them (after being rescued from a mountain top where they landed their helicopter after running out of fuel) and together they found 12 fragments in total, including one weighting 160kg.",
    "images": [
     "2022-11-24-10.44.54-ZS-retouched-1-01.jpg"
-   ]
+   ],
+   "dims": {
+    "2022-11-24-10.44.54-ZS-retouched-1-01.jpg": [
+     3824,
+     2360
+    ]
+   }
   },
   {
    "name": "ALH 76009 (L6)",
@@ -4566,7 +9356,17 @@
    "images": [
     "2021-09-20-20.58.50-ZS-retouched-01.jpeg",
     "2021-09-20-21.04.43-ZS-retouched-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2021-09-20-20.58.50-ZS-retouched-01.jpeg": [
+     4088,
+     2726
+    ],
+    "2021-09-20-21.04.43-ZS-retouched-01.jpeg": [
+     4297,
+     2865
+    ]
+   }
   },
   {
    "name": "ALH 76001 (L6) - multiple micros",
@@ -4578,7 +9378,17 @@
    "images": [
     "1627287741259-01.jpeg",
     "2021-08-03-15.12.51-ZS-retouched-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "1627287741259-01.jpeg": [
+     1980,
+     1272
+    ],
+    "2021-08-03-15.12.51-ZS-retouched-01.jpeg": [
+     5184,
+     3456
+    ]
+   }
   },
   {
    "name": "1749. Krasnojarsk (pallasite) - 70mg",
@@ -4592,7 +9402,25 @@
     "2021-07-26-15.41.36-ZS-retouched-01.jpeg",
     "2021-07-26-16.01.11-ZS-retouched-01.jpeg",
     "IMG_20210726_192635-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "12356_31968_183-01-01-01-08.jpeg": [
+     1468,
+     918
+    ],
+    "2021-07-26-15.41.36-ZS-retouched-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-07-26-16.01.11-ZS-retouched-01.jpeg": [
+     5184,
+     3456
+    ],
+    "IMG_20210726_192635-01.jpeg": [
+     2641,
+     1740
+    ]
+   }
   },
   {
    "name": "1751. Hrašćina (iron, IID) - 3mg",
@@ -4607,7 +9435,29 @@
     "1644766705064.jpg",
     "[Group 0]-2021-09-13-14.53.56-ZS-retouched_2021-09-13-14.58.00-ZS-retouched-2 images-01.jpeg",
     "[Group 1]-2021-09-13-14.44.27-ZS-retouched_2021-09-13-14.50.16-ZS-retouched-2 images-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "1631008615660.jpg": [
+     2144,
+     1354
+    ],
+    "1631179892119.jpg": [
+     1860,
+     2498
+    ],
+    "1644766705064.jpg": [
+     2086,
+     2700
+    ],
+    "[Group 0]-2021-09-13-14.53.56-ZS-retouched_2021-09-13-14.58.00-ZS-retouched-2 images-01.jpeg": [
+     2340,
+     6715
+    ],
+    "[Group 1]-2021-09-13-14.44.27-ZS-retouched_2021-09-13-14.50.16-ZS-retouched-2 images-01.jpeg": [
+     2207,
+     6046
+    ]
+   }
   },
   {
    "name": "1400. Elbogen (iron, IID) - micro",
@@ -4621,7 +9471,25 @@
     "IMG_20220630_175604_1-01.jpeg",
     "IMG_20220630_175659-01.jpeg",
     "Loket-archiwalne-z-1801r-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2022-07-11-19.06.49-ZS-retouched-01-01.jpeg": [
+     3519,
+     2748
+    ],
+    "IMG_20220630_175604_1-01.jpeg": [
+     2930,
+     1958
+    ],
+    "IMG_20220630_175659-01.jpeg": [
+     2369,
+     1580
+    ],
+    "Loket-archiwalne-z-1801r-01.jpeg": [
+     1200,
+     881
+    ]
+   }
   },
   {
    "name": "1795. Wold Cottage (L6) - micros",
@@ -4635,7 +9503,25 @@
     "2022-07-11-19.01.10-ZS-DMap-01.jpeg",
     "IMG_20230301_101218-01.jpeg",
     "IMG_20230301_101315_1-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2022-07-11-18.59.09-ZS-DMap-01.jpeg": [
+     4115,
+     2347
+    ],
+    "2022-07-11-19.01.10-ZS-DMap-01.jpeg": [
+     4056,
+     2443
+    ],
+    "IMG_20230301_101218-01.jpeg": [
+     4032,
+     2906
+    ],
+    "IMG_20230301_101315_1-01.jpeg": [
+     2378,
+     2145
+    ]
+   }
   },
   {
    "name": "1492. Ensisheim (LL6) - micro",
@@ -4647,7 +9533,17 @@
    "images": [
     "1627320077811.jpg",
     "2021-07-28-08.08.23-ZS-retouched-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "1627320077811.jpg": [
+     2020,
+     3200
+    ],
+    "2021-07-28-08.08.23-ZS-retouched-01.jpeg": [
+     5409,
+     3681
+    ]
+   }
   },
   {
    "name": "1803. L'Aigle (L6)",
@@ -4659,7 +9555,17 @@
    "images": [
     "2021-06-13-11.27.27-ZS-DMap-01.jpeg",
     "2021-06-13-11.29.58-ZS-DMap-01.jpeg"
-   ]
+   ],
+   "dims": {
+    "2021-06-13-11.27.27-ZS-DMap-01.jpeg": [
+     3965,
+     3100
+    ],
+    "2021-06-13-11.29.58-ZS-DMap-01.jpeg": [
+     4113,
+     3044
+    ]
+   }
   }
  ],
  "tree": {
