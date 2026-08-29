@@ -5,201 +5,6 @@
  "totalImages": 1077,
  "meteorites": [
   {
-   "name": "Almahatta Sita MS-211 (E-chondrite ELb 6) - 14mg",
-   "path": "Photos/Observed asteroid falls/Almahatta Sita (ureilite)/Almahatta Sita MS-211 (E-chondrite ELb 6) - 14mg",
-   "categories": [
-    "Observed asteroid falls",
-    "Almahatta Sita (ureilite)"
-   ],
-   "description": "Almahatta Sita MS-211 (E-chondrite ELb 6) - 14mg",
-   "images": [
-    "2022-11-30-17.24.41-ZS-DMap-01.jpeg",
-    "2022-11-30-17.25.36-ZS-DMap-01.jpeg",
-    "2022-11-30-17.27.04-ZS-DMap-01.jpeg",
-    "2022-11-30-17.27.04-ZS-DMap-02.jpeg",
-    "2022-11-30-17.28.33-ZS-DMap-01.jpeg",
-    "[Group 0]-2022-12-03-13.22.17-ZS-DMap_2022-12-03-13.26.35-ZS-DMap-4 images-01.jpeg",
-    "[Group 0]-2022-12-03-13.28.33-ZS-DMap_2022-12-03-13.33.00-ZS-DMap-4 images-01.jpeg"
-   ],
-   "dims": {
-    "2022-11-30-17.24.41-ZS-DMap-01.jpeg": [
-     5184,
-     3456
-    ],
-    "2022-11-30-17.25.36-ZS-DMap-01.jpeg": [
-     5184,
-     3456
-    ],
-    "2022-11-30-17.27.04-ZS-DMap-01.jpeg": [
-     5184,
-     3456
-    ],
-    "2022-11-30-17.27.04-ZS-DMap-02.jpeg": [
-     5184,
-     3456
-    ],
-    "2022-11-30-17.28.33-ZS-DMap-01.jpeg": [
-     5184,
-     3456
-    ],
-    "[Group 0]-2022-12-03-13.22.17-ZS-DMap_2022-12-03-13.26.35-ZS-DMap-4 images-01.jpeg": [
-     6823,
-     3663
-    ],
-    "[Group 0]-2022-12-03-13.28.33-ZS-DMap_2022-12-03-13.33.00-ZS-DMap-4 images-01.jpeg": [
-     6845,
-     3651
-    ]
-   }
-  },
-  {
-   "name": "Almahatta Sita MS-322 (fine-grained ureilite) - 35mg",
-   "path": "Photos/Observed asteroid falls/Almahatta Sita (ureilite)/Almahatta Sita MS-322 (fine-grained ureilite) - 35mg",
-   "categories": [
-    "Observed asteroid falls",
-    "Almahatta Sita (ureilite)"
-   ],
-   "description": "Almahatta Sita MS-322 (fine-grained ureilite) - 35mg",
-   "images": [
-    "2022-11-30-17.23.45-ZS-retouched-01.jpg"
-   ],
-   "dims": {
-    "2022-11-30-17.23.45-ZS-retouched-01.jpg": [
-     5184,
-     3456
-    ]
-   }
-  },
-  {
-   "name": "Almahatta Sita MS-325 (fine-variable-sized ureilite) - 9mg",
-   "path": "Photos/Observed asteroid falls/Almahatta Sita (ureilite)/Almahatta Sita MS-325 (fine-variable-sized ureilite) - 9mg",
-   "categories": [
-    "Observed asteroid falls",
-    "Almahatta Sita (ureilite)"
-   ],
-   "description": "Almahatta Sita MS-325 (fine-variable-sized ureilite) - 9mg",
-   "images": [
-    "2022-11-30-17.04.56-ZS-retouched-01.jpg"
-   ],
-   "dims": {
-    "2022-11-30-17.04.56-ZS-retouched-01.jpg": [
-     5184,
-     3456
-    ]
-   }
-  },
-  {
-   "name": "Almahatta Sita MS-315 (E-chondrite ELb 5-6) - 15mg",
-   "path": "Photos/Observed asteroid falls/Almahatta Sita (ureilite)/Almahatta Sita MS-315 (E-chondrite ELb 5-6) - 15mg",
-   "categories": [
-    "Observed asteroid falls",
-    "Almahatta Sita (ureilite)"
-   ],
-   "description": "Almahatta Sita MS-315 (E-chondrite ELb 5/6) - 15mg",
-   "images": [
-    "2022-11-30-17.06.47-ZS-DMap-01.jpeg",
-    "2022-11-30-17.15.09-ZS-DMap-01.jpeg",
-    "2022-12-03-13.21.11-ZS-DMap-01.jpeg"
-   ],
-   "dims": {
-    "2022-11-30-17.06.47-ZS-DMap-01.jpeg": [
-     5184,
-     3456
-    ],
-    "2022-11-30-17.15.09-ZS-DMap-01.jpeg": [
-     5184,
-     3456
-    ],
-    "2022-12-03-13.21.11-ZS-DMap-01.jpeg": [
-     5184,
-     3325
-    ]
-   }
-  },
-  {
-   "name": "Saint-Pierre-le-Viger (L5-6, asteroid 2023 CX1) - 0.63g",
-   "path": "Photos/Observed asteroid falls/Saint-Pierre-le-Viger (L5-6, asteroid 2023 CX1) - 0.63g",
-   "categories": [
-    "Observed asteroid falls"
-   ],
-   "description": "Saint-Pierre-le-Viger (L5-6, asteroid 2023 CX1) - 0.63g\nOn Feb 13, 2023, 7 hours after being discovered in space, a 1m asteroid entered Earth's atmosphere over Normandy, France. This was only the third time pieces of predicted asteroid impact where successfully recovered on the ground and only second such meteorite, after Almahatta Sita that's available to collectors making it very special.\nThis crusted fragment is from the largest stone recovered, found and donated by Thierry Monter!\nCurrently, at just 34 days, holds the record for the shortest time from space to my collection.",
-   "images": [
-    "2023-03-21-18.09.16-ZS-retouched-03.jpeg",
-    "IMG_20230320_201226-01.jpeg",
-    "IMG_20230320_201304-01.jpeg",
-    "[Group 0]-2023-03-25-12.36.23-ZS-retouched_2023-03-25-13.38.52-ZS-retouched-10 images (1)-01.jpeg",
-    "[Group 0]-2023-03-25-14.33.22-ZS-DMap_2023-03-25-14.40.20-ZS-retouched-10 images-01.jpeg",
-    "[Group 1]-2023-03-21-15.42.14-ZS-retouched_2023-03-21-16.11.16-ZS-retouched-3 images-02.jpeg",
-    "[Group 2]-2023-03-21-15.26.23-ZS-retouched_2023-03-21-15.35.07-ZS-retouched-3 images-01.jpeg"
-   ],
-   "dims": {
-    "2023-03-21-18.09.16-ZS-retouched-03.jpeg": [
-     5184,
-     3456
-    ],
-    "IMG_20230320_201226-01.jpeg": [
-     4032,
-     3024
-    ],
-    "IMG_20230320_201304-01.jpeg": [
-     4032,
-     3024
-    ],
-    "[Group 0]-2023-03-25-12.36.23-ZS-retouched_2023-03-25-13.38.52-ZS-retouched-10 images (1)-01.jpeg": [
-     6418,
-     3895
-    ],
-    "[Group 0]-2023-03-25-14.33.22-ZS-DMap_2023-03-25-14.40.20-ZS-retouched-10 images-01.jpeg": [
-     6364,
-     3928
-    ],
-    "[Group 1]-2023-03-21-15.42.14-ZS-retouched_2023-03-21-16.11.16-ZS-retouched-3 images-02.jpeg": [
-     6553,
-     3814
-    ],
-    "[Group 2]-2023-03-21-15.26.23-ZS-retouched_2023-03-21-15.35.07-ZS-retouched-3 images-01.jpeg": [
-     6282,
-     3978
-    ]
-   }
-  },
-  {
-   "name": "Saint-Pierre-le-Viger (L5-6, asteroid 2023 CX1) - micro from Roberto Vargas",
-   "path": "Photos/Observed asteroid falls/Saint-Pierre-le-Viger (L5-6, asteroid 2023 CX1) - 0.63g/Saint-Pierre-le-Viger (L5-6, asteroid 2023 CX1) - micro from Roberto Vargas",
-   "categories": [
-    "Observed asteroid falls",
-    "Saint-Pierre-le-Viger (L5-6, asteroid 2023 CX1) - 0.63g"
-   ],
-   "description": "Saint-Pierre-le-Viger (L5-6, asteroid 2023 CX1) - micro from Roberto Vargas",
-   "images": [
-    "2023-06-27-17.55.38-ZS-retouched-01.jpeg"
-   ],
-   "dims": {
-    "2023-06-27-17.55.38-ZS-retouched-01.jpeg": [
-     3907,
-     2807
-    ]
-   }
-  },
-  {
-   "name": "Saint-Pierre-le-Viger (L5-6, asteroid 2023 CX1) - ",
-   "path": "Photos/Observed asteroid falls/Saint-Pierre-le-Viger (L5-6, asteroid 2023 CX1) - 0.63g/Saint-Pierre-le-Viger (L5-6, asteroid 2023 CX1) - ",
-   "categories": [
-    "Observed asteroid falls",
-    "Saint-Pierre-le-Viger (L5-6, asteroid 2023 CX1) - 0.63g"
-   ],
-   "description": "Saint-Pierre-le-Viger (L5-6, asteroid 2023 CX1) -",
-   "images": [
-    "2023-04-07-10.00.26-ZS-retouched-01.jpg"
-   ],
-   "dims": {
-    "2023-04-07-10.00.26-ZS-retouched-01.jpg": [
-     5184,
-     3456
-    ]
-   }
-  },
-  {
    "name": "NWA 14683 (diogenite-olivine) - thin section",
    "path": "Photos/Achondrites/HED/Diogenite/NWA 14683 (diogenite-olivine) - thin section",
    "categories": [
@@ -3658,6 +3463,126 @@
    }
   },
   {
+   "name": "Almahatta Sita MS-211 (E-chondrite ELb 6) - 14mg",
+   "path": "Photos/Achondrites/Evolved/Ureilite/Almahatta Sita (ureilite)/Almahatta Sita MS-211 (E-chondrite ELb 6) - 14mg",
+   "categories": [
+    "Achondrites",
+    "Evolved",
+    "Ureilite",
+    "Almahatta Sita (ureilite)"
+   ],
+   "description": "Almahatta Sita MS-211 (E-chondrite ELb 6) - 14mg",
+   "images": [
+    "2022-11-30-17.24.41-ZS-DMap-01.jpeg",
+    "2022-11-30-17.25.36-ZS-DMap-01.jpeg",
+    "2022-11-30-17.27.04-ZS-DMap-01.jpeg",
+    "2022-11-30-17.27.04-ZS-DMap-02.jpeg",
+    "2022-11-30-17.28.33-ZS-DMap-01.jpeg",
+    "[Group 0]-2022-12-03-13.22.17-ZS-DMap_2022-12-03-13.26.35-ZS-DMap-4 images-01.jpeg",
+    "[Group 0]-2022-12-03-13.28.33-ZS-DMap_2022-12-03-13.33.00-ZS-DMap-4 images-01.jpeg"
+   ],
+   "dims": {
+    "2022-11-30-17.24.41-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2022-11-30-17.25.36-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2022-11-30-17.27.04-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2022-11-30-17.27.04-ZS-DMap-02.jpeg": [
+     5184,
+     3456
+    ],
+    "2022-11-30-17.28.33-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "[Group 0]-2022-12-03-13.22.17-ZS-DMap_2022-12-03-13.26.35-ZS-DMap-4 images-01.jpeg": [
+     6823,
+     3663
+    ],
+    "[Group 0]-2022-12-03-13.28.33-ZS-DMap_2022-12-03-13.33.00-ZS-DMap-4 images-01.jpeg": [
+     6845,
+     3651
+    ]
+   }
+  },
+  {
+   "name": "Almahatta Sita MS-322 (fine-grained ureilite) - 35mg",
+   "path": "Photos/Achondrites/Evolved/Ureilite/Almahatta Sita (ureilite)/Almahatta Sita MS-322 (fine-grained ureilite) - 35mg",
+   "categories": [
+    "Achondrites",
+    "Evolved",
+    "Ureilite",
+    "Almahatta Sita (ureilite)"
+   ],
+   "description": "Almahatta Sita MS-322 (fine-grained ureilite) - 35mg",
+   "images": [
+    "2022-11-30-17.23.45-ZS-retouched-01.jpg"
+   ],
+   "dims": {
+    "2022-11-30-17.23.45-ZS-retouched-01.jpg": [
+     5184,
+     3456
+    ]
+   }
+  },
+  {
+   "name": "Almahatta Sita MS-325 (fine-variable-sized ureilite) - 9mg",
+   "path": "Photos/Achondrites/Evolved/Ureilite/Almahatta Sita (ureilite)/Almahatta Sita MS-325 (fine-variable-sized ureilite) - 9mg",
+   "categories": [
+    "Achondrites",
+    "Evolved",
+    "Ureilite",
+    "Almahatta Sita (ureilite)"
+   ],
+   "description": "Almahatta Sita MS-325 (fine-variable-sized ureilite) - 9mg",
+   "images": [
+    "2022-11-30-17.04.56-ZS-retouched-01.jpg"
+   ],
+   "dims": {
+    "2022-11-30-17.04.56-ZS-retouched-01.jpg": [
+     5184,
+     3456
+    ]
+   }
+  },
+  {
+   "name": "Almahatta Sita MS-315 (E-chondrite ELb 5-6) - 15mg",
+   "path": "Photos/Achondrites/Evolved/Ureilite/Almahatta Sita (ureilite)/Almahatta Sita MS-315 (E-chondrite ELb 5-6) - 15mg",
+   "categories": [
+    "Achondrites",
+    "Evolved",
+    "Ureilite",
+    "Almahatta Sita (ureilite)"
+   ],
+   "description": "Almahatta Sita MS-315 (E-chondrite ELb 5/6) - 15mg",
+   "images": [
+    "2022-11-30-17.06.47-ZS-DMap-01.jpeg",
+    "2022-11-30-17.15.09-ZS-DMap-01.jpeg",
+    "2022-12-03-13.21.11-ZS-DMap-01.jpeg"
+   ],
+   "dims": {
+    "2022-11-30-17.06.47-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2022-11-30-17.15.09-ZS-DMap-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2022-12-03-13.21.11-ZS-DMap-01.jpeg": [
+     5184,
+     3325
+    ]
+   }
+  },
+  {
    "name": "NWA xxx (prob. ureilite) - 0.687g",
    "path": "Photos/Achondrites/Evolved/Ureilite/NWA xxx (prob. ureilite) - 0.687g",
    "categories": [
@@ -4994,6 +4919,98 @@
    }
   },
   {
+   "name": "Saint-Pierre-le-Viger (L5-6, asteroid 2023 CX1) - 0.63g",
+   "path": "Photos/Chondrites/OC/L/L5/Saint-Pierre-le-Viger (L5-6, asteroid 2023 CX1) - 0.63g",
+   "categories": [
+    "Chondrites",
+    "OC",
+    "L",
+    "L5"
+   ],
+   "description": "Saint-Pierre-le-Viger (L5-6, asteroid 2023 CX1) - 0.63g\nOn Feb 13, 2023, 7 hours after being discovered in space, a 1m asteroid entered Earth's atmosphere over Normandy, France. This was only the third time pieces of predicted asteroid impact where successfully recovered on the ground and only second such meteorite, after Almahatta Sita that's available to collectors making it very special.\nThis crusted fragment is from the largest stone recovered, found and donated by Thierry Monter!\nCurrently, at just 34 days, holds the record for the shortest time from space to my collection.",
+   "images": [
+    "2023-03-21-18.09.16-ZS-retouched-03.jpeg",
+    "IMG_20230320_201226-01.jpeg",
+    "IMG_20230320_201304-01.jpeg",
+    "[Group 0]-2023-03-25-12.36.23-ZS-retouched_2023-03-25-13.38.52-ZS-retouched-10 images (1)-01.jpeg",
+    "[Group 0]-2023-03-25-14.33.22-ZS-DMap_2023-03-25-14.40.20-ZS-retouched-10 images-01.jpeg",
+    "[Group 1]-2023-03-21-15.42.14-ZS-retouched_2023-03-21-16.11.16-ZS-retouched-3 images-02.jpeg",
+    "[Group 2]-2023-03-21-15.26.23-ZS-retouched_2023-03-21-15.35.07-ZS-retouched-3 images-01.jpeg"
+   ],
+   "dims": {
+    "2023-03-21-18.09.16-ZS-retouched-03.jpeg": [
+     5184,
+     3456
+    ],
+    "IMG_20230320_201226-01.jpeg": [
+     4032,
+     3024
+    ],
+    "IMG_20230320_201304-01.jpeg": [
+     4032,
+     3024
+    ],
+    "[Group 0]-2023-03-25-12.36.23-ZS-retouched_2023-03-25-13.38.52-ZS-retouched-10 images (1)-01.jpeg": [
+     6418,
+     3895
+    ],
+    "[Group 0]-2023-03-25-14.33.22-ZS-DMap_2023-03-25-14.40.20-ZS-retouched-10 images-01.jpeg": [
+     6364,
+     3928
+    ],
+    "[Group 1]-2023-03-21-15.42.14-ZS-retouched_2023-03-21-16.11.16-ZS-retouched-3 images-02.jpeg": [
+     6553,
+     3814
+    ],
+    "[Group 2]-2023-03-21-15.26.23-ZS-retouched_2023-03-21-15.35.07-ZS-retouched-3 images-01.jpeg": [
+     6282,
+     3978
+    ]
+   }
+  },
+  {
+   "name": "Saint-Pierre-le-Viger (L5-6, asteroid 2023 CX1) - micro from Roberto Vargas",
+   "path": "Photos/Chondrites/OC/L/L5/Saint-Pierre-le-Viger (L5-6, asteroid 2023 CX1) - 0.63g/Saint-Pierre-le-Viger (L5-6, asteroid 2023 CX1) - micro from Roberto Vargas",
+   "categories": [
+    "Chondrites",
+    "OC",
+    "L",
+    "L5",
+    "Saint-Pierre-le-Viger (L5-6, asteroid 2023 CX1) - 0.63g"
+   ],
+   "description": "Saint-Pierre-le-Viger (L5-6, asteroid 2023 CX1) - micro from Roberto Vargas",
+   "images": [
+    "2023-06-27-17.55.38-ZS-retouched-01.jpeg"
+   ],
+   "dims": {
+    "2023-06-27-17.55.38-ZS-retouched-01.jpeg": [
+     3907,
+     2807
+    ]
+   }
+  },
+  {
+   "name": "Saint-Pierre-le-Viger (L5-6, asteroid 2023 CX1) - ",
+   "path": "Photos/Chondrites/OC/L/L5/Saint-Pierre-le-Viger (L5-6, asteroid 2023 CX1) - 0.63g/Saint-Pierre-le-Viger (L5-6, asteroid 2023 CX1) - ",
+   "categories": [
+    "Chondrites",
+    "OC",
+    "L",
+    "L5",
+    "Saint-Pierre-le-Viger (L5-6, asteroid 2023 CX1) - 0.63g"
+   ],
+   "description": "Saint-Pierre-le-Viger (L5-6, asteroid 2023 CX1) -",
+   "images": [
+    "2023-04-07-10.00.26-ZS-retouched-01.jpg"
+   ],
+   "dims": {
+    "2023-04-07-10.00.26-ZS-retouched-01.jpg": [
+     5184,
+     3456
+    ]
+   }
+  },
+  {
    "name": "Nebka (L5 S3 W0)",
    "path": "Photos/Chondrites/OC/L/L5/Nebka (L5 S3 W0)",
    "categories": [
@@ -5129,6 +5146,31 @@
    }
   },
   {
+   "name": "ALH 76009 (L6)",
+   "path": "Photos/Chondrites/OC/L/L6/ALH 76009 (L6)",
+   "categories": [
+    "Chondrites",
+    "OC",
+    "L",
+    "L6"
+   ],
+   "description": "ALH 76009 (L6)\nWith a TKW of 407kg it's the largest Antarctic find. Pieces of it were stolen from the McMurdo base.",
+   "images": [
+    "2021-09-20-20.58.50-ZS-retouched-01.jpeg",
+    "2021-09-20-21.04.43-ZS-retouched-01.jpeg"
+   ],
+   "dims": {
+    "2021-09-20-20.58.50-ZS-retouched-01.jpeg": [
+     4088,
+     2726
+    ],
+    "2021-09-20-21.04.43-ZS-retouched-01.jpeg": [
+     4297,
+     2865
+    ]
+   }
+  },
+  {
    "name": "Ozerki (L6 S4-5 W-low) - 3.14g",
    "path": "Photos/Chondrites/OC/L/L6/Ozerki (L6 S4-5 W-low) - 3.14g",
    "categories": [
@@ -5164,6 +5206,41 @@
    }
   },
   {
+   "name": "1795. Wold Cottage (L6) - micros",
+   "path": "Photos/Chondrites/OC/L/L6/1795. Wold Cottage (L6) - micros",
+   "categories": [
+    "Chondrites",
+    "OC",
+    "L",
+    "L6"
+   ],
+   "description": "1795. Wold Cottage (L6) - micros\nThe stone fell at around 3 o'clock, on 13 December 1795, landing within a few yards of ploughman John Shipley.The Wold Cottage meteorite was the largest meteorite observed to fall in Britain, and is the second-largest recorded in Europe (after the Ensisheim meteorite). The meteorite and evidence given about its fall contributed to the debate concerning whether extraterrestrial matter existed or not, and towards the early scientific study of meteorites.",
+   "images": [
+    "2022-07-11-18.59.09-ZS-DMap-01.jpeg",
+    "2022-07-11-19.01.10-ZS-DMap-01.jpeg",
+    "IMG_20230301_101218-01.jpeg",
+    "IMG_20230301_101315_1-01.jpeg"
+   ],
+   "dims": {
+    "2022-07-11-18.59.09-ZS-DMap-01.jpeg": [
+     4115,
+     2347
+    ],
+    "2022-07-11-19.01.10-ZS-DMap-01.jpeg": [
+     4056,
+     2443
+    ],
+    "IMG_20230301_101218-01.jpeg": [
+     4032,
+     2906
+    ],
+    "IMG_20230301_101315_1-01.jpeg": [
+     2378,
+     2145
+    ]
+   }
+  },
+  {
    "name": "Viñales (L6 S3 W0) - 10mg",
    "path": "Photos/Chondrites/OC/L/L6/Viñales (L6 S3 W0) - 10mg",
    "categories": [
@@ -5185,6 +5262,56 @@
     "[Group 0]-2022-04-14-11.05.13-ZS-DMap_2022-04-14-11.06.28-ZS-DMap-2 images-01.jpeg": [
      6639,
      2882
+    ]
+   }
+  },
+  {
+   "name": "ALH 76001 (L6) - multiple micros",
+   "path": "Photos/Chondrites/OC/L/L6/ALH 76001 (L6) - multiple micros",
+   "categories": [
+    "Chondrites",
+    "OC",
+    "L",
+    "L6"
+   ],
+   "description": "ALH 76001 (L6) - multiple micros\nThis was one of the earliest ANSMET Antarctica finds during the first 1976./77. expedition.",
+   "images": [
+    "1627287741259-01.jpeg",
+    "2021-08-03-15.12.51-ZS-retouched-01.jpeg"
+   ],
+   "dims": {
+    "1627287741259-01.jpeg": [
+     1980,
+     1272
+    ],
+    "2021-08-03-15.12.51-ZS-retouched-01.jpeg": [
+     5184,
+     3456
+    ]
+   }
+  },
+  {
+   "name": "1803. L'Aigle (L6)",
+   "path": "Photos/Chondrites/OC/L/L6/1803. L'Aigle (L6)",
+   "categories": [
+    "Chondrites",
+    "OC",
+    "L",
+    "L6"
+   ],
+   "description": "1803. L'Aigle (L6)\nIn the early afternoon of 26 April 1803 a meteorite shower of more than 3000 fragments fell upon the town of L'Aigle in Normandy, France. The L'Aigle event was a milestone in the understanding of meteorites and their origins because at that time the mere existence of meteorites was harshly debated. This was a first major meteorite fall witnessed by undoubtedly reliable witnesses.",
+   "images": [
+    "2021-06-13-11.27.27-ZS-DMap-01.jpeg",
+    "2021-06-13-11.29.58-ZS-DMap-01.jpeg"
+   ],
+   "dims": {
+    "2021-06-13-11.27.27-ZS-DMap-01.jpeg": [
+     3965,
+     3100
+    ],
+    "2021-06-13-11.29.58-ZS-DMap-01.jpeg": [
+     4113,
+     3044
     ]
    }
   },
@@ -6013,6 +6140,26 @@
    }
   },
   {
+   "name": "Mount Baldr A76002 (H6) - micro",
+   "path": "Photos/Chondrites/OC/H/H6/Mount Baldr A76002 (H6) - micro",
+   "categories": [
+    "Chondrites",
+    "OC",
+    "H",
+    "H6"
+   ],
+   "description": "Mount Baldr A76002 (H6) - micro\nThe second find of the first joined USA/Japanese Antarctic expedition.\nFrom Bill Cassidy's book:\nAt the top was a small patch of exposed ice about 3 × 3km in area, partially covered in a very patchy way by snow. It didn’t look very promising, but we got out and Keizo almost immediatedly spotted a meteorite near the helo. We were ecstatic, but while we were photographing it and admiring it, Keizo was scanning the ice with his binoculars. Presently he started running and we, of course, followed. Sam ran back to the helicopter and took off, following us at an elevation of about 2m, and 20m behind. In silhouette, it would have been a memorable, if puzzling, tableau: a figure running at top speed over the ice, two more people chasing him and a helicopter skimming along behind. I remember looking back and thinking that this is what an insect must feel like, being stalked by a praying mantis. Meanwhile, Keizo had spotted another meteorite. So Keizo Yanai had found our first two meteorites during our\nfirst 20 minutes in the field, and that is how it all began. We didn’t find another for the next six weeks!",
+   "images": [
+    "2021-10-12-16.29.41-ZS-retouched-01.jpg"
+   ],
+   "dims": {
+    "2021-10-12-16.29.41-ZS-retouched-01.jpg": [
+     4249,
+     2833
+    ]
+   }
+  },
+  {
    "name": "NWA 14588 (H5 S2 W1) - 5g",
    "path": "Photos/Chondrites/OC/H/H5/NWA 14588 (H5 S2 W1) - 5g",
    "categories": [
@@ -6810,6 +6957,31 @@
     "[Group 0]-IMG_0384_IMG_0494-111 images-G62.jpg": [
      12416,
      7902
+    ]
+   }
+  },
+  {
+   "name": "1492. Ensisheim (LL6) - micro",
+   "path": "Photos/Chondrites/OC/LL/LL6/1492. Ensisheim (LL6) - micro",
+   "categories": [
+    "Chondrites",
+    "OC",
+    "LL",
+    "LL6"
+   ],
+   "description": "1492. Ensisheim (LL6) - micro\nOldest preserved European witnessed fall with a well documented date and circumstances of the fall. Fell in France on 7 November 1492.",
+   "images": [
+    "1627320077811.jpg",
+    "2021-07-28-08.08.23-ZS-retouched-01.jpeg"
+   ],
+   "dims": {
+    "1627320077811.jpg": [
+     2020,
+     3200
+    ],
+    "2021-07-28-08.08.23-ZS-retouched-01.jpeg": [
+     5409,
+     3681
     ]
    }
   },
@@ -8650,6 +8822,40 @@
    }
   },
   {
+   "name": "1749. Krasnojarsk (pallasite) - 70mg",
+   "path": "Photos/Stony Irons/Palasites/PMG/1749. Krasnojarsk (pallasite) - 70mg",
+   "categories": [
+    "Stony Irons",
+    "Palasites",
+    "PMG"
+   ],
+   "description": "1749. Krasnojarsk (pallasite) - 70mg\nIt was found by locals in Russia in 1749. but not recognised as a meteorite at that time. More intensive study by Peter Pallas started in 1772. and later, in 1794. by Ernst Chladni, for the first time as a meteorite. This was the first such meteorite discovered and it's group was named pallasites after Peter Pallas.\nWilliam Thomson, in 1804., studying this meteorite was the first one to discover strange patterns formed by etching metal meteorite (kamacite and taenite crystals).",
+   "images": [
+    "12356_31968_183-01-01-01-08.jpeg",
+    "2021-07-26-15.41.36-ZS-retouched-01.jpeg",
+    "2021-07-26-16.01.11-ZS-retouched-01.jpeg",
+    "IMG_20210726_192635-01.jpeg"
+   ],
+   "dims": {
+    "12356_31968_183-01-01-01-08.jpeg": [
+     1468,
+     918
+    ],
+    "2021-07-26-15.41.36-ZS-retouched-01.jpeg": [
+     5184,
+     3456
+    ],
+    "2021-07-26-16.01.11-ZS-retouched-01.jpeg": [
+     5184,
+     3456
+    ],
+    "IMG_20210726_192635-01.jpeg": [
+     2641,
+     1740
+    ]
+   }
+  },
+  {
    "name": "Pallasovka (pallasite-mg)",
    "path": "Photos/Stony Irons/Palasites/PMG/Pallasovka (pallasite-mg)",
    "categories": [
@@ -9257,6 +9463,24 @@
    }
   },
   {
+   "name": "Derrick Peak A78008 (IIAB iron)",
+   "path": "Photos/Irons/IIAB/Derrick Peak A78008 (IIAB iron)",
+   "categories": [
+    "Irons",
+    "IIAB"
+   ],
+   "description": "Derrick Peak A78008 (IIAB iron)\nDerrick Peak pairing group is the largest Antarctic iron meteorite find. The first fragments were found  by a group of geologists from New Zeland. Bill Casidy's team soon joined them (after being rescued from a mountain top where they landed their helicopter after running out of fuel) and together they found 12 fragments in total, including one weighting 160kg.",
+   "images": [
+    "2022-11-24-10.44.54-ZS-retouched-1-01.jpg"
+   ],
+   "dims": {
+    "2022-11-24-10.44.54-ZS-retouched-1-01.jpg": [
+     3824,
+     2360
+    ]
+   }
+  },
+  {
    "name": "Sikhote-Alin (iron, IIAB, coarse octahedrite) - 2.2g",
    "path": "Photos/Irons/IIAB/Sikhote-Alin (iron, IIAB, coarse octahedrite) - 2.2g",
    "categories": [
@@ -9313,120 +9537,11 @@
    }
   },
   {
-   "name": "Mount Baldr A76002 (H6) - micro",
-   "path": "Photos/Antarctic/Mount Baldr A76002 (H6) - micro",
-   "categories": [
-    "Antarctic"
-   ],
-   "description": "Mount Baldr A76002 (H6) - micro\nThe second find of the first joined USA/Japanese Antarctic expedition.\nFrom Bill Cassidy's book:\nAt the top was a small patch of exposed ice about 3 × 3km in area, partially covered in a very patchy way by snow. It didn’t look very promising, but we got out and Keizo almost immediatedly spotted a meteorite near the helo. We were ecstatic, but while we were photographing it and admiring it, Keizo was scanning the ice with his binoculars. Presently he started running and we, of course, followed. Sam ran back to the helicopter and took off, following us at an elevation of about 2m, and 20m behind. In silhouette, it would have been a memorable, if puzzling, tableau: a figure running at top speed over the ice, two more people chasing him and a helicopter skimming along behind. I remember looking back and thinking that this is what an insect must feel like, being stalked by a praying mantis. Meanwhile, Keizo had spotted another meteorite. So Keizo Yanai had found our first two meteorites during our\nfirst 20 minutes in the field, and that is how it all began. We didn’t find another for the next six weeks!",
-   "images": [
-    "2021-10-12-16.29.41-ZS-retouched-01.jpg"
-   ],
-   "dims": {
-    "2021-10-12-16.29.41-ZS-retouched-01.jpg": [
-     4249,
-     2833
-    ]
-   }
-  },
-  {
-   "name": "Derrick Peak A78008 (IIAB iron)",
-   "path": "Photos/Antarctic/Derrick Peak A78008 (IIAB iron)",
-   "categories": [
-    "Antarctic"
-   ],
-   "description": "Derrick Peak A78008 (IIAB iron)\nDerrick Peak pairing group is the largest Antarctic iron meteorite find. The first fragments were found  by a group of geologists from New Zeland. Bill Casidy's team soon joined them (after being rescued from a mountain top where they landed their helicopter after running out of fuel) and together they found 12 fragments in total, including one weighting 160kg.",
-   "images": [
-    "2022-11-24-10.44.54-ZS-retouched-1-01.jpg"
-   ],
-   "dims": {
-    "2022-11-24-10.44.54-ZS-retouched-1-01.jpg": [
-     3824,
-     2360
-    ]
-   }
-  },
-  {
-   "name": "ALH 76009 (L6)",
-   "path": "Photos/Antarctic/ALH 76009 (L6)",
-   "categories": [
-    "Antarctic"
-   ],
-   "description": "ALH 76009 (L6)\nWith a TKW of 407kg it's the largest Antarctic find. Pieces of it were stolen from the McMurdo base.",
-   "images": [
-    "2021-09-20-20.58.50-ZS-retouched-01.jpeg",
-    "2021-09-20-21.04.43-ZS-retouched-01.jpeg"
-   ],
-   "dims": {
-    "2021-09-20-20.58.50-ZS-retouched-01.jpeg": [
-     4088,
-     2726
-    ],
-    "2021-09-20-21.04.43-ZS-retouched-01.jpeg": [
-     4297,
-     2865
-    ]
-   }
-  },
-  {
-   "name": "ALH 76001 (L6) - multiple micros",
-   "path": "Photos/Antarctic/ALH 76001 (L6) - multiple micros",
-   "categories": [
-    "Antarctic"
-   ],
-   "description": "ALH 76001 (L6) - multiple micros\nThis was one of the earliest ANSMET Antarctica finds during the first 1976./77. expedition.",
-   "images": [
-    "1627287741259-01.jpeg",
-    "2021-08-03-15.12.51-ZS-retouched-01.jpeg"
-   ],
-   "dims": {
-    "1627287741259-01.jpeg": [
-     1980,
-     1272
-    ],
-    "2021-08-03-15.12.51-ZS-retouched-01.jpeg": [
-     5184,
-     3456
-    ]
-   }
-  },
-  {
-   "name": "1749. Krasnojarsk (pallasite) - 70mg",
-   "path": "Photos/Historical/1749. Krasnojarsk (pallasite) - 70mg",
-   "categories": [
-    "Historical"
-   ],
-   "description": "1749. Krasnojarsk (pallasite) - 70mg\nIt was found by locals in Russia in 1749. but not recognised as a meteorite at that time. More intensive study by Peter Pallas started in 1772. and later, in 1794. by Ernst Chladni, for the first time as a meteorite. This was the first such meteorite discovered and it's group was named pallasites after Peter Pallas.\nWilliam Thomson, in 1804., studying this meteorite was the first one to discover strange patterns formed by etching metal meteorite (kamacite and taenite crystals).",
-   "images": [
-    "12356_31968_183-01-01-01-08.jpeg",
-    "2021-07-26-15.41.36-ZS-retouched-01.jpeg",
-    "2021-07-26-16.01.11-ZS-retouched-01.jpeg",
-    "IMG_20210726_192635-01.jpeg"
-   ],
-   "dims": {
-    "12356_31968_183-01-01-01-08.jpeg": [
-     1468,
-     918
-    ],
-    "2021-07-26-15.41.36-ZS-retouched-01.jpeg": [
-     5184,
-     3456
-    ],
-    "2021-07-26-16.01.11-ZS-retouched-01.jpeg": [
-     5184,
-     3456
-    ],
-    "IMG_20210726_192635-01.jpeg": [
-     2641,
-     1740
-    ]
-   }
-  },
-  {
    "name": "1751. Hrašćina (iron, IID) - 3mg",
-   "path": "Photos/Historical/1751. Hrašćina (iron, IID) - 3mg",
+   "path": "Photos/Irons/IID/1751. Hrašćina (iron, IID) - 3mg",
    "categories": [
-    "Historical"
+    "Irons",
+    "IID"
    ],
    "description": "1751. Hrašćina (iron, IID) - 3mg\n26. May 1751, Hrašćina, Croatia.\nOne of the early iron meteorite falls that E. Chladni used to put forth his theory that meteorites come from space.\nMain mass is the founding piece of the oldest collection of meteorites - exibit at Natural History Museum of Vienna.",
    "images": [
@@ -9461,9 +9576,10 @@
   },
   {
    "name": "1400. Elbogen (iron, IID) - micro",
-   "path": "Photos/Historical/1400. Elbogen (iron, IID) - micro",
+   "path": "Photos/Irons/IID/1400. Elbogen (iron, IID) - micro",
    "categories": [
-    "Historical"
+    "Irons",
+    "IID"
    ],
    "description": "1400. Elbogen (iron, IID) - micro\nFell in the village of Loket, Karlovy Vary Region, Kingdom of Bohemia, about the year 1400. \nIt is said that one of local nobelman, perhaps Puta von Illburk, was cursed by an old woman, struck by lightning and transformed into this hard piece of iron. In those days, superstition also had that the Elbogen meteorite was fixed with chains in the dungeon of the Loket castle for fear that it would change weight over time, and even is thrown into the deep castle well that it would always reappear. During the Thirty Years' War the royal and imperial general Johann von Werth decided to try this out by having it thrown into the castle well. However, by the end of 1670 the water in the well was drawn off and the stone was pulled out and brought into the castle. In 1742, the French threw the rock back into the well and it stayed there until sometime in 1776 when it was once more recovered.",
    "images": [
@@ -9490,109 +9606,10 @@
      881
     ]
    }
-  },
-  {
-   "name": "1795. Wold Cottage (L6) - micros",
-   "path": "Photos/Historical/1795. Wold Cottage (L6) - micros",
-   "categories": [
-    "Historical"
-   ],
-   "description": "1795. Wold Cottage (L6) - micros\nThe stone fell at around 3 o'clock, on 13 December 1795, landing within a few yards of ploughman John Shipley.The Wold Cottage meteorite was the largest meteorite observed to fall in Britain, and is the second-largest recorded in Europe (after the Ensisheim meteorite). The meteorite and evidence given about its fall contributed to the debate concerning whether extraterrestrial matter existed or not, and towards the early scientific study of meteorites.",
-   "images": [
-    "2022-07-11-18.59.09-ZS-DMap-01.jpeg",
-    "2022-07-11-19.01.10-ZS-DMap-01.jpeg",
-    "IMG_20230301_101218-01.jpeg",
-    "IMG_20230301_101315_1-01.jpeg"
-   ],
-   "dims": {
-    "2022-07-11-18.59.09-ZS-DMap-01.jpeg": [
-     4115,
-     2347
-    ],
-    "2022-07-11-19.01.10-ZS-DMap-01.jpeg": [
-     4056,
-     2443
-    ],
-    "IMG_20230301_101218-01.jpeg": [
-     4032,
-     2906
-    ],
-    "IMG_20230301_101315_1-01.jpeg": [
-     2378,
-     2145
-    ]
-   }
-  },
-  {
-   "name": "1492. Ensisheim (LL6) - micro",
-   "path": "Photos/Historical/1492. Ensisheim (LL6) - micro",
-   "categories": [
-    "Historical"
-   ],
-   "description": "1492. Ensisheim (LL6) - micro\nOldest preserved European witnessed fall with a well documented date and circumstances of the fall. Fell in France on 7 November 1492.",
-   "images": [
-    "1627320077811.jpg",
-    "2021-07-28-08.08.23-ZS-retouched-01.jpeg"
-   ],
-   "dims": {
-    "1627320077811.jpg": [
-     2020,
-     3200
-    ],
-    "2021-07-28-08.08.23-ZS-retouched-01.jpeg": [
-     5409,
-     3681
-    ]
-   }
-  },
-  {
-   "name": "1803. L'Aigle (L6)",
-   "path": "Photos/Historical/1803. L'Aigle (L6)",
-   "categories": [
-    "Historical"
-   ],
-   "description": "1803. L'Aigle (L6)\nIn the early afternoon of 26 April 1803 a meteorite shower of more than 3000 fragments fell upon the town of L'Aigle in Normandy, France. The L'Aigle event was a milestone in the understanding of meteorites and their origins because at that time the mere existence of meteorites was harshly debated. This was a first major meteorite fall witnessed by undoubtedly reliable witnesses.",
-   "images": [
-    "2021-06-13-11.27.27-ZS-DMap-01.jpeg",
-    "2021-06-13-11.29.58-ZS-DMap-01.jpeg"
-   ],
-   "dims": {
-    "2021-06-13-11.27.27-ZS-DMap-01.jpeg": [
-     3965,
-     3100
-    ],
-    "2021-06-13-11.29.58-ZS-DMap-01.jpeg": [
-     4113,
-     3044
-    ]
-   }
   }
  ],
  "tree": {
   "children": {
-   "Observed asteroid falls": {
-    "children": {
-     "Almahatta Sita (ureilite)": {
-      "children": {},
-      "meteorites": [
-       "Almahatta Sita MS-211 (E-chondrite ELb 6) - 14mg",
-       "Almahatta Sita MS-322 (fine-grained ureilite) - 35mg",
-       "Almahatta Sita MS-325 (fine-variable-sized ureilite) - 9mg",
-       "Almahatta Sita MS-315 (E-chondrite ELb 5-6) - 15mg"
-      ]
-     },
-     "Saint-Pierre-le-Viger (L5-6, asteroid 2023 CX1) - 0.63g": {
-      "children": {},
-      "meteorites": [
-       "Saint-Pierre-le-Viger (L5-6, asteroid 2023 CX1) - micro from Roberto Vargas",
-       "Saint-Pierre-le-Viger (L5-6, asteroid 2023 CX1) - "
-      ]
-     }
-    },
-    "meteorites": [
-     "Saint-Pierre-le-Viger (L5-6, asteroid 2023 CX1) - 0.63g"
-    ]
-   },
    "Achondrites": {
     "children": {
      "HED": {
@@ -9845,7 +9862,17 @@
         ]
        },
        "Ureilite": {
-        "children": {},
+        "children": {
+         "Almahatta Sita (ureilite)": {
+          "children": {},
+          "meteorites": [
+           "Almahatta Sita MS-211 (E-chondrite ELb 6) - 14mg",
+           "Almahatta Sita MS-322 (fine-grained ureilite) - 35mg",
+           "Almahatta Sita MS-325 (fine-variable-sized ureilite) - 9mg",
+           "Almahatta Sita MS-315 (E-chondrite ELb 5-6) - 15mg"
+          ]
+         }
+        },
         "meteorites": [
          "NWA xxx (prob. ureilite) - 0.687g",
          "NWA 5771 (ureilite) - corner cut",
@@ -9954,8 +9981,17 @@
        "L": {
         "children": {
          "L5": {
-          "children": {},
+          "children": {
+           "Saint-Pierre-le-Viger (L5-6, asteroid 2023 CX1) - 0.63g": {
+            "children": {},
+            "meteorites": [
+             "Saint-Pierre-le-Viger (L5-6, asteroid 2023 CX1) - micro from Roberto Vargas",
+             "Saint-Pierre-le-Viger (L5-6, asteroid 2023 CX1) - "
+            ]
+           }
+          },
           "meteorites": [
+           "Saint-Pierre-le-Viger (L5-6, asteroid 2023 CX1) - 0.63g",
            "Nebka (L5 S3 W0)",
            "NWA 14278 (L5 melt) - 9.2g"
           ]
@@ -9965,8 +10001,12 @@
           "meteorites": [
            "Viñales (L6 S3 W0)",
            "HaH 346 Gadamis (L6 S5 W0) - 11.4g",
+           "ALH 76009 (L6)",
            "Ozerki (L6 S4-5 W-low) - 3.14g",
+           "1795. Wold Cottage (L6) - micros",
            "Viñales (L6 S3 W0) - 10mg",
+           "ALH 76001 (L6) - multiple micros",
+           "1803. L'Aigle (L6)",
            "NWA 100 (L6) - 1.2g"
           ]
          },
@@ -10013,6 +10053,12 @@
           "meteorites": [
            "NWA 2335 (H3.05 S1 W1) - 0.45g in 3 fragments",
            "Cranfield (H3-5 S3 W0) - 68mg (crusted)"
+          ]
+         },
+         "H6": {
+          "children": {},
+          "meteorites": [
+           "Mount Baldr A76002 (H6) - micro"
           ]
          },
          "H5": {
@@ -10081,7 +10127,8 @@
          "LL6": {
           "children": {},
           "meteorites": [
-           "NWA 16550 (LL6 melt breccia, S2 W1) - 12.43g"
+           "NWA 16550 (LL6 melt breccia, S2 W1) - 12.43g",
+           "1492. Ensisheim (LL6) - micro"
           ]
          }
         },
@@ -10234,6 +10281,7 @@
        "PMG": {
         "children": {},
         "meteorites": [
+         "1749. Krasnojarsk (pallasite) - 70mg",
          "Pallasovka (pallasite-mg)",
          "Sericho (pallasite) - 5g",
          "Seymchan (pallasite, PMG)",
@@ -10307,32 +10355,20 @@
       "meteorites": [
        "Lake Murray (IIAB iron)",
        "Agoudal (IIAB) - 1.5g",
+       "Derrick Peak A78008 (IIAB iron)",
        "Sikhote-Alin (iron, IIAB, coarse octahedrite) - 2.2g",
        "Sikhote-Alin (iron, IIAB, coarse octahedrite) - 6.9g"
+      ]
+     },
+     "IID": {
+      "children": {},
+      "meteorites": [
+       "1751. Hrašćina (iron, IID) - 3mg",
+       "1400. Elbogen (iron, IID) - micro"
       ]
      }
     },
     "meteorites": []
-   },
-   "Antarctic": {
-    "children": {},
-    "meteorites": [
-     "Mount Baldr A76002 (H6) - micro",
-     "Derrick Peak A78008 (IIAB iron)",
-     "ALH 76009 (L6)",
-     "ALH 76001 (L6) - multiple micros"
-    ]
-   },
-   "Historical": {
-    "children": {},
-    "meteorites": [
-     "1749. Krasnojarsk (pallasite) - 70mg",
-     "1751. Hrašćina (iron, IID) - 3mg",
-     "1400. Elbogen (iron, IID) - micro",
-     "1795. Wold Cottage (L6) - micros",
-     "1492. Ensisheim (LL6) - micro",
-     "1803. L'Aigle (L6)"
-    ]
    }
   },
   "meteorites": []
