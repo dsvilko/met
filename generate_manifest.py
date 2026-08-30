@@ -3,7 +3,8 @@
 Generate manifest.json from the Photos/ directory tree.
 
 Walks the Photos/ hierarchy, finds leaf meteorite folders (those containing
-.jpg/.jpeg image files), reads any info.txt descriptions, reads the pixel
+.jpg/.jpeg image files), reads any info.txt descriptions and links.html
+(link HTML, kept separate), reads the pixel
 dimensions of each image's full-resolution counterpart in Full/ (same
 relative path, same filenames), and outputs a manifest.json that the gallery
 webpage can consume.
@@ -72,6 +73,7 @@ def walk_photos(root, full_root):
         "path": "Photos/Achondrites/Lunar/ferroan anorthosite/Gadamis 003 ...",
         "categories": ["Achondrites", "Lunar", "ferroan anorthosite"],
         "description": "contents of info.txt or empty string",
+        "links": "contents of links.html (raw HTML) or empty string",
         "images": ["filename1.jpeg", "filename2.jpg"],
         "dims": {"filename1.jpeg": [4000, 3000], ...}
     }
@@ -108,6 +110,18 @@ def walk_photos(root, full_root):
             except Exception as e:
                 print(f"Warning: Could not read {info_path}: {e}", file=sys.stderr)
 
+        # Read links.html if present (raw HTML, rendered as-is by the gallery)
+        links = ""
+        links_path = os.path.join(dirpath, "links.html")
+        if os.path.isfile(links_path):
+            try:
+                with open(links_path, "r", encoding="utf-8", errors="replace") as f:
+                    # Fix outdated domain in old links.html files
+                    links = f.read().strip().replace("meteoritestudies.com",
+                                                     "meteoritestudies2.com")
+            except Exception as e:
+                print(f"Warning: Could not read {links_path}: {e}", file=sys.stderr)
+
         # Read dimensions from the full-resolution counterparts in Full/
         dims = {}
         if full_root:
@@ -127,6 +141,7 @@ def walk_photos(root, full_root):
             "path": rel_path,
             "categories": categories,
             "description": description,
+            "links": links,
             "images": images,
             "dims": dims,
         })

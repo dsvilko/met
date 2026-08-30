@@ -38,6 +38,7 @@ A single-page vanilla JS gallery for a hierarchical meteorite photo collection (
       "path": "Photos/Achondrites/Lunar/ferroan anorthosite/Gadamis 003 ...",
       "categories": ["Achondrites", "Lunar", "ferroan anorthosite"],
       "description": "content of info.txt",
+      "links": "raw HTML from links.html (rendered as-is in detail view)",
       "images": ["img1.jpeg", "img2.jpg"],
       "dims": {"img1.jpeg": [5184, 3456], "img2.jpg": [3456, 5184]}
     }
@@ -57,7 +58,7 @@ it is used by the lightbox auto-rotation and is omitted if Pillow or
 - **3 sort orders**: Category path, Name, Random
 - **Search**: Two separate fields — name-only search and full description text search (AND when both set)
 - **Slideshow**: Fullscreen random from current filter (4s interval)
-- **Detail view**: All images for a meteorite + description
+- **Detail view**: All images for a meteorite + description + links.html (raw HTML)
 - **Lightbox**: Navigate, pause/play, keyboard (←/→/Space/Esc)
   - Modal overlay (fully opaque black background)
   - Full-resolution images from `Full/` symlink
