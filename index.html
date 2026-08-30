@@ -58,6 +58,7 @@ a:hover { color: var(--accent-hover); }
   object-fit: cover;
   opacity: 0;
   transition: opacity 1.5s ease-in-out;
+  /*filter: blur(3px);*/
 }
 #header h1 {
   position: relative;
@@ -75,7 +76,32 @@ a:hover { color: var(--accent-hover); }
   color: white;
   margin-top: 0.3rem;
   text-shadow: 0 1px 3px rgba(0,0,0,.9), 0 0 10px rgba(0,0,0,.7);
+  font-style: italic;
 }
+/* Right-edge click zone: toggles all thumbnail slideshows (cards + header bg) */
+#header-slideshow-toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: 100%;
+  z-index: 2;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 0.4rem;
+  user-select: none;
+}
+#header-slideshow-toggle span {
+  font-size: 1rem;
+  line-height: 1;
+  color: white;
+  text-shadow: 0 1px 4px rgba(0,0,0,.95), 0 0 8px rgba(0,0,0,.8);
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+#header-slideshow-toggle:hover span { opacity: 1; }
 
 /* ─── Info Toggle ────────────────────────────────────────────── */
 #info-toggle {
@@ -539,6 +565,7 @@ a:hover { color: var(--accent-hover); }
   <div id="header-bg"><img alt=""><img alt=""></div>
   <h1>Domjan Svilković Meteorite Collection</h1>
   <div class="subtitle">Macro Photography Gallery</div>
+  <div id="header-slideshow-toggle" title="Stop slideshows"><span>❚❚</span></div>
 </div>
 
 <div id="info-toggle">
@@ -630,6 +657,15 @@ const PAGE_SIZE = 100;
 
 // Slideshow timers for category cards
 const slideshowTimers = new Map();
+
+// Thumbnail slideshow toggle (card slideshows + header background);
+// persisted so a paused session stays paused across reloads
+let slideshowsEnabled = (() => {
+  try { return localStorage.getItem('metgal-slideshows') !== '0'; } catch (e) { return true; }
+})();
+const slideshowRegistry = new Map(); // timerKey -> {card, runSlideshow}
+let headerBgTimer = null;            // header background rotation interval
+let headerBgTick = null;             // header background advance function
 
 // Lightbox state
 let lightboxImages = [];
@@ -771,8 +807,7 @@ window.addEventListener('popstate', () => {
 
 /** Render the gallery/grid view from current state (no pushState). */
 function renderGalleryView() {
-  slideshowTimers.forEach(t => clearInterval(t));
-  slideshowTimers.clear();
+  stopAllCardSlideshows();
 
   const gallery = document.getElementById('gallery');
   const detailView = document.getElementById('detail-view');
@@ -815,6 +850,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     hashToState();
     setupToolbar();
     syncToolbarUI();
+    syncHeaderToggleUI();
     startHeaderSlideshow();
     if (detailMeteoriteName) {
       const met = manifest.meteorites.find(m => m.name === detailMeteoriteName);
@@ -881,6 +917,11 @@ function setupToolbar() {
 
   // Slideshow
   document.getElementById('slideshow-btn').addEventListener('click', startSlideshow);
+
+  // Header right-edge click zone: toggle all thumbnail slideshows
+  document.getElementById('header-slideshow-toggle').addEventListener('click', () => {
+    setSlideshowsEnabled(!slideshowsEnabled);
+  });
 
   // Lightbox controls
   document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
@@ -1022,6 +1063,31 @@ function getRandomImage(met) {
   return met.path + '/' + img;
 }
 
+/** Find the largest image (by full-res pixel area from manifest `dims`)
+ *  among all images of the given meteorites — a recursive category search,
+ *  since callers pass every meteorite below the category path. Deterministic:
+ *  ties resolve to manifest order and missing `dims` ranks below any dimmed
+ *  image. Falls back to the first image when no `dims` exist at all.
+ *  Returns {met, img} or null. */
+function findLargestImage(meteorites) {
+  let best = null;
+  let bestArea = -1;
+  for (const met of meteorites) {
+    for (const img of met.images) {
+      const dims = met.dims && met.dims[img];
+      const area = dims ? dims[0] * dims[1] : -1;
+      if (area > bestArea) {
+        bestArea = area;
+        best = { met, img };
+      }
+    }
+  }
+  if (!best && meteorites.length > 0 && meteorites[0].images.length > 0) {
+    best = { met: meteorites[0], img: meteorites[0].images[0] };
+  }
+  return best;
+}
+
 /** Collect all images (with captions) for meteorites matching the current view. */
 function collectAllImages(meteorites) {
   const images = [];
@@ -1045,8 +1111,7 @@ function render() {
   pushState();
 
   // Clean up any running slideshow timers
-  slideshowTimers.forEach(t => clearInterval(t));
-  slideshowTimers.clear();
+  stopAllCardSlideshows();
 
   const gallery = document.getElementById('gallery');
   const detailView = document.getElementById('detail-view');
@@ -1187,6 +1252,11 @@ function appendHierarchyCards(container, path, node, onClickBase) {
         const j = Math.floor(Math.random() * (i + 1));
         [childCards[i], childCards[j]] = [childCards[j], childCards[i]];
       }
+    } else if (sortMode === 'category' && path.length === 0) {
+      // Custom order for top-level categories at Home
+      const order = ['Chondrites', 'Achondrites', 'Irons', 'Stony Irons', 'Special'];
+      const idx = k => { const i = order.indexOf(k); return i === -1 ? order.length : i; };
+      childCards.sort((a, b) => idx(a.key) - idx(b.key) || a.key.localeCompare(b.key));
     } else {
       // Largest sub-item count first, alphabetical tiebreak
       childCards.sort((a, b) => b.mets.length - a.mets.length || a.key.localeCompare(b.key));
@@ -1343,7 +1413,25 @@ function renderPagination(totalPages, currentPg) {
 // SLIDESHOW HELPER
 // ═══════════════════════════════════════════════════════════════
 
-/** Set up crossfade slideshow on a card's image elements. */
+/** Schedule (or re-schedule) the crossfade sequence for a registered card
+ *  slideshow. No-ops if a timer for this key already exists. */
+function startCardSlideshowTimer(timerKey) {
+  const entry = slideshowRegistry.get(timerKey);
+  if (!entry) return;
+  if (slideshowTimers.has(timerKey) || slideshowTimers.has(timerKey + '-init')) return;
+  const initialDelay = Math.random() * 5000;
+  const timer = setTimeout(() => {
+    entry.runSlideshow();
+    slideshowTimers.delete(timerKey + '-init');
+    const intervalTimer = setInterval(entry.runSlideshow, 5000);
+    slideshowTimers.set(timerKey, intervalTimer);
+  }, initialDelay);
+  slideshowTimers.set(timerKey + '-init', timer);
+}
+
+/** Set up crossfade slideshow on a card's image elements.
+ *  Always registers the slideshow so the header toggle can restart it;
+ *  only schedules timers when slideshows are enabled. */
 function setupSlideshow(card, getNextSrc, timerKey) {
   const imgEl = card.querySelector('img');
   const nextEl = card.querySelector('.slideshow-next');
@@ -1365,28 +1453,69 @@ function setupSlideshow(card, getNextSrc, timerKey) {
     tempImg.src = newSrc;
   };
 
-  const initialDelay = Math.random() * 5000;
-  const timer = setTimeout(() => {
-    runSlideshow();
-    const intervalTimer = setInterval(runSlideshow, 5000);
-    slideshowTimers.set(timerKey, intervalTimer);
-  }, initialDelay);
-  slideshowTimers.set(timerKey + '-init', timer);
+  slideshowRegistry.set(timerKey, { card, runSlideshow });
+  if (slideshowsEnabled) startCardSlideshowTimer(timerKey);
+}
+
+/** Stop every card slideshow timer (cards keep their current image). */
+function stopAllCardSlideshows() {
+  slideshowTimers.forEach(t => clearInterval(t));
+  slideshowTimers.clear();
+}
+
+/** Toggle all thumbnail slideshows (cards + header background).
+ *  When off, each image slot shows its deterministic largest image
+ *  (cacheable across reloads) and nothing else is downloaded. */
+function setSlideshowsEnabled(on) {
+  slideshowsEnabled = on;
+  try { localStorage.setItem('metgal-slideshows', on ? '1' : '0'); } catch (e) { /* unavailable */ }
+  syncHeaderToggleUI();
+  if (on) {
+    // Restart only slideshows whose cards are still in the DOM; prune the rest
+    for (const key of [...slideshowRegistry.keys()]) {
+      if (slideshowRegistry.get(key).card.isConnected) startCardSlideshowTimer(key);
+      else slideshowRegistry.delete(key);
+    }
+    startHeaderBgRotation();
+  } else {
+    stopAllCardSlideshows();
+    stopHeaderBgRotation();
+  }
+}
+
+/** Reflect the slideshow toggle state in the header click zone. */
+function syncHeaderToggleUI() {
+  const toggle = document.getElementById('header-slideshow-toggle');
+  if (!toggle) return;
+  toggle.querySelector('span').textContent = slideshowsEnabled ? '❚❚' : '►';
+  toggle.title = slideshowsEnabled ? 'Stop slideshows' : 'Start slideshows';
 }
 
 // ═══════════════════════════════════════════════════════════════
 // HEADER BACKGROUND SLIDESHOW
 // ═══════════════════════════════════════════════════════════════
 
-/** Pick a random image from the entire collection. Returns {src, portrait}. */
-function pickRandomHeaderImage() {
-  const met = manifest.meteorites[Math.floor(Math.random() * manifest.meteorites.length)];
-  const img = met.images[Math.floor(Math.random() * met.images.length)];
+/** Build a {src, portrait} header entry for a given meteorite image. */
+function headerImageEntry(met, img) {
   const dims = met.dims && met.dims[img];
   return {
     src: encodeImagePath(met.path + '/' + img),
     portrait: !!(dims && dims[1] > dims[0])
   };
+}
+
+/** Pick a random image from the entire collection. Returns {src, portrait}. */
+function pickRandomHeaderImage() {
+  const met = manifest.meteorites[Math.floor(Math.random() * manifest.meteorites.length)];
+  const img = met.images[Math.floor(Math.random() * met.images.length)];
+  return headerImageEntry(met, img);
+}
+
+/** Largest image of the whole collection — the deterministic,
+ *  cache-friendly header background used while slideshows are paused. */
+function pausedHeaderImage() {
+  const best = findLargestImage(manifest.meteorites);
+  return best ? headerImageEntry(best.met, best.img) : null;
 }
 
 /**
@@ -1414,14 +1543,16 @@ function fitHeaderImg(img) {
   }
 }
 
-/** Full-collection crossfade slideshow behind the header text (8s interval). */
+/** Full-collection crossfade slideshow behind the header text (8s interval).
+ *  Loads a random image when active; the deterministic first manifest image
+ *  when paused. Rotates only while slideshows are enabled. */
 function startHeaderSlideshow() {
   const imgs = document.querySelectorAll('#header-bg img');
   let currentImg = imgs[0];
   let nextImg = imgs[1];
 
-  const showNext = () => {
-    const pick = pickRandomHeaderImage();
+  const showNext = (pick) => {
+    if (!pick) pick = pickRandomHeaderImage();
     // Preload so we never crossfade to a blank image
     const temp = new Image();
     temp.onload = () => {
@@ -1437,14 +1568,28 @@ function startHeaderSlideshow() {
     temp.src = pick.src;
   };
 
-  showNext();
-  setInterval(showNext, 8000);
+  headerBgTick = showNext;
+  if (slideshowsEnabled) {
+    showNext();
+    headerBgTimer = setInterval(showNext, 8000);
+  } else {
+    showNext(pausedHeaderImage());
+  }
 
   // Re-fit current images when the header box changes size/orientation
   window.addEventListener('resize', () => {
     fitHeaderImg(currentImg);
     fitHeaderImg(nextImg);
   });
+}
+
+function stopHeaderBgRotation() {
+  if (headerBgTimer) { clearInterval(headerBgTimer); headerBgTimer = null; }
+}
+
+function startHeaderBgRotation() {
+  stopHeaderBgRotation();
+  if (slideshowsEnabled && headerBgTick) headerBgTimer = setInterval(headerBgTick, 8000);
 }
 
 // ═══════════════════════════════════════════════════════════════
@@ -1456,11 +1601,17 @@ function createCategoryCard(name, meteorites, onClickOverride) {
   const card = document.createElement('div');
   card.className = 'card';
 
-  const randomMet = meteorites.length > 0
-    ? meteorites[Math.floor(Math.random() * meteorites.length)]
-    : null;
-
-  const imgSrc = randomMet ? encodeImagePath(getRandomImage(randomMet)) : '';
+  let imgSrc = '';
+  if (meteorites.length > 0) {
+    // Random pick while slideshows run; when paused, recursively find the
+    // largest image below the category (deterministic -> cache-friendly)
+    if (slideshowsEnabled) {
+      imgSrc = encodeImagePath(getRandomImage(meteorites[Math.floor(Math.random() * meteorites.length)]));
+    } else {
+      const best = findLargestImage(meteorites);
+      if (best) imgSrc = encodeImagePath(best.met.path + '/' + best.img);
+    }
+  }
 
   card.innerHTML = `
     <div class="card-img-wrap">
@@ -1537,7 +1688,13 @@ function createMeteoriteCard(met, noSlideshow = false) {
   const card = document.createElement('div');
   card.className = 'card';
 
-  const imgSrc = encodeImagePath(getRandomImage(met));
+  let imgSrc = '';
+  if (slideshowsEnabled) {
+    imgSrc = encodeImagePath(getRandomImage(met));
+  } else {
+    const best = findLargestImage([met]);
+    if (best) imgSrc = encodeImagePath(best.met.path + '/' + best.img);
+  }
   const parsed = parseMeteoriteName(met.name, met);
 
   let labelHtml = `<div class="met-name">${escapeHtml(parsed.name)} <span class="count">(${met.images.length})</span></div>`;
@@ -1579,8 +1736,7 @@ function showDetail(met) {
   pushState();
 
   // Stop card slideshows
-  slideshowTimers.forEach(t => clearInterval(t));
-  slideshowTimers.clear();
+  stopAllCardSlideshows();
 
   const gallery = document.getElementById('gallery');
   const detailView = document.getElementById('detail-view');

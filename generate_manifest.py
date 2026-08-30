@@ -30,7 +30,7 @@ PHOTOS_ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "Photos")
 FULL_ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "Full")
 OUTPUT_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "manifest.json")
 
-IMAGE_EXTENSIONS = {".jpg", ".jpeg"}
+IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".gif"}
 
 EXIF_ORIENTATION_TAG = 0x0112
 # Orientations 5-8 mean the image is stored rotated 90° from how it should
@@ -116,6 +116,11 @@ def walk_photos(root, full_root):
                 size = get_image_dimensions(os.path.join(full_root, rel_dir, img))
                 if size is not None:
                     dims[img] = [size[0], size[1]]
+
+        # Sort images by megapixels, largest first. Images whose full-res
+        # dimensions are unknown sort last (stable, so alphabetical order
+        # is preserved within each group).
+        images.sort(key=lambda img: dims.get(img, [0, 0])[0] * dims.get(img, [0, 0])[1], reverse=True)
 
         meteorites.append({
             "name": name,
