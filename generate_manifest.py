@@ -3,11 +3,16 @@
 Generate manifest.json from the Photos/ directory tree.
 
 Walks the Photos/ hierarchy, finds leaf meteorite folders (those containing
-.jpg/.jpeg image files), reads any info.txt descriptions and links.html
+.avif/.gif image files), reads any info.txt descriptions and links.html
 (link HTML, kept separate), reads the pixel
 dimensions of each image's full-resolution counterpart in Full/ (same
 relative path, same filenames), and outputs a manifest.json that the gallery
 webpage can consume.
+
+Dimensions are read with Pillow when possible. AVIF is only supported by
+Pillow when it is built against libavif; otherwise all AVIF dimensions are
+read in one batch via ImageMagick (`magick identify -ping`), which decodes
+only the file headers and is therefore very fast.
 
 Usage:
     python3 generate_manifest.py
@@ -16,10 +21,12 @@ Usage:
 
 import json
 import os
+import shutil
+import subprocess
 import sys
 
 try:
-    from PIL import Image
+    from PIL import Image, features
     # Only image headers are read here (never pixel data), so Pillow's
     # decompression-bomb size guard is irrelevant; disable it to avoid
     # spurious warnings and skipped very large panoramas.
@@ -27,11 +34,15 @@ try:
 except ImportError:
     Image = None
 
+# Pillow can only parse AVIF when built against libavif (or with the
+# pillow-avif-plugin installed); otherwise we fall back to ImageMagick.
+PILLOW_HAS_AVIF = Image is not None and features.check("avif")
+
 PHOTOS_ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "Photos")
 FULL_ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "Full")
 OUTPUT_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "manifest.json")
 
-IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".gif"}
+IMAGE_EXTENSIONS = {".avif", ".gif"}
 
 EXIF_ORIENTATION_TAG = 0x0112
 # Orientations 5-8 mean the image is stored rotated 90° from how it should
@@ -39,13 +50,77 @@ EXIF_ORIENTATION_TAG = 0x0112
 # dimensions a browser will actually render.
 EXIF_SWAP_DIMENSIONS = {5, 6, 7, 8}
 
+# Dimensions of full-resolution AVIF files (which stock Pillow builds cannot
+# parse), read in one batch with ImageMagick and cached: absolute path ->
+# (width, height), EXIF orientation already applied.
+_avif_dims = {}
+
+
+def _identify_command():
+    """Return the ImageMagick identify command, or None if unavailable."""
+    for candidate in (["magick", "identify"], ["identify"]):
+        if shutil.which(candidate[0]):
+            return candidate
+    return None
+
+
+def preload_avif_dims(full_root):
+    """Read dimensions of every AVIF under full_root using ImageMagick.
+
+    `identify -ping` decodes only the file header, so a single invocation
+    covers the whole tree in about a second. Results are cached in
+    _avif_dims, keyed by absolute path, with EXIF orientation applied.
+    """
+    cmd = _identify_command()
+    if cmd is None:
+        print("Warning: ImageMagick ('magick identify') not found; "
+              "AVIF dimensions will be omitted.", file=sys.stderr)
+        return
+    avif_paths = []
+    for dirpath, _dirnames, filenames in os.walk(full_root):
+        avif_paths.extend(
+            os.path.join(dirpath, f) for f in filenames
+            if os.path.splitext(f.lower())[1] == ".avif")
+    if not avif_paths:
+        return
+    # One "<w> <h> <orientation> <path>" line per file; %d/%f reconstruct
+    # the path exactly as it was passed in. An absent EXIF orientation
+    # yields an empty field, treated as 1 (normal) below.
+    format_str = "%w %h %[EXIF:Orientation] %d/%f\n"
+    try:
+        proc = subprocess.run(
+            cmd + ["-ping", "-quiet", "-format", format_str, "--", *avif_paths],
+            capture_output=True, text=True)
+    except OSError as e:
+        print(f"Warning: could not run {cmd[0]}: {e}; "
+              "AVIF dimensions will be omitted.", file=sys.stderr)
+        return
+    if proc.returncode != 0:
+        print(f"Warning: {cmd[0]} identify exited with status "
+              f"{proc.returncode}; some AVIF dimensions may be missing.",
+              file=sys.stderr)
+    for line in proc.stdout.splitlines():
+        try:
+            w_str, h_str, o_str, path = line.split(" ", 3)
+            width, height = int(w_str), int(h_str)
+            orientation = int(o_str) if o_str else 1
+        except ValueError:
+            continue
+        if orientation in EXIF_SWAP_DIMENSIONS:
+            width, height = height, width
+        _avif_dims[path] = (width, height)
+
 
 def get_image_dimensions(path):
-    """Return (width, height) of a JPEG, EXIF-orientation corrected.
+    """Return (width, height) of an image, EXIF-orientation corrected.
 
-    Only the header is read, so this stays fast even for large files.
+    AVIF dimensions come from the ImageMagick cache (stock Pillow builds
+    cannot parse AVIF); everything else goes through Pillow, reading only
+    the header so this stays fast even for large files.
     Returns None if the file is missing or unreadable.
     """
+    if path.lower().endswith(".avif") and not PILLOW_HAS_AVIF:
+        return _avif_dims.get(os.path.abspath(path))
     try:
         with Image.open(path) as im:
             width, height = im.size
@@ -53,13 +128,17 @@ def get_image_dimensions(path):
             if orientation in EXIF_SWAP_DIMENSIONS:
                 width, height = height, width
             return width, height
+    except FileNotFoundError:
+        # The full-resolution counterpart simply does not exist (e.g. GIFs
+        # are thumbnails only); the image is left out of "dims" silently.
+        return None
     except Exception as e:
         print(f"Warning: Could not read dimensions of {path}: {e}", file=sys.stderr)
         return None
 
 
 def is_image(filename):
-    """Check if a file is a JPEG image."""
+    """Check if a file is a supported image (AVIF or GIF)."""
     return os.path.splitext(filename.lower())[1] in IMAGE_EXTENSIONS
 
 
@@ -193,6 +272,10 @@ def main():
               "image dimensions will be omitted.", file=sys.stderr)
     else:
         full_root = FULL_ROOT
+        if not PILLOW_HAS_AVIF:
+            # Stock Pillow cannot read AVIF; gather AVIF dimensions with
+            # ImageMagick up front.
+            preload_avif_dims(FULL_ROOT)
 
     print(f"Scanning {PHOTOS_ROOT} ...")
     meteorites = walk_photos(PHOTOS_ROOT, full_root)

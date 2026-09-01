@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+echo "Do not use! Edit info.txt files amont thumbnails!"
+exit 
+
 set -euo pipefail
 
 SRC_DIR="/home/dsvilko/Pictures/Meteorites"

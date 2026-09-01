@@ -369,11 +369,12 @@ a:hover { background: var(--accent-hover); color: #111; }
   color: var(--fg-dim);
   line-height: 1.6;
   margin: 0 auto 1rem;
-  white-space: pre-wrap;
   text-align: left;
   max-width: 800px;
   margin-bottom: 30px;
 }
+#detail-desc p { margin: 0 0 0.9em; }
+#detail-desc p:last-child { margin-bottom: 0; }
 .met-links {
   display: flex;
   flex-wrap: wrap;
@@ -1083,13 +1084,19 @@ function searchMeteorites() {
   });
 }
 
+/** Natural-order string compare: embedded digit runs compare as numbers,
+ *  so "NWA 500" sorts before "NWA 1000" instead of "NWA 1000" first. */
+function naturalCompare(a, b) {
+  return a.localeCompare(b, undefined, { numeric: true });
+}
+
 /** Sort a list of meteorites. */
 function sortMeteorites(list) {
   const sorted = [...list];
   if (sortMode === 'category') {
     sorted.sort((a, b) => a.path.localeCompare(b.path));
   } else if (sortMode === 'name') {
-    sorted.sort((a, b) => a.name.localeCompare(b.name));
+    sorted.sort((a, b) => naturalCompare(a.name, b.name));
   } else {
     // Fisher-Yates shuffle
     for (let i = sorted.length - 1; i > 0; i--) {
@@ -1368,7 +1375,7 @@ function renderPhotos() {
   if (sortMode === 'category') {
     allPhotos.sort((a, b) => a.src.localeCompare(b.src));
   } else if (sortMode === 'name') {
-    allPhotos.sort((a, b) => a.caption.localeCompare(b.caption));
+    allPhotos.sort((a, b) => naturalCompare(a.caption, b.caption));
   } else {
     for (let i = allPhotos.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -1807,7 +1814,8 @@ function showDetail(met) {
   document.getElementById('detail-weight').textContent = parsed.weight;
   const descEl = document.getElementById('detail-desc');
   const desc = met.description || '';
-  descEl.textContent = desc.includes('\n') ? desc.slice(desc.indexOf('\n') + 1) : desc;
+  // info.txt is lightweight Markdown (**bold**, *italic*, links); rendered safely
+  descEl.innerHTML = renderMarkup(desc.includes('\n') ? desc.slice(desc.indexOf('\n') + 1) : desc);
   // links.html content is pre-made HTML; inserted as-is
   if (met.links) {
     const linksEl = document.createElement('div');
@@ -2285,6 +2293,62 @@ function escapeHtml(text) {
   const d = document.createElement('div');
   d.textContent = text;
   return d.innerHTML;
+}
+
+/** Render info.txt markup (lightweight Markdown) to safe HTML.
+ *  Input is HTML-escaped first, so only the constructs below become markup.
+ *  Supported: **bold**, *italic*, ***bold italic***, [text](url) links,
+ *  reference-style links ([2]: url "Title" + [2] refs in the text; the
+ *  definition is hidden and utm_* tracking params are stripped from URLs),
+ *  superscripts (^238U, ^{238}U), auto-linked bare http(s) URLs,
+ *  blank-line paragraphs, single newlines as <br>. */
+function renderMarkup(text) {
+  if (!text) return '';
+  // Strip tracking params (utm_*); tolerate escaped '&' inside href text
+  const cleanUrl = url => url
+    .replace(/([?&](?:amp;)?)utm_[a-z_]+=[^&\s]*/gi, (m, sep) => sep.startsWith('?') ? '?' : '')
+    .replace(/\?&(?:amp;)?/, '?')
+    .replace(/(?:[?&]|&(?:amp;)?)+$/, '');
+  const safeUrl = url => /^https?:\/\//i.test(url) ? url : '#';
+  const esc = escapeHtml(text);
+  // Reference-style definitions: [id]: URL "Title" — collect, remove from output
+  const refs = new Map();
+  const body = esc.replace(/^[ \t]*\[([^\]\n]+)\]:[ \t]*(\S+)(?:[ \t]+"([^"]*)")?[ \t]*$/gm,
+    (m, id, url, title) => {
+      refs.set(id, { url: cleanUrl(url), title: title || '' });
+      return '';
+    });
+  const inline = s => {
+    // [text](url) markdown links
+    s = s.replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g,
+      (m, txt, url) => `<a href="${safeUrl(cleanUrl(url))}" target="_blank" rel="noopener">${txt}</a>`);
+    // reference links: only [id] is clickable, the URL itself stays hidden
+    s = s.replace(/\[([^\]\n]+)\]/g, (m, id) => {
+      const ref = refs.get(id);
+      if (!ref) return m;
+      return `<a href="${safeUrl(ref.url)}" target="_blank" rel="noopener"${ref.title ? ` title="${ref.title}"` : ''}>[${id}]</a>`;
+    });
+    // bare URLs (not already inside an attribute/href); cleaned in href AND text
+    s = s.replace(/(^|[\s(])((?:https?:\/\/)[^\s<]+)/g, (m, pre, url) => {
+      const cleaned = cleanUrl(url);
+      const trimmed = cleaned.replace(/[.,;:!?)\]]+$/, '');
+      const rest = cleaned.slice(trimmed.length);
+      return `${pre}<a href="${safeUrl(trimmed)}" target="_blank" rel="noopener">${trimmed}</a>${rest}`;
+    });
+    s = s.replace(/\*\*\*([^*\n]+)\*\*\*/g, '<strong><em>$1</em></strong>');
+    s = s.replace(/\*\*([^*\n]+)\*\*/g, '<strong>$1</strong>');
+    s = s.replace(/\*([^*\n]+)\*/g, '<em>$1</em>');
+    // superscripts: isotopes ^238U and LaTeX-style ^{238}U
+    s = s.replace(/\^\{([^}\n]+)\}/g, '<sup>$1</sup>');
+    s = s.replace(/\^(\d+)/g, '<sup>$1</sup>');
+    return s;
+  };
+  return body
+    .split(/\n{2,}/)
+    .map(par => par.trim())
+    .filter(Boolean)
+    .map(par => `<p>${inline(par).replace(/\n/g, '<br>')}</p>`)
+    .join('');
 }
 
 function encodeImagePath(path) {

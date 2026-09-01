@@ -39,8 +39,8 @@ A single-page vanilla JS gallery for a hierarchical meteorite photo collection (
       "categories": ["Achondrites", "Lunar", "ferroan anorthosite"],
       "description": "content of info.txt",
       "links": "raw HTML from links.html (rendered as-is in detail view)",
-      "images": ["img1.jpeg", "img2.jpg"],
-      "dims": {"img1.jpeg": [5184, 3456], "img2.jpg": [3456, 5184]}
+      "images": ["img1.avif", "img2.gif"],
+      "dims": {"img1.avif": [5184, 3456], "img2.avif": [3456, 5184]}
     }
   ],
   "tree": { "children": { "Achondrites": { "children": {...}, "meteorites": [...] } }, "meteorites": [] }
@@ -50,7 +50,10 @@ A single-page vanilla JS gallery for a hierarchical meteorite photo collection (
 `dims` holds the dimensions of the **full-resolution** images in `Full/`
 (same relative path/filenames as `Photos/`), EXIF-orientation corrected;
 it is used by the lightbox auto-rotation and is omitted if Pillow or
-`Full/` is missing.
+`Full/` is missing. Images are `.avif` (full-res + thumbs) and `.gif`
+(thumbs only, so GIFs get no `dims` entry). Pillow cannot parse AVIF
+unless built with libavif, so `generate_manifest.py` batch-reads AVIF
+dimensions via ImageMagick (`magick identify -ping`) as a fallback.
 
 ## Features Implemented
 
