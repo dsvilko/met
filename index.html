@@ -48,6 +48,7 @@ a:hover { background: var(--accent-hover); color: #111; }
   text-align: center;
   padding: 2rem 1rem 1rem;
   border-bottom: 1px solid var(--border);
+  cursor: pointer;
 }
 #header-bg {
   position: absolute;
@@ -1050,6 +1051,14 @@ function setupToolbar() {
   // Header right-edge click zone: toggle all thumbnail slideshows
   document.getElementById('header-slideshow-toggle').addEventListener('click', () => {
     setSlideshowsEnabled(!slideshowsEnabled);
+  });
+
+  // Clicking the header returns to Home (root)
+  document.getElementById('header').addEventListener('click', (e) => {
+    if (e.target.closest('#header-slideshow-toggle')) return;
+    currentPath = [];
+    currentPage = 1;
+    render();
   });
 
   // Lightbox controls

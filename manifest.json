@@ -2,7 +2,7 @@
  "generated": true,
  "root": "Photos",
  "totalMeteorites": 306,
- "totalImages": 1124,
+ "totalImages": 1123,
  "meteorites": [
   {
    "name": "Sericho (pallasite) - 5g",
@@ -1767,7 +1767,6 @@
    "images": [
     "nwa-13921-achondrite-ung-0-35g-01.avif",
     "nwa-13921-achondrite-ung-0-35g-02.avif",
-    "nwa-13921-achondrite-ung-0-35g-03.avif",
     "nwa-13921-achondrite-ung-0-35g-04.avif"
    ],
    "dims": {
@@ -1778,10 +1777,6 @@
     "nwa-13921-achondrite-ung-0-35g-02.avif": [
      6197,
      4841
-    ],
-    "nwa-13921-achondrite-ung-0-35g-03.avif": [
-     4515,
-     5537
     ],
     "nwa-13921-achondrite-ung-0-35g-04.avif": [
      5809,
