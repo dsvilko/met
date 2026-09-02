@@ -1,7 +1,7 @@
 {
  "generated": true,
  "root": "Photos",
- "totalMeteorites": 305,
+ "totalMeteorites": 306,
  "totalImages": 1124,
  "meteorites": [
   {
@@ -127,7 +127,10 @@
      2641,
      1740
     ]
-   }
+   },
+   "tags": [
+    "historical"
+   ]
   },
   {
    "name": "Jepara (pallasite, PMG) - 0.35g",
@@ -222,7 +225,10 @@
      5184,
      3456
     ]
-   }
+   },
+   "tags": [
+    "antarctic"
+   ]
   },
   {
    "name": "Seymchan (pallasite, PMG)",
@@ -283,7 +289,7 @@
     "ES"
    ],
    "description": "Gyarub Zangbo (pallasite)\nAn unusual, unique pallasite (possibly previously unsampled parent body) with chemical affinities to carbonaceous pallasites such as the Eagel Station pallasite grouplet and Milton.\nA gift from dr. Yang Shun-Chung through Michael Kelly!",
-   "links": "<a href=\"https://www.lpi.usra.edu/meteor/metbull.php?code=73792\">MetBul</a>",
+   "links": "<a href=\"https://www.lpi.usra.edu/meteor/metbull.php?code=73792\">MetBul</a> \n<a href=\"http://meteoritestudies2.com/protected_GYARUB.HTM\">David Weir's MeteoriteStudies</a>",
    "images": [
     "gyarub-zangbo-pallasite-01.avif"
    ],
@@ -705,7 +711,7 @@
     "troctolitic ..."
    ],
    "description": "NWA 12971 (lunar troctolite melt) - 0.1g\nVery fine grained melt composed primarily of anorthite and olivine. Troctolitic bulk composition.",
-   "links": "<a href=\"https://www.lpi.usra.edu/meteor/metbull.php?code=70835\">MetBul</a> \n<a href=\"https://sites.wustl.edu/meteoritesite/items/lm_nwa_12971/\">R. Korotev, WU</a>",
+   "links": "<a href=\"https://www.lpi.usra.edu/meteor/metbull.php?code=70835\">MetBul</a> \n<a href=\"https://sites.wustl.edu/meteoritesite/items/lm_nwa_12971/\">R. Korotev, WU</a> \n<a href=\"http://meteoritestudies2.com/protected_NWA12971.HTM\">David Weir's MeteoriteStudies</a>",
    "images": [
     "nwa-12971-lunar-troctolite-melt-0-1g-03.avif",
     "nwa-12971-lunar-troctolite-melt-0-1g-02.avif",
@@ -1070,7 +1076,7 @@
     "felspathic beccia"
    ],
    "description": "NWA 11273 (Lunar feldsp. breccia) - 0.34g\nBreccia composed of mineral clasts of anorthite, olivine, exsolved pigeonite, pigeonite, augite, chromite, Ti-Cr-Fe spinel, kamacite, taenite and troilite in a finer grained matrix containing small vesicles and minor barite. Rare basalt clasts and glass fragments are also present.\nTKW: 2.8kg",
-   "links": "<a href=\"https://www.lpi.usra.edu/meteor/metbull.php?code=66064\">MetBul</a> \n<a href=\"https://sites.wustl.edu/meteoritesite/items/lm_nwa_08046_clan/\">R. Korotev, WU</a>",
+   "links": "<a href=\"https://www.lpi.usra.edu/meteor/metbull.php?code=66064\">MetBul</a> \n<a href=\"https://sites.wustl.edu/meteoritesite/items/lm_nwa_08046_clan/\">R. Korotev, WU</a> \n<a href=\"http://meteoritestudies2.com/protected_NWA11273.HTM\">David Weir's MeteoriteStudies</a>",
    "images": [
     "nwa-11273-lunar-feldsp-breccia-0-34g-02.avif",
     "nwa-11273-lunar-feldsp-breccia-0-34g-01.avif"
@@ -1458,7 +1464,7 @@
     "Ungrouped"
    ],
    "description": "Wan Zawatin 001 (achondrite-ung, anorthite-rich with diogenitic affinities) - 0.37g in multiple fragments\nComposed predominantly of anorthite (76 vol.%) and subordinate orthopyroxene (24 vol.%) together with accessory low-Ti chromite and troilite.\nUnique meteoritic material, possibly linked to diogenites.\nA gift from Azizi Habibi!",
-   "links": "<a href=\"https://www.lpi.usra.edu/meteor/metbull.php?code=78561\">MetBul</a>",
+   "links": "<a href=\"https://www.lpi.usra.edu/meteor/metbull.php?code=78561\">MetBul</a> \n<a href=\"http://meteoritestudies2.com/protected_WANZAWAT.HTM\">David Weir's MeteoriteStudies</a>",
    "images": [
     "wan-zawatin-001-achondrite-ung-anorthite-rich-with-diogenitic-affinities-0-37g-in-multiple-fragments-02.avif",
     "wan-zawatin-001-achondrite-ung-anorthite-rich-with-diogenitic-affinities-0-37g-in-multiple-fragments-06.avif",
@@ -1512,7 +1518,7 @@
     "Ungrouped"
    ],
    "description": "NWA 15915 (achondrite-ung, Mg-rich clinopyroxenite) - multiple broken fragments\nCoarse grained protogranular aggregate composed predominantly of homogeneous, almost pure end-member augite (with sparse, very thin exsolution lamellae of enstatite) accompanied by subordinate discrete grains of enstatite (~ 10 vol.%) and accessory daubreelite, alabandite, troilite, minor low-Ni kamacite and secondary Fe oxide.\nFrom Matt Stream and Gediminas Brizgys.",
-   "links": "<a href=\"https://www.lpi.usra.edu/meteor/metbull.php?code=79980\">MetBul</a>",
+   "links": "<a href=\"https://www.lpi.usra.edu/meteor/metbull.php?code=79980\">MetBul</a> \n<a href=\"http://meteoritestudies2.com/protected_NWA15915.HTM\">David Weir's MeteoriteStudies</a>",
    "images": [
     "nwa-15915-achondrite-ung-mg-rich-clinopyroxenite-multiple-broken-fragments-05.avif",
     "nwa-15915-achondrite-ung-mg-rich-clinopyroxenite-multiple-broken-fragments-01.avif",
@@ -1673,7 +1679,7 @@
     "Achondrites",
     "Ungrouped"
    ],
-   "description": "Ksar Ghilane 022, before NEA 050 (ungrouped, Mg-rich clinopyroxenite)\nComposed predominantly (>90 vol.%) of almost end-member augite (mostly as equant grains, mean grainsize ~1.5 mm) accompanied by minor enstatite and accessory Cr-troilite, daubreelite, alabandite and an Mn-Fe oxide phase. Enstatite occurs as small irregular inclusions or sparse fine lamellae within augite grains, and different macroscopic colors of the augite grains apparently reflect differing concentrations of sulfide inclusions. Some secondary calcite veins are present throughout. Very similar but not paired with NWA 15915.\nFrom Craig Zlimen.\nNWA 16286 (Lunar mare basalt, olivine phyric) - 0.27g\nOne of the rarest types of Lunar meteorites!\nMetbul: Olivine-phyric basalt composed of zoned subhedral olivine phenocrysts (up to 0.3 mm long), smaller zoned anhedral clinopyroxene grains (mean size ~0.2 mm) and thin laths of maskelynite (mean length ~0.2 mm) accompanied by accessory ilmenite (as fairly abundant thin, acicular grains), chromite and interstitial glassy mesostasis with quench crystallites.\nFrom Yang Shun-Chung.",
+   "description": "Ksar Ghilane 022, before NEA 050 (ungrouped, Mg-rich clinopyroxenite)\nComposed predominantly (>90 vol.%) of almost end-member augite (mostly as equant grains, mean grainsize ~1.5 mm) accompanied by minor enstatite and accessory Cr-troilite, daubreelite, alabandite and an Mn-Fe oxide phase. Enstatite occurs as small irregular inclusions or sparse fine lamellae within augite grains, and different macroscopic colors of the augite grains apparently reflect differing concentrations of sulfide inclusions. Some secondary calcite veins are present throughout. Very similar but not paired with NWA 15915.\nFrom Craig Zlimen.",
    "links": "",
    "images": [
     "ksar-ghilane-022-before-nea-050-ungrouped-mg-rich-clinopyroxenite-08.avif",
@@ -1728,7 +1734,7 @@
     "Ungrouped"
    ],
    "description": "Erg Atouila 001 (achondrite-un, albitite) - 66mg\nThis meteorite is an albitite with one of the highest modal feldspar contents ever reported in a meteorite – comparable modal abundance to lunar anorthosite meteorites, however its feldspar is an alkali feldspar solid solution.\nOxygen isotopes hint to the lodranute/acapulcoite clan but mineralogically it's very different.",
-   "links": "<a href=\"https://www.lpi.usra.edu/meteor/metbull.php?code=75507\">MetBul</a>",
+   "links": "<a href=\"https://www.lpi.usra.edu/meteor/metbull.php?code=75507\">MetBul</a> \n<a href=\"http://meteoritestudies2.com/protected_ERG-A001.HTM\">David Weir's MeteoriteStudies</a>",
    "images": [
     "erg-atouila-001-achondrite-un-albitite-66mg-02.avif",
     "erg-atouila-001-achondrite-un-albitite-66mg-03.avif",
@@ -1757,7 +1763,7 @@
     "Ungrouped"
    ],
    "description": "NWA 13921 (achondrite-ung) - 0.35g\nMetbul: Complex specimen consisting of some polymineralic lithic clasts and irregularly-shaped mineral grains within a dominant quench-textured groundmass. Lithic clasts are relatively coarse grained gabbroic assemblages composed of olivine, low-Ca pyroxene and highly calcic plagioclase. Separate irregularly shaped (apparently resorbed) mineral grains are olivine, orthopyroxene, pigeonite, augite, exsolved pigeonite, silica polymorph and calcic plagioclase. The groundmass or matrix is composed mainly of radiating arrays of very thin, acicular, strongly-zoned pyroxene grains, some of which are oriented perpendicular to edges of the larger mineral grains and appear to have nucleated on them. Accessory phases in the matrix include kamacite (with taenite rims), ilmenite, troilite and pentlandite.\nFrom Mohamed Ali Loud.\nUnclassified (PD012 from Pat Brown) - 9.8g\nPossible H5/6.",
-   "links": "",
+   "links": "<a href=\"http://meteoritestudies2.com/protected_NWA13921.HTM\">David Weir's MeteoriteStudies</a>",
    "images": [
     "nwa-13921-achondrite-ung-0-35g-01.avif",
     "nwa-13921-achondrite-ung-0-35g-02.avif",
@@ -2145,7 +2151,10 @@
      4766,
      5245
     ]
-   }
+   },
+   "tags": [
+    "tracked"
+   ]
   },
   {
    "name": "Norton County - 0.19g crusted + 0.12g of fragments",
@@ -2205,7 +2214,7 @@
     "Evolved",
     "Aubrites"
    ],
-   "description": "Tiglit (aubrite) - 0.191g",
+   "description": "Tiglit (aubrite) - 0.191g\n\nTiglit is a **witnessed meteorite fall from southern Morocco on December 9, 2021**, following a spectacular blue-green fireball and several loud explosions. Fragments were recovered within days around the village of Tiglit, making this an exceptionally fresh fall; the total officially recorded mass is about **2.22 kg**. The first specimens were strikingly pale, with large white crystals and multicolored (brown/green to white) fusion crust, and preliminary examination quickly showed that they were an unusual achondrite. ([LPI][1])\n\nInterestingly, **before formal analysis, some collectors were excited by the first photographs and reportedly speculated that Tiglit might even be the first observed lunar meteorite fall** The excitement was short-lived: laboratory work established Tiglit as an **aubrite (enstatite achondrite)**, a rare meteorite type thought to originate from a highly reduced, asteroid-sized parent body rather than the Moon. Its extremely fresh material has nevertheless proved scientifically valuable, including the preservation of fragile sulfides and unusual phases; recent work has also identified carbon phases and terrestrial alteration products such as calcite.\n\n[1]: https://www.lpi.usra.edu/meteor/metbull.php?code=77162&utm_source=chatgpt.com \"Meteoritical Bulletin: Entry for Tiglit\"",
    "links": "<a href=\"https://www.lpi.usra.edu/meteor/metbull.php?code=77162\">MetBul</a>",
    "images": [
     "tiglit-aubrite-0-191g-06.avif",
@@ -2442,7 +2451,7 @@
     "Winonaite"
    ],
    "description": "NWA 725 (winonaite, proposed tissemouminite) - 1.46g\nMineral composition similar to acapulcoites, more relic chondrules than typical winonaites. Possibly belonging to new parent body, distinct from winonaite as well as lodranite-acapulcoite parent bodies.",
-   "links": "<a href=\"https://www.lpi.usra.edu/meteor/metbull.php?code=17807\">MetBul</a> \n<a href=\"https://onlinelibrary.wiley.com/doi/10.1111/maps.13944?mibextid=Zxz2cZ\">MP</a>",
+   "links": "<a href=\"https://www.lpi.usra.edu/meteor/metbull.php?code=17807\">MetBul</a> \n<a href=\"https://onlinelibrary.wiley.com/doi/10.1111/maps.13944?mibextid=Zxz2cZ\">MP</a> \n<a href=\"http://meteoritestudies2.com/protected_NWA725.HTM\">David Weir's MeteoriteStudies</a>",
    "images": [
     "nwa-725-winonaite-proposed-tissemouminite-1-46g-02.avif",
     "nwa-725-winonaite-proposed-tissemouminite-1-46g-03.avif",
@@ -2472,7 +2481,7 @@
     "Winonaite"
    ],
    "description": "NWA 15061 (winonaite) - 0.49g\nA gift from Mohamed Ali Loud!",
-   "links": "<a href=\"https://www.lpi.usra.edu/meteor/metbull.php?code=77716\">MetBul</a>",
+   "links": "<a href=\"https://www.lpi.usra.edu/meteor/metbull.php?code=77716\">MetBul</a> \n<a href=\"http://meteoritestudies2.com/protected_NWA15061.HTM\">David Weir's MeteoriteStudies</a>",
    "images": [
     "nwa-15061-winonaite-0-49g-01.avif",
     "nwa-15061-winonaite-0-49g-02.avif"
@@ -2738,6 +2747,22 @@
      3747
     ]
    }
+  },
+  {
+   "name": "Almahatta Sita (ureilite)",
+   "path": "Photos/Achondrites/Primitive/Ureilite/Almahatta Sita (ureilite)",
+   "categories": [
+    "Achondrites",
+    "Primitive",
+    "Ureilite"
+   ],
+   "description": "Almahatta Sita (ureilite)\nAlmahata Sitta is the meteorite fall produced by asteroid **2008 TC₃**, which was discovered on **6 October 2008**, only about **19 hours before it struck Earth** over northern Sudan on October 7. This made it the first meteorite whose parent asteroid had been observed and spectroscopically characterized in space before impact. The asteroid was only ~4 m across and exploded high in the atmosphere, but searches in the Nubian Desert recovered **hundreds of small fragments**, collectively named Almahata Sitta (“Station 6”). ([Nature][1])\n\nWhat makes Almahata Sitta particularly remarkable is its **extreme compositional diversity**. It was initially classified as an anomalous polymict ureilite, but subsequent studies found numerous ureilites alongside **enstatite, ordinary, carbonaceous and R-like chondrites**, as well as some unusual lithologies. This indicates that 2008 TC₃ was a highly heterogeneous, porous **breccia/rubble-pile-like body**, apparently assembled from material with very different histories. It therefore provides an unusually direct look at the processes of **asteroid fragmentation, mixing and reaccretion**, while also establishing a powerful link between an observed asteroid's spectrum and actual meteorite material. ([sciencedirect.com][2])\n\n[1]: https://www.nature.com/articles/nature07920?utm_source=chatgpt.com \"The impact and recovery of asteroid 2008 TC3 | Nature\"\n[2]: https://www.sciencedirect.com/science/article/abs/pii/S0009281914000063?utm_source=chatgpt.com \"The Almahata Sitta polymict breccia and the late accretion of asteroid 2008 TC3 - ScienceDirect\"\n\nThese fragments were generous gift directly from the finders, Haberer family!",
+   "links": "<a href=\"https://www.lpi.usra.edu/meteor/metbull.php?code=48915\">MetBul</a> \n<a href=\"http://meteoritestudies2.com/protected_ALMAHATA.HTM\">David Weir's MeteoriteStudies</a>",
+   "images": [],
+   "dims": {},
+   "tags": [
+    "tracked"
+   ]
   },
   {
    "name": "Almahatta Sita MS-325 (fine-variable-sized ureilite) - 9mg",
@@ -5217,7 +5242,10 @@
      2207,
      6046
     ]
-   }
+   },
+   "tags": [
+    "historical"
+   ]
   },
   {
    "name": "1400. Elbogen (iron, IID) - micro",
@@ -5251,7 +5279,10 @@
      1200,
      881
     ]
-   }
+   },
+   "tags": [
+    "historical"
+   ]
   },
   {
    "name": "Muonionalusta (IVA iron) - 10cm slice",
@@ -5347,7 +5378,7 @@
     "IIE"
    ],
    "description": "Miles (iron, IIE) - 0.829g\nA very rare iron sub-type.\nFractionated. Contains 10-20% globular silicate inclusions that form interconnected network and that formed at significant depth experiencing slow cooling.",
-   "links": "<a href=\"https://www.lpi.usra.edu/meteor/metbull.php?code=16641\">MetBul</a>",
+   "links": "<a href=\"https://www.lpi.usra.edu/meteor/metbull.php?code=16641\">MetBul</a> \n<a href=\"http://meteoritestudies2.com/protected_MILES.HTM\">David Weir's MeteoriteStudies</a>",
    "images": [
     "miles-iron-iie-0-829g-01.avif"
    ],
@@ -5395,7 +5426,7 @@
     "ungrouped"
    ],
    "description": "NWA 859 Taza (ungrouped iron) - 0.61g\nOriented individual, 9.98mm.",
-   "links": "<a href=\"https://www.lpi.usra.edu/meteor/metbull.php?code=17884\">MetBul</a>",
+   "links": "<a href=\"https://www.lpi.usra.edu/meteor/metbull.php?code=17884\">MetBul</a> \n<a href=\"http://meteoritestudies2.com/protected_TAZA.HTM\">David Weir's MeteoriteStudies</a>",
    "images": [
     "nwa-859-taza-ungrouped-iron-0-61g-02.avif",
     "nwa-859-taza-ungrouped-iron-0-61g-06.avif",
@@ -5599,7 +5630,10 @@
      3824,
      2360
     ]
-   }
+   },
+   "tags": [
+    "antarctic"
+   ]
   },
   {
    "name": "Lake Murray (IIAB iron)",
@@ -6885,7 +6919,7 @@
     "ungrouped"
    ],
    "description": "NWA 12416 (C3-ung) - micro\nPossible member of the proposed CT grouplet.\nOne side later polished.",
-   "links": "<a href=\"https://www.lpi.usra.edu/meteor/metbull.php?code=70073\">MetBul</a>",
+   "links": "<a href=\"https://www.lpi.usra.edu/meteor/metbull.php?code=70073\">MetBul</a> \n<a href=\"http://meteoritestudies2.com/protected_NWA12416.HTM\">David Weir's MeteoriteStudies</a>",
    "images": [
     "nwa-12416-c3-ung-micro-03.avif",
     "nwa-12416-c3-ung-micro-01.avif",
@@ -6915,7 +6949,7 @@
     "ungrouped"
    ],
    "description": "NWA 11961 (C3-ung, prop. CX) - 50mg\nIt was suggested that this meteorite, together with a few others could belong to a new sub-type of carbonaceous chondrites with a proposed designation CX.",
-   "links": "<a href=\"https://www.lpi.usra.edu/meteor/metbull.php?code=68670\">MetBul</a>",
+   "links": "<a href=\"https://www.lpi.usra.edu/meteor/metbull.php?code=68670\">MetBul</a> \n<a href=\"http://meteoritestudies2.com/protected_NWA11961.HTM\">David Weir's MeteoriteStudies</a>",
    "images": [
     "nwa-11961-c3-ung-prop-cx-50mg-01.avif"
    ],
@@ -7164,7 +7198,7 @@
     "CH"
    ],
    "description": "SaU 290 (CH3) - 0.14g\nThe meteorite is mostly composed of small chondrules (<20 μm) of various textural types, ~15% fine grained metal, few small \"matrix lumps\" and rare refractory inclusions.\nThis rare meteorite, acquired in 2023 from Maxime was my last missing CC type!",
-   "links": "<a href=\"https://www.lpi.usra.edu/meteor/metbull.php?code=32488\">MetBul</a>",
+   "links": "<a href=\"https://www.lpi.usra.edu/meteor/metbull.php?code=32488\">MetBul</a> \n<a href=\"http://meteoritestudies2.com/protected_SAU290.HTM\">David Weir's MeteoriteStudies</a>",
    "images": [
     "sau-290-ch3-0-14g-01.avif",
     "sau-290-ch3-0-14g-03.avif",
@@ -7569,7 +7603,7 @@
     "CV"
    ],
    "description": "NWA 1465 (CV3-an)\nA gift from Chalom Malka!",
-   "links": "<a href=\"https://www.lpi.usra.edu/meteor/metbull.php?code=17241\">MetBul</a>",
+   "links": "<a href=\"https://www.lpi.usra.edu/meteor/metbull.php?code=17241\">MetBul</a> \n<a href=\"http://meteoritestudies2.com/protected_NWA1465.HTM\">David Weir's MeteoriteStudies</a>",
    "images": [
     "nwa-1465-cv3-an-03.avif",
     "nwa-1465-cv3-an-02.avif",
@@ -8400,7 +8434,10 @@
      6282,
      3978
     ]
-   }
+   },
+   "tags": [
+    "tracked"
+   ]
   },
   {
    "name": "Saint-Pierre-le-Viger (L5-6, asteroid 2023 CX1) - ",
@@ -8575,7 +8612,10 @@
      2378,
      2145
     ]
-   }
+   },
+   "tags": [
+    "historical"
+   ]
   },
   {
    "name": "Viñales (L6 S3 W0)",
@@ -8613,7 +8653,7 @@
     "L6"
    ],
    "description": "ALH 76009 (L6)\nWith a TKW of 407kg it's the largest Antarctic find. Pieces of it were stolen from the McMurdo base.",
-   "links": "<a href=\"https://www.lpi.usra.edu/meteor/metbull.php?code=1316\">MetBul</a>",
+   "links": "<a href=\"https://www.lpi.usra.edu/meteor/metbull.php?code=1316\">MetBul</a> \n<a href=\"https://www.youtube.com/watch?v=zwtNzCv3dU4\">YouTube</a>",
    "images": [
     "alh-76009-l6-02.avif",
     "alh-76009-l6-01.avif"
@@ -8627,7 +8667,10 @@
      4297,
      2865
     ]
-   }
+   },
+   "tags": [
+    "antarctic"
+   ]
   },
   {
    "name": "ALH 76001 (L6) - multiple micros",
@@ -8653,7 +8696,10 @@
      5184,
      3456
     ]
-   }
+   },
+   "tags": [
+    "antarctic"
+   ]
   },
   {
    "name": "Mvskoke Merkv (L6 S3 W0) - micro",
@@ -8721,7 +8767,10 @@
      4113,
      3044
     ]
-   }
+   },
+   "tags": [
+    "historical"
+   ]
   },
   {
    "name": "HaH 346 Gadamis (L6 S5 W0) - 11.4g",
@@ -9065,7 +9114,7 @@
     "ungrouped"
    ],
    "description": "NWA 15468 (OC4-melt breccia) - 5.25g\nThe oxygen isotopic composition plots above the terrestrial fractionation line, but it is distant from the established trend for H, L, and LL ordinary chondrites. The unmelted portions of the specimens are composed of well-formed equilibrated chondrules. Partially melted portions have thin metal veins surrounding chondrule-bearing domains.\nA gift from dr. Yang Shun-Chung!",
-   "links": "<a href=\"https://www.lpi.usra.edu/meteor/metbull.php?code=78797\">MetBul</a>",
+   "links": "<a href=\"https://www.lpi.usra.edu/meteor/metbull.php?code=78797\">MetBul</a> \n<a href=\"http://meteoritestudies2.com/protected_NWA15468.HTM\">David Weir's MeteoriteStudies</a>",
    "images": [
     "nwa-15468-oc4-melt-breccia-5-25g-04.avif",
     "nwa-15468-oc4-melt-breccia-5-25g-03.avif",
@@ -9250,7 +9299,10 @@
      5409,
      3681
     ]
-   }
+   },
+   "tags": [
+    "historical"
+   ]
   },
   {
    "name": "NWA 16550 (LL6 melt breccia, S2 W1) - 12.43g",
@@ -9737,7 +9789,10 @@
      4249,
      2833
     ]
-   }
+   },
+   "tags": [
+    "antarctic"
+   ]
   },
   {
    "name": "El Mrira 001 (H4-6 S2 W2) - multiple micros",
@@ -10313,6 +10368,7 @@
          }
         },
         "meteorites": [
+         "Almahatta Sita (ureilite)",
          "NWA 13239 (ureilite S-low, W-low) - 0.207g",
          "NWA 13135 (ureilite, W-low, S-low) - 0.76g",
          "NWA xxx (prob. ureilite) - 0.687g",

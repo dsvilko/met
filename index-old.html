@@ -751,19 +751,6 @@ a:hover { background: var(--accent-hover); color: #111; }
 
 <script>
 // ═══════════════════════════════════════════════════════════════
-// MEDIA SOURCE CONFIG
-// ═══════════════════════════════════════════════════════════════
-// Defaults to R2 (production-safe: nothing to remember to switch back
-// before deploying). Add ?src=local to the URL to serve Photos/Full from
-// the same origin as index.html instead (e.g. your local Python server).
-// Bookmark both:
-//   http://localhost:8000/?src=local   -> local files
-//   http://localhost:8000/             -> R2 (or wherever index.html is hosted)
-const R2_BASE = 'https://met.dsvilko.uk/';
-const USE_LOCAL = new URLSearchParams(location.search).get('src') === 'local';
-const MEDIA_BASE = USE_LOCAL ? '' : R2_BASE;
-
-// ═══════════════════════════════════════════════════════════════
 // STATE
 // ═══════════════════════════════════════════════════════════════
 let manifest = null;        // full manifest.json data
@@ -2527,8 +2514,7 @@ function renderMarkup(text) {
 
 function encodeImagePath(path) {
   // Encode each path segment individually to handle special chars in filenames
-  const encoded = path.split('/').map(seg => encodeURIComponent(seg)).join('/');
-  return MEDIA_BASE + encoded;
+  return path.split('/').map(seg => encodeURIComponent(seg)).join('/');
 }
 </script>
 </body>

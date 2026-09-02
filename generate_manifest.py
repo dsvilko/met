@@ -3,8 +3,9 @@
 Generate manifest.json from the Photos/ directory tree.
 
 Walks the Photos/ hierarchy, finds leaf meteorite folders (those containing
-.avif/.gif image files), reads any info.txt descriptions and links.html
-(link HTML, kept separate), reads the pixel
+.avif/.gif image files), reads any info.txt descriptions, links.html
+(link HTML, kept separate) and tags files (one tag per line, normalized
+to lowercase), reads the pixel
 dimensions of each image's full-resolution counterpart in Full/ (same
 relative path, same filenames), and outputs a manifest.json that the gallery
 webpage can consume.
@@ -146,6 +147,10 @@ def walk_photos(root, full_root):
     """
     Walk the Photos/ tree and return a list of meteorite entries.
 
+    A folder is a meteorite folder when it contains image files or an
+    info.txt; folders with neither are pure categories. Image-less
+    meteorite folders (pure parents) get an empty "images" list.
+
     Each entry is:
     {
         "name": "Gadamis 003 (Lunar ferroan anorthosite) - 81mg",
@@ -153,6 +158,7 @@ def walk_photos(root, full_root):
         "categories": ["Achondrites", "Lunar", "ferroan anorthosite"],
         "description": "contents of info.txt or empty string",
         "links": "contents of links.html (raw HTML) or empty string",
+        "tags": ["historical", ...]  (omitted when the folder has no tags file),
         "images": ["filename1.jpeg", "filename2.jpg"],
         "dims": {"filename1.jpeg": [4000, 3000], ...}
     }
@@ -168,7 +174,13 @@ def walk_photos(root, full_root):
         # Find image files in this directory
         images = sorted(f for f in filenames if is_image(f))
 
-        if not images:
+        # A folder is a meteorite folder if it holds photos OR an info.txt.
+        # Image-less meteorite folders exist: pure parents whose photos
+        # live only in their sub-folders (e.g. a fall with several named
+        # specimens); folders with neither stay pure categories.
+        info_path = os.path.join(dirpath, "info.txt")
+        has_info = os.path.isfile(info_path)
+        if not images and not has_info:
             continue
 
         # This is a leaf meteorite folder
@@ -181,8 +193,7 @@ def walk_photos(root, full_root):
 
         # Read info.txt if present
         description = ""
-        info_path = os.path.join(dirpath, "info.txt")
-        if os.path.isfile(info_path):
+        if has_info:
             try:
                 with open(info_path, "r", encoding="utf-8", errors="replace") as f:
                     description = f.read().strip()
@@ -201,6 +212,19 @@ def walk_photos(root, full_root):
             except Exception as e:
                 print(f"Warning: Could not read {links_path}: {e}", file=sys.stderr)
 
+        # Read tags if present (one tag per line; blank lines skipped,
+        # normalized to lowercase so 'Historical' and 'historical' merge,
+        # deduplicated preserving first occurrence)
+        tags = []
+        tags_path = os.path.join(dirpath, "tags")
+        if os.path.isfile(tags_path):
+            try:
+                with open(tags_path, "r", encoding="utf-8", errors="replace") as f:
+                    tags = list(dict.fromkeys(
+                        line.strip().lower() for line in f if line.strip()))
+            except Exception as e:
+                print(f"Warning: Could not read {tags_path}: {e}", file=sys.stderr)
+
         # Read dimensions from the full-resolution counterparts in Full/
         dims = {}
         if full_root:
@@ -215,7 +239,7 @@ def walk_photos(root, full_root):
         # is preserved within each group).
         images.sort(key=lambda img: dims.get(img, [0, 0])[0] * dims.get(img, [0, 0])[1], reverse=True)
 
-        meteorites.append({
+        entry = {
             "name": name,
             "path": rel_path,
             "categories": categories,
@@ -223,7 +247,12 @@ def walk_photos(root, full_root):
             "links": links,
             "images": images,
             "dims": dims,
-        })
+        }
+        # Omit the key entirely for untagged meteorites to keep the
+        # manifest lean
+        if tags:
+            entry["tags"] = tags
+        meteorites.append(entry)
 
     return meteorites
 

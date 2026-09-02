@@ -1,10 +1,14 @@
+# ./
+At the most basic level, meteorites can be divided into stony, irons and stony-irons. Stony meteorites (by far the largest group) can be divided into chondrites (very small asteroids) and achondrited (planets and large asteroids).
+
 # ./Achondrites
 Achondrites are meteorites that lack chondrules, meaning they formed from melted or partially melted material on differentiated parent bodies rather than from unaltered solar nebula dust. They represent igneous rocks from asteroids, Mars, and the Moon, and are far rarer than chondrites.
+It is thought that on early asteroids larger that around 100km, there was enough heat being generated mostly from 26Al to partly or completely melt them.
 
 Wikipedia: https://en.wikipedia.org/wiki/Achondrite
 
 # ./Achondrites/HED
-The Howardite-Eucrite-Diogenite clan is the largest achondrite group and is widely believed to originate from the asteroid 4 Vesta. Together its members sample Vesta's crust, mantle, and mixed regolith.
+The Howardite-Eucrite-Diogenite clan is the largest achondrite group and is widely believed to originate from the asteroid 4 Vesta. Together its members sample Vesta's crust (eucrites), mantle (diogenites), and mixed surface regolith (howardites).
 
 Wikipedia: https://en.wikipedia.org/wiki/HED_meteorite
 
@@ -353,3 +357,17 @@ This collection gathers meteorites with notable documented histories, such as wi
 
 # ./Special/Observed asteroid falls
 There have been only a few small asteroids that have been discovered in Space prior to impact with the Earth. These meteorites are remains of such super-rare predicted falls.
+
+# ./tags
+Here you can find virtual groupings of meteorites sharing the same tag.
+
+# ./tags/historical
+These are some of the most well known historical meteorites in my collection.
+
+# ./tags/tracked
+As of 2026., only 4 recovered meteorites have been discovered as asteroids in Space prior to them hitting the Earth. Of these 4, I have samples of 3 of them - the last one is unobtainable for private collectors:
+
+# ./tags/antarctic
+This tag groups meteorites recovered from the Antarctic ice sheet, where dark stones stand out against the ice and cold, dry conditions leave them exceptionally well preserved. Some of my specimens come from the early days of Antarctic meteorite hunting, including the ANSMET program.
+
+Wikipedia: https://en.wikipedia.org/wiki/ANSMET
