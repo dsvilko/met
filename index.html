@@ -759,7 +759,7 @@ a:hover { background: var(--accent-hover); color: #111; }
 // Bookmark both:
 //   http://localhost:8000/?src=local   -> local files
 //   http://localhost:8000/             -> R2 (or wherever index.html is hosted)
-const R2_BASE = 'https://met.dsvilko.uk/';
+const R2_BASE = 'https://media.dsvilko.uk/';
 const USE_LOCAL = new URLSearchParams(location.search).get('src') === 'local';
 const MEDIA_BASE = USE_LOCAL ? '' : R2_BASE;
 
