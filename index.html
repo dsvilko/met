@@ -799,6 +799,12 @@ let currentLightboxPhoto = null;
 let hashLightboxImg = null; // img= param from current URL hash (restoration)
 let lightboxVideoReady = false; // full-res video active (metadata loaded)
 
+// Swipe navigation (touch): horizontal swipes go prev/next while the
+// photo is at fit scale; zoomed-in gestures stay with panzoom (pan),
+// and pinched (2+ finger) gestures are never swipes
+let lbSwipeStart = null;    // {x, y, t} of the gesture's first touch
+let lbSwipePinched = false; // gesture involved 2+ fingers (pinch zoom)
+
 // Auto-rotation (lightbox): rotate a photo 90° when its orientation
 // mismatches the viewport orientation, so it fills the screen better
 let autoRotateEnabled = true;   // user toggle (⟳ button), default on
@@ -1066,6 +1072,16 @@ function setupToolbar() {
   document.getElementById('lb-prev').addEventListener('click', () => lightboxNav(-1));
   document.getElementById('lb-next').addEventListener('click', () => lightboxNav(1));
   document.getElementById('lb-pause').addEventListener('click', toggleLightboxPause);
+
+  // Swipe navigation: panzoom preventDefault()s touchstart but only
+  // stopPropagation()s it, so rotator-level listeners still see gestures
+  const lbRotator = document.getElementById('lightbox-rotator');
+  lbRotator.addEventListener('touchstart', onLightboxTouchStart, { passive: true });
+  lbRotator.addEventListener('touchend', onLightboxTouchEnd, { passive: true });
+  lbRotator.addEventListener('touchcancel', () => {
+    lbSwipeStart = null;
+    lbSwipePinched = false;
+  });
 
   // Video play/pause button + glyph sync on playback state changes
   document.getElementById('lightbox-video-toggle')
@@ -2232,6 +2248,9 @@ function initLightboxPanzoom(preserveTransform) {
     bounds: true,
     boundsPadding: 0.1,
     zoomDoubleClickSpeed: 1,
+    // No kinetic inertia: the transform must be final at touchend, or
+    // the swipe handler's snap-back would fight the post-gesture glide
+    smoothScroll: false,
   });
 
   // Restore zoom/pan only if the saved transform is fully valid
@@ -2443,6 +2462,45 @@ function lightboxNav(dir) {
   updateLightboxImage();
   pushState(true); // keep img= in sync without a new history entry
   if (lightboxPlaying) { clearInterval(lightboxTimer); startLightboxTimer(); }
+}
+
+/** Record the first touch of a lightbox gesture (see onLightboxTouchEnd). */
+function onLightboxTouchStart(e) {
+  if (e.touches.length > 1) {
+    lbSwipePinched = true; // pinch zoom - never a swipe
+    return;
+  }
+  if (!lbSwipeStart) {
+    lbSwipeStart = {
+      x: e.touches[0].clientX,
+      y: e.touches[0].clientY,
+      t: Date.now(),
+    };
+  }
+}
+
+/** Finished touch gesture: swipe prev/next at fit scale, else snap back. */
+function onLightboxTouchEnd(e) {
+  if (e.touches.length > 0) return; // fingers still down - not done yet
+  const start = lbSwipeStart;
+  const pinched = lbSwipePinched;
+  lbSwipeStart = null;
+  lbSwipePinched = false;
+  if (!start || pinched || !panzoomInstance) return;
+  // Zoomed in: the gesture belongs to panning; keep the pan position
+  if (panzoomInstance.getTransform().scale > 1.001) return;
+  const touch = e.changedTouches[0];
+  const dx = touch.clientX - start.x;
+  const dy = touch.clientY - start.y;
+  const dt = Date.now() - start.t;
+  // Deliberate horizontal fling: swipe left = next, right = prev
+  if (Math.abs(dx) >= 60 && Math.abs(dx) > 2 * Math.abs(dy) && dt <= 600) {
+    lightboxNav(dx < 0 ? 1 : -1);
+    return;
+  }
+  // Not a swipe: undo any drift panzoom's bounds allow at fit scale
+  panzoomInstance.moveTo(0, 0);
+  panzoomInstance.zoomAbs(0, 0, 1);
 }
 
 function toggleLightboxPause() {

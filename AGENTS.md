@@ -117,6 +117,12 @@ skips image-less entries.
     is rotated 90° whenever its orientation mismatches the viewport
     (landscape photo on portrait screen and vice versa), using `dims` from
     manifest.json; re-fits on viewport resize/orientation change
+  - **Swipe navigation** (touch): horizontal swipe (>= 60px, 2:1 axis
+    dominance, < 600ms) goes prev/next while the photo is at fit scale
+    (not zoomed); zoomed-in gestures pan as before; rejected swipes snap
+    back to center. panzoom runs with `smoothScroll: false` (no kinetic
+    inertia) so the transform is final at touchend; pinch gestures are
+    never swipes
 - **Thumbnail slideshows**: Crossfade transitions (no flash)
 - **Header background slideshow**: Random images (whole collection, Photos/
   thumbs) crossfade every 8s behind the header text (black text-shadow for
@@ -167,6 +173,7 @@ skips image-less entries.
 - `openLightboxForPhotos(photos, startIndex)` - opens lightbox at specific index
 - `startSlideshow()` - fullscreen random slideshow from current filter (4s interval)
 - `lightboxNav(dir)` / `toggleLightboxPause()` - keyboard + button controls
+- `onLightboxTouchStart()` / `onLightboxTouchEnd()` - swipe navigation on `#lightbox-rotator` (scale-gated; snap-back on rejected gestures)
 - `showLightbox()` - shows lightbox, initializes panzoom
 - `closeLightbox()` - hides lightbox, destroys panzoom instance
 - `updateLightboxImage()` - loads Full/ image, shows spinner, calculates dynamic maxZoom, initializes panzoom
