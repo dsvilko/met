@@ -1,9 +1,9 @@
 # ./
-At the most basic level, meteorites can be divided into stony, irons and stony-irons. Stony meteorites (by far the largest group) can be divided into chondrites (originate from a very small asteroids) and achondrited (come from planets and large asteroids).
+At the most basic level, meteorites can be divided into stony, irons and stony-irons. Stony meteorites (by far the largest group) can be divided into chondrites (originate from a very small asteroids) and achondrites (come from planets and large asteroids).
 
 # ./Achondrites
 Achondrites are meteorites that lack chondrules, meaning they formed from melted or partially melted material on differentiated parent bodies rather than from unaltered solar nebula dust. They represent igneous rocks from asteroids, Mars, and the Moon, and are far rarer than chondrites.
-It is thought that on early asteroids larger that around 100km, there was enough heat being generated mostly from 26Al to partly or completely melt them.
+It is thought that on early asteroids larger that around 100km, there was enough heat being generated, mostly from 26Al decay, to partly or completely melt them.
 
 Wikipedia: https://en.wikipedia.org/wiki/Achondrite
 

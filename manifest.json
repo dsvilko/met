@@ -620,7 +620,10 @@
      7350,
      3401
     ]
-   }
+   },
+   "tags": [
+    "significant"
+   ]
   },
   {
    "name": "NWA 14526 (Lunar mare basalt) - 4 fragments",
@@ -1841,7 +1844,10 @@
      6149,
      4064
     ]
-   }
+   },
+   "tags": [
+    "significant"
+   ]
   },
   {
    "name": "NWA xxx (ungrouped, dunite breccia - in classification) - 0.40g, 10.5mm",
@@ -3131,7 +3137,10 @@
      2532,
      1902
     ]
-   }
+   },
+   "tags": [
+    "significant"
+   ]
   },
   {
    "name": "NWA 2737 (chassignite W-low) - micro",
@@ -6028,7 +6037,10 @@
      5485,
      4040
     ]
-   }
+   },
+   "tags": [
+    "significant"
+   ]
   },
   {
    "name": "NWA 10393 (CO3 S2 W-low) - 0.73g",
@@ -6803,7 +6815,10 @@
      1080,
      720
     ]
-   }
+   },
+   "tags": [
+    "significant"
+   ]
   },
   {
    "name": "Tarda (C2-ungrouped) - multiple fragments",
@@ -7151,7 +7166,10 @@
      7162,
      3489
     ]
-   }
+   },
+   "tags": [
+    "significant"
+   ]
   },
   {
    "name": "Blue Angel-like CAI (first discovered in Murchison)",
