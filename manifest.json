@@ -1418,7 +1418,22 @@
      5065,
      4934
     ]
-   }
+   },
+   "tags": [
+    "blink"
+   ],
+   "pairs": [
+    {
+     "images": [
+      "bachar-006-lunar-feldsp-breccia-micro-01.avif",
+      "bachar-006-lunar-feldsp-breccia-micro-03.avif"
+     ],
+     "labels": [
+      "VIS light",
+      "UV light"
+     ]
+    }
+   ]
   },
   {
    "name": "NWA 13446 (anchodrite-un) - 0.87g",
@@ -1673,7 +1688,22 @@
      6257,
      3994
     ]
-   }
+   },
+   "tags": [
+    "blink"
+   ],
+   "pairs": [
+    {
+     "images": [
+      "nwa-13272-achondrite-un-slice-and-a-thin-section-05.avif",
+      "nwa-13272-achondrite-un-slice-and-a-thin-section-07.avif"
+     ],
+     "labels": [
+      "normal, transmitted light",
+      "XP light"
+     ]
+    }
+   ]
   },
   {
    "name": "Ksar Ghilane 022, before NEA 050 (ungrouped, Mg-rich clinopyroxenite)",
@@ -1727,7 +1757,22 @@
      6213,
      4829
     ]
-   }
+   },
+   "tags": [
+    "blink"
+   ],
+   "pairs": [
+    {
+     "images": [
+      "ksar-ghilane-022-before-nea-050-ungrouped-mg-rich-clinopyroxenite-02.avif",
+      "ksar-ghilane-022-before-nea-050-ungrouped-mg-rich-clinopyroxenite-03.avif"
+     ],
+     "labels": [
+      "UV light",
+      "visible light"
+     ]
+    }
+   ]
   },
   {
    "name": "Erg Atouila 001 (achondrite-un, albitite) - 66mg",
@@ -4294,7 +4339,22 @@
      6412,
      3898
     ]
-   }
+   },
+   "tags": [
+    "blink"
+   ],
+   "pairs": [
+    {
+     "images": [
+      "nwa-14683-diogenite-olivine-thin-section-01.avif",
+      "nwa-14683-diogenite-olivine-thin-section-02.avif"
+     ],
+     "labels": [
+      "XP light",
+      "normal transmitted light"
+     ]
+    }
+   ]
   },
   {
    "name": "Tatahouine (diogenite) - 0.7g",
@@ -8175,7 +8235,22 @@
      7220,
      3461
     ]
-   }
+   },
+   "tags": [
+    "blink"
+   ],
+   "pairs": [
+    {
+     "images": [
+      "aba-panu-l3-s4-w0-0-77g-27.avif",
+      "aba-panu-l3-s4-w0-0-77g-32.avif"
+     ],
+     "labels": [
+      "thin section in XP light",
+      "bulk material before thin section"
+     ]
+    }
+   ]
   },
   {
    "name": "NWA 14058 (L3 C-S1 W2-3)",
@@ -9989,7 +10064,22 @@
      3031,
      3459
     ]
-   }
+   },
+   "tags": [
+    "blink"
+   ],
+   "pairs": [
+    {
+     "images": [
+      "nwa-13758-r3-thin-section-03.avif",
+      "nwa-13758-r3-thin-section-04.avif"
+     ],
+     "labels": [
+      "XP light",
+      "normal, transmitted light"
+     ]
+    }
+   ]
   },
   {
    "name": "NWA 12858 (R3 S3 W2) - 1.49g",

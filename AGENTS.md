@@ -60,6 +60,9 @@ A single-page vanilla JS gallery for a hierarchical meteorite photo collection.
       "description": "content of info.txt",
       "links": "raw HTML from links.html (rendered as-is in detail view)",
       "tags": ["historical"],  (from the folder's `tags` file; omitted when absent)
+      "pairs": [{"images": ["img1.avif", "img2.avif"], "labels": ["UV", "VIS"]}],
+               (from the folder's `pairs` file; omitted when absent, labels
+               omitted when unset)
       "images": ["img1.avif", "img2.gif"],
       "dims": {"img1.avif": [5184, 3456], "img2.avif": [3456, 5184]}
     }
@@ -83,6 +86,23 @@ and `getMeteoritesBelow()` synthesize it from the per-meteorite `tags`
 arrays, so `#path=tags/<tag>` shows a flat list of all meteorites with
 that tag, and the detail view renders clickable tag pills below
 `detail-weight`. Search intentionally does NOT match tag names.
+
+A meteorite folder may contain a `pairs` file listing **paired photos**
+(same view of the same meteorite under different lighting, e.g.
+visible/UV). One pair per line: `A|B` with optional per-image labels
+`A|B|labelA|labelB` (a 3-field line labels A only); blank lines and
+`#` comments skipped. Each file field is a verbatim filename or a bare
+number matched against the trailing digit run of a filename (`1` matches
+`...01.avif`; zero or ambiguous matches drop the line with a warning).
+Pairs give a meteorite `"pairs"` in the manifest and an automatic
+`blink` tag (so `#path=tags/blink` lists them). The lightbox lets you
+toggle between pair members (`togglePairImage()`: ⇄ button next to the
+rotate button, `P` key, or a plain click on the photo via panzoom's
+`onClick`), preserving zoom/pan in fit-box-relative units; the partner
+is spliced into `lightboxImages` if the filtered list lacks it, its
+thumb + full-res are preloaded, and the current image's label shows
+under `lb-weight` as `(label)`. Paired thumbnails get a `.pair-badge`
+overlay (detail view + Photos mode).
 
 Folders qualify as meteorites with photos **or** an `info.txt` — an
 image-less meteorite folder is a pure parent whose photos live only in
@@ -123,6 +143,11 @@ skips image-less entries.
     back to center. panzoom runs with `smoothScroll: false` (no kinetic
     inertia) so the transform is final at touchend; pinch gestures are
     never swipes
+  - **Pair toggle**: ⇄ button / `P` / plain click (panzoom `onClick`)
+    switches between paired photos (manifest `pairs`), preserving
+    zoom/pan in fit-box-relative units; current image's label shows
+    below `lb-weight` as `(label)`; partner spliced into the list if
+    missing and preloaded; `.pair-badge` overlay marks paired thumbs
 - **Thumbnail slideshows**: Crossfade transitions (no flash)
 - **Header background slideshow**: Random images (whole collection, Photos/
   thumbs) crossfade every 8s behind the header text (black text-shadow for
@@ -149,6 +174,9 @@ skips image-less entries.
 | `sortMeteorites(list)` | Sorts by category path, name, or random |
 | `getRandomImage(met)` | Picks random image from meteorite |
 | `collectAllImages(meteorites)` | Flattens to `{src, caption}` array for lightbox |
+| `getPairForFile(met, filename)` | Finds the manifest `pairs` entry containing a filename: `{pair, index}` or null |
+| `getPairInfo(photo)` | Pair info for a lightbox photo: `{pair, index, partnerSrc, label}` or null |
+| `appendPairBadge(container, met, filename)` | Adds the `.pair-badge` overlay to a thumbnail container when paired |
 | `toFullPath(photoSrc)` | Converts Photos/ path to Full/ path |
 | `encodeImagePath(path)` | Encodes path segments + prepends `MEDIA_BASE` (R2 or local, see Hosting) |
 
@@ -177,6 +205,8 @@ skips image-less entries.
 - `showLightbox()` - shows lightbox, initializes panzoom
 - `closeLightbox()` - hides lightbox, destroys panzoom instance
 - `updateLightboxImage()` - loads Full/ image, shows spinner, calculates dynamic maxZoom, initializes panzoom
+- `togglePairImage()` / `getRelativeTransform()` - pair toggle; stores the transform as fractions of the fit box in one-shot `pendingPairTransform`, consumed by the next layout via `applyRelativePanzoomTransform()`
+- `setPanzoomTransform(x, y, scale)` / `resetPanzoomTransform()` - exact panzoom transform setter (zero-anchor zoomAbs then moveTo) and fit reset
 
 ### Utilities
 - `escapeHtml(text)` - XSS-safe text insertion
@@ -191,6 +221,12 @@ skips image-less entries.
   silently poisons `transform.scale` with NaN (its guard only checks NaN,
   not undefined) and every later `zoomAbs()` throws "zoom requires valid
   numbers"; reset with `moveTo(0, 0)` + `zoomAbs(0, 0, 1)` instead
+- **panzoom zoomAbs(x, y, s) anchors, it doesn't set**: it means "zoom to s
+  keeping element point (x, y) fixed", so passing a desired transform as
+  arguments from a fresh instance lands at (x*(1-s), y*(1-s), s) - a
+  mirrored pan. To set the transform exactly use
+  `setPanzoomTransform()`: `moveTo(0, 0)` + `zoomAbs(0, 0, s)` + `moveTo(x, y)`
+  (and read back the actual scale afterwards when clamping to maxZoom matters)
 - **Crossfade slideshows**: Two overlapping `<img>` elements swap roles via reference swap (not src swap) to avoid flash
 - **Photos/Full are not in git**: they're gitignored and live in R2; don't
   expect `git status` to show media changes, sync with `rclone` instead
@@ -200,5 +236,5 @@ skips image-less entries.
 
 ## Skill/MCP instructions
 
-- always prefer to use grill me skill for clarifying questions
+- always prefer the `question` tool (navigable TUI with multiple choices) for clarifying questions whenever possible - ask the whole set of open questions in one call instead of listing questions as plain text
 - even though DevTools is usually available, use it only for debugging - let user visually inspect your work and report any problems

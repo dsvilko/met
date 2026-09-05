@@ -122,7 +122,12 @@ a:hover { background: var(--accent-hover); color: #111; }
   cursor: pointer; font-size: 0.85rem; padding: 0.3rem 0.8rem;
   text-decoration: underline;
 }
-#info-panel {
+#info-toggle button.active {
+  color: var(--fg);
+  text-decoration: none;
+  font-weight: 600;
+}
+.info-panel {
   display: none;
   max-width: 800px;
   margin: 0 auto 1rem;
@@ -133,8 +138,9 @@ a:hover { background: var(--accent-hover); color: #111; }
   line-height: 1.7;
   color: var(--fg-dim);
 }
-#info-panel.open { display: block; }
-#info-panel h3 { color: var(--fg); margin: 1rem 0 0.3rem; font-size: 0.9rem; }
+.info-panel.open { display: block; }
+.info-panel h3 { color: var(--fg); margin: 1rem 0 0.3rem; font-size: 0.9rem; }
+.info-panel video { max-width: 100%; border-radius: var(--radius); margin-top: 0.8rem; }
 
 /* ─── Toolbar ────────────────────────────────────────────────── */
 #toolbar {
@@ -472,6 +478,20 @@ a:hover { background: var(--accent-hover); color: #111; }
   font-weight: 600;
   pointer-events: none;
 }
+/* "Part of a pair" overlay icon on thumbnails (top-right corner) */
+.pair-badge {
+  position: absolute;
+  top: 0.3rem;
+  right: 0.3rem;
+  z-index: 1;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.45);
+  padding: 0.05rem 0.3rem;
+  border-radius: var(--radius);
+  font-size: 0.75rem;
+  font-weight: 600;
+  pointer-events: none;
+}
 
 /* Sub-folders shown inside the detail view */
 #detail-subfolders { margin-top: 2rem; }
@@ -558,6 +578,7 @@ a:hover { background: var(--accent-hover); color: #111; }
 #lightbox-caption .lb-name { font-weight: 700; font-size: 1.5rem; }
 #lightbox-caption .lb-category { font-style: italic; color: var(--accent); font-size: 1rem; }
 #lightbox-caption .lb-weight { font-size: 1rem; color: var(--fg); }
+#lightbox-caption .lb-pair { font-size: 1rem; color: var(--fg); }
 #lightbox-close {
   position: absolute;
   top: 1rem; right: 1rem;
@@ -577,6 +598,15 @@ a:hover { background: var(--accent-hover); color: #111; }
 #lightbox-rotate:hover { color: var(--fg); }
 #lightbox-rotate.active { color: var(--accent); }
 #lightbox-rotate.active:hover { color: var(--accent-hover); }
+#lightbox-pair {
+  position: absolute;
+  top: 1.3rem; right: 7.5rem;
+  background: none; border: none;
+  color: var(--fg-dim); font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 1001;
+}
+#lightbox-pair:hover { color: var(--fg); }
 #lightbox-video-toggle {
   position: absolute;
   bottom: 1rem; right: 1rem;
@@ -663,15 +693,40 @@ a:hover { background: var(--accent-hover); color: #111; }
 </div>
 
 <div id="info-toggle">
-  <button onclick="document.getElementById('info-panel').classList.toggle('open')">About this collection</button>
+  <button id="info-tab-about" onclick="toggleInfoTab('about')">About this collection</button>
+  <button id="info-tab-setup" onclick="toggleInfoTab('setup')">My photography setup</button>
 </div>
-<div id="info-panel">
+<div id="info-panel-about" class="info-panel">
  <p>Welcome to the photo album of my meteorite collection. For any inquiries, I can be contacted at dsvilko@gmail.com. Please note that due to high demand, I can no longer help identify stones you have found and suspect might be meteorites. There are dedicated websites as well as excellent Facebook groups that can help you ID your rock.</p>
 <h3>About Me</h3>
 <p>I'm a physics teacher, meteorite collector, and macro photographer from Zagreb, Croatia. Due to my very limited budget, most of my meteorite collection is in the form of micro fragments and small slices, but it covers a wide range of different meteoritic materials. I started collecting in 2019, and my collection currently contains samples of over 200 different meteorites, making it the most varied meteorite collection in Croatia. The collection is also often used for STEM outreach, especially to school kids. I would like to give special thanks to all the generous meteorite dealers and my "meteoritic" friends who have helped grow my collection over the past few years. Needless to say, without such help, my collection would be nowhere near this extensive.</p>
 <h3>Photo Licensing</h3>
 <p>All of these macro photos are copyrighted by me. If you want to use my photos, please contact me at dsvilko@gmail.com. In general, if it's purely for educational/outreach, non-commercial use, I'll likely grant free use of my photos. If it's for commercial use, we can work something out.</p>
 </div>
+<div id="info-panel-setup" class="info-panel">
+<h3>My photography setup</h3>
+<p>To produce these photographs, I've built a completely custom macro photography setup. It's close to fully automated and can take hundreds of individual
+photos that are required, after extensive focus and mosaic stacking, to produce a single output image. I also use the best possible lighting - cross polarized 
+reflected lighting that elliminates reflections from individual mineral grains and so allows us to see the real color of this material.</p>
+<video controls preload="metadata" playsinline src="media/photo_setup.mp4"></video>
+</div>
+<script>
+function toggleInfoTab(which) {
+  const about = document.getElementById('info-panel-about');
+  const setup = document.getElementById('info-panel-setup');
+  const btnAbout = document.getElementById('info-tab-about');
+  const btnSetup = document.getElementById('info-tab-setup');
+  const show = which === 'about' ? about : setup;
+  const other = which === 'about' ? setup : about;
+  const showBtn = which === 'about' ? btnAbout : btnSetup;
+  const otherBtn = which === 'about' ? btnSetup : btnAbout;
+  const willOpen = !show.classList.contains('open');
+  other.classList.remove('open');
+  otherBtn.classList.remove('active');
+  show.classList.toggle('open', willOpen);
+  showBtn.classList.toggle('active', willOpen);
+}
+</script>
 
 <!-- ─── Toolbar ──────────────────────────────────────────────── -->
 <div id="toolbar">
@@ -729,6 +784,7 @@ a:hover { background: var(--accent-hover); color: #111; }
 <div id="lightbox">
   <div id="lightbox-counter"></div>
   <button id="lightbox-rotate" title="Auto-rotate: on (click to disable)">⟳</button>
+  <button id="lightbox-pair" title="Switch pair image (P)" style="display:none">⇄</button>
   <button id="lightbox-close" title="Close">✕</button>
   <button id="lightbox-video-toggle" title="Play/Pause video" style="display:none">⏸</button>
   <div id="lightbox-img-wrap" style="position:relative;display:flex;align-items:center;justify-content:center;">
@@ -742,6 +798,7 @@ a:hover { background: var(--accent-hover); color: #111; }
     <div class="lb-name"></div>
     <div class="lb-category"></div>
     <div class="lb-weight"></div>
+    <div class="lb-pair"></div>
   </div>
   <div id="lightbox-nav">
     <button id="lb-prev">◄ Prev</button>
@@ -798,6 +855,10 @@ let panzoomInstance = null;
 let currentLightboxPhoto = null;
 let hashLightboxImg = null; // img= param from current URL hash (restoration)
 let lightboxVideoReady = false; // full-res video active (metadata loaded)
+
+// Pair toggle (paired photos, e.g. visible/UV): one-shot transform stored
+// as fractions of the fit box, carried into the next updateLightboxImage()
+let pendingPairTransform = null;
 
 // Swipe navigation (touch): horizontal swipes go prev/next while the
 // photo is at fit scale; zoomed-in gestures stay with panzoom (pan),
@@ -1069,6 +1130,7 @@ function setupToolbar() {
 
   // Lightbox controls
   document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+  document.getElementById('lightbox-pair').addEventListener('click', togglePairImage);
   document.getElementById('lb-prev').addEventListener('click', () => lightboxNav(-1));
   document.getElementById('lb-next').addEventListener('click', () => lightboxNav(1));
   document.getElementById('lb-pause').addEventListener('click', toggleLightboxPause);
@@ -1130,6 +1192,7 @@ function setupToolbar() {
       else if (e.key === 'ArrowLeft') lightboxNav(-1);
       else if (e.key === 'ArrowRight') lightboxNav(1);
       else if (e.key === ' ') { e.preventDefault(); toggleLightboxPause(); }
+      else if (e.key === 'p' || e.key === 'P') togglePairImage();
     } else if (e.key === 'Escape' && document.getElementById('detail-view').classList.contains('active')) {
       hideDetail();
       render();
@@ -1308,6 +1371,42 @@ function collectAllImages(meteorites) {
     }
   }
   return images;
+}
+
+/** Pair metadata (manifest "pairs") for a meteorite image filename:
+ *  {pair, index} where index is the image's position in the pair, or null. */
+function getPairForFile(met, filename) {
+  if (!met || !met.pairs) return null;
+  for (const pair of met.pairs) {
+    const i = pair.images.indexOf(filename);
+    if (i >= 0) return { pair, index: i };
+  }
+  return null;
+}
+
+/** Pair info for a lightbox photo object, or null:
+ *  {pair, index, partnerSrc, label} - label is the current photo's own
+ *  pair label (from the pairs file), null when unlabeled. */
+function getPairInfo(photo) {
+  if (!photo || !photo.met) return null;
+  const hit = getPairForFile(photo.met, photo.src.split('/').pop());
+  if (!hit) return null;
+  return {
+    pair: hit.pair,
+    index: hit.index,
+    partnerSrc: photo.met.path + '/' + hit.pair.images[1 - hit.index],
+    label: (hit.pair.labels || [])[hit.index] || null,
+  };
+}
+
+/** Add the "part of a pair" overlay badge to a thumbnail container. */
+function appendPairBadge(container, met, filename) {
+  if (!getPairForFile(met, filename)) return;
+  const badge = document.createElement('span');
+  badge.className = 'pair-badge';
+  badge.textContent = '⇄';
+  badge.title = 'Part of a pair (switch in lightbox)';
+  container.appendChild(badge);
 }
 
 // ═══════════════════════════════════════════════════════════════
@@ -1588,6 +1687,8 @@ function renderPaginatedPhotos(photos) {
       </div>
       <div class="card-label">${escapeHtml(photo.caption)}</div>
     `;
+    appendPairBadge(card.querySelector('.card-img-wrap'), photo.met,
+                    photo.src.split('/').pop());
     card.addEventListener('click', () => {
       // Open lightbox at this photo within the full set
       openLightboxForPhotos(photos, start + idx);
@@ -2045,6 +2146,7 @@ function showDetail(met) {
       label.textContent = Math.round(info.mpix) + ' Mpix';
       wrap.appendChild(label);
     }
+    appendPairBadge(wrap, met, img);
 
     const imgEl = document.createElement('img');
     imgEl.src = encodeImagePath(met.path + '/' + img);
@@ -2202,7 +2304,7 @@ function applyLightboxLayout(dims, opts = {}) {
   rotator.style.width = (lightboxRotated ? imgH : imgW) + 'px';
   rotator.style.height = (lightboxRotated ? imgW : imgH) + 'px';
 
-  initLightboxPanzoom(opts.preserveTransform === true);
+  initLightboxPanzoom(opts);
 }
 
 /** Clear explicit sizing so the CSS fallback rules take over. */
@@ -2224,8 +2326,45 @@ function resetLightboxLayout() {
   rotator.style.height = '';
 }
 
-/** (Re-)create the panzoom controller on the rotator box. */
-function initLightboxPanzoom(preserveTransform) {
+/** Exactly set the panzoom transform to (x, y, scale).
+ *  zoomAbs(x, y, s) means "zoom to s keeping element point (x, y) fixed",
+ *  so calling it with the desired transform as arguments from a fresh
+ *  instance actually lands at (x*(1-s), y*(1-s), s). Zooming around the
+ *  zero anchor instead (scale clamp included), then moving, is exact. */
+function setPanzoomTransform(x, y, scale) {
+  panzoomInstance.moveTo(0, 0);
+  panzoomInstance.zoomAbs(0, 0, scale);
+  panzoomInstance.moveTo(x, y);
+}
+
+/** Reset the panzoom transform to fit scale, centered. */
+function resetPanzoomTransform() {
+  panzoomInstance.moveTo(0, 0);
+  panzoomInstance.zoomAbs(0, 0, 1);
+}
+
+/** Apply a pair-switch transform stored relative to the fit box:
+ *  rx/ry are pan offsets as fractions of the fit-sized, scaled rotator
+ *  box; scale is kept as-is (1 = fit for every image, so it is already
+ *  dimension-relative). */
+function applyRelativePanzoomTransform(rel) {
+  const rotator = document.getElementById('lightbox-rotator');
+  panzoomInstance.moveTo(0, 0);
+  panzoomInstance.zoomAbs(0, 0, rel.scale);
+  // The requested scale may have been clamped to maxZoom - anchor the
+  // pan to the fractions of whatever scale actually applied
+  const s = panzoomInstance.getTransform().scale;
+  panzoomInstance.moveTo(rel.rx * rotator.clientWidth * s,
+                         rel.ry * rotator.clientHeight * s);
+}
+
+/** (Re-)create the panzoom controller on the rotator box.
+ *  opts.preserveTransform: keep the current zoom/pan across re-inits
+ *  opts.relativeTransform: one-shot {rx, ry, scale, rotated} - apply
+ *    the zoom/pan as fractions of the new image's fit box (pair switch) */
+function initLightboxPanzoom(opts = {}) {
+  const preserveTransform = opts.preserveTransform === true;
+  const relative = opts.relativeTransform || null;
   const rotator = document.getElementById('lightbox-rotator');
   const savedTransform = (preserveTransform && panzoomInstance)
     ? panzoomInstance.getTransform()
@@ -2251,18 +2390,34 @@ function initLightboxPanzoom(preserveTransform) {
     // No kinetic inertia: the transform must be final at touchend, or
     // the swipe handler's snap-back would fight the post-gesture glide
     smoothScroll: false,
+    // A click (not a pan/drag) on the photo toggles its pair, if any
+    // (panzoom's own click detection: <5px movement, double-tap safe)
+    onClick: () => {
+      if (getPairInfo(currentLightboxPhoto)) togglePairImage();
+    },
   });
 
   // Restore zoom/pan only if the saved transform is fully valid
   // (a partial zoomTo() can silently poison panzoom's scale with NaN)
-  if (savedTransform &&
+  if (relative &&
+      Number.isFinite(relative.rx) &&
+      Number.isFinite(relative.ry) &&
+      Number.isFinite(relative.scale)) {
+    // Pair switch. If the two images' auto-rotation states differ
+    // (orientation mismatch), the pan axes would rotate with them -
+    // fall back to reset-to-fit.
+    if (relative.rotated !== lightboxRotated) {
+      resetPanzoomTransform();
+    } else {
+      applyRelativePanzoomTransform(relative);
+    }
+  } else if (savedTransform &&
       Number.isFinite(savedTransform.x) &&
       Number.isFinite(savedTransform.y) &&
       Number.isFinite(savedTransform.scale)) {
-    panzoomInstance.zoomAbs(savedTransform.x, savedTransform.y, savedTransform.scale);
+    setPanzoomTransform(savedTransform.x, savedTransform.y, savedTransform.scale);
   } else {
-    panzoomInstance.moveTo(0, 0);
-    panzoomInstance.zoomAbs(0, 0, 1);
+    resetPanzoomTransform();
   }
 }
 
@@ -2339,6 +2494,13 @@ function updateLightboxImage() {
   currentLightboxPhoto = photo;
   lightboxVideoReady = false;
 
+  // One-shot pair-switch transform (consumed by the first layout below)
+  const pairTransform = pendingPairTransform;
+  pendingPairTransform = null;
+
+  // Pair info (paired photos, e.g. visible/UV of the same view)
+  const pairInfo = getPairInfo(photo);
+
   // Reset media visibility: thumbnail img visible, video hidden
   img.style.display = '';
   video.style.display = 'none';
@@ -2346,6 +2508,7 @@ function updateLightboxImage() {
   video.onloadedmetadata = null;
   video.onerror = null;
   updateVideoToggleBtn();
+  updatePairBtn();
 
   // Immediately show thumbnail (Photos/ path) - no spinner
   const thumbSrc = encodeImagePath(photo.src);
@@ -2365,6 +2528,15 @@ function updateLightboxImage() {
   setLine('lb-name', parsed.name);
   setLine('lb-category', parsed.category);
   setLine('lb-weight', parsed.weight);
+  setLine('lb-pair', pairInfo && pairInfo.label ? `(${pairInfo.label})` : '');
+
+  // Preload the pair partner (thumb + full-res) so toggling is instant
+  if (pairInfo) {
+    new Image().src = encodeImagePath(pairInfo.partnerSrc);
+    if (!isVideoPhoto({ src: pairInfo.partnerSrc })) {
+      new Image().src = encodeImagePath(toFullPath(pairInfo.partnerSrc));
+    }
+  }
 
   document.getElementById('lightbox-counter').textContent =
     `${lightboxIndex + 1} / ${lightboxImages.length}`;
@@ -2373,14 +2545,15 @@ function updateLightboxImage() {
   // thumbnail's natural size (same aspect ratio)
   const dims = getManifestDims(photo);
   if (dims) {
-    applyLightboxLayout(dims, { preserveTransform: true });
+    applyLightboxLayout(dims, { preserveTransform: true, relativeTransform: pairTransform });
   } else {
     resetLightboxLayout();
     const onThumbMeta = () => {
       // Skip once the video has taken over (it supplies its own dims)
       if (currentLightboxPhoto === photo &&
           !lightboxVideoReady && img.naturalWidth > 0) {
-        applyLightboxLayout({ w: img.naturalWidth, h: img.naturalHeight });
+        applyLightboxLayout({ w: img.naturalWidth, h: img.naturalHeight },
+          { relativeTransform: pairTransform });
       }
     };
     if (img.complete && img.naturalWidth > 0) {
@@ -2400,7 +2573,7 @@ function updateLightboxImage() {
       spinner.style.display = 'none';
       lightboxVideoReady = true;
       applyLightboxLayout({ w: video.videoWidth, h: video.videoHeight },
-        { preserveTransform: true });
+        { preserveTransform: true, relativeTransform: pairTransform });
       img.style.display = 'none';
       video.style.display = '';
       video.play().catch(() => {});
@@ -2451,12 +2624,61 @@ function updateLightboxImage() {
   }
 }
 
+/** Show the ⇄ button only when the current photo is part of a pair. */
+function updatePairBtn() {
+  const btn = document.getElementById('lightbox-pair');
+  btn.style.display = getPairInfo(currentLightboxPhoto) ? 'block' : 'none';
+}
+
+/** Current panzoom transform as fractions of the fit-sized rotator box
+ *  (for pair switching), or null when at fit scale. */
+function getRelativeTransform() {
+  if (!panzoomInstance) return null;
+  const t = panzoomInstance.getTransform();
+  if (!Number.isFinite(t.x) || !Number.isFinite(t.y) ||
+      !Number.isFinite(t.scale)) {
+    return null;
+  }
+  if (t.scale === 1 && t.x === 0 && t.y === 0) return null;
+  const rotator = document.getElementById('lightbox-rotator');
+  if (!rotator.clientWidth || !rotator.clientHeight) return null;
+  return {
+    rx: t.x / (rotator.clientWidth * t.scale),
+    ry: t.y / (rotator.clientHeight * t.scale),
+    scale: t.scale,
+    rotated: lightboxRotated,
+  };
+}
+
+/** Switch to the paired counterpart of the current photo (manifest
+ *  "pairs"), preserving the relative zoom/pan between the two images. */
+function togglePairImage() {
+  const info = getPairInfo(currentLightboxPhoto);
+  if (!info) return;
+  let idx = lightboxImages.findIndex(p => p.src === info.partnerSrc);
+  if (idx < 0) {
+    // Partner missing from the current (possibly filtered) set: splice it
+    // in right after the current image so pair members stay adjacent
+    idx = lightboxIndex + 1;
+    lightboxImages.splice(idx, 0, {
+      src: info.partnerSrc,
+      caption: currentLightboxPhoto.caption,
+      met: currentLightboxPhoto.met,
+    });
+  }
+  if (idx === lightboxIndex) return;
+  pendingPairTransform = getRelativeTransform();
+  lightboxIndex = idx;
+  updateLightboxImage();
+  pushState(true); // keep img= in sync without a new history entry
+  if (lightboxPlaying) { clearInterval(lightboxTimer); startLightboxTimer(); }
+}
+
 function lightboxNav(dir) {
   // Reset zoom/pan before navigating
   // (zoomTo() needs all three args - zoomTo(1) poisons the transform)
   if (panzoomInstance) {
-    panzoomInstance.moveTo(0, 0);
-    panzoomInstance.zoomAbs(0, 0, 1);
+    resetPanzoomTransform();
   }
   lightboxIndex = (lightboxIndex + dir + lightboxImages.length) % lightboxImages.length;
   updateLightboxImage();
@@ -2499,8 +2721,7 @@ function onLightboxTouchEnd(e) {
     return;
   }
   // Not a swipe: undo any drift panzoom's bounds allow at fit scale
-  panzoomInstance.moveTo(0, 0);
-  panzoomInstance.zoomAbs(0, 0, 1);
+  resetPanzoomTransform();
 }
 
 function toggleLightboxPause() {

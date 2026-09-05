@@ -371,3 +371,6 @@ As of 2026., only 4 recovered meteorites have been discovered as asteroids in Sp
 This tag groups meteorites recovered from the Antarctic ice sheet, where dark stones stand out against the ice and cold, dry conditions leave them exceptionally well preserved. Some of my specimens come from the early days of Antarctic meteorite hunting, including the ANSMET program.
 
 Wikipedia: https://en.wikipedia.org/wiki/ANSMET
+
+# ./tags/blink
+These are the meteorites that contain pairs of matching images - often views of the same piece but taken in different light. You can easily switch (blink) between these two images of such a pair, even when zoomed in. Use a dedicated button or simply click anywhere on an image.

@@ -5,7 +5,8 @@ Generate manifest.json from the Photos/ directory tree.
 Walks the Photos/ hierarchy, finds leaf meteorite folders (those containing
 .avif/.gif image files), reads any info.txt descriptions, links.html
 (link HTML, kept separate) and tags files (one tag per line, normalized
-to lowercase), reads the pixel
+to lowercase), reads the optional pairs file (paired photos, e.g.
+visible/UV shots of the same view) and the pixel
 dimensions of each image's full-resolution counterpart in Full/ (same
 relative path, same filenames), and outputs a manifest.json that the gallery
 webpage can consume.
@@ -22,6 +23,7 @@ Usage:
 
 import json
 import os
+import re
 import shutil
 import subprocess
 import sys
@@ -143,6 +145,75 @@ def is_image(filename):
     return os.path.splitext(filename.lower())[1] in IMAGE_EXTENSIONS
 
 
+def resolve_pair_field(field, image_set):
+    """Resolve one `pairs` file field to an image filename, or None.
+
+    A field containing a dot is a verbatim filename (must exist in
+    image_set); otherwise it is an integer matched against the trailing
+    digit run of each filename, so "1" matches "...01.avif". Returns None
+    when nothing matches or the match is ambiguous.
+    """
+    if "." in field:
+        return field if field in image_set else None
+    if not re.fullmatch(r"\d+", field):
+        return None
+    number = int(field)
+    matches = []
+    for img in image_set:
+        trailing = re.search(r"(\d+)$", os.path.splitext(img)[0])
+        if trailing and int(trailing.group(1)) == number:
+            matches.append(img)
+    return matches[0] if len(matches) == 1 else None
+
+
+def read_pairs(dirpath, images):
+    """Read the optional `pairs` file listing paired photos.
+
+    One pair per line: "<fileA>|<fileB>" with optional per-image labels
+    "<fileA>|<fileB>|<labelA>|<labelB>" (either or both labels may be
+    given; a 3-field line labels fileA only). Each file field is a
+    filename or a number matching the trailing digits of a filename (see
+    resolve_pair_field). Blank lines and #-comments are skipped; invalid
+    lines are dropped with a warning.
+
+    Returns a list of {"images": [a, b]} dicts, with "labels":
+    [labelA, labelB] added when at least one label is set.
+    """
+    pairs_path = os.path.join(dirpath, "pairs")
+    if not os.path.isfile(pairs_path):
+        return []
+    image_set = set(images)
+    pairs = []
+    try:
+        with open(pairs_path, "r", encoding="utf-8", errors="replace") as f:
+            for lineno, raw in enumerate(f, 1):
+                line = raw.strip()
+                if not line or line.startswith("#"):
+                    continue
+                fields = [fld.strip() for fld in line.split("|")]
+                if not 2 <= len(fields) <= 4:
+                    print(f"Warning: {pairs_path}:{lineno}: expected 2-4 "
+                          f"'|'-separated fields, got {len(fields)}; skipped",
+                          file=sys.stderr)
+                    continue
+                file_a = resolve_pair_field(fields[0], image_set)
+                file_b = resolve_pair_field(fields[1], image_set)
+                if not file_a or not file_b or file_a == file_b:
+                    print(f"Warning: {pairs_path}:{lineno}: could not resolve "
+                          f"pair '{line}'; skipped", file=sys.stderr)
+                    continue
+                entry = {"images": [file_a, file_b]}
+                if len(fields) >= 3:
+                    label_a = fields[2] or None
+                    label_b = (fields[3] or None) if len(fields) == 4 else None
+                    if label_a or label_b:
+                        entry["labels"] = [label_a, label_b]
+                pairs.append(entry)
+    except Exception as e:
+        print(f"Warning: Could not read {pairs_path}: {e}", file=sys.stderr)
+    return pairs
+
+
 def walk_photos(root, full_root):
     """
     Walk the Photos/ tree and return a list of meteorite entries.
@@ -159,6 +230,9 @@ def walk_photos(root, full_root):
         "description": "contents of info.txt or empty string",
         "links": "contents of links.html (raw HTML) or empty string",
         "tags": ["historical", ...]  (omitted when the folder has no tags file),
+        "pairs": [{"images": ["01.avif", "04.avif"],
+                   "labels": ["UV", "VIS"]}, ...]  (from the pairs file;
+                  omitted when absent, labels omitted when unset),
         "images": ["filename1.jpeg", "filename2.jpg"],
         "dims": {"filename1.jpeg": [4000, 3000], ...}
     }
@@ -225,6 +299,14 @@ def walk_photos(root, full_root):
             except Exception as e:
                 print(f"Warning: Could not read {tags_path}: {e}", file=sys.stderr)
 
+        # Read pairs if present (paired photos, e.g. visible/UV shots of
+        # the same view; the lightbox can toggle between them while
+        # preserving zoom/pan). Meteorites with pairs get an automatic
+        # "blink" tag so the virtual tags category lists them.
+        pairs = read_pairs(dirpath, images)
+        if pairs and "blink" not in tags:
+            tags.append("blink")
+
         # Read dimensions from the full-resolution counterparts in Full/
         dims = {}
         if full_root:
@@ -248,10 +330,12 @@ def walk_photos(root, full_root):
             "images": images,
             "dims": dims,
         }
-        # Omit the key entirely for untagged meteorites to keep the
-        # manifest lean
+        # Omit the keys entirely for untagged / unpaired meteorites to
+        # keep the manifest lean
         if tags:
             entry["tags"] = tags
+        if pairs:
+            entry["pairs"] = pairs
         meteorites.append(entry)
 
     return meteorites
